@@ -4275,6 +4275,51 @@ void LVL_12_TODANO_FUN_0033AB58(char *p)
     *(char *)(p + 8) = (char)(q[2] * 255.0f);
     LVL_12_TODANO_Fc10c1216_FUN_002F1928(p + 16, p + 16, (char *)(q + 4));
 }
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *LVL_12_TODANO_F904cc63b_FUN_00324938(char *p);
+extern void LVL_12_TODANO_F904cc63b_FUN_002F21C8(V4_F904cc63b *dst, char *src);
+extern void LVL_12_TODANO_F904cc63b_FUN_002F1928(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_12_TODANO_F904cc63b_FUN_002F1958(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_12_TODANO_F904cc63b_FUN_002F2450(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void LVL_12_TODANO_F904cc63b_FUN_002F1E08(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int LVL_12_TODANO_FUN_00324BB8(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = LVL_12_TODANO_F904cc63b_FUN_00324938(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    LVL_12_TODANO_F904cc63b_FUN_002F21C8(b0, p);
+    LVL_12_TODANO_F904cc63b_FUN_002F1928(b1, (V4_F904cc63b *)a2, p + 16);
+    LVL_12_TODANO_F904cc63b_FUN_002F1958(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        LVL_12_TODANO_F904cc63b_FUN_002F21C8(b3, p + 32);
+        LVL_12_TODANO_F904cc63b_FUN_002F2450(b2, b3);
+        LVL_12_TODANO_F904cc63b_FUN_002F1E08(b1, b1, b2);
+        LVL_12_TODANO_F904cc63b_FUN_002F1E08(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        LVL_12_TODANO_F904cc63b_FUN_002F1E08(b1, b1, b0);
+    }
+    LVL_12_TODANO_F904cc63b_FUN_002F1928(b1, b1, a1 + 16);
+    LVL_12_TODANO_F904cc63b_FUN_002F1958((V4_F904cc63b *)a3, b1, a2);
+    return 1;
+}
 extern int LVL_12_TODANO_F250fbfa4_FUN_002F15C8(char *p);
 extern void LVL_12_TODANO_F250fbfa4_FUN_00334F58(char *p);
 extern void LVL_12_TODANO_F250fbfa4_FUN_002F1928(char *p0, char *p1, char *p2);

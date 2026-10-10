@@ -4684,6 +4684,51 @@ void LVL_10_HRUGIS_CLOUD_FUN_00349D28(char *p)
     *(char *)(p + 8) = (char)(q[2] * 255.0f);
     LVL_10_HRUGIS_CLOUD_Fc10c1216_FUN_00308B30(p + 16, p + 16, (char *)(q + 4));
 }
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_0033B008(char *p);
+extern void LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_003093B0(V4_F904cc63b *dst, char *src);
+extern void LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B30(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B60(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00309638(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308FF0(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int LVL_10_HRUGIS_CLOUD_FUN_0033B288(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_0033B008(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_003093B0(b0, p);
+    LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B30(b1, (V4_F904cc63b *)a2, p + 16);
+    LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B60(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_003093B0(b3, p + 32);
+        LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00309638(b2, b3);
+        LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308FF0(b1, b1, b2);
+        LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308FF0(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308FF0(b1, b1, b0);
+    }
+    LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B30(b1, b1, a1 + 16);
+    LVL_10_HRUGIS_CLOUD_F904cc63b_FUN_00308B60((V4_F904cc63b *)a3, b1, a2);
+    return 1;
+}
 extern int LVL_10_HRUGIS_CLOUD_F250fbfa4_FUN_003087D0(char *p);
 extern void LVL_10_HRUGIS_CLOUD_F250fbfa4_FUN_00344128(char *p);
 extern void LVL_10_HRUGIS_CLOUD_F250fbfa4_FUN_00308B30(char *p0, char *p1, char *p2);

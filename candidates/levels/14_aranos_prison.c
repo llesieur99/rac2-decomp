@@ -4389,6 +4389,51 @@ void LVL_14_ARANOS_PRISON_FUN_0033FB18(char *p)
     *(char *)(p + 8) = (char)(q[2] * 255.0f);
     LVL_14_ARANOS_PRISON_Fc10c1216_FUN_002F5C38(p + 16, p + 16, (char *)(q + 4));
 }
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *LVL_14_ARANOS_PRISON_F904cc63b_FUN_00328768(char *p);
+extern void LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F64B8(V4_F904cc63b *dst, char *src);
+extern void LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C38(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C68(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F6740(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F60F8(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int LVL_14_ARANOS_PRISON_FUN_003289E8(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = LVL_14_ARANOS_PRISON_F904cc63b_FUN_00328768(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F64B8(b0, p);
+    LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C38(b1, (V4_F904cc63b *)a2, p + 16);
+    LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C68(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F64B8(b3, p + 32);
+        LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F6740(b2, b3);
+        LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F60F8(b1, b1, b2);
+        LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F60F8(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F60F8(b1, b1, b0);
+    }
+    LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C38(b1, b1, a1 + 16);
+    LVL_14_ARANOS_PRISON_F904cc63b_FUN_002F5C68((V4_F904cc63b *)a3, b1, a2);
+    return 1;
+}
 extern int LVL_14_ARANOS_PRISON_F250fbfa4_FUN_002F58A8(char *p);
 extern void LVL_14_ARANOS_PRISON_F250fbfa4_FUN_00339F18(char *p);
 extern void LVL_14_ARANOS_PRISON_F250fbfa4_FUN_002F5C38(char *p0, char *p1, char *p2);

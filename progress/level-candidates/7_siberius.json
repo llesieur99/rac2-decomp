@@ -6,13 +6,13 @@
   "reference_sha256": "76b77dbbc9a3e15f1c4f202a36b37d01bdaff7936142c14b5b35a1552a85287a",
   "reference_entry": 2769288,
   "candidate_source": "candidates/levels/7_siberius.c",
-  "source_sha256": "f64ff117e988078ef774a57712811750bf863280a1b5075bbe9e24e9f5e0ebad",
-  "catalog_sha256": "f6e53dc62fba48079ab069376ecc057c81b55363924a7fa732de2eb7f45e8ab4",
-  "object_sha256": "c5912252e54ec0206b118b2df46bc488de6abeb351d2f34774a1849633bc7429",
-  "candidate_elf_sha256": "0eacdd3b878cd48cf1153fe724e03895142dda386348a8ddb21d980d5a5bd195",
+  "source_sha256": "8b04283777cb1d0ed34cfdd7b6d25b3e10396756ac89f9c32d92b22c5f8137aa",
+  "catalog_sha256": "660234a096476c179ddad22407885665c074c8ad3031ef0dea6b8e2847cb870b",
+  "object_sha256": "b810ef9715a9c22d6f906d8c626f5dda27074f442c1ad84df07eeb912cdb039e",
+  "candidate_elf_sha256": "1ff638db97473b7c732a11883aa0dc4b25cc98e8086ec18cbfe9996b9d648e6d",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -848,6 +848,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 16
+    },
+    {
+      "symbol": "LVL_7_SIBERIUS_FUN_00317258",
+      "address": 3240536,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "f8652d130aad57f05d0434145db440e555a5c3eecdb1d006f70d98c159a75132",
+      "candidate_sha256": "f8652d130aad57f05d0434145db440e555a5c3eecdb1d006f70d98c159a75132",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_7_SIBERIUS_FUN_00317520",
@@ -2864,5 +2875,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 30092
+  "matched_code_bytes": 30412
 }

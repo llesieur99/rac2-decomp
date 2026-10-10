@@ -6,13 +6,13 @@
   "reference_sha256": "bd41a03a57871a6f33106d5277c6b4918f379ceaa5f780a84c82360b421204fb",
   "reference_entry": 2868232,
   "candidate_source": "candidates/levels/5_feltzin_system.c",
-  "source_sha256": "fac2f2c7e1ddf0ab24b10ddea433db1da8c320a58cd03a14f492491153d40672",
-  "catalog_sha256": "a243bed92340d6c2dd896172d68faf135d30dfcfac423fbacc334c79f57b77d7",
-  "object_sha256": "6af83304c7382f951154e3562570a7051c1edac0124628c9f7e4c6ef8129c227",
-  "candidate_elf_sha256": "e8a353977f6cfba89e3d37df98a48ed7be3aae919bb27c7109b9f1c2d09f6e48",
+  "source_sha256": "05cd46256fa9dd78af01723350d08dd93fb4ba2c00640236cb63c7e5340f72c8",
+  "catalog_sha256": "5c3eeb3155e0e4ae67f0899bf40cfcac1b51a4adcf25877ecd943807e304199e",
+  "object_sha256": "1a14f678e9c0a3ba81c421f5b2646f3b1a44cad40224008a9dce73ff7046a029",
+  "candidate_elf_sha256": "82895ab410e20cb4270af47bf4ad1c6adbfa4a3121be7123d717e4ddecc867e9",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -925,6 +925,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 124
+    },
+    {
+      "symbol": "LVL_5_FELTZIN_SYSTEM_FUN_00338A28",
+      "address": 3377704,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "d35b47dc1adbc5012ec9731274b207b355f22f201252d0a01319d90d47c6d104",
+      "candidate_sha256": "d35b47dc1adbc5012ec9731274b207b355f22f201252d0a01319d90d47c6d104",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_5_FELTZIN_SYSTEM_FUN_00338CF0",
@@ -3007,5 +3018,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 32152
+  "matched_code_bytes": 32472
 }
