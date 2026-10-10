@@ -78,6 +78,10 @@ Its fill uses the full 0–100% scale.
 
 ## Supported version
 
+> **Target change:** new work targets **USA v2.00** (`--region v2`; disc and boot are pinned in
+> `config/regions/ntsc-u-v2/`). The proofs and progress below were measured on v1.01 and move
+> to v2.00 only after its overlays are measured and the proofs regenerated.
+
 | Game | Platform | Region | Version | Boot executable |
 | --- | --- | --- | --- | --- |
 | Ratchet & Clank: Going Commando (2003) | PlayStation 2 | USA / NTSC-U | 1.01 | `SCUS_972.68` |
