@@ -93,7 +93,10 @@ another compiler and report it as qualified.
 Contributors fetch these themselves; they are git-ignored and never committed:
 `git clone https://github.com/AngheloAlf/SN-Systems-ProDG_for_PS2_3.01 toolchain/sn-prodg-3.01` and
 `git clone https://github.com/AngheloAlf/sce_ps2_sdk_24 toolchain/sn-prodg-24`
-(the layout rac1-decomp uses). A mirror is not proof of permission to use or distribute it.
+(the layout rac1-decomp uses). The tool root for `--toolchain` is
+`toolchain/sn-prodg-3.01/usr/local/sce/ee/gcc`. On Linux, run the Windows executables through
+[wibo](https://github.com/decompals/wibo) by exporting `RAC2_EXE_RUNNER=/path/to/wibo-x86_64`;
+`build.py` then prefixes every `.exe` call with it. A mirror is not proof of permission to use or distribute it.
 Verify the executables against the hashes in `progress/report.json` before relying on them.
 
 You must supply an authorized copy of the qualified legacy assembler/linker.
