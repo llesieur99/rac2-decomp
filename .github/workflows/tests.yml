@@ -28,10 +28,12 @@ jobs:
         run: |
           python scripts/source_layout.py --check --inventory-check progress/source-inventory.json
           python scripts/campaign.py --runtime /tmp/rac2-campaign-ci views --check
-      - name: Export verified RAC2 progress
+      - name: Export legacy USA v1.01 proofs
         run: |
-          python scripts/decomp_report.py --output build/decomp/report.json \
+          python scripts/decomp_report.py --output build/decomp/report-v1.01.json \
             $(for f in progress/levels/*.json; do printf -- '--level-proof %s ' "$f"; done)
+      - name: Export USA v2.00 progress
+        run: python scripts/v2_report.py report --output build/decomp/report.json
       - name: Validate the report with objdiff
         # decomp.dev parses this artifact with objdiff; reject a report it cannot load.
         # The release binary is pinned by version and SHA-256.
@@ -46,7 +48,7 @@ jobs:
         run: |
           python scripts/unique_code_report.py --catalog config/function-catalog/catalog.json --output progress/unique-code-report.json --check
           python scripts/unique_code_report.py --catalog config/function-catalog/catalog.json --output build/decomp/unique-summary.json --objdiff-output build/decomp/unique-report.json
-          python scripts/readme_unique_progress.py --catalogue-report progress/unique-code-report.json --physical-report build/decomp/report.json --check
+          python scripts/readme_unique_progress.py --catalogue-report progress/unique-code-report.json --physical-report build/decomp/report-v1.01.json --check
           # Parse every unit against an empty report. Comparing 84k units to
           # themselves makes the CLI perform an unnecessary quadratic search.
           python -c 'import sys,json; sys.path.insert(0,"scripts"); from decomp_report import measures; print(json.dumps({"version":2,"measures":measures(0,0,0),"units":[],"categories":[]}))' > "$RUNNER_TEMP/empty-report.json"

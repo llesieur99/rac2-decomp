@@ -70,7 +70,15 @@ python scripts/try_function.py src/usa-v2/IntToFloat.c --address 0x284690 --size
 Write your function in `src/usa-v2/`, compare, then iterate on the C shape (see the notes in
 [`src/usa-v2/README.md`](../src/usa-v2/README.md)). Leaf functions compare exactly; calls and globals carry relocations.
 
-## 6. Contribute
+## 6. decomp.dev report
+
+`python scripts/function_size_rank.py` and `python scripts/v2_report.py catalog --reference <reference dir>` refresh the committed
+structure-only catalogue (`config/regions/ntsc-u-v2/catalog.json`). After a function matches, add `--record` to
+`scripts/try_function.py` to store its proof in `progress/v2/matches.json`, then
+`python scripts/v2_report.py report --output build/decomp/report.json` builds the objdiff report CI uploads to decomp.dev.
+Totals count each unique body once (about 5.27 MB of code), not 27 overlay copies.
+
+## 7. Contribute
 
 Claim a small lot in [`CONTRIBUTOR-RESERVATIONS.md`](CONTRIBUTOR-RESERVATIONS.md) first, open a draft PR against `RAC2`
 as described in [`CONTRIBUTOR-QUICKSTART.md`](CONTRIBUTOR-QUICKSTART.md), and keep matching claims honest:

@@ -11,6 +11,8 @@ Needs the chain via scripts/wsl_chain.py (on Linux: tools/linux/sitecustomize.py
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 import struct
 import sys
 import tempfile
@@ -41,6 +43,7 @@ def main() -> int:
     ap.add_argument("--size", type=int, required=True)
     ap.add_argument("--symbol")
     ap.add_argument("--elf", type=Path, default=rank.DEFAULT_ELF)
+    ap.add_argument("--record", action="store_true", help="on MATCH, add the proof to progress/v2/matches.json")
     ap.add_argument("--flags", default="-O2 -G0 -ffunction-sections")
     args = ap.parse_args()
     symbol = args.symbol or args.source.stem
@@ -65,7 +68,22 @@ def main() -> int:
         c = ours[i] if i < len(ours) else None
         print(f"{'  ' if a == c else '!!'} +{i * 4:02X} ref {a if a is None else f'{a:08X}'} ours {c if c is None else f'{c:08X}'}")
     print("MATCH" if ok else "DIFFERENT")
+    if ok and args.record:
+        record_match(args, symbol, reference)
     return 0 if ok else 1
+
+
+def record_match(args, symbol: str, words: list[int]) -> None:
+    path = Path(__file__).resolve().parents[1] / "progress/v2/matches.json"
+    doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"schema": 1, "target": "SCUS_972.68", "version": "2.00", "matches": []}
+    source = args.source.resolve().relative_to(path.parents[2])
+    row = {"symbol": symbol, "address": args.address, "size": args.size, "source": source.as_posix(),
+           "source_sha256": hashlib.sha256(args.source.read_bytes()).hexdigest(), "flags": args.flags,
+           "reference_sha256": hashlib.sha256(struct.pack(f"<{len(words)}I", *words)).hexdigest()}
+    doc["matches"] = sorted([m for m in doc["matches"] if m["address"] != args.address] + [row], key=lambda m: m["address"])
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8")
+    print(f"recorded {symbol} in {path.relative_to(path.parents[2])}")
 
 
 if __name__ == "__main__":
