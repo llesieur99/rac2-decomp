@@ -54,7 +54,11 @@ edit(tc_mips, "      return 1;\n  return 0;\n}\n\nstatic void\nmacro_build (char
      "  if (prev_prev_insn.insn_mo == 0 || prev_prev_insn.insn_mo == &dummy_opcode)\n    return 0;\n  return 1;\n}\n\n"
      "static void\nmacro_build (char *place,\n")
 run("restrict_mtc1_exemption.py", tc_mips)
+run("pad_div_erratum_nops.py", tc_mips)
+run("pad_div_erratum_branch.py", tc_mips)  # must follow pad_div_erratum_nops.py
 
-subprocess.run([sys.executable, str(published / "fold_zero_ti_store.py"), str(tree / "gcc")], check=True)
+run("fold_zero_ti_store.py", tree / "gcc")
+run("fold_zero_ti_return_value.py", tree / "gcc")  # rewrites the guard fold_zero_ti_store.py inserts
+run("neutralise_div_dslot.py", tree / "gcc")
 run("disable_frame_order_default.py", mips_c)
 print("RAC2 recipe applied")

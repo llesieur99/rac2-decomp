@@ -51,7 +51,7 @@ tools/linux/build-compiler.sh ~/rac2-private/compiler       # ~2 minutes, needs 
 
 All inputs are public and SHA-256 checked. The script applies only published transformers (`tools/linux/rac2_recipe.py`)
 and prints the five source hashes; all must equal the checkpoint table in [`COMPILER-NOTES.md`](COMPILER-NOTES.md)
-(`mips.c 7952e5da…`, `mips.h 87d59c06…`, `mips.md 177caa69…`, `toplev.c 38d52727…`, `tc-mips.c 61e51c1e…`).
+(`mips.c 4a6a1ae1…`, `mips.h 87d59c06…`, `mips.md 9720897d…`, `toplev.c 38d52727…`, `tc-mips.c b22dfff8…`).
 They do on Ubuntu 24.04 and 26.04 (`UBUNTU=26.04 tools/linux/build-compiler.sh …`). The `cc1`/`cpp`/`as` **binary** hashes
 depend on the build host and do not equal the documented ones, so record your own in any proof.
 Behavioural check: compiling `candidates/boot.c` gives bytes identical to the recorded v1.01 proofs for all 210
