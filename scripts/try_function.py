@@ -23,7 +23,7 @@ import function_size_rank as rank  # noqa: E402
 import wsl_chain  # noqa: E402
 
 
-def object_text(path: Path, section_hint: str) -> bytes:
+def object_text(path: Path, section_hint: str) -> tuple[bytes, dict[int, int]]:
     b = path.read_bytes()
     shoff, = struct.unpack_from("<I", b, 0x20)
     entsize, num, strndx = struct.unpack_from("<HHH", b, 0x2E)
@@ -32,7 +32,12 @@ def object_text(path: Path, section_hint: str) -> bytes:
     found = {b[names + r[0]:b.index(b"\0", names + r[0])].decode(): b[r[4]:r[4] + r[5]] for r in rows}
     for key in (f".text.{section_hint}", ".text"):
         if key in found:
-            return found[key]
+            relocs = {}
+            rel = found.get(".rel" + key, b"")
+            for i in range(0, len(rel), 8):
+                offset, info = struct.unpack_from("<II", rel, i)
+                relocs[offset] = info & 0xFF
+            return found[key], relocs
     raise SystemExit(f"no code section in object; sections: {sorted(found)}")
 
 
@@ -43,6 +48,7 @@ def main() -> int:
     ap.add_argument("--size", type=int, required=True)
     ap.add_argument("--symbol")
     ap.add_argument("--elf", type=Path, default=rank.DEFAULT_ELF)
+    ap.add_argument("--mask-relocs", action="store_true", help="ignore relocated fields (calls, globals) when comparing")
     ap.add_argument("--record", action="store_true", help="on MATCH, add the proof to progress/v2/matches.json")
     ap.add_argument("--flags", default="-O2 -G0 -ffunction-sections")
     args = ap.parse_args()
@@ -58,9 +64,16 @@ def main() -> int:
     with tempfile.TemporaryDirectory(dir=Path.home() / "rac2-private") as tmp:
         obj, asm = Path(tmp) / "f.o", Path(tmp) / "f.s"
         wsl_chain.compile_c(args.source, args.flags.split(), obj, asm, Path(tmp) / "log.txt")
-        raw = object_text(obj, symbol)
+        raw, relocs = object_text(obj, symbol)
         print(asm.read_text())
     ours = list(struct.unpack(f"<{len(raw) // 4}I", raw))
+    if args.mask_relocs:  # relocated fields are filled by the linker: compare everything else
+        masks = {4: 0xFC000000, 5: 0xFFFF0000, 6: 0xFFFF0000, 7: 0xFFFF0000}  # JMP26, HI16, LO16, GPREL16
+        for offset, kind in relocs.items():
+            if kind in masks and offset // 4 < len(ours):
+                ours[offset // 4] &= masks[kind]
+                reference[offset // 4] &= masks[kind]
+        print(f"masked {len(relocs)} relocated field(s)")
     print(f"reference {len(reference)} words, ours {len(ours)} words")
     ok = ours == reference
     for i in range(max(len(ours), len(reference))):
@@ -78,7 +91,7 @@ def record_match(args, symbol: str, words: list[int]) -> None:
     doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"schema": 1, "target": "SCUS_972.68", "version": "2.00", "matches": []}
     source = args.source.resolve().relative_to(path.parents[2])
     row = {"symbol": symbol, "address": args.address, "size": args.size, "source": source.as_posix(),
-           "source_sha256": hashlib.sha256(args.source.read_bytes()).hexdigest(), "flags": args.flags,
+           "source_sha256": hashlib.sha256(args.source.read_bytes()).hexdigest(), "flags": args.flags, "relocs_masked": args.mask_relocs,
            "reference_sha256": hashlib.sha256(struct.pack(f"<{len(words)}I", *words)).hexdigest()}
     doc["matches"] = sorted([m for m in doc["matches"] if m["address"] != args.address] + [row], key=lambda m: m["address"])
     path.parent.mkdir(parents=True, exist_ok=True)

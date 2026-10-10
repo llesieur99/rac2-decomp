@@ -4,6 +4,16 @@
  "version": "2.00",
  "matches": [
   {
+   "symbol": "LoadDiscToc",
+   "address": 1260152,
+   "size": 40,
+   "source": "src/usa-v2/LoadDiscToc.c",
+   "source_sha256": "13b0a62a7dc89beb52340bdb37e874671a404e52e741041a33978bb1ed255515",
+   "flags": "-O2 -G0 -ffunction-sections",
+   "relocs_masked": true,
+   "reference_sha256": "eefe9ed42c56278eb5c9dca81b47c32bcc52c613d371aca9ef16d63fc21496a2"
+  },
+  {
    "symbol": "IntToFloat",
    "address": 2639504,
    "size": 16,
@@ -11,6 +21,26 @@
    "source_sha256": "81b52e6f92942ef1728d2e6a7c2b70d93796543fb6e21e1fe2cd358914cece68",
    "flags": "-O2 -G0 -ffunction-sections",
    "reference_sha256": "c1e504a1520ea751993cb70ee75a0c1a34e0aec9abb8c2ef7a9fb873b9071368"
+  },
+  {
+   "symbol": "ApplyGsDisplayEnv",
+   "address": 2644016,
+   "size": 36,
+   "source": "src/usa-v2/ApplyGsDisplayEnv.c",
+   "source_sha256": "29a937ff78c256142477a7e1cecd8c0f1d13df9a3fa9368711a188a3611a5629",
+   "flags": "-O2 -G8 -ffunction-sections",
+   "relocs_masked": true,
+   "reference_sha256": "026821d9e0bef26bec066d9ef30296cc9f07c1594ccf537262b4622cb6f98f77"
+  },
+  {
+   "symbol": "MapSetCurrentLevel",
+   "address": 2712832,
+   "size": 32,
+   "source": "src/usa-v2/MapSetCurrentLevel.c",
+   "source_sha256": "d6a8ed465ae89110057d2b9ca1d95ec0e15b8f050734cc416314f01005b9cb35",
+   "flags": "-O2 -G0 -ffunction-sections",
+   "relocs_masked": true,
+   "reference_sha256": "1ea576fccaf441aca7df4e061f7525d15567286ea9b53284dfd13f19f1d3052d"
   },
   {
    "symbol": "HasMobyGroup",
