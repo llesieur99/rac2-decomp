@@ -79,6 +79,12 @@
     "LVL_0_ARANOS_TUTORIAL_F40487154_FUN_002EE6F8": 3073784,
     "LVL_0_ARANOS_TUTORIAL_F40487154_FUN_002EE950": 3074384,
     "LVL_0_ARANOS_TUTORIAL_F40487154_FUN_002EF0F8": 3076344,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_D_00189E20": 1613344,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_FUN_002B8F00": 2854656,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_FUN_002EE108": 3072264,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_FUN_002EE138": 3072312,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_FUN_002EE178": 3072376,
+    "LVL_0_ARANOS_TUTORIAL_F41eb487e_FUN_002EE5D8": 3073496,
     "LVL_0_ARANOS_TUTORIAL_F42d2147f_D_00189E20": 1613344,
     "LVL_0_ARANOS_TUTORIAL_F42d2147f_D_00189EA0": 1613472,
     "LVL_0_ARANOS_TUTORIAL_F42d2147f_FUN_002EE108": 3072264,
@@ -264,6 +270,15 @@
     "LVL_0_ARANOS_TUTORIAL_Fc10c1216_FUN_002EE108": 3072264,
     "LVL_0_ARANOS_TUTORIAL_Fc10c1216_FUN_002EF250": 3076688,
     "LVL_0_ARANOS_TUTORIAL_Fc10c1216_FUN_0032FC10": 3341328,
+    "LVL_0_ARANOS_TUTORIAL_Fc186f630_D_00189E20": 1613344,
+    "LVL_0_ARANOS_TUTORIAL_Fc186f630_FUN_002EE138": 3072312,
+    "LVL_0_ARANOS_TUTORIAL_Fc186f630_FUN_002EE178": 3072376,
+    "LVL_0_ARANOS_TUTORIAL_Fc186f630_FUN_002EE1F8": 3072504,
+    "LVL_0_ARANOS_TUTORIAL_Fc186f630_FUN_002EE3D0": 3072976,
+    "LVL_0_ARANOS_TUTORIAL_Fc3cb9262_FUN_002EDD78": 3071352,
+    "LVL_0_ARANOS_TUTORIAL_Fc3cb9262_FUN_002EE108": 3072264,
+    "LVL_0_ARANOS_TUTORIAL_Fc3cb9262_FUN_002EF250": 3076688,
+    "LVL_0_ARANOS_TUTORIAL_Fc3cb9262_FUN_0032FC10": 3341328,
     "LVL_0_ARANOS_TUTORIAL_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_0_ARANOS_TUTORIAL_Fc936841d_FUN_002EE108": 3072264,
     "LVL_0_ARANOS_TUTORIAL_Fc936841d_FUN_002EE138": 3072312,
@@ -479,6 +494,12 @@
       "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_002B3998"
     },
     {
+      "address": 2855360,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_002B91C0"
+    },
+    {
       "address": 2921000,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -525,6 +546,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_002D3778"
+    },
+    {
+      "address": 2963808,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_002D3960"
     },
     {
       "address": 2965424,
@@ -906,6 +933,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_0033A3E0"
+    },
+    {
+      "address": 3403976,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_0_ARANOS_TUTORIAL_FUN_0033F0C8"
     },
     {
       "address": 3405432,

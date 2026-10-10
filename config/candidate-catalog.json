@@ -195,6 +195,10 @@
     "Fc10c1216_FUN_00282CC0": 2632896,
     "Fc10c1216_FUN_00283CF0": 2637040,
     "Fc10c1216_FUN_002B9180": 2855296,
+    "Fc3cb9262_FUN_00282978": 2632056,
+    "Fc3cb9262_FUN_00282CC0": 2632896,
+    "Fc3cb9262_FUN_00283CF0": 2637040,
+    "Fc3cb9262_FUN_002B9180": 2855296,
     "Fc936841d_FUN_00282CC0": 2632896,
     "Fc936841d_FUN_00282CF0": 2632944,
     "Fd1c348f5_FUN_00282978": 2632056,
@@ -1179,6 +1183,14 @@
       "ranges": 1,
       "size": 236,
       "symbol": "FUN_002C2080",
+      "xrefs": 1
+    },
+    {
+      "address": 2913592,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "ranges": 1,
+      "size": 228,
+      "symbol": "FUN_002C7538",
       "xrefs": 1
     },
     {

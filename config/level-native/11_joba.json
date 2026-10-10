@@ -83,6 +83,12 @@
     "LVL_11_JOBA_F40487154_FUN_00300B20": 3148576,
     "LVL_11_JOBA_F40487154_FUN_00300D78": 3149176,
     "LVL_11_JOBA_F40487154_FUN_003015A8": 3151272,
+    "LVL_11_JOBA_F41eb487e_D_00189E20": 1613344,
+    "LVL_11_JOBA_F41eb487e_FUN_002D0F90": 2953104,
+    "LVL_11_JOBA_F41eb487e_FUN_003004E0": 3146976,
+    "LVL_11_JOBA_F41eb487e_FUN_00300510": 3147024,
+    "LVL_11_JOBA_F41eb487e_FUN_00300580": 3147136,
+    "LVL_11_JOBA_F41eb487e_FUN_00300A00": 3148288,
     "LVL_11_JOBA_F42d2147f_D_00189E20": 1613344,
     "LVL_11_JOBA_F42d2147f_D_00189EA0": 1613472,
     "LVL_11_JOBA_F42d2147f_FUN_003004E0": 3146976,
@@ -258,9 +264,18 @@
     "LVL_11_JOBA_Fc10c1216_FUN_003004E0": 3146976,
     "LVL_11_JOBA_Fc10c1216_FUN_00301700": 3151616,
     "LVL_11_JOBA_Fc10c1216_FUN_00343AA0": 3422880,
+    "LVL_11_JOBA_Fc186f630_D_00189E20": 1613344,
+    "LVL_11_JOBA_Fc186f630_FUN_00300510": 3147024,
+    "LVL_11_JOBA_Fc186f630_FUN_00300580": 3147136,
+    "LVL_11_JOBA_Fc186f630_FUN_00300600": 3147264,
+    "LVL_11_JOBA_Fc186f630_FUN_003007F8": 3147768,
     "LVL_11_JOBA_Fc1edda5c_D_001A742C": 1733676,
     "LVL_11_JOBA_Fc1edda5c_D_001B3D08": 1785096,
     "LVL_11_JOBA_Fc1edda5c_FUN_00126108": 1204488,
+    "LVL_11_JOBA_Fc3cb9262_FUN_00300180": 3146112,
+    "LVL_11_JOBA_Fc3cb9262_FUN_003004E0": 3146976,
+    "LVL_11_JOBA_Fc3cb9262_FUN_00301700": 3151616,
+    "LVL_11_JOBA_Fc3cb9262_FUN_00343AA0": 3422880,
     "LVL_11_JOBA_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_11_JOBA_Fc84472d1_D_001ADD98": 1760664,
     "LVL_11_JOBA_Fc84472d1_D_001ADDB8": 1760696,
@@ -498,6 +513,12 @@
       "symbol": "LVL_11_JOBA_FUN_002CBD60"
     },
     {
+      "address": 2953808,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_11_JOBA_FUN_002D1250"
+    },
+    {
       "address": 3030384,
       "meaning": "shared native body of family c68ad20a",
       "size": 96,
@@ -538,6 +559,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_11_JOBA_FUN_002E5570"
+    },
+    {
+      "address": 3037016,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_11_JOBA_FUN_002E5758"
     },
     {
       "address": 3038632,
@@ -966,6 +993,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_11_JOBA_FUN_0034E2C0"
+    },
+    {
+      "address": 3486680,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_11_JOBA_FUN_003533D8"
     },
     {
       "address": 3488400,

@@ -83,6 +83,12 @@
     "LVL_20_YEEDIL_F40487154_FUN_00302870": 3156080,
     "LVL_20_YEEDIL_F40487154_FUN_00302AC8": 3156680,
     "LVL_20_YEEDIL_F40487154_FUN_00303270": 3158640,
+    "LVL_20_YEEDIL_F41eb487e_D_00189E20": 1613344,
+    "LVL_20_YEEDIL_F41eb487e_FUN_002CC050": 2932816,
+    "LVL_20_YEEDIL_F41eb487e_FUN_00302260": 3154528,
+    "LVL_20_YEEDIL_F41eb487e_FUN_00302290": 3154576,
+    "LVL_20_YEEDIL_F41eb487e_FUN_003022D0": 3154640,
+    "LVL_20_YEEDIL_F41eb487e_FUN_00302750": 3155792,
     "LVL_20_YEEDIL_F42d2147f_D_00189E20": 1613344,
     "LVL_20_YEEDIL_F42d2147f_D_00189EA0": 1613472,
     "LVL_20_YEEDIL_F42d2147f_FUN_00302260": 3154528,
@@ -255,6 +261,15 @@
     "LVL_20_YEEDIL_Fc10c1216_FUN_00302260": 3154528,
     "LVL_20_YEEDIL_Fc10c1216_FUN_003033C8": 3158984,
     "LVL_20_YEEDIL_Fc10c1216_FUN_00345160": 3428704,
+    "LVL_20_YEEDIL_Fc186f630_D_00189E20": 1613344,
+    "LVL_20_YEEDIL_Fc186f630_FUN_00302290": 3154576,
+    "LVL_20_YEEDIL_Fc186f630_FUN_003022D0": 3154640,
+    "LVL_20_YEEDIL_Fc186f630_FUN_00302350": 3154768,
+    "LVL_20_YEEDIL_Fc186f630_FUN_00302548": 3155272,
+    "LVL_20_YEEDIL_Fc3cb9262_FUN_00301F00": 3153664,
+    "LVL_20_YEEDIL_Fc3cb9262_FUN_00302260": 3154528,
+    "LVL_20_YEEDIL_Fc3cb9262_FUN_003033C8": 3158984,
+    "LVL_20_YEEDIL_Fc3cb9262_FUN_00345160": 3428704,
     "LVL_20_YEEDIL_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_20_YEEDIL_Fc84472d1_D_001ADD98": 1760664,
     "LVL_20_YEEDIL_Fc84472d1_D_001ADDB8": 1760696,
@@ -470,6 +485,12 @@
       "symbol": "LVL_20_YEEDIL_FUN_002C6AC8"
     },
     {
+      "address": 2933520,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_20_YEEDIL_FUN_002CC310"
+    },
+    {
       "address": 3000928,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -516,6 +537,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_20_YEEDIL_FUN_002E76A0"
+    },
+    {
+      "address": 3045512,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_20_YEEDIL_FUN_002E7888"
     },
     {
       "address": 3047128,
@@ -897,6 +924,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_20_YEEDIL_FUN_0034F928"
+    },
+    {
+      "address": 3491784,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_20_YEEDIL_FUN_003547C8"
     },
     {
       "address": 3493240,

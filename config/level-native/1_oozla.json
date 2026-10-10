@@ -78,6 +78,12 @@
     "LVL_1_OOZLA_F40487154_FUN_002E3A60": 3029600,
     "LVL_1_OOZLA_F40487154_FUN_002E3CB8": 3030200,
     "LVL_1_OOZLA_F40487154_FUN_002E4460": 3032160,
+    "LVL_1_OOZLA_F41eb487e_D_00189E20": 1613344,
+    "LVL_1_OOZLA_F41eb487e_FUN_002B9070": 2855024,
+    "LVL_1_OOZLA_F41eb487e_FUN_002E3470": 3028080,
+    "LVL_1_OOZLA_F41eb487e_FUN_002E34A0": 3028128,
+    "LVL_1_OOZLA_F41eb487e_FUN_002E34E0": 3028192,
+    "LVL_1_OOZLA_F41eb487e_FUN_002E3940": 3029312,
     "LVL_1_OOZLA_F42d2147f_D_00189E20": 1613344,
     "LVL_1_OOZLA_F42d2147f_D_00189EA0": 1613472,
     "LVL_1_OOZLA_F42d2147f_FUN_002E3470": 3028080,
@@ -228,6 +234,15 @@
     "LVL_1_OOZLA_Fc10c1216_FUN_002E3470": 3028080,
     "LVL_1_OOZLA_Fc10c1216_FUN_002E45B8": 3032504,
     "LVL_1_OOZLA_Fc10c1216_FUN_003258B8": 3299512,
+    "LVL_1_OOZLA_Fc186f630_D_00189E20": 1613344,
+    "LVL_1_OOZLA_Fc186f630_FUN_002E34A0": 3028128,
+    "LVL_1_OOZLA_Fc186f630_FUN_002E34E0": 3028192,
+    "LVL_1_OOZLA_Fc186f630_FUN_002E3560": 3028320,
+    "LVL_1_OOZLA_Fc186f630_FUN_002E3738": 3028792,
+    "LVL_1_OOZLA_Fc3cb9262_FUN_002E3110": 3027216,
+    "LVL_1_OOZLA_Fc3cb9262_FUN_002E3470": 3028080,
+    "LVL_1_OOZLA_Fc3cb9262_FUN_002E45B8": 3032504,
+    "LVL_1_OOZLA_Fc3cb9262_FUN_003258B8": 3299512,
     "LVL_1_OOZLA_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_1_OOZLA_Fc84472d1_D_001ADD98": 1760664,
     "LVL_1_OOZLA_Fc84472d1_D_001ADDB8": 1760696,
@@ -452,6 +467,12 @@
       "symbol": "LVL_1_OOZLA_FUN_002B4328"
     },
     {
+      "address": 2855728,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_1_OOZLA_FUN_002B9330"
+    },
+    {
       "address": 2914104,
       "meaning": "shared native body of family c68ad20a",
       "size": 96,
@@ -474,6 +495,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_1_OOZLA_FUN_002C8EF8"
+    },
+    {
+      "address": 2920672,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_1_OOZLA_FUN_002C90E0"
     },
     {
       "address": 2922288,
@@ -819,6 +846,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_1_OOZLA_FUN_00330178"
+    },
+    {
+      "address": 3363064,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_1_OOZLA_FUN_003350F8"
     },
     {
       "address": 3364520,

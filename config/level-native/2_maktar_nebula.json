@@ -79,6 +79,12 @@
     "LVL_2_MAKTAR_NEBULA_F40487154_FUN_002F2598": 3089816,
     "LVL_2_MAKTAR_NEBULA_F40487154_FUN_002F27F0": 3090416,
     "LVL_2_MAKTAR_NEBULA_F40487154_FUN_002F3000": 3092480,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_D_00189E20": 1613344,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_FUN_002BC380": 2868096,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_FUN_002F1F70": 3088240,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_FUN_002F1FA0": 3088288,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_FUN_002F1FF8": 3088376,
+    "LVL_2_MAKTAR_NEBULA_F41eb487e_FUN_002F2478": 3089528,
     "LVL_2_MAKTAR_NEBULA_F42d2147f_D_00189E20": 1613344,
     "LVL_2_MAKTAR_NEBULA_F42d2147f_D_00189EA0": 1613472,
     "LVL_2_MAKTAR_NEBULA_F42d2147f_FUN_002F1F70": 3088240,
@@ -266,9 +272,18 @@
     "LVL_2_MAKTAR_NEBULA_Fc10c1216_FUN_002F1F70": 3088240,
     "LVL_2_MAKTAR_NEBULA_Fc10c1216_FUN_002F3158": 3092824,
     "LVL_2_MAKTAR_NEBULA_Fc10c1216_FUN_003366A8": 3368616,
+    "LVL_2_MAKTAR_NEBULA_Fc186f630_D_00189E20": 1613344,
+    "LVL_2_MAKTAR_NEBULA_Fc186f630_FUN_002F1FA0": 3088288,
+    "LVL_2_MAKTAR_NEBULA_Fc186f630_FUN_002F1FF8": 3088376,
+    "LVL_2_MAKTAR_NEBULA_Fc186f630_FUN_002F2078": 3088504,
+    "LVL_2_MAKTAR_NEBULA_Fc186f630_FUN_002F2270": 3089008,
     "LVL_2_MAKTAR_NEBULA_Fc1edda5c_D_001A742C": 1733676,
     "LVL_2_MAKTAR_NEBULA_Fc1edda5c_D_001B3D08": 1785096,
     "LVL_2_MAKTAR_NEBULA_Fc1edda5c_FUN_00126108": 1204488,
+    "LVL_2_MAKTAR_NEBULA_Fc3cb9262_FUN_002F1BE0": 3087328,
+    "LVL_2_MAKTAR_NEBULA_Fc3cb9262_FUN_002F1F70": 3088240,
+    "LVL_2_MAKTAR_NEBULA_Fc3cb9262_FUN_002F3158": 3092824,
+    "LVL_2_MAKTAR_NEBULA_Fc3cb9262_FUN_003366A8": 3368616,
     "LVL_2_MAKTAR_NEBULA_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_2_MAKTAR_NEBULA_Fc936841d_FUN_002F1F70": 3088240,
     "LVL_2_MAKTAR_NEBULA_Fc936841d_FUN_002F1FA0": 3088288,
@@ -491,6 +506,12 @@
       "symbol": "LVL_2_MAKTAR_NEBULA_FUN_002B6E18"
     },
     {
+      "address": 2868800,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_2_MAKTAR_NEBULA_FUN_002BC640"
+    },
+    {
       "address": 2934440,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -537,6 +558,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_2_MAKTAR_NEBULA_FUN_002D6BF8"
+    },
+    {
+      "address": 2977248,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_2_MAKTAR_NEBULA_FUN_002D6DE0"
     },
     {
       "address": 2978864,
@@ -959,6 +986,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_2_MAKTAR_NEBULA_FUN_00340EA8"
+    },
+    {
+      "address": 3431752,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_2_MAKTAR_NEBULA_FUN_00345D48"
     },
     {
       "address": 3433208,

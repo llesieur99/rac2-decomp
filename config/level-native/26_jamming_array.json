@@ -84,6 +84,12 @@
     "LVL_26_JAMMING_ARRAY_F40487154_FUN_002EE918": 3074328,
     "LVL_26_JAMMING_ARRAY_F40487154_FUN_002EEB70": 3074928,
     "LVL_26_JAMMING_ARRAY_F40487154_FUN_002EF358": 3076952,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_D_00189E20": 1613344,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_FUN_002B9680": 2856576,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_FUN_002EE328": 3072808,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_FUN_002EE358": 3072856,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_FUN_002EE398": 3072920,
+    "LVL_26_JAMMING_ARRAY_F41eb487e_FUN_002EE7F8": 3074040,
     "LVL_26_JAMMING_ARRAY_F42d2147f_D_00189E20": 1613344,
     "LVL_26_JAMMING_ARRAY_F42d2147f_D_00189EA0": 1613472,
     "LVL_26_JAMMING_ARRAY_F42d2147f_FUN_002EE328": 3072808,
@@ -255,6 +261,15 @@
     "LVL_26_JAMMING_ARRAY_Fc10c1216_FUN_002EE328": 3072808,
     "LVL_26_JAMMING_ARRAY_Fc10c1216_FUN_002EF4B0": 3077296,
     "LVL_26_JAMMING_ARRAY_Fc10c1216_FUN_0032F720": 3340064,
+    "LVL_26_JAMMING_ARRAY_Fc186f630_D_00189E20": 1613344,
+    "LVL_26_JAMMING_ARRAY_Fc186f630_FUN_002EE358": 3072856,
+    "LVL_26_JAMMING_ARRAY_Fc186f630_FUN_002EE398": 3072920,
+    "LVL_26_JAMMING_ARRAY_Fc186f630_FUN_002EE418": 3073048,
+    "LVL_26_JAMMING_ARRAY_Fc186f630_FUN_002EE5F0": 3073520,
+    "LVL_26_JAMMING_ARRAY_Fc3cb9262_FUN_002EDFC8": 3071944,
+    "LVL_26_JAMMING_ARRAY_Fc3cb9262_FUN_002EE328": 3072808,
+    "LVL_26_JAMMING_ARRAY_Fc3cb9262_FUN_002EF4B0": 3077296,
+    "LVL_26_JAMMING_ARRAY_Fc3cb9262_FUN_0032F720": 3340064,
     "LVL_26_JAMMING_ARRAY_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_26_JAMMING_ARRAY_Fc84472d1_D_001ADD98": 1760664,
     "LVL_26_JAMMING_ARRAY_Fc84472d1_D_001ADDB8": 1760696,
@@ -476,6 +491,12 @@
       "symbol": "LVL_26_JAMMING_ARRAY_FUN_002B4118"
     },
     {
+      "address": 2857280,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_26_JAMMING_ARRAY_FUN_002B9940"
+    },
+    {
       "address": 2922920,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -522,6 +543,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_26_JAMMING_ARRAY_FUN_002D3EF8"
+    },
+    {
+      "address": 2965728,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_26_JAMMING_ARRAY_FUN_002D40E0"
     },
     {
       "address": 2967344,
@@ -903,6 +930,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_26_JAMMING_ARRAY_FUN_00339DD0"
+    },
+    {
+      "address": 3402424,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_26_JAMMING_ARRAY_FUN_0033EAB8"
     },
     {
       "address": 3403880,

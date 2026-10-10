@@ -89,6 +89,12 @@
     "LVL_7_SIBERIUS_F40487154_FUN_002E4918": 3033368,
     "LVL_7_SIBERIUS_F40487154_FUN_002E4B70": 3033968,
     "LVL_7_SIBERIUS_F40487154_FUN_002E5318": 3035928,
+    "LVL_7_SIBERIUS_F41eb487e_D_00189E20": 1613344,
+    "LVL_7_SIBERIUS_F41eb487e_FUN_002B74C8": 2847944,
+    "LVL_7_SIBERIUS_F41eb487e_FUN_002E4310": 3031824,
+    "LVL_7_SIBERIUS_F41eb487e_FUN_002E4340": 3031872,
+    "LVL_7_SIBERIUS_F41eb487e_FUN_002E4398": 3031960,
+    "LVL_7_SIBERIUS_F41eb487e_FUN_002E47F8": 3033080,
     "LVL_7_SIBERIUS_F42d2147f_D_00189E20": 1613344,
     "LVL_7_SIBERIUS_F42d2147f_D_00189EA0": 1613472,
     "LVL_7_SIBERIUS_F42d2147f_FUN_002E4310": 3031824,
@@ -268,6 +274,15 @@
     "LVL_7_SIBERIUS_Fc10c1216_FUN_002E4310": 3031824,
     "LVL_7_SIBERIUS_Fc10c1216_FUN_002E5470": 3036272,
     "LVL_7_SIBERIUS_Fc10c1216_FUN_003263C0": 3302336,
+    "LVL_7_SIBERIUS_Fc186f630_D_00189E20": 1613344,
+    "LVL_7_SIBERIUS_Fc186f630_FUN_002E4340": 3031872,
+    "LVL_7_SIBERIUS_Fc186f630_FUN_002E4398": 3031960,
+    "LVL_7_SIBERIUS_Fc186f630_FUN_002E4418": 3032088,
+    "LVL_7_SIBERIUS_Fc186f630_FUN_002E45F0": 3032560,
+    "LVL_7_SIBERIUS_Fc3cb9262_FUN_002E3FB0": 3030960,
+    "LVL_7_SIBERIUS_Fc3cb9262_FUN_002E4310": 3031824,
+    "LVL_7_SIBERIUS_Fc3cb9262_FUN_002E5470": 3036272,
+    "LVL_7_SIBERIUS_Fc3cb9262_FUN_003263C0": 3302336,
     "LVL_7_SIBERIUS_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_7_SIBERIUS_Fc895cb79_D_001D1D00": 1907968,
     "LVL_7_SIBERIUS_Fc936841d_FUN_002E4310": 3031824,
@@ -466,6 +481,12 @@
       "symbol": "LVL_7_SIBERIUS_FUN_002B2690"
     },
     {
+      "address": 2848648,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_7_SIBERIUS_FUN_002B7788"
+    },
+    {
       "address": 2890616,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -500,6 +521,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_7_SIBERIUS_FUN_002C9728"
+    },
+    {
+      "address": 2922768,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_7_SIBERIUS_FUN_002C9910"
     },
     {
       "address": 2924384,
@@ -911,6 +938,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_7_SIBERIUS_FUN_00330950"
+    },
+    {
+      "address": 3364408,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_7_SIBERIUS_FUN_00335638"
     },
     {
       "address": 3365864,
