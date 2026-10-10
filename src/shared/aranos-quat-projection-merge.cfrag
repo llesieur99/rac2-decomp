@@ -1,0 +1,45 @@
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *@@ROLE_0_00@@(char *p);
+extern void @@ROLE_1_00@@(V4_F904cc63b *dst, char *src);
+extern void @@ROLE_2_00@@(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void @@ROLE_3_00@@(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void @@ROLE_5_00@@(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void @@ROLE_6_00@@(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int @@FUNCTION@@(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = @@ROLE_0_01@@(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    @@ROLE_1_01@@(b0, p);
+    @@ROLE_2_01@@(b1, (V4_F904cc63b *)a2, p + 16);
+    @@ROLE_3_01@@(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        @@ROLE_1_02@@(b3, p + 32);
+        @@ROLE_5_01@@(b2, b3);
+        @@ROLE_6_01@@(b1, b1, b2);
+        @@ROLE_6_02@@(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        @@ROLE_6_03@@(b1, b1, b0);
+    }
+    @@ROLE_2_02@@(b1, b1, a1 + 16);
+    @@ROLE_3_02@@((V4_F904cc63b *)a3, b1, a2);
+    return 1;
+}

@@ -1,0 +1,85 @@
+
+
+#ifndef RAC2_T_TI_F41EB487E
+#define RAC2_T_TI_F41EB487E
+typedef int TI_F41eb487e __attribute__((mode(TI)));
+#endif
+
+
+extern void @@ROLE_0_00@@(void *a, void *b, void *c);
+extern void @@ROLE_1_00@@(void *a, void *b, float value);
+extern void @@ROLE_2_00@@(void *a, void *b, int c, float p, float q, float r);
+extern void @@ROLE_3_00@@(void *a, void *b, void *c);
+extern void @@ROLE_4_00@@(void *a, void *b, void *c);
+
+
+#ifndef RAC2_T_VEC4_F41EB487E
+#define RAC2_T_VEC4_F41EB487E
+typedef struct {
+    int a;
+    int b;
+    float c;
+    float d;
+} Vec4_F41eb487e;
+#endif
+
+
+#ifndef RAC2_T_RESIDENTSTATE_F41EB487E
+#define RAC2_T_RESIDENTSTATE_F41EB487E
+typedef struct {
+    u8 pad000[0x80];
+    u8 area080[0x218 - 0x80];
+    short h218;
+    u8 pad21a[0x2a0 - 0x21a];
+    TI_F41eb487e q2A0;
+    u8 pad2b0[0x2c0 - 0x2b0];
+    u8 area2C0[0x31c - 0x2c0];
+    float f31C;
+    u8 pad320[0x34e - 0x320];
+    short h34E;
+    u8 pad350[0x22c3 - 0x350];
+    u8 b22C3;
+} ResidentState_F41eb487e;
+#endif
+
+
+extern ResidentState_F41eb487e @@BIND_DATA_BASE_00@@;
+
+void @@FUNCTION@@(void)
+{
+    u8 scratch[64];
+    Vec4_F41eb487e A, B, C;
+    float hi = 0.035f;
+    float lo = 0.3f;
+
+    *(TI_F41eb487e *)&A = 0;
+    *(TI_F41eb487e *)&B = 0;
+    *(TI_F41eb487e *)&C = 0;
+
+    A.c = 1.0f;
+    B.c = 0.8f;
+    C.c = 0.8f;
+
+    @@ROLE_0_01@@(&B, &B, &@@BIND_DATA_BASE_01@@);
+
+    *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&@@BIND_DATA_BASE_02@@.q2A0;
+    if (@@BIND_DATA_BASE_03@@.b22C3 == 2) {
+        @@ROLE_1_01@@(&A, &@@BIND_DATA_BASE_04@@.area2C0, -1.0f);
+    }
+
+    if (@@BIND_DATA_BASE_05@@.b22C3 == 1 && (@@BIND_DATA_BASE_06@@.h34E < 10 || @@BIND_DATA_BASE_07@@.f31C < 1.0f))
+        *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&@@BIND_DATA_BASE_08@@.q2A0;
+
+    if (@@BIND_DATA_BASE_09@@.h34E != 0 && @@BIND_DATA_BASE_10@@.h218 != 0) {
+        lo = 0.001f;
+        hi = lo;
+    }
+
+    @@ROLE_2_01@@(&A, scratch, 0, hi, lo, 0.0f);
+
+    if (@@BIND_DATA_BASE_11@@.b22C3 == 1 && @@BIND_DATA_BASE_12@@.h34E != 0) {
+        @@ROLE_0_02@@(&C, &C, scratch);
+        @@ROLE_3_01@@(&@@BIND_DATA_BASE_13@@.area080, &@@BIND_DATA_BASE_14@@.area080, &C);
+        @@ROLE_4_01@@(&@@BIND_DATA_BASE_15@@.area080, &@@BIND_DATA_BASE_16@@.area080, &B);
+    }
+}

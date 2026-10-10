@@ -1,51 +1,51 @@
 {
-  "boot_review_sha256": "afee317d6a9eb4e8c629e955d0a2870f94f5eda12c4cfe5980e183f708284c21",
+  "boot_review_sha256": "87d864562d4fce12e905d7cb53232b8bcc3f6f660547323a7f4b6806dfa68074",
   "c_link_object_adapter": {
     "compiled_code_unchanged": true,
-    "compiled_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
+    "compiled_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
     "integration_credit": 0,
     "kind": "reviewed-shared-import-relocation-adapter",
-    "link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
+    "link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
     "new_physical_bytes": 0,
     "relocation_changes": [
       {
         "caller": "FUN_0034F898",
         "caller_address": 4596888,
-        "new_r_info": 111364,
-        "new_symbol_index": 435,
+        "new_r_info": 122116,
+        "new_symbol_index": 477,
         "old_r_info": 67844,
         "old_symbol_index": 265,
         "provider": "FUN_001338C8",
         "provider_address": 1259720,
         "provider_reference_sha256": "df665c024f2c2f2122ca91cb5b61048030b7f98a3df2606d8c91441295d69d2f",
         "provider_size": 36,
-        "r_info_offset": 110272
+        "r_info_offset": 139596
       },
       {
         "caller": "FUN_0034FB20",
         "caller_address": 4597660,
-        "new_r_info": 128260,
-        "new_symbol_index": 501,
+        "new_r_info": 139012,
+        "new_symbol_index": 543,
         "old_r_info": 68100,
         "old_symbol_index": 266,
         "provider": "FUN_00133930",
         "provider_address": 1259824,
         "provider_reference_sha256": "d1b7a40a24b4537c4f9b704b87cafb6001ecaf64ef96c01c869fd05532732474",
         "provider_size": 44,
-        "r_info_offset": 110720
+        "r_info_offset": 140044
       },
       {
         "caller": "FUN_002B7170",
         "caller_address": 3416436,
-        "new_r_info": 142596,
-        "new_symbol_index": 557,
+        "new_r_info": 153348,
+        "new_symbol_index": 599,
         "old_r_info": 67588,
         "old_symbol_index": 264,
         "provider": "FUN_00133490",
         "provider_address": 1258640,
         "provider_reference_sha256": "1c102a1be303b46fbc85f02f327e97d8ecdbbf6635d3458a6454c0c7de75c75a",
         "provider_size": 40,
-        "r_info_offset": 111032
+        "r_info_offset": 140356
       }
     ],
     "schema": 1,
@@ -64,12 +64,12 @@
       {
         "index": 4,
         "name": ".reginfo",
-        "sha256": "c2d3969b3225176d95cc329e9f1b623c332436096048e9022c551cb112907c70"
+        "sha256": "64d8421d1617bb4b885b93d05be3edf7877e0f122dc202fecad75ba433668b99"
       },
       {
         "index": 5,
         "name": ".mdebug",
-        "sha256": "f68b313f458385fdc23576b8b4ed6a90bec6cd0670e3657e4fb9ac9425ceab6f"
+        "sha256": "f6056cff404204a133933b99b885398edfd69800c6d7dc0752b5cc5a72a93e92"
       },
       {
         "index": 6,
@@ -1688,29 +1688,239 @@
       },
       {
         "index": 440,
-        "name": ".shstrtab",
-        "sha256": "cf25a6821455714f54a5c0b81e2a723dff861ae4c7644231093fd15f91279cd2"
-      },
-      {
-        "index": 441,
-        "name": ".symtab",
-        "sha256": "0f6fa54a0b3b657de8e7f47c7adf996fb081d7796c96d521df415dd0dd426008"
+        "name": ".text.FUN_002D4E10",
+        "sha256": "a8676595c567569004a5593e8ec58c810dd0c27f0362c0bdcf4a022103432611"
       },
       {
         "index": 442,
+        "name": ".text.FUN_0034EC70",
+        "sha256": "12a13f773a4450fbc9d7e9bc664115f322058a9f643f21ba85b1ae0322e5b5fb"
+      },
+      {
+        "index": 444,
+        "name": ".text.FUN_002E46C0",
+        "sha256": "dce4524975475049e746d94bca280f5a9b9f19693e77a99c02a2739983a1e687"
+      },
+      {
+        "index": 446,
+        "name": ".text.FUN_00293CA8",
+        "sha256": "e74b7eb12a26601c43476977470e0713c48f0c39046031809fd38008a6af5d7c"
+      },
+      {
+        "index": 448,
+        "name": ".text.FUN_002E4478",
+        "sha256": "19eb8bea954758107bfa70beeb67787dd158173a05733753b1cf58d0a4308a46"
+      },
+      {
+        "index": 450,
+        "name": ".text.FUN_00274128",
+        "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+      },
+      {
+        "index": 452,
+        "name": ".text.FUN_00274208",
+        "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+      },
+      {
+        "index": 454,
+        "name": ".text.FUN_0031A998",
+        "sha256": "c59e0502110792ab05e18abe5a69eb3869c2588ecdab762c9af03f2dd0ac4f45"
+      },
+      {
+        "index": 456,
+        "name": ".text.FUN_00328D98",
+        "sha256": "ada74c42c5ce6f5f11c2faed30219547b4f71049cae441483fe9413baf3dbc91"
+      },
+      {
+        "index": 458,
+        "name": ".text.FUN_0031E8F8",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 460,
+        "name": ".text.FUN_00328D30",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 462,
+        "name": ".text.FUN_0032B378",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 464,
+        "name": ".text.FUN_00304B68",
+        "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+      },
+      {
+        "index": 466,
+        "name": ".text.FUN_00307330",
+        "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+      },
+      {
+        "index": 468,
+        "name": ".text.FUN_002BE9B8",
+        "sha256": "47ef2422a86b8f1480709500f0c502bf995875c378fba7e72f7217fa4c492a40"
+      },
+      {
+        "index": 470,
+        "name": ".text.FUN_002AD330",
+        "sha256": "7353422adf1ba7e824cb4403384ab03670e0aa1a54e5361c81bc5da78ad2c537"
+      },
+      {
+        "index": 472,
+        "name": ".text.FUN_002C7AE8",
+        "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+      },
+      {
+        "index": 474,
+        "name": ".text.FUN_002C87B0",
+        "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+      },
+      {
+        "index": 476,
+        "name": ".text.FUN_0033BD38",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 478,
+        "name": ".text.FUN_0033C178",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 480,
+        "name": ".text.FUN_0033C430",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 482,
+        "name": ".text.FUN_0033C9B8",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 484,
+        "name": ".text.FUN_0033D440",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 486,
+        "name": ".text.FUN_0033D708",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 488,
+        "name": ".text.FUN_0033DAD0",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 490,
+        "name": ".text.FUN_0033DD80",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 492,
+        "name": ".text.FUN_0033DF78",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 494,
+        "name": ".text.FUN_0033BE98",
+        "sha256": "ab40ac7b3980ddde7f3bcc832fa16d4679f87a122bfa26c58a539f2caa34a86c"
+      },
+      {
+        "index": 496,
+        "name": ".text.FUN_00350918",
+        "sha256": "131da89b0cd6ab731d1592a063b35ab31f231814fef35421bcab70b3f24101f7"
+      },
+      {
+        "index": 498,
+        "name": ".text.FUN_002C8F40",
+        "sha256": "420a1985ac5201b95c99f5ca4559d621b28402c475f737ee04f8df938181df1c"
+      },
+      {
+        "index": 500,
+        "name": ".text.FUN_00335FC8",
+        "sha256": "b86d2f5886fb6421e27ab73126bf55b37a925c616d33d9e1c0af4f7328cfaa0f"
+      },
+      {
+        "index": 502,
+        "name": ".text.FUN_003439A0",
+        "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+      },
+      {
+        "index": 504,
+        "name": ".text.FUN_00345400",
+        "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+      },
+      {
+        "index": 506,
+        "name": ".text.FUN_00310D78",
+        "sha256": "ccbea74f6d9ce9e7c3ceff7f683b22e4e33fa8e381334e8f22e59a3ffa447004"
+      },
+      {
+        "index": 508,
+        "name": ".text.FUN_002BC8E8",
+        "sha256": "7a52e9f3918046fb461bb5dc39bfed862d338e6eb4dcf23258ddcd3d2e212489"
+      },
+      {
+        "index": 510,
+        "name": ".text.FUN_0029AF98",
+        "sha256": "57a99eb12379fba8033071dd8c5369be58457a175511a9403d322b2e21d81196"
+      },
+      {
+        "index": 512,
+        "name": ".text.FUN_002AD5F8",
+        "sha256": "6c90c644dfa6208696e4a2d2414afd39f4155f065b4c1eb91816da5eac2f3994"
+      },
+      {
+        "index": 514,
+        "name": ".text.FUN_002C2080",
+        "sha256": "50a1c69b99eb97473f174de501f579ba943403ec222f0188bda2b1e725c46b17"
+      },
+      {
+        "index": 516,
+        "name": ".text.FUN_002CF0A0",
+        "sha256": "216fe722f15b90e1eb2ddb0624c178247370f97a0aa89982bdec78bc03c1cacd"
+      },
+      {
+        "index": 518,
+        "name": ".text.FUN_002BAF68",
+        "sha256": "8c604857278dcd0d148203087aaa43bd706eabf5b32560885aa1b8f20a7998d2"
+      },
+      {
+        "index": 520,
+        "name": ".text.FUN_002B1A80",
+        "sha256": "59346241c50a8954d9c86ee45a17f708967a997dcc68f1013d64ac01fe3a02d5"
+      },
+      {
+        "index": 522,
+        "name": ".text.FUN_002C7538",
+        "sha256": "fc153d244b019c43c19aef4072ddd8fe29f4df94ef5e07877d701eb4e9ceb4ad"
+      },
+      {
+        "index": 524,
+        "name": ".shstrtab",
+        "sha256": "39f788becf3fbfef0474aa22e408ac9d76d505a6579c2d46287d5b8f16eb2a1e"
+      },
+      {
+        "index": 525,
+        "name": ".symtab",
+        "sha256": "d39399bcddc2eff172381708f2f0b7615bff647bf1853534ffbd47bb81318b70"
+      },
+      {
+        "index": 526,
         "name": ".strtab",
-        "sha256": "6add012a7b2c038503b5b6c96edbf3697e91c4a90988170c762399f422a99359"
+        "sha256": "4a9259e4fbba7611bd464492187952484f070e8a5d6aaf082592033212a86ab8"
       }
     ]
   },
-  "c_link_object_adapter_sha256": "f7cebd41f94506a4c5a3809c93e2206084a58da4c8a35daa0170560b10675cbd",
-  "c_link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
-  "c_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
-  "candidate_elf_sha256": "b9361a5624aaf658c15df99f90becba200066080343376e98d97b83be2ea80ac",
+  "c_link_object_adapter_sha256": "f8a0ac2f0067625af4c510da13e47fc424a5222a9a35899654d26693878bd2ac",
+  "c_link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
+  "c_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
+  "candidate_elf_sha256": "e9d1929dc0591dddea51872190f623efcbff07b0af96b0a3e13f9af718916d8c",
   "candidate_entry": 2877704,
   "candidate_source": "candidates/boot.c",
   "catalog_sha256": "fc792ac26dd3bbec8f54565bc6a44fe3ed2c05756e5f66981ceb3d9c294fb7b0",
-  "dependency_sha256": "62cb43ff27a5f063a14ceec13953aef19354eb30362ce1f47c27088bc1a70a6f",
+  "dependency_sha256": "50bc15a139c200be60cf476b13f5bf74664f04ed6e7aea6c207f1185b86f7a5b",
   "full_level_gate": {
     "bytes_compared": 2871096,
     "matched": true,
@@ -4042,6 +4252,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C0F08"
     },
     {
+      "address": 2888096,
+      "candidate_sha256": "3f4f53e524bf52d3a458123140df9ce81c8a08a01576463916b6d013ddde8b86",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "3f4f53e524bf52d3a458123140df9ce81c8a08a01576463916b6d013ddde8b86",
+      "size": 440,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C11A0"
+    },
+    {
       "address": 2891248,
       "candidate_sha256": "e2ec8d2f09ca1ffacdd130557390561523bfbf5994b8731317081b8e7e180cd1",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -4068,6 +4292,20 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C1E70"
+    },
+    {
+      "address": 2907784,
+      "candidate_sha256": "c670c727f486c09b0d4d694a974a2c7ccd75cffca022cddcf4fd5fbe48d1df12",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "c670c727f486c09b0d4d694a974a2c7ccd75cffca022cddcf4fd5fbe48d1df12",
+      "size": 208,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C5E88"
     },
     {
       "address": 2919032,
@@ -4182,6 +4420,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C9840"
     },
     {
+      "address": 2932656,
+      "candidate_sha256": "94bc07b0b78cbb41a1a180e8c5f8c751403580228355cace2ff34a94249ceb75",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "94bc07b0b78cbb41a1a180e8c5f8c751403580228355cace2ff34a94249ceb75",
+      "size": 212,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002CBFB0"
+    },
+    {
       "address": 2940872,
       "candidate_sha256": "44096337db3ef2dead087fe4023d99ef94fef08cdc91bbbefc8f38dc33eb7522",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -4208,6 +4460,34 @@
       "size": 64,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002CE718"
+    },
+    {
+      "address": 2965312,
+      "candidate_sha256": "2acf5b7d40a576bce6fcd1cb60de858306fdadc37887c5e88975292d13fff569",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "2acf5b7d40a576bce6fcd1cb60de858306fdadc37887c5e88975292d13fff569",
+      "size": 444,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002D3F40"
+    },
+    {
+      "address": 3030952,
+      "candidate_sha256": "20eab6097536708989ac69f39fe96ab263cdc229da2c020f5ce9854b7c8433a1",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "20eab6097536708989ac69f39fe96ab263cdc229da2c020f5ce9854b7c8433a1",
+      "size": 540,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002E3FA8"
     },
     {
       "address": 3067128,
@@ -4308,6 +4588,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EE4F8"
     },
     {
+      "address": 3073760,
+      "candidate_sha256": "66b9d12126abec5bea891bca373fca40d85d19face9d042f17bdfb7c1e434c88",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "66b9d12126abec5bea891bca373fca40d85d19face9d042f17bdfb7c1e434c88",
+      "size": 248,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EE6E0"
+    },
+    {
       "address": 3075376,
       "candidate_sha256": "151d11ef59d410e5b1971cd6b00ea66786ba5c372f5825a0026f16bbd66b6c46",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -4320,6 +4614,20 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EED30"
+    },
+    {
+      "address": 3078000,
+      "candidate_sha256": "17d2985c9c04877cde3444bf0c3c9fbae9d8d5809918c013213dbd48e2803e81",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "17d2985c9c04877cde3444bf0c3c9fbae9d8d5809918c013213dbd48e2803e81",
+      "size": 496,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EF770"
     },
     {
       "address": 3085408,
@@ -4474,6 +4782,34 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7078"
+    },
+    {
+      "address": 3108992,
+      "candidate_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7080"
+    },
+    {
+      "address": 3109216,
+      "candidate_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7160"
     },
     {
       "address": 3110592,
@@ -4784,6 +5120,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0031B0E8"
     },
     {
+      "address": 3273128,
+      "candidate_sha256": "3c6e48b9297c8e3cb70feb461c8ed5fee30b00678f133e6bb404c31f27f1e210",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "3c6e48b9297c8e3cb70feb461c8ed5fee30b00678f133e6bb404c31f27f1e210",
+      "size": 132,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0031F1A8"
+    },
+    {
       "address": 3275464,
       "candidate_sha256": "c7a60a61ce9a76559a9f70d7fed39faff8e933713e8243c959a08a88cdd3dbb9",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -4880,6 +5230,90 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00323E40"
+    },
+    {
+      "address": 3304168,
+      "candidate_sha256": "91838e7c493a0b43e91585b7fc4c087948cc1dae386598b70ee73a567a200d39",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "91838e7c493a0b43e91585b7fc4c087948cc1dae386598b70ee73a567a200d39",
+      "size": 276,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00326AE8"
+    },
+    {
+      "address": 3306504,
+      "candidate_sha256": "88511edfb0c61118b59fc4052f220c11f1fa2f74ff6dc81ab7cc4b26ab64977d",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "88511edfb0c61118b59fc4052f220c11f1fa2f74ff6dc81ab7cc4b26ab64977d",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327408"
+    },
+    {
+      "address": 3308176,
+      "candidate_sha256": "84842c083edfb72965d27847e7a184974f84dcece90dd057d6e71e64a368c451",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "84842c083edfb72965d27847e7a184974f84dcece90dd057d6e71e64a368c451",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327A90"
+    },
+    {
+      "address": 3308768,
+      "candidate_sha256": "52a9e420b6143f1e32a80908769623b2baa0ab4d36c727c21aa9dc6ae930c00f",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "52a9e420b6143f1e32a80908769623b2baa0ab4d36c727c21aa9dc6ae930c00f",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327CE0"
+    },
+    {
+      "address": 3308816,
+      "candidate_sha256": "589c09ffe0eccadc8fe2034fcacc215afc01416e89b7f1dcaa57ef4f4e75ad76",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "589c09ffe0eccadc8fe2034fcacc215afc01416e89b7f1dcaa57ef4f4e75ad76",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327D10"
+    },
+    {
+      "address": 3311904,
+      "candidate_sha256": "795c48ff88f7ce16335329787786e209cbbe128e1dd8c739c18cde6e85b44ff6",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "795c48ff88f7ce16335329787786e209cbbe128e1dd8c739c18cde6e85b44ff6",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00328920"
     },
     {
       "address": 3316208,
@@ -5008,6 +5442,34 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033A6C0"
     },
     {
+      "address": 3388040,
+      "candidate_sha256": "a8c0d18639012ef4528eac671639321bd98864f88213d0efa71fe57da34ace62",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "a8c0d18639012ef4528eac671639321bd98864f88213d0efa71fe57da34ace62",
+      "size": 320,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033B288"
+    },
+    {
+      "address": 3388752,
+      "candidate_sha256": "6fef82ab9a857ce9cc9004d5d0e456f80803be8754ae646562f37bd39a722cf6",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "6fef82ab9a857ce9cc9004d5d0e456f80803be8754ae646562f37bd39a722cf6",
+      "size": 244,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033B550"
+    },
+    {
       "address": 3394576,
       "candidate_sha256": "abe91adb1deaad83f37d5926f1d2520958a62e602026efecfbfad1d3d236c21c",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5020,6 +5482,34 @@
       "size": 128,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033CC10"
+    },
+    {
+      "address": 3400536,
+      "candidate_sha256": "afc59c44ba59553d5de9b130babfe446c4ec3f21815266ef687c21a7098dd50b",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "afc59c44ba59553d5de9b130babfe446c4ec3f21815266ef687c21a7098dd50b",
+      "size": 88,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033E358"
+    },
+    {
+      "address": 3405880,
+      "candidate_sha256": "5eeb35f5bc1aebac58bd8aaf4445a89d6652f107e6fa3b51f707b996953f73cc",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "5eeb35f5bc1aebac58bd8aaf4445a89d6652f107e6fa3b51f707b996953f73cc",
+      "size": 416,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033F838"
     },
     {
       "address": 3407176,
@@ -5078,6 +5568,132 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00342C80"
     },
     {
+      "address": 3432208,
+      "candidate_sha256": "e852055c36da3c859ac81c82c3626331eba82bc5d3ba6fea71278465cf51f74d",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "e852055c36da3c859ac81c82c3626331eba82bc5d3ba6fea71278465cf51f74d",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00345F10"
+    },
+    {
+      "address": 3438736,
+      "candidate_sha256": "f700af15b39322c7f03def46ca83d9fc8b1dd67efbb3cb7b84d9c0f256463ab4",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "f700af15b39322c7f03def46ca83d9fc8b1dd67efbb3cb7b84d9c0f256463ab4",
+      "size": 284,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00347890"
+    },
+    {
+      "address": 3448104,
+      "candidate_sha256": "a021ea35d7a7eec586b727e59feb858aaed927a8a7aa89c908f533cddacb1601",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "a021ea35d7a7eec586b727e59feb858aaed927a8a7aa89c908f533cddacb1601",
+      "size": 516,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00349D28"
+    },
+    {
+      "address": 3462616,
+      "candidate_sha256": "65799f5e2bf971a125efef37fec3c2b72b6ff9dba326e6e5d25c70a2a9df049f",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "65799f5e2bf971a125efef37fec3c2b72b6ff9dba326e6e5d25c70a2a9df049f",
+      "size": 236,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0034D5D8"
+    },
+    {
+      "address": 3467224,
+      "candidate_sha256": "06e43e96a6ba325cb6a440eecce631d4ef09a18d5a814a586305c86f0e9c1ba3",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "06e43e96a6ba325cb6a440eecce631d4ef09a18d5a814a586305c86f0e9c1ba3",
+      "size": 432,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0034E7D8"
+    },
+    {
+      "address": 3486912,
+      "candidate_sha256": "381e68880c2fadf58030745d78fdea3960d646981ca1998d04d335a7dee99bef",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "381e68880c2fadf58030745d78fdea3960d646981ca1998d04d335a7dee99bef",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003534C0"
+    },
+    {
+      "address": 3488368,
+      "candidate_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+      "size": 204,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00353A70"
+    },
+    {
+      "address": 3492512,
+      "candidate_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+      "size": 204,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00354AA0"
+    },
+    {
+      "address": 3496136,
+      "candidate_sha256": "0b06ff9df747f6a19f0a340b27cdf711990f2bf2294540cb9d1da310dffd0989",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "0b06ff9df747f6a19f0a340b27cdf711990f2bf2294540cb9d1da310dffd0989",
+      "size": 344,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003558C8"
+    },
+    {
       "address": 3497416,
       "candidate_sha256": "ebca143726974110e29d0bfcb98a049bd0855fc47004d282f041d760cf6454fc",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5132,6 +5748,20 @@
       "size": 48,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0035B088"
+    },
+    {
+      "address": 3524712,
+      "candidate_sha256": "2452504046fc699ccd0316be8d0fdf45421c3ef59488fe692f46ffe507e8748a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "2452504046fc699ccd0316be8d0fdf45421c3ef59488fe692f46ffe507e8748a",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0035C868"
     },
     {
       "address": 3540096,
@@ -5204,6 +5834,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00360B58"
     },
     {
+      "address": 3548632,
+      "candidate_sha256": "55620a8ac11e24bbbd54bcc4d260f483f21120ebbcd406dba163b22f78515786",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "55620a8ac11e24bbbd54bcc4d260f483f21120ebbcd406dba163b22f78515786",
+      "size": 52,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003625D8"
+    },
+    {
       "address": 3550472,
       "candidate_sha256": "cf0b0b92b76ea7a3f293e82a4e933a185c4f6c330b9c6a6915d961cbf10eb7ca",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5274,6 +5918,34 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00371348"
     },
     {
+      "address": 3612688,
+      "candidate_sha256": "2ea1cd461fd634c16f2d70db950f8d42fd917b72c22c138de550825c77c89a19",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "2ea1cd461fd634c16f2d70db950f8d42fd917b72c22c138de550825c77c89a19",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00372010"
+    },
+    {
+      "address": 3613272,
+      "candidate_sha256": "a0ce15937480aceb0eacbc13a1696482fbe8bebfe4fc265309fa796f6ad2551f",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "a0ce15937480aceb0eacbc13a1696482fbe8bebfe4fc265309fa796f6ad2551f",
+      "size": 68,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00372258"
+    },
+    {
       "address": 3617896,
       "candidate_sha256": "7951b2cbb91617f11428db64e29dbb210606237bfb7c26c24b9733e5f956f32e",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5300,6 +5972,20 @@
       "size": 116,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00373BA8"
+    },
+    {
+      "address": 3656880,
+      "candidate_sha256": "acb2363e004b821a83ecb421454bcdce591415f4db22650b8ddd3186389e62c2",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "acb2363e004b821a83ecb421454bcdce591415f4db22650b8ddd3186389e62c2",
+      "size": 272,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0037CCB0"
     },
     {
       "address": 3667216,
@@ -5498,6 +6184,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0039A690"
     },
     {
+      "address": 3801272,
+      "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A00B8"
+    },
+    {
       "address": 3801544,
       "candidate_sha256": "43543588faba03371e2f6079f89143be51badc0289ae9075e7393cc4ae2ccaf4",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5552,6 +6252,20 @@
       "size": 144,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A1068"
+    },
+    {
+      "address": 3812192,
+      "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A2B60"
     },
     {
       "address": 3812464,
@@ -5610,6 +6324,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A36F0"
     },
     {
+      "address": 3833992,
+      "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A8088"
+    },
+    {
       "address": 3870152,
       "candidate_sha256": "c96786493f569cb11e0918dbcf24292685c48ade7b7ef38b1aa402d8e92bffa2",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5622,6 +6350,20 @@
       "size": 52,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003B0DC8"
+    },
+    {
+      "address": 3880656,
+      "candidate_sha256": "0da0d09793b4855609848fac98919c2226b024ad96ca8becaddb27088bb0b1a9",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "0da0d09793b4855609848fac98919c2226b024ad96ca8becaddb27088bb0b1a9",
+      "size": 288,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003B36D0"
     },
     {
       "address": 3889320,
@@ -5820,6 +6562,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003DF4B8"
     },
     {
+      "address": 4060768,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003DF660"
+    },
+    {
       "address": 4062992,
       "candidate_sha256": "f7be2cfa5bb289066aebe4895360b7d2ec1869be6c49c619df48dd87ddabb8ee",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5862,6 +6618,48 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E6360"
     },
     {
+      "address": 4088808,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E63E8"
+    },
+    {
+      "address": 4089352,
+      "candidate_sha256": "8059f375ec651ae6179c698e60b05feadce9d6fb4930967bf7fc0ccac38113ce",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "8059f375ec651ae6179c698e60b05feadce9d6fb4930967bf7fc0ccac38113ce",
+      "size": 384,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E6608"
+    },
+    {
+      "address": 4094424,
+      "candidate_sha256": "89deebac6f12ad57bf20975c9efed987d1d27dfb655f30225f5c35b3a8b98964",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "89deebac6f12ad57bf20975c9efed987d1d27dfb655f30225f5c35b3a8b98964",
+      "size": 212,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E79D8"
+    },
+    {
       "address": 4102408,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5876,6 +6674,62 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E9908"
     },
     {
+      "address": 4102544,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E9990"
+    },
+    {
+      "address": 4102648,
+      "candidate_sha256": "7d7645dd87393ae1c009b067f976f141918de1998aaa2dbb0655d06ed9c2656a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "7d7645dd87393ae1c009b067f976f141918de1998aaa2dbb0655d06ed9c2656a",
+      "size": 384,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E99F8"
+    },
+    {
+      "address": 4113584,
+      "candidate_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+      "size": 296,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EC4B0"
+    },
+    {
+      "address": 4113880,
+      "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EC5D8"
+    },
+    {
       "address": 4127720,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5888,6 +6742,20 @@
       "size": 136,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EFBE8"
+    },
+    {
+      "address": 4127856,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EFC70"
     },
     {
       "address": 4136280,
@@ -5960,6 +6828,34 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F3248"
     },
     {
+      "address": 4152688,
+      "candidate_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+      "size": 296,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F5D70"
+    },
+    {
+      "address": 4152984,
+      "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F5E98"
+    },
+    {
       "address": 4156328,
       "candidate_sha256": "c96786493f569cb11e0918dbcf24292685c48ade7b7ef38b1aa402d8e92bffa2",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -5988,6 +6884,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F8CE0"
     },
     {
+      "address": 4164968,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F8D68"
+    },
+    {
       "address": 4169864,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -6000,6 +6910,20 @@
       "size": 136,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003FA088"
+    },
+    {
+      "address": 4170000,
+      "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003FA110"
     },
     {
       "address": 4172640,
@@ -6184,6 +7108,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00435298"
     },
     {
+      "address": 4433480,
+      "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043A648"
+    },
+    {
       "address": 4435664,
       "candidate_sha256": "6f95f2a5a70ce23e417a5e50d3bccbc7e0d414218d62d5a735db21419a15f69b",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -6196,6 +7134,48 @@
       "size": 160,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043AED0"
+    },
+    {
+      "address": 4449192,
+      "candidate_sha256": "c62996d3c7c1f14993cfd96c590b940bf8463eff1ba16ac452c191c7602c9cec",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "c62996d3c7c1f14993cfd96c590b940bf8463eff1ba16ac452c191c7602c9cec",
+      "size": 100,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043E3A8"
+    },
+    {
+      "address": 4458424,
+      "candidate_sha256": "ba112147a81ffacf3baf3c707e7445e03235b1773277d28fb9d77b2b6f0d5a74",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "ba112147a81ffacf3baf3c707e7445e03235b1773277d28fb9d77b2b6f0d5a74",
+      "size": 224,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004407B8"
+    },
+    {
+      "address": 4466432,
+      "candidate_sha256": "5d204d2d4d5dc5d113e9218ab36c270c7e5c374003227cc6fbbb6cfbae759f8a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "5d204d2d4d5dc5d113e9218ab36c270c7e5c374003227cc6fbbb6cfbae759f8a",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00442700"
     },
     {
       "address": 4469536,
@@ -6238,6 +7218,20 @@
       "size": 112,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004488A0"
+    },
+    {
+      "address": 4492200,
+      "candidate_sha256": "ae6c9fddb89c2d32744eaef6b2c5d9d707debd6d429e9f79ff8c82370caaa4f2",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "ae6c9fddb89c2d32744eaef6b2c5d9d707debd6d429e9f79ff8c82370caaa4f2",
+      "size": 292,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00448BA8"
     },
     {
       "address": 4494864,
@@ -6392,6 +7386,146 @@
       "size": 20,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044DC00"
+    },
+    {
+      "address": 4516128,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044E920"
+    },
+    {
+      "address": 4516480,
+      "candidate_sha256": "e2785748ac8af1e4e539339e371da7f145623ddf583b5aefe2d4534420e2ebfb",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "e2785748ac8af1e4e539339e371da7f145623ddf583b5aefe2d4534420e2ebfb",
+      "size": 396,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044EA80"
+    },
+    {
+      "address": 4517216,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044ED60"
+    },
+    {
+      "address": 4517912,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044F018"
+    },
+    {
+      "address": 4519328,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044F5A0"
+    },
+    {
+      "address": 4522024,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450028"
+    },
+    {
+      "address": 4522736,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004502F0"
+    },
+    {
+      "address": 4523704,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004506B8"
+    },
+    {
+      "address": 4524392,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450968"
+    },
+    {
+      "address": 4524896,
+      "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450B60"
     },
     {
       "address": 4525400,
@@ -6562,6 +7696,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456168"
     },
     {
+      "address": 4547976,
+      "candidate_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+      "size": 144,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456588"
+    },
+    {
       "address": 4549960,
       "candidate_sha256": "0b701a3602b046d21a3e5e8fcc1d4e367dcb09be53b08fc3f97719b83d5bb9e2",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -6574,6 +7722,20 @@
       "size": 312,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456D48"
+    },
+    {
+      "address": 4554728,
+      "candidate_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+      "size": 144,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00457FE8"
     },
     {
       "address": 4565640,
@@ -6758,6 +7920,20 @@
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004617D8"
     },
     {
+      "address": 4593768,
+      "candidate_sha256": "d6c4966ba7b32f10a4ac9cd4bce00ca8eb34dfe728396a2199873103b25b5b10",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "d6c4966ba7b32f10a4ac9cd4bce00ca8eb34dfe728396a2199873103b25b5b10",
+      "size": 56,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00461868"
+    },
+    {
       "address": 4600224,
       "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
@@ -6784,6 +7960,34 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004632A0"
+    },
+    {
+      "address": 4601104,
+      "candidate_sha256": "2d6ae587da7f5d01a30784ef3411df390c51f208882c5ada724f354c62856965",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "2d6ae587da7f5d01a30784ef3411df390c51f208882c5ada724f354c62856965",
+      "size": 352,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00463510"
+    },
+    {
+      "address": 4602304,
+      "candidate_sha256": "97373f20b1bcea3fc54d1d66ae881b5646d545cb5affcaa898ab20987995b880",
+      "candidate_source": "candidates/levels/10_hrugis_cloud.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "10_hrugis_cloud",
+      "reference_sha256": "97373f20b1bcea3fc54d1d66ae881b5646d545cb5affcaa898ab20987995b880",
+      "size": 272,
+      "state": "integrated",
+      "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004639C0"
     },
     {
       "address": 4606520,
@@ -7473,13 +8677,13 @@
     }
   ],
   "kind": "level-c-integration",
-  "matched_code_bytes": 31116,
+  "matched_code_bytes": 45200,
   "native": {
     "catalog_path": "config/level-native/10_hrugis_cloud.json",
     "object_qualification": {
-      "candidate_elf_sha256": "dc94538c1f884018fa3692aec4267f0f8360f3c9c25a022572a1750f70895e99",
+      "candidate_elf_sha256": "0b23c7880eeff7c439c329a386ac622fd650e87513f29c66086b4e897d3f9e5b",
       "candidate_source": "candidates/levels/10_hrugis_cloud.c",
-      "catalog_sha256": "3925bc3fe9c8d2c676e6005d90a0f942e54610408ae110b8a4b5bb50992e7c09",
+      "catalog_sha256": "06cee750ddd77ab1cd39f9c7e17318fa79c7f9cba77ee398f4eb1dde5f7a1d13",
       "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
       "flags": [
         "-O2",
@@ -7521,6 +8725,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C0F08"
         },
         {
+          "address": 2888096,
+          "candidate_sha256": "3f4f53e524bf52d3a458123140df9ce81c8a08a01576463916b6d013ddde8b86",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 440,
+          "reference_sha256": "3f4f53e524bf52d3a458123140df9ce81c8a08a01576463916b6d013ddde8b86",
+          "size": 440,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C11A0"
+        },
+        {
           "address": 2891248,
           "candidate_sha256": "e2ec8d2f09ca1ffacdd130557390561523bfbf5994b8731317081b8e7e180cd1",
           "different_bytes": 0,
@@ -7541,6 +8756,17 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C1E70"
+        },
+        {
+          "address": 2907784,
+          "candidate_sha256": "c670c727f486c09b0d4d694a974a2c7ccd75cffca022cddcf4fd5fbe48d1df12",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 208,
+          "reference_sha256": "c670c727f486c09b0d4d694a974a2c7ccd75cffca022cddcf4fd5fbe48d1df12",
+          "size": 208,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C5E88"
         },
         {
           "address": 2919032,
@@ -7631,6 +8857,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002C9840"
         },
         {
+          "address": 2932656,
+          "candidate_sha256": "94bc07b0b78cbb41a1a180e8c5f8c751403580228355cace2ff34a94249ceb75",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 212,
+          "reference_sha256": "94bc07b0b78cbb41a1a180e8c5f8c751403580228355cace2ff34a94249ceb75",
+          "size": 212,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002CBFB0"
+        },
+        {
           "address": 2940872,
           "candidate_sha256": "44096337db3ef2dead087fe4023d99ef94fef08cdc91bbbefc8f38dc33eb7522",
           "different_bytes": 0,
@@ -7651,6 +8888,28 @@
           "size": 64,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002CE718"
+        },
+        {
+          "address": 2965312,
+          "candidate_sha256": "2acf5b7d40a576bce6fcd1cb60de858306fdadc37887c5e88975292d13fff569",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 444,
+          "reference_sha256": "2acf5b7d40a576bce6fcd1cb60de858306fdadc37887c5e88975292d13fff569",
+          "size": 444,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002D3F40"
+        },
+        {
+          "address": 3030952,
+          "candidate_sha256": "20eab6097536708989ac69f39fe96ab263cdc229da2c020f5ce9854b7c8433a1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 540,
+          "reference_sha256": "20eab6097536708989ac69f39fe96ab263cdc229da2c020f5ce9854b7c8433a1",
+          "size": 540,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002E3FA8"
         },
         {
           "address": 3067128,
@@ -7730,6 +8989,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EE4F8"
         },
         {
+          "address": 3073760,
+          "candidate_sha256": "66b9d12126abec5bea891bca373fca40d85d19face9d042f17bdfb7c1e434c88",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 248,
+          "reference_sha256": "66b9d12126abec5bea891bca373fca40d85d19face9d042f17bdfb7c1e434c88",
+          "size": 248,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EE6E0"
+        },
+        {
           "address": 3075376,
           "candidate_sha256": "151d11ef59d410e5b1971cd6b00ea66786ba5c372f5825a0026f16bbd66b6c46",
           "different_bytes": 0,
@@ -7739,6 +9009,17 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EED30"
+        },
+        {
+          "address": 3078000,
+          "candidate_sha256": "17d2985c9c04877cde3444bf0c3c9fbae9d8d5809918c013213dbd48e2803e81",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 496,
+          "reference_sha256": "17d2985c9c04877cde3444bf0c3c9fbae9d8d5809918c013213dbd48e2803e81",
+          "size": 496,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002EF770"
         },
         {
           "address": 3085408,
@@ -7860,6 +9141,28 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7078"
+        },
+        {
+          "address": 3108992,
+          "candidate_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7080"
+        },
+        {
+          "address": 3109216,
+          "candidate_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "ea7613d80d60e165463515f75917282c47ceed587233177b2c6283d51463ff83",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_002F7160"
         },
         {
           "address": 3110592,
@@ -8104,6 +9407,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0031B0E8"
         },
         {
+          "address": 3273128,
+          "candidate_sha256": "3c6e48b9297c8e3cb70feb461c8ed5fee30b00678f133e6bb404c31f27f1e210",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 132,
+          "reference_sha256": "3c6e48b9297c8e3cb70feb461c8ed5fee30b00678f133e6bb404c31f27f1e210",
+          "size": 132,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0031F1A8"
+        },
+        {
           "address": 3275464,
           "candidate_sha256": "c7a60a61ce9a76559a9f70d7fed39faff8e933713e8243c959a08a88cdd3dbb9",
           "different_bytes": 0,
@@ -8179,6 +9493,72 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00323E40"
+        },
+        {
+          "address": 3304168,
+          "candidate_sha256": "91838e7c493a0b43e91585b7fc4c087948cc1dae386598b70ee73a567a200d39",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 276,
+          "reference_sha256": "91838e7c493a0b43e91585b7fc4c087948cc1dae386598b70ee73a567a200d39",
+          "size": 276,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00326AE8"
+        },
+        {
+          "address": 3306504,
+          "candidate_sha256": "88511edfb0c61118b59fc4052f220c11f1fa2f74ff6dc81ab7cc4b26ab64977d",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "88511edfb0c61118b59fc4052f220c11f1fa2f74ff6dc81ab7cc4b26ab64977d",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327408"
+        },
+        {
+          "address": 3308176,
+          "candidate_sha256": "84842c083edfb72965d27847e7a184974f84dcece90dd057d6e71e64a368c451",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "84842c083edfb72965d27847e7a184974f84dcece90dd057d6e71e64a368c451",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327A90"
+        },
+        {
+          "address": 3308768,
+          "candidate_sha256": "52a9e420b6143f1e32a80908769623b2baa0ab4d36c727c21aa9dc6ae930c00f",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "52a9e420b6143f1e32a80908769623b2baa0ab4d36c727c21aa9dc6ae930c00f",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327CE0"
+        },
+        {
+          "address": 3308816,
+          "candidate_sha256": "589c09ffe0eccadc8fe2034fcacc215afc01416e89b7f1dcaa57ef4f4e75ad76",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "589c09ffe0eccadc8fe2034fcacc215afc01416e89b7f1dcaa57ef4f4e75ad76",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00327D10"
+        },
+        {
+          "address": 3311904,
+          "candidate_sha256": "795c48ff88f7ce16335329787786e209cbbe128e1dd8c739c18cde6e85b44ff6",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "795c48ff88f7ce16335329787786e209cbbe128e1dd8c739c18cde6e85b44ff6",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00328920"
         },
         {
           "address": 3316208,
@@ -8280,6 +9660,28 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033A6C0"
         },
         {
+          "address": 3388040,
+          "candidate_sha256": "a8c0d18639012ef4528eac671639321bd98864f88213d0efa71fe57da34ace62",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 320,
+          "reference_sha256": "a8c0d18639012ef4528eac671639321bd98864f88213d0efa71fe57da34ace62",
+          "size": 320,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033B288"
+        },
+        {
+          "address": 3388752,
+          "candidate_sha256": "6fef82ab9a857ce9cc9004d5d0e456f80803be8754ae646562f37bd39a722cf6",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 244,
+          "reference_sha256": "6fef82ab9a857ce9cc9004d5d0e456f80803be8754ae646562f37bd39a722cf6",
+          "size": 244,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033B550"
+        },
+        {
           "address": 3394576,
           "candidate_sha256": "abe91adb1deaad83f37d5926f1d2520958a62e602026efecfbfad1d3d236c21c",
           "different_bytes": 0,
@@ -8289,6 +9691,28 @@
           "size": 128,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033CC10"
+        },
+        {
+          "address": 3400536,
+          "candidate_sha256": "afc59c44ba59553d5de9b130babfe446c4ec3f21815266ef687c21a7098dd50b",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 88,
+          "reference_sha256": "afc59c44ba59553d5de9b130babfe446c4ec3f21815266ef687c21a7098dd50b",
+          "size": 88,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033E358"
+        },
+        {
+          "address": 3405880,
+          "candidate_sha256": "5eeb35f5bc1aebac58bd8aaf4445a89d6652f107e6fa3b51f707b996953f73cc",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 416,
+          "reference_sha256": "5eeb35f5bc1aebac58bd8aaf4445a89d6652f107e6fa3b51f707b996953f73cc",
+          "size": 416,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0033F838"
         },
         {
           "address": 3407176,
@@ -8335,6 +9759,105 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00342C80"
         },
         {
+          "address": 3432208,
+          "candidate_sha256": "e852055c36da3c859ac81c82c3626331eba82bc5d3ba6fea71278465cf51f74d",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "e852055c36da3c859ac81c82c3626331eba82bc5d3ba6fea71278465cf51f74d",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00345F10"
+        },
+        {
+          "address": 3438736,
+          "candidate_sha256": "f700af15b39322c7f03def46ca83d9fc8b1dd67efbb3cb7b84d9c0f256463ab4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 284,
+          "reference_sha256": "f700af15b39322c7f03def46ca83d9fc8b1dd67efbb3cb7b84d9c0f256463ab4",
+          "size": 284,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00347890"
+        },
+        {
+          "address": 3448104,
+          "candidate_sha256": "a021ea35d7a7eec586b727e59feb858aaed927a8a7aa89c908f533cddacb1601",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 516,
+          "reference_sha256": "a021ea35d7a7eec586b727e59feb858aaed927a8a7aa89c908f533cddacb1601",
+          "size": 516,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00349D28"
+        },
+        {
+          "address": 3462616,
+          "candidate_sha256": "65799f5e2bf971a125efef37fec3c2b72b6ff9dba326e6e5d25c70a2a9df049f",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 236,
+          "reference_sha256": "65799f5e2bf971a125efef37fec3c2b72b6ff9dba326e6e5d25c70a2a9df049f",
+          "size": 236,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0034D5D8"
+        },
+        {
+          "address": 3467224,
+          "candidate_sha256": "06e43e96a6ba325cb6a440eecce631d4ef09a18d5a814a586305c86f0e9c1ba3",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 432,
+          "reference_sha256": "06e43e96a6ba325cb6a440eecce631d4ef09a18d5a814a586305c86f0e9c1ba3",
+          "size": 432,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0034E7D8"
+        },
+        {
+          "address": 3486912,
+          "candidate_sha256": "381e68880c2fadf58030745d78fdea3960d646981ca1998d04d335a7dee99bef",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "381e68880c2fadf58030745d78fdea3960d646981ca1998d04d335a7dee99bef",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003534C0"
+        },
+        {
+          "address": 3488368,
+          "candidate_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 204,
+          "reference_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+          "size": 204,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00353A70"
+        },
+        {
+          "address": 3492512,
+          "candidate_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 204,
+          "reference_sha256": "4a44f37da80c4e89a5c01fc2a723b87d0ef9bf45da7791ec53d8fa626682accd",
+          "size": 204,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00354AA0"
+        },
+        {
+          "address": 3496136,
+          "candidate_sha256": "0b06ff9df747f6a19f0a340b27cdf711990f2bf2294540cb9d1da310dffd0989",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 344,
+          "reference_sha256": "0b06ff9df747f6a19f0a340b27cdf711990f2bf2294540cb9d1da310dffd0989",
+          "size": 344,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003558C8"
+        },
+        {
           "address": 3497416,
           "candidate_sha256": "ebca143726974110e29d0bfcb98a049bd0855fc47004d282f041d760cf6454fc",
           "different_bytes": 0,
@@ -8377,6 +9900,17 @@
           "size": 48,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0035B088"
+        },
+        {
+          "address": 3524712,
+          "candidate_sha256": "2452504046fc699ccd0316be8d0fdf45421c3ef59488fe692f46ffe507e8748a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "2452504046fc699ccd0316be8d0fdf45421c3ef59488fe692f46ffe507e8748a",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0035C868"
         },
         {
           "address": 3540096,
@@ -8434,6 +9968,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00360B58"
         },
         {
+          "address": 3548632,
+          "candidate_sha256": "55620a8ac11e24bbbd54bcc4d260f483f21120ebbcd406dba163b22f78515786",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 52,
+          "reference_sha256": "55620a8ac11e24bbbd54bcc4d260f483f21120ebbcd406dba163b22f78515786",
+          "size": 52,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003625D8"
+        },
+        {
           "address": 3550472,
           "candidate_sha256": "cf0b0b92b76ea7a3f293e82a4e933a185c4f6c330b9c6a6915d961cbf10eb7ca",
           "different_bytes": 0,
@@ -8489,6 +10034,28 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00371348"
         },
         {
+          "address": 3612688,
+          "candidate_sha256": "2ea1cd461fd634c16f2d70db950f8d42fd917b72c22c138de550825c77c89a19",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "2ea1cd461fd634c16f2d70db950f8d42fd917b72c22c138de550825c77c89a19",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00372010"
+        },
+        {
+          "address": 3613272,
+          "candidate_sha256": "a0ce15937480aceb0eacbc13a1696482fbe8bebfe4fc265309fa796f6ad2551f",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 68,
+          "reference_sha256": "a0ce15937480aceb0eacbc13a1696482fbe8bebfe4fc265309fa796f6ad2551f",
+          "size": 68,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00372258"
+        },
+        {
           "address": 3617896,
           "candidate_sha256": "7951b2cbb91617f11428db64e29dbb210606237bfb7c26c24b9733e5f956f32e",
           "different_bytes": 0,
@@ -8509,6 +10076,17 @@
           "size": 116,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00373BA8"
+        },
+        {
+          "address": 3656880,
+          "candidate_sha256": "acb2363e004b821a83ecb421454bcdce591415f4db22650b8ddd3186389e62c2",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 272,
+          "reference_sha256": "acb2363e004b821a83ecb421454bcdce591415f4db22650b8ddd3186389e62c2",
+          "size": 272,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0037CCB0"
         },
         {
           "address": 3667216,
@@ -8665,6 +10243,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0039A690"
         },
         {
+          "address": 3801272,
+          "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A00B8"
+        },
+        {
           "address": 3801544,
           "candidate_sha256": "43543588faba03371e2f6079f89143be51badc0289ae9075e7393cc4ae2ccaf4",
           "different_bytes": 0,
@@ -8707,6 +10296,17 @@
           "size": 144,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A1068"
+        },
+        {
+          "address": 3812192,
+          "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A2B60"
         },
         {
           "address": 3812464,
@@ -8753,6 +10353,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A36F0"
         },
         {
+          "address": 3833992,
+          "candidate_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "768579739f84d4e307f8051f5bd1a2f098108fe0d4a6ab48661fbd48d0e72fd8",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003A8088"
+        },
+        {
           "address": 3870152,
           "candidate_sha256": "c96786493f569cb11e0918dbcf24292685c48ade7b7ef38b1aa402d8e92bffa2",
           "different_bytes": 0,
@@ -8762,6 +10373,17 @@
           "size": 52,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003B0DC8"
+        },
+        {
+          "address": 3880656,
+          "candidate_sha256": "0da0d09793b4855609848fac98919c2226b024ad96ca8becaddb27088bb0b1a9",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 288,
+          "reference_sha256": "0da0d09793b4855609848fac98919c2226b024ad96ca8becaddb27088bb0b1a9",
+          "size": 288,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003B36D0"
         },
         {
           "address": 3889320,
@@ -8918,6 +10540,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003DF4B8"
         },
         {
+          "address": 4060768,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003DF660"
+        },
+        {
           "address": 4062992,
           "candidate_sha256": "f7be2cfa5bb289066aebe4895360b7d2ec1869be6c49c619df48dd87ddabb8ee",
           "different_bytes": 0,
@@ -8951,6 +10584,39 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E6360"
         },
         {
+          "address": 4088808,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E63E8"
+        },
+        {
+          "address": 4089352,
+          "candidate_sha256": "8059f375ec651ae6179c698e60b05feadce9d6fb4930967bf7fc0ccac38113ce",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 384,
+          "reference_sha256": "8059f375ec651ae6179c698e60b05feadce9d6fb4930967bf7fc0ccac38113ce",
+          "size": 384,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E6608"
+        },
+        {
+          "address": 4094424,
+          "candidate_sha256": "89deebac6f12ad57bf20975c9efed987d1d27dfb655f30225f5c35b3a8b98964",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 212,
+          "reference_sha256": "89deebac6f12ad57bf20975c9efed987d1d27dfb655f30225f5c35b3a8b98964",
+          "size": 212,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E79D8"
+        },
+        {
           "address": 4102408,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -8962,6 +10628,50 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E9908"
         },
         {
+          "address": 4102544,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E9990"
+        },
+        {
+          "address": 4102648,
+          "candidate_sha256": "7d7645dd87393ae1c009b067f976f141918de1998aaa2dbb0655d06ed9c2656a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 384,
+          "reference_sha256": "7d7645dd87393ae1c009b067f976f141918de1998aaa2dbb0655d06ed9c2656a",
+          "size": 384,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003E99F8"
+        },
+        {
+          "address": 4113584,
+          "candidate_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 296,
+          "reference_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+          "size": 296,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EC4B0"
+        },
+        {
+          "address": 4113880,
+          "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EC5D8"
+        },
+        {
           "address": 4127720,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -8971,6 +10681,17 @@
           "size": 136,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EFBE8"
+        },
+        {
+          "address": 4127856,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003EFC70"
         },
         {
           "address": 4136280,
@@ -9028,6 +10749,28 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F3248"
         },
         {
+          "address": 4152688,
+          "candidate_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 296,
+          "reference_sha256": "4a90efa38add67fbcee86ac595ca2b24ad1372ffc0de01298c28ed18111a3665",
+          "size": 296,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F5D70"
+        },
+        {
+          "address": 4152984,
+          "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F5E98"
+        },
+        {
           "address": 4156328,
           "candidate_sha256": "c96786493f569cb11e0918dbcf24292685c48ade7b7ef38b1aa402d8e92bffa2",
           "different_bytes": 0,
@@ -9050,6 +10793,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F8CE0"
         },
         {
+          "address": 4164968,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003F8D68"
+        },
+        {
           "address": 4169864,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -9059,6 +10813,17 @@
           "size": 136,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003FA088"
+        },
+        {
+          "address": 4170000,
+          "candidate_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "211f6b0c7ec1c655e7a24d4c1f0b622307227c212e0425595fb0e91cf8ee68da",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_003FA110"
         },
         {
           "address": 4172640,
@@ -9204,6 +10969,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00435298"
         },
         {
+          "address": 4433480,
+          "candidate_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "5ad13a49df8c48aae271b569a704dd96027bf170377cd560d00db0715fb57c65",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043A648"
+        },
+        {
           "address": 4435664,
           "candidate_sha256": "6f95f2a5a70ce23e417a5e50d3bccbc7e0d414218d62d5a735db21419a15f69b",
           "different_bytes": 0,
@@ -9213,6 +10989,39 @@
           "size": 160,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043AED0"
+        },
+        {
+          "address": 4449192,
+          "candidate_sha256": "c62996d3c7c1f14993cfd96c590b940bf8463eff1ba16ac452c191c7602c9cec",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 100,
+          "reference_sha256": "c62996d3c7c1f14993cfd96c590b940bf8463eff1ba16ac452c191c7602c9cec",
+          "size": 100,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0043E3A8"
+        },
+        {
+          "address": 4458424,
+          "candidate_sha256": "ba112147a81ffacf3baf3c707e7445e03235b1773277d28fb9d77b2b6f0d5a74",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 224,
+          "reference_sha256": "ba112147a81ffacf3baf3c707e7445e03235b1773277d28fb9d77b2b6f0d5a74",
+          "size": 224,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004407B8"
+        },
+        {
+          "address": 4466432,
+          "candidate_sha256": "5d204d2d4d5dc5d113e9218ab36c270c7e5c374003227cc6fbbb6cfbae759f8a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "5d204d2d4d5dc5d113e9218ab36c270c7e5c374003227cc6fbbb6cfbae759f8a",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00442700"
         },
         {
           "address": 4469536,
@@ -9246,6 +11055,17 @@
           "size": 112,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004488A0"
+        },
+        {
+          "address": 4492200,
+          "candidate_sha256": "ae6c9fddb89c2d32744eaef6b2c5d9d707debd6d429e9f79ff8c82370caaa4f2",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 292,
+          "reference_sha256": "ae6c9fddb89c2d32744eaef6b2c5d9d707debd6d429e9f79ff8c82370caaa4f2",
+          "size": 292,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00448BA8"
         },
         {
           "address": 4494864,
@@ -9367,6 +11187,116 @@
           "size": 20,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044DC00"
+        },
+        {
+          "address": 4516128,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044E920"
+        },
+        {
+          "address": 4516480,
+          "candidate_sha256": "e2785748ac8af1e4e539339e371da7f145623ddf583b5aefe2d4534420e2ebfb",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 396,
+          "reference_sha256": "e2785748ac8af1e4e539339e371da7f145623ddf583b5aefe2d4534420e2ebfb",
+          "size": 396,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044EA80"
+        },
+        {
+          "address": 4517216,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044ED60"
+        },
+        {
+          "address": 4517912,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044F018"
+        },
+        {
+          "address": 4519328,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_0044F5A0"
+        },
+        {
+          "address": 4522024,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450028"
+        },
+        {
+          "address": 4522736,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004502F0"
+        },
+        {
+          "address": 4523704,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004506B8"
+        },
+        {
+          "address": 4524392,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450968"
+        },
+        {
+          "address": 4524896,
+          "candidate_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "14b54b256903c8271a1e26d621cb33991f4e69ea8053fd5ca9f47bff9373c46a",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00450B60"
         },
         {
           "address": 4525400,
@@ -9501,6 +11431,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456168"
         },
         {
+          "address": 4547976,
+          "candidate_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 144,
+          "reference_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+          "size": 144,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456588"
+        },
+        {
           "address": 4549960,
           "candidate_sha256": "0b701a3602b046d21a3e5e8fcc1d4e367dcb09be53b08fc3f97719b83d5bb9e2",
           "different_bytes": 0,
@@ -9510,6 +11451,17 @@
           "size": 312,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00456D48"
+        },
+        {
+          "address": 4554728,
+          "candidate_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 144,
+          "reference_sha256": "57c86ce6c7a994e623821d5e8a2a9c9c73013db8c7939517698e4ce907d896d6",
+          "size": 144,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00457FE8"
         },
         {
           "address": 4565640,
@@ -9655,6 +11607,17 @@
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004617D8"
         },
         {
+          "address": 4593768,
+          "candidate_sha256": "d6c4966ba7b32f10a4ac9cd4bce00ca8eb34dfe728396a2199873103b25b5b10",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 56,
+          "reference_sha256": "d6c4966ba7b32f10a4ac9cd4bce00ca8eb34dfe728396a2199873103b25b5b10",
+          "size": 56,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00461868"
+        },
+        {
           "address": 4600224,
           "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
           "different_bytes": 0,
@@ -9675,6 +11638,28 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004632A0"
+        },
+        {
+          "address": 4601104,
+          "candidate_sha256": "2d6ae587da7f5d01a30784ef3411df390c51f208882c5ada724f354c62856965",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 352,
+          "reference_sha256": "2d6ae587da7f5d01a30784ef3411df390c51f208882c5ada724f354c62856965",
+          "size": 352,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_00463510"
+        },
+        {
+          "address": 4602304,
+          "candidate_sha256": "97373f20b1bcea3fc54d1d66ae881b5646d545cb5affcaa898ab20987995b880",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 272,
+          "reference_sha256": "97373f20b1bcea3fc54d1d66ae881b5646d545cb5affcaa898ab20987995b880",
+          "size": 272,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_10_HRUGIS_CLOUD_FUN_004639C0"
         },
         {
           "address": 4606520,
@@ -9700,26 +11685,26 @@
         }
       ],
       "kind": "level-native-candidate",
-      "matched_code_bytes": 19392,
-      "object_sha256": "c72130135167bbb7c8eaf95123ee69274e4d230bdddf0a7e20d45811ac0febb3",
+      "matched_code_bytes": 33476,
+      "object_sha256": "40430ad40bf22e961d758a8f13af3fdc5b704e215d4889ef7092578353858280",
       "program": "levels/10_hrugis_cloud",
       "read_only_sections": [],
       "reference_entry": 2877704,
       "reference_sha256": "287e8f233f0b60cf4ccb3f0ff4dc043b907cabb7b3eff8c2229ca79cc1d19b48",
       "schema": 1,
-      "source_sha256": "4bdc66023e808ec7431f94eb1fffbe26b57741ca4aecfb5dac9833a7a7179245",
+      "source_sha256": "b266e4a98b958c0febcb3123ae3159356c716ca5d378a214f55f5407150cc180",
       "state": "matched_unintegrated",
       "target": "SCUS_972.68",
       "tools": {
-        "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-        "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+        "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+        "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
         "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
         "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
       }
     },
-    "object_sha256": "c72130135167bbb7c8eaf95123ee69274e4d230bdddf0a7e20d45811ac0febb3",
+    "object_sha256": "40430ad40bf22e961d758a8f13af3fdc5b704e215d4889ef7092578353858280",
     "review_path": "progress/level-candidates/10_hrugis_cloud.json",
-    "review_sha256": "54429929be870f90519094667b9edbe22224271c7664608181d4278b50b09c0b",
+    "review_sha256": "180cbf42725699791b18f3ee6a34a684ef6325942a17e23da6654038dee2eb24",
     "source": "candidates/levels/10_hrugis_cloud.c"
   },
   "program": "10_hrugis_cloud",
@@ -9897,8 +11882,10 @@
       "LVL_10_HRUGIS_CLOUD_FUN_002BFC70",
       "LVL_10_HRUGIS_CLOUD_FUN_002BFD68",
       "LVL_10_HRUGIS_CLOUD_FUN_002C0F08",
+      "LVL_10_HRUGIS_CLOUD_FUN_002C11A0",
       "LVL_10_HRUGIS_CLOUD_FUN_002C1DF0",
       "LVL_10_HRUGIS_CLOUD_FUN_002C1E70",
+      "LVL_10_HRUGIS_CLOUD_FUN_002C5E88",
       "LVL_10_HRUGIS_CLOUD_FUN_002C8A78",
       "LVL_10_HRUGIS_CLOUD_FUN_002C8BE8",
       "LVL_10_HRUGIS_CLOUD_FUN_002C8C20",
@@ -9907,8 +11894,11 @@
       "LVL_10_HRUGIS_CLOUD_FUN_002C8D00",
       "LVL_10_HRUGIS_CLOUD_FUN_002C8D50",
       "LVL_10_HRUGIS_CLOUD_FUN_002C9840",
+      "LVL_10_HRUGIS_CLOUD_FUN_002CBFB0",
       "LVL_10_HRUGIS_CLOUD_FUN_002CDFC8",
       "LVL_10_HRUGIS_CLOUD_FUN_002CE718",
+      "LVL_10_HRUGIS_CLOUD_FUN_002D3F40",
+      "LVL_10_HRUGIS_CLOUD_FUN_002E3FA8",
       "LVL_10_HRUGIS_CLOUD_FUN_002ECCF8",
       "LVL_10_HRUGIS_CLOUD_FUN_002ED1F0",
       "LVL_10_HRUGIS_CLOUD_FUN_002EDDE8",
@@ -9916,7 +11906,9 @@
       "LVL_10_HRUGIS_CLOUD_FUN_002EDF88",
       "LVL_10_HRUGIS_CLOUD_FUN_002EE180",
       "LVL_10_HRUGIS_CLOUD_FUN_002EE4F8",
+      "LVL_10_HRUGIS_CLOUD_FUN_002EE6E0",
       "LVL_10_HRUGIS_CLOUD_FUN_002EED30",
+      "LVL_10_HRUGIS_CLOUD_FUN_002EF770",
       "LVL_10_HRUGIS_CLOUD_FUN_002F1460",
       "LVL_10_HRUGIS_CLOUD_FUN_002F14E0",
       "LVL_10_HRUGIS_CLOUD_FUN_002F15B0",
@@ -9928,6 +11920,8 @@
       "LVL_10_HRUGIS_CLOUD_FUN_002F6C68",
       "LVL_10_HRUGIS_CLOUD_FUN_002F7070",
       "LVL_10_HRUGIS_CLOUD_FUN_002F7078",
+      "LVL_10_HRUGIS_CLOUD_FUN_002F7080",
+      "LVL_10_HRUGIS_CLOUD_FUN_002F7160",
       "LVL_10_HRUGIS_CLOUD_FUN_002F76C0",
       "LVL_10_HRUGIS_CLOUD_FUN_002FD858",
       "LVL_10_HRUGIS_CLOUD_FUN_002FE3D8",
@@ -9950,6 +11944,7 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00316120",
       "LVL_10_HRUGIS_CLOUD_FUN_003170C8",
       "LVL_10_HRUGIS_CLOUD_FUN_0031B0E8",
+      "LVL_10_HRUGIS_CLOUD_FUN_0031F1A8",
       "LVL_10_HRUGIS_CLOUD_FUN_0031FAC8",
       "LVL_10_HRUGIS_CLOUD_FUN_00320388",
       "LVL_10_HRUGIS_CLOUD_FUN_00320408",
@@ -9957,6 +11952,12 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00323660",
       "LVL_10_HRUGIS_CLOUD_FUN_00323A88",
       "LVL_10_HRUGIS_CLOUD_FUN_00323E40",
+      "LVL_10_HRUGIS_CLOUD_FUN_00326AE8",
+      "LVL_10_HRUGIS_CLOUD_FUN_00327408",
+      "LVL_10_HRUGIS_CLOUD_FUN_00327A90",
+      "LVL_10_HRUGIS_CLOUD_FUN_00327CE0",
+      "LVL_10_HRUGIS_CLOUD_FUN_00327D10",
+      "LVL_10_HRUGIS_CLOUD_FUN_00328920",
       "LVL_10_HRUGIS_CLOUD_FUN_003299F0",
       "LVL_10_HRUGIS_CLOUD_FUN_0032AB80",
       "LVL_10_HRUGIS_CLOUD_FUN_0032AFD0",
@@ -9966,27 +11967,45 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00335160",
       "LVL_10_HRUGIS_CLOUD_FUN_00339818",
       "LVL_10_HRUGIS_CLOUD_FUN_0033A6C0",
+      "LVL_10_HRUGIS_CLOUD_FUN_0033B288",
+      "LVL_10_HRUGIS_CLOUD_FUN_0033B550",
       "LVL_10_HRUGIS_CLOUD_FUN_0033CC10",
+      "LVL_10_HRUGIS_CLOUD_FUN_0033E358",
+      "LVL_10_HRUGIS_CLOUD_FUN_0033F838",
       "LVL_10_HRUGIS_CLOUD_FUN_0033FD48",
       "LVL_10_HRUGIS_CLOUD_FUN_00341C20",
       "LVL_10_HRUGIS_CLOUD_FUN_00342B08",
       "LVL_10_HRUGIS_CLOUD_FUN_00342C80",
+      "LVL_10_HRUGIS_CLOUD_FUN_00345F10",
+      "LVL_10_HRUGIS_CLOUD_FUN_00347890",
+      "LVL_10_HRUGIS_CLOUD_FUN_00349D28",
+      "LVL_10_HRUGIS_CLOUD_FUN_0034D5D8",
+      "LVL_10_HRUGIS_CLOUD_FUN_0034E7D8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003534C0",
+      "LVL_10_HRUGIS_CLOUD_FUN_00353A70",
+      "LVL_10_HRUGIS_CLOUD_FUN_00354AA0",
+      "LVL_10_HRUGIS_CLOUD_FUN_003558C8",
       "LVL_10_HRUGIS_CLOUD_FUN_00355DC8",
       "LVL_10_HRUGIS_CLOUD_FUN_0035A9E8",
       "LVL_10_HRUGIS_CLOUD_FUN_0035ADE8",
       "LVL_10_HRUGIS_CLOUD_FUN_0035B088",
+      "LVL_10_HRUGIS_CLOUD_FUN_0035C868",
       "LVL_10_HRUGIS_CLOUD_FUN_00360480",
       "LVL_10_HRUGIS_CLOUD_FUN_003605F0",
       "LVL_10_HRUGIS_CLOUD_FUN_003606A8",
       "LVL_10_HRUGIS_CLOUD_FUN_00360A58",
       "LVL_10_HRUGIS_CLOUD_FUN_00360B58",
+      "LVL_10_HRUGIS_CLOUD_FUN_003625D8",
       "LVL_10_HRUGIS_CLOUD_FUN_00362D08",
       "LVL_10_HRUGIS_CLOUD_FUN_00366F60",
       "LVL_10_HRUGIS_CLOUD_FUN_0036C9D0",
       "LVL_10_HRUGIS_CLOUD_FUN_0036EC50",
       "LVL_10_HRUGIS_CLOUD_FUN_00371348",
+      "LVL_10_HRUGIS_CLOUD_FUN_00372010",
+      "LVL_10_HRUGIS_CLOUD_FUN_00372258",
       "LVL_10_HRUGIS_CLOUD_FUN_00373468",
       "LVL_10_HRUGIS_CLOUD_FUN_00373BA8",
+      "LVL_10_HRUGIS_CLOUD_FUN_0037CCB0",
       "LVL_10_HRUGIS_CLOUD_FUN_0037F510",
       "LVL_10_HRUGIS_CLOUD_FUN_0037F5B0",
       "LVL_10_HRUGIS_CLOUD_FUN_00381D80",
@@ -10001,15 +12020,19 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00398E48",
       "LVL_10_HRUGIS_CLOUD_FUN_0039A628",
       "LVL_10_HRUGIS_CLOUD_FUN_0039A690",
+      "LVL_10_HRUGIS_CLOUD_FUN_003A00B8",
       "LVL_10_HRUGIS_CLOUD_FUN_003A01C8",
       "LVL_10_HRUGIS_CLOUD_FUN_003A0778",
       "LVL_10_HRUGIS_CLOUD_FUN_003A0BA0",
       "LVL_10_HRUGIS_CLOUD_FUN_003A1068",
+      "LVL_10_HRUGIS_CLOUD_FUN_003A2B60",
       "LVL_10_HRUGIS_CLOUD_FUN_003A2C70",
       "LVL_10_HRUGIS_CLOUD_FUN_003A3218",
       "LVL_10_HRUGIS_CLOUD_FUN_003A3618",
       "LVL_10_HRUGIS_CLOUD_FUN_003A36F0",
+      "LVL_10_HRUGIS_CLOUD_FUN_003A8088",
       "LVL_10_HRUGIS_CLOUD_FUN_003B0DC8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003B36D0",
       "LVL_10_HRUGIS_CLOUD_FUN_003B58A8",
       "LVL_10_HRUGIS_CLOUD_FUN_003B6768",
       "LVL_10_HRUGIS_CLOUD_FUN_003B9BE0",
@@ -10024,19 +12047,32 @@
       "LVL_10_HRUGIS_CLOUD_FUN_003D9350",
       "LVL_10_HRUGIS_CLOUD_FUN_003DC290",
       "LVL_10_HRUGIS_CLOUD_FUN_003DF4B8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003DF660",
       "LVL_10_HRUGIS_CLOUD_FUN_003DFF10",
       "LVL_10_HRUGIS_CLOUD_FUN_003E5E90",
       "LVL_10_HRUGIS_CLOUD_FUN_003E6360",
+      "LVL_10_HRUGIS_CLOUD_FUN_003E63E8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003E6608",
+      "LVL_10_HRUGIS_CLOUD_FUN_003E79D8",
       "LVL_10_HRUGIS_CLOUD_FUN_003E9908",
+      "LVL_10_HRUGIS_CLOUD_FUN_003E9990",
+      "LVL_10_HRUGIS_CLOUD_FUN_003E99F8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003EC4B0",
+      "LVL_10_HRUGIS_CLOUD_FUN_003EC5D8",
       "LVL_10_HRUGIS_CLOUD_FUN_003EFBE8",
+      "LVL_10_HRUGIS_CLOUD_FUN_003EFC70",
       "LVL_10_HRUGIS_CLOUD_FUN_003F1D58",
       "LVL_10_HRUGIS_CLOUD_FUN_003F2190",
       "LVL_10_HRUGIS_CLOUD_FUN_003F2748",
       "LVL_10_HRUGIS_CLOUD_FUN_003F2E20",
       "LVL_10_HRUGIS_CLOUD_FUN_003F3248",
+      "LVL_10_HRUGIS_CLOUD_FUN_003F5D70",
+      "LVL_10_HRUGIS_CLOUD_FUN_003F5E98",
       "LVL_10_HRUGIS_CLOUD_FUN_003F6BA8",
       "LVL_10_HRUGIS_CLOUD_FUN_003F8CE0",
+      "LVL_10_HRUGIS_CLOUD_FUN_003F8D68",
       "LVL_10_HRUGIS_CLOUD_FUN_003FA088",
+      "LVL_10_HRUGIS_CLOUD_FUN_003FA110",
       "LVL_10_HRUGIS_CLOUD_FUN_003FAB60",
       "LVL_10_HRUGIS_CLOUD_FUN_003FD2D8",
       "LVL_10_HRUGIS_CLOUD_FUN_004006F8",
@@ -10050,10 +12086,15 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00432A88",
       "LVL_10_HRUGIS_CLOUD_FUN_00435230",
       "LVL_10_HRUGIS_CLOUD_FUN_00435298",
+      "LVL_10_HRUGIS_CLOUD_FUN_0043A648",
       "LVL_10_HRUGIS_CLOUD_FUN_0043AED0",
+      "LVL_10_HRUGIS_CLOUD_FUN_0043E3A8",
+      "LVL_10_HRUGIS_CLOUD_FUN_004407B8",
+      "LVL_10_HRUGIS_CLOUD_FUN_00442700",
       "LVL_10_HRUGIS_CLOUD_FUN_00443320",
       "LVL_10_HRUGIS_CLOUD_FUN_004486F0",
       "LVL_10_HRUGIS_CLOUD_FUN_004488A0",
+      "LVL_10_HRUGIS_CLOUD_FUN_00448BA8",
       "LVL_10_HRUGIS_CLOUD_FUN_00449610",
       "LVL_10_HRUGIS_CLOUD_FUN_00449618",
       "LVL_10_HRUGIS_CLOUD_FUN_00449770",
@@ -10065,6 +12106,16 @@
       "LVL_10_HRUGIS_CLOUD_FUN_0044BB38",
       "LVL_10_HRUGIS_CLOUD_FUN_0044C358",
       "LVL_10_HRUGIS_CLOUD_FUN_0044DC00",
+      "LVL_10_HRUGIS_CLOUD_FUN_0044E920",
+      "LVL_10_HRUGIS_CLOUD_FUN_0044EA80",
+      "LVL_10_HRUGIS_CLOUD_FUN_0044ED60",
+      "LVL_10_HRUGIS_CLOUD_FUN_0044F018",
+      "LVL_10_HRUGIS_CLOUD_FUN_0044F5A0",
+      "LVL_10_HRUGIS_CLOUD_FUN_00450028",
+      "LVL_10_HRUGIS_CLOUD_FUN_004502F0",
+      "LVL_10_HRUGIS_CLOUD_FUN_004506B8",
+      "LVL_10_HRUGIS_CLOUD_FUN_00450968",
+      "LVL_10_HRUGIS_CLOUD_FUN_00450B60",
       "LVL_10_HRUGIS_CLOUD_FUN_00450D58",
       "LVL_10_HRUGIS_CLOUD_FUN_00450EF8",
       "LVL_10_HRUGIS_CLOUD_FUN_00450F30",
@@ -10077,7 +12128,9 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00455C28",
       "LVL_10_HRUGIS_CLOUD_FUN_00456148",
       "LVL_10_HRUGIS_CLOUD_FUN_00456168",
+      "LVL_10_HRUGIS_CLOUD_FUN_00456588",
       "LVL_10_HRUGIS_CLOUD_FUN_00456D48",
+      "LVL_10_HRUGIS_CLOUD_FUN_00457FE8",
       "LVL_10_HRUGIS_CLOUD_FUN_0045AA88",
       "LVL_10_HRUGIS_CLOUD_FUN_0045ACD0",
       "LVL_10_HRUGIS_CLOUD_FUN_0045BD30",
@@ -10091,8 +12144,11 @@
       "LVL_10_HRUGIS_CLOUD_FUN_00460E10",
       "LVL_10_HRUGIS_CLOUD_FUN_004611B0",
       "LVL_10_HRUGIS_CLOUD_FUN_004617D8",
+      "LVL_10_HRUGIS_CLOUD_FUN_00461868",
       "LVL_10_HRUGIS_CLOUD_FUN_004631A0",
       "LVL_10_HRUGIS_CLOUD_FUN_004632A0",
+      "LVL_10_HRUGIS_CLOUD_FUN_00463510",
+      "LVL_10_HRUGIS_CLOUD_FUN_004639C0",
       "LVL_10_HRUGIS_CLOUD_FUN_00464A38",
       "LVL_10_HRUGIS_CLOUD_FUN_00464AE0",
       "LVL_10_HRUGIS_CLOUD_FUN_003240A0",
@@ -10148,50 +12204,50 @@
   "shared": {
     "c_link_object_adapter": {
       "compiled_code_unchanged": true,
-      "compiled_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
+      "compiled_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
       "integration_credit": 0,
       "kind": "reviewed-shared-import-relocation-adapter",
-      "link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
+      "link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
       "new_physical_bytes": 0,
       "relocation_changes": [
         {
           "caller": "FUN_0034F898",
           "caller_address": 4596888,
-          "new_r_info": 111364,
-          "new_symbol_index": 435,
+          "new_r_info": 122116,
+          "new_symbol_index": 477,
           "old_r_info": 67844,
           "old_symbol_index": 265,
           "provider": "FUN_001338C8",
           "provider_address": 1259720,
           "provider_reference_sha256": "df665c024f2c2f2122ca91cb5b61048030b7f98a3df2606d8c91441295d69d2f",
           "provider_size": 36,
-          "r_info_offset": 110272
+          "r_info_offset": 139596
         },
         {
           "caller": "FUN_0034FB20",
           "caller_address": 4597660,
-          "new_r_info": 128260,
-          "new_symbol_index": 501,
+          "new_r_info": 139012,
+          "new_symbol_index": 543,
           "old_r_info": 68100,
           "old_symbol_index": 266,
           "provider": "FUN_00133930",
           "provider_address": 1259824,
           "provider_reference_sha256": "d1b7a40a24b4537c4f9b704b87cafb6001ecaf64ef96c01c869fd05532732474",
           "provider_size": 44,
-          "r_info_offset": 110720
+          "r_info_offset": 140044
         },
         {
           "caller": "FUN_002B7170",
           "caller_address": 3416436,
-          "new_r_info": 142596,
-          "new_symbol_index": 557,
+          "new_r_info": 153348,
+          "new_symbol_index": 599,
           "old_r_info": 67588,
           "old_symbol_index": 264,
           "provider": "FUN_00133490",
           "provider_address": 1258640,
           "provider_reference_sha256": "1c102a1be303b46fbc85f02f327e97d8ecdbbf6635d3458a6454c0c7de75c75a",
           "provider_size": 40,
-          "r_info_offset": 111032
+          "r_info_offset": 140356
         }
       ],
       "schema": 1,
@@ -10210,12 +12266,12 @@
         {
           "index": 4,
           "name": ".reginfo",
-          "sha256": "c2d3969b3225176d95cc329e9f1b623c332436096048e9022c551cb112907c70"
+          "sha256": "64d8421d1617bb4b885b93d05be3edf7877e0f122dc202fecad75ba433668b99"
         },
         {
           "index": 5,
           "name": ".mdebug",
-          "sha256": "f68b313f458385fdc23576b8b4ed6a90bec6cd0670e3657e4fb9ac9425ceab6f"
+          "sha256": "f6056cff404204a133933b99b885398edfd69800c6d7dc0752b5cc5a72a93e92"
         },
         {
           "index": 6,
@@ -11834,25 +13890,235 @@
         },
         {
           "index": 440,
-          "name": ".shstrtab",
-          "sha256": "cf25a6821455714f54a5c0b81e2a723dff861ae4c7644231093fd15f91279cd2"
-        },
-        {
-          "index": 441,
-          "name": ".symtab",
-          "sha256": "0f6fa54a0b3b657de8e7f47c7adf996fb081d7796c96d521df415dd0dd426008"
+          "name": ".text.FUN_002D4E10",
+          "sha256": "a8676595c567569004a5593e8ec58c810dd0c27f0362c0bdcf4a022103432611"
         },
         {
           "index": 442,
+          "name": ".text.FUN_0034EC70",
+          "sha256": "12a13f773a4450fbc9d7e9bc664115f322058a9f643f21ba85b1ae0322e5b5fb"
+        },
+        {
+          "index": 444,
+          "name": ".text.FUN_002E46C0",
+          "sha256": "dce4524975475049e746d94bca280f5a9b9f19693e77a99c02a2739983a1e687"
+        },
+        {
+          "index": 446,
+          "name": ".text.FUN_00293CA8",
+          "sha256": "e74b7eb12a26601c43476977470e0713c48f0c39046031809fd38008a6af5d7c"
+        },
+        {
+          "index": 448,
+          "name": ".text.FUN_002E4478",
+          "sha256": "19eb8bea954758107bfa70beeb67787dd158173a05733753b1cf58d0a4308a46"
+        },
+        {
+          "index": 450,
+          "name": ".text.FUN_00274128",
+          "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+        },
+        {
+          "index": 452,
+          "name": ".text.FUN_00274208",
+          "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+        },
+        {
+          "index": 454,
+          "name": ".text.FUN_0031A998",
+          "sha256": "c59e0502110792ab05e18abe5a69eb3869c2588ecdab762c9af03f2dd0ac4f45"
+        },
+        {
+          "index": 456,
+          "name": ".text.FUN_00328D98",
+          "sha256": "ada74c42c5ce6f5f11c2faed30219547b4f71049cae441483fe9413baf3dbc91"
+        },
+        {
+          "index": 458,
+          "name": ".text.FUN_0031E8F8",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 460,
+          "name": ".text.FUN_00328D30",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 462,
+          "name": ".text.FUN_0032B378",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 464,
+          "name": ".text.FUN_00304B68",
+          "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+        },
+        {
+          "index": 466,
+          "name": ".text.FUN_00307330",
+          "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+        },
+        {
+          "index": 468,
+          "name": ".text.FUN_002BE9B8",
+          "sha256": "47ef2422a86b8f1480709500f0c502bf995875c378fba7e72f7217fa4c492a40"
+        },
+        {
+          "index": 470,
+          "name": ".text.FUN_002AD330",
+          "sha256": "7353422adf1ba7e824cb4403384ab03670e0aa1a54e5361c81bc5da78ad2c537"
+        },
+        {
+          "index": 472,
+          "name": ".text.FUN_002C7AE8",
+          "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+        },
+        {
+          "index": 474,
+          "name": ".text.FUN_002C87B0",
+          "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+        },
+        {
+          "index": 476,
+          "name": ".text.FUN_0033BD38",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 478,
+          "name": ".text.FUN_0033C178",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 480,
+          "name": ".text.FUN_0033C430",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 482,
+          "name": ".text.FUN_0033C9B8",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 484,
+          "name": ".text.FUN_0033D440",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 486,
+          "name": ".text.FUN_0033D708",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 488,
+          "name": ".text.FUN_0033DAD0",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 490,
+          "name": ".text.FUN_0033DD80",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 492,
+          "name": ".text.FUN_0033DF78",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 494,
+          "name": ".text.FUN_0033BE98",
+          "sha256": "ab40ac7b3980ddde7f3bcc832fa16d4679f87a122bfa26c58a539f2caa34a86c"
+        },
+        {
+          "index": 496,
+          "name": ".text.FUN_00350918",
+          "sha256": "131da89b0cd6ab731d1592a063b35ab31f231814fef35421bcab70b3f24101f7"
+        },
+        {
+          "index": 498,
+          "name": ".text.FUN_002C8F40",
+          "sha256": "420a1985ac5201b95c99f5ca4559d621b28402c475f737ee04f8df938181df1c"
+        },
+        {
+          "index": 500,
+          "name": ".text.FUN_00335FC8",
+          "sha256": "b86d2f5886fb6421e27ab73126bf55b37a925c616d33d9e1c0af4f7328cfaa0f"
+        },
+        {
+          "index": 502,
+          "name": ".text.FUN_003439A0",
+          "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+        },
+        {
+          "index": 504,
+          "name": ".text.FUN_00345400",
+          "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+        },
+        {
+          "index": 506,
+          "name": ".text.FUN_00310D78",
+          "sha256": "ccbea74f6d9ce9e7c3ceff7f683b22e4e33fa8e381334e8f22e59a3ffa447004"
+        },
+        {
+          "index": 508,
+          "name": ".text.FUN_002BC8E8",
+          "sha256": "7a52e9f3918046fb461bb5dc39bfed862d338e6eb4dcf23258ddcd3d2e212489"
+        },
+        {
+          "index": 510,
+          "name": ".text.FUN_0029AF98",
+          "sha256": "57a99eb12379fba8033071dd8c5369be58457a175511a9403d322b2e21d81196"
+        },
+        {
+          "index": 512,
+          "name": ".text.FUN_002AD5F8",
+          "sha256": "6c90c644dfa6208696e4a2d2414afd39f4155f065b4c1eb91816da5eac2f3994"
+        },
+        {
+          "index": 514,
+          "name": ".text.FUN_002C2080",
+          "sha256": "50a1c69b99eb97473f174de501f579ba943403ec222f0188bda2b1e725c46b17"
+        },
+        {
+          "index": 516,
+          "name": ".text.FUN_002CF0A0",
+          "sha256": "216fe722f15b90e1eb2ddb0624c178247370f97a0aa89982bdec78bc03c1cacd"
+        },
+        {
+          "index": 518,
+          "name": ".text.FUN_002BAF68",
+          "sha256": "8c604857278dcd0d148203087aaa43bd706eabf5b32560885aa1b8f20a7998d2"
+        },
+        {
+          "index": 520,
+          "name": ".text.FUN_002B1A80",
+          "sha256": "59346241c50a8954d9c86ee45a17f708967a997dcc68f1013d64ac01fe3a02d5"
+        },
+        {
+          "index": 522,
+          "name": ".text.FUN_002C7538",
+          "sha256": "fc153d244b019c43c19aef4072ddd8fe29f4df94ef5e07877d701eb4e9ceb4ad"
+        },
+        {
+          "index": 524,
+          "name": ".shstrtab",
+          "sha256": "39f788becf3fbfef0474aa22e408ac9d76d505a6579c2d46287d5b8f16eb2a1e"
+        },
+        {
+          "index": 525,
+          "name": ".symtab",
+          "sha256": "d39399bcddc2eff172381708f2f0b7615bff647bf1853534ffbd47bb81318b70"
+        },
+        {
+          "index": 526,
           "name": ".strtab",
-          "sha256": "6add012a7b2c038503b5b6c96edbf3697e91c4a90988170c762399f422a99359"
+          "sha256": "4a9259e4fbba7611bd464492187952484f070e8a5d6aaf082592033212a86ab8"
         }
       ]
     },
-    "c_link_object_adapter_sha256": "f7cebd41f94506a4c5a3809c93e2206084a58da4c8a35daa0170560b10675cbd",
-    "c_link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
-    "c_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
-    "candidate_elf_sha256": "b9361a5624aaf658c15df99f90becba200066080343376e98d97b83be2ea80ac",
+    "c_link_object_adapter_sha256": "f8a0ac2f0067625af4c510da13e47fc424a5222a9a35899654d26693878bd2ac",
+    "c_link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
+    "c_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
+    "candidate_elf_sha256": "e9d1929dc0591dddea51872190f623efcbff07b0af96b0a3e13f9af718916d8c",
     "candidate_source": "candidates/boot.c",
     "catalog_sha256": "fc792ac26dd3bbec8f54565bc6a44fe3ed2c05756e5f66981ceb3d9c294fb7b0",
     "full_level_gate": {
@@ -12031,8 +14297,10 @@
         "LVL_10_HRUGIS_CLOUD_FUN_002BFC70",
         "LVL_10_HRUGIS_CLOUD_FUN_002BFD68",
         "LVL_10_HRUGIS_CLOUD_FUN_002C0F08",
+        "LVL_10_HRUGIS_CLOUD_FUN_002C11A0",
         "LVL_10_HRUGIS_CLOUD_FUN_002C1DF0",
         "LVL_10_HRUGIS_CLOUD_FUN_002C1E70",
+        "LVL_10_HRUGIS_CLOUD_FUN_002C5E88",
         "LVL_10_HRUGIS_CLOUD_FUN_002C8A78",
         "LVL_10_HRUGIS_CLOUD_FUN_002C8BE8",
         "LVL_10_HRUGIS_CLOUD_FUN_002C8C20",
@@ -12041,8 +14309,11 @@
         "LVL_10_HRUGIS_CLOUD_FUN_002C8D00",
         "LVL_10_HRUGIS_CLOUD_FUN_002C8D50",
         "LVL_10_HRUGIS_CLOUD_FUN_002C9840",
+        "LVL_10_HRUGIS_CLOUD_FUN_002CBFB0",
         "LVL_10_HRUGIS_CLOUD_FUN_002CDFC8",
         "LVL_10_HRUGIS_CLOUD_FUN_002CE718",
+        "LVL_10_HRUGIS_CLOUD_FUN_002D3F40",
+        "LVL_10_HRUGIS_CLOUD_FUN_002E3FA8",
         "LVL_10_HRUGIS_CLOUD_FUN_002ECCF8",
         "LVL_10_HRUGIS_CLOUD_FUN_002ED1F0",
         "LVL_10_HRUGIS_CLOUD_FUN_002EDDE8",
@@ -12050,7 +14321,9 @@
         "LVL_10_HRUGIS_CLOUD_FUN_002EDF88",
         "LVL_10_HRUGIS_CLOUD_FUN_002EE180",
         "LVL_10_HRUGIS_CLOUD_FUN_002EE4F8",
+        "LVL_10_HRUGIS_CLOUD_FUN_002EE6E0",
         "LVL_10_HRUGIS_CLOUD_FUN_002EED30",
+        "LVL_10_HRUGIS_CLOUD_FUN_002EF770",
         "LVL_10_HRUGIS_CLOUD_FUN_002F1460",
         "LVL_10_HRUGIS_CLOUD_FUN_002F14E0",
         "LVL_10_HRUGIS_CLOUD_FUN_002F15B0",
@@ -12062,6 +14335,8 @@
         "LVL_10_HRUGIS_CLOUD_FUN_002F6C68",
         "LVL_10_HRUGIS_CLOUD_FUN_002F7070",
         "LVL_10_HRUGIS_CLOUD_FUN_002F7078",
+        "LVL_10_HRUGIS_CLOUD_FUN_002F7080",
+        "LVL_10_HRUGIS_CLOUD_FUN_002F7160",
         "LVL_10_HRUGIS_CLOUD_FUN_002F76C0",
         "LVL_10_HRUGIS_CLOUD_FUN_002FD858",
         "LVL_10_HRUGIS_CLOUD_FUN_002FE3D8",
@@ -12084,6 +14359,7 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00316120",
         "LVL_10_HRUGIS_CLOUD_FUN_003170C8",
         "LVL_10_HRUGIS_CLOUD_FUN_0031B0E8",
+        "LVL_10_HRUGIS_CLOUD_FUN_0031F1A8",
         "LVL_10_HRUGIS_CLOUD_FUN_0031FAC8",
         "LVL_10_HRUGIS_CLOUD_FUN_00320388",
         "LVL_10_HRUGIS_CLOUD_FUN_00320408",
@@ -12091,6 +14367,12 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00323660",
         "LVL_10_HRUGIS_CLOUD_FUN_00323A88",
         "LVL_10_HRUGIS_CLOUD_FUN_00323E40",
+        "LVL_10_HRUGIS_CLOUD_FUN_00326AE8",
+        "LVL_10_HRUGIS_CLOUD_FUN_00327408",
+        "LVL_10_HRUGIS_CLOUD_FUN_00327A90",
+        "LVL_10_HRUGIS_CLOUD_FUN_00327CE0",
+        "LVL_10_HRUGIS_CLOUD_FUN_00327D10",
+        "LVL_10_HRUGIS_CLOUD_FUN_00328920",
         "LVL_10_HRUGIS_CLOUD_FUN_003299F0",
         "LVL_10_HRUGIS_CLOUD_FUN_0032AB80",
         "LVL_10_HRUGIS_CLOUD_FUN_0032AFD0",
@@ -12100,27 +14382,45 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00335160",
         "LVL_10_HRUGIS_CLOUD_FUN_00339818",
         "LVL_10_HRUGIS_CLOUD_FUN_0033A6C0",
+        "LVL_10_HRUGIS_CLOUD_FUN_0033B288",
+        "LVL_10_HRUGIS_CLOUD_FUN_0033B550",
         "LVL_10_HRUGIS_CLOUD_FUN_0033CC10",
+        "LVL_10_HRUGIS_CLOUD_FUN_0033E358",
+        "LVL_10_HRUGIS_CLOUD_FUN_0033F838",
         "LVL_10_HRUGIS_CLOUD_FUN_0033FD48",
         "LVL_10_HRUGIS_CLOUD_FUN_00341C20",
         "LVL_10_HRUGIS_CLOUD_FUN_00342B08",
         "LVL_10_HRUGIS_CLOUD_FUN_00342C80",
+        "LVL_10_HRUGIS_CLOUD_FUN_00345F10",
+        "LVL_10_HRUGIS_CLOUD_FUN_00347890",
+        "LVL_10_HRUGIS_CLOUD_FUN_00349D28",
+        "LVL_10_HRUGIS_CLOUD_FUN_0034D5D8",
+        "LVL_10_HRUGIS_CLOUD_FUN_0034E7D8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003534C0",
+        "LVL_10_HRUGIS_CLOUD_FUN_00353A70",
+        "LVL_10_HRUGIS_CLOUD_FUN_00354AA0",
+        "LVL_10_HRUGIS_CLOUD_FUN_003558C8",
         "LVL_10_HRUGIS_CLOUD_FUN_00355DC8",
         "LVL_10_HRUGIS_CLOUD_FUN_0035A9E8",
         "LVL_10_HRUGIS_CLOUD_FUN_0035ADE8",
         "LVL_10_HRUGIS_CLOUD_FUN_0035B088",
+        "LVL_10_HRUGIS_CLOUD_FUN_0035C868",
         "LVL_10_HRUGIS_CLOUD_FUN_00360480",
         "LVL_10_HRUGIS_CLOUD_FUN_003605F0",
         "LVL_10_HRUGIS_CLOUD_FUN_003606A8",
         "LVL_10_HRUGIS_CLOUD_FUN_00360A58",
         "LVL_10_HRUGIS_CLOUD_FUN_00360B58",
+        "LVL_10_HRUGIS_CLOUD_FUN_003625D8",
         "LVL_10_HRUGIS_CLOUD_FUN_00362D08",
         "LVL_10_HRUGIS_CLOUD_FUN_00366F60",
         "LVL_10_HRUGIS_CLOUD_FUN_0036C9D0",
         "LVL_10_HRUGIS_CLOUD_FUN_0036EC50",
         "LVL_10_HRUGIS_CLOUD_FUN_00371348",
+        "LVL_10_HRUGIS_CLOUD_FUN_00372010",
+        "LVL_10_HRUGIS_CLOUD_FUN_00372258",
         "LVL_10_HRUGIS_CLOUD_FUN_00373468",
         "LVL_10_HRUGIS_CLOUD_FUN_00373BA8",
+        "LVL_10_HRUGIS_CLOUD_FUN_0037CCB0",
         "LVL_10_HRUGIS_CLOUD_FUN_0037F510",
         "LVL_10_HRUGIS_CLOUD_FUN_0037F5B0",
         "LVL_10_HRUGIS_CLOUD_FUN_00381D80",
@@ -12135,15 +14435,19 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00398E48",
         "LVL_10_HRUGIS_CLOUD_FUN_0039A628",
         "LVL_10_HRUGIS_CLOUD_FUN_0039A690",
+        "LVL_10_HRUGIS_CLOUD_FUN_003A00B8",
         "LVL_10_HRUGIS_CLOUD_FUN_003A01C8",
         "LVL_10_HRUGIS_CLOUD_FUN_003A0778",
         "LVL_10_HRUGIS_CLOUD_FUN_003A0BA0",
         "LVL_10_HRUGIS_CLOUD_FUN_003A1068",
+        "LVL_10_HRUGIS_CLOUD_FUN_003A2B60",
         "LVL_10_HRUGIS_CLOUD_FUN_003A2C70",
         "LVL_10_HRUGIS_CLOUD_FUN_003A3218",
         "LVL_10_HRUGIS_CLOUD_FUN_003A3618",
         "LVL_10_HRUGIS_CLOUD_FUN_003A36F0",
+        "LVL_10_HRUGIS_CLOUD_FUN_003A8088",
         "LVL_10_HRUGIS_CLOUD_FUN_003B0DC8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003B36D0",
         "LVL_10_HRUGIS_CLOUD_FUN_003B58A8",
         "LVL_10_HRUGIS_CLOUD_FUN_003B6768",
         "LVL_10_HRUGIS_CLOUD_FUN_003B9BE0",
@@ -12158,19 +14462,32 @@
         "LVL_10_HRUGIS_CLOUD_FUN_003D9350",
         "LVL_10_HRUGIS_CLOUD_FUN_003DC290",
         "LVL_10_HRUGIS_CLOUD_FUN_003DF4B8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003DF660",
         "LVL_10_HRUGIS_CLOUD_FUN_003DFF10",
         "LVL_10_HRUGIS_CLOUD_FUN_003E5E90",
         "LVL_10_HRUGIS_CLOUD_FUN_003E6360",
+        "LVL_10_HRUGIS_CLOUD_FUN_003E63E8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003E6608",
+        "LVL_10_HRUGIS_CLOUD_FUN_003E79D8",
         "LVL_10_HRUGIS_CLOUD_FUN_003E9908",
+        "LVL_10_HRUGIS_CLOUD_FUN_003E9990",
+        "LVL_10_HRUGIS_CLOUD_FUN_003E99F8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003EC4B0",
+        "LVL_10_HRUGIS_CLOUD_FUN_003EC5D8",
         "LVL_10_HRUGIS_CLOUD_FUN_003EFBE8",
+        "LVL_10_HRUGIS_CLOUD_FUN_003EFC70",
         "LVL_10_HRUGIS_CLOUD_FUN_003F1D58",
         "LVL_10_HRUGIS_CLOUD_FUN_003F2190",
         "LVL_10_HRUGIS_CLOUD_FUN_003F2748",
         "LVL_10_HRUGIS_CLOUD_FUN_003F2E20",
         "LVL_10_HRUGIS_CLOUD_FUN_003F3248",
+        "LVL_10_HRUGIS_CLOUD_FUN_003F5D70",
+        "LVL_10_HRUGIS_CLOUD_FUN_003F5E98",
         "LVL_10_HRUGIS_CLOUD_FUN_003F6BA8",
         "LVL_10_HRUGIS_CLOUD_FUN_003F8CE0",
+        "LVL_10_HRUGIS_CLOUD_FUN_003F8D68",
         "LVL_10_HRUGIS_CLOUD_FUN_003FA088",
+        "LVL_10_HRUGIS_CLOUD_FUN_003FA110",
         "LVL_10_HRUGIS_CLOUD_FUN_003FAB60",
         "LVL_10_HRUGIS_CLOUD_FUN_003FD2D8",
         "LVL_10_HRUGIS_CLOUD_FUN_004006F8",
@@ -12184,10 +14501,15 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00432A88",
         "LVL_10_HRUGIS_CLOUD_FUN_00435230",
         "LVL_10_HRUGIS_CLOUD_FUN_00435298",
+        "LVL_10_HRUGIS_CLOUD_FUN_0043A648",
         "LVL_10_HRUGIS_CLOUD_FUN_0043AED0",
+        "LVL_10_HRUGIS_CLOUD_FUN_0043E3A8",
+        "LVL_10_HRUGIS_CLOUD_FUN_004407B8",
+        "LVL_10_HRUGIS_CLOUD_FUN_00442700",
         "LVL_10_HRUGIS_CLOUD_FUN_00443320",
         "LVL_10_HRUGIS_CLOUD_FUN_004486F0",
         "LVL_10_HRUGIS_CLOUD_FUN_004488A0",
+        "LVL_10_HRUGIS_CLOUD_FUN_00448BA8",
         "LVL_10_HRUGIS_CLOUD_FUN_00449610",
         "LVL_10_HRUGIS_CLOUD_FUN_00449618",
         "LVL_10_HRUGIS_CLOUD_FUN_00449770",
@@ -12199,6 +14521,16 @@
         "LVL_10_HRUGIS_CLOUD_FUN_0044BB38",
         "LVL_10_HRUGIS_CLOUD_FUN_0044C358",
         "LVL_10_HRUGIS_CLOUD_FUN_0044DC00",
+        "LVL_10_HRUGIS_CLOUD_FUN_0044E920",
+        "LVL_10_HRUGIS_CLOUD_FUN_0044EA80",
+        "LVL_10_HRUGIS_CLOUD_FUN_0044ED60",
+        "LVL_10_HRUGIS_CLOUD_FUN_0044F018",
+        "LVL_10_HRUGIS_CLOUD_FUN_0044F5A0",
+        "LVL_10_HRUGIS_CLOUD_FUN_00450028",
+        "LVL_10_HRUGIS_CLOUD_FUN_004502F0",
+        "LVL_10_HRUGIS_CLOUD_FUN_004506B8",
+        "LVL_10_HRUGIS_CLOUD_FUN_00450968",
+        "LVL_10_HRUGIS_CLOUD_FUN_00450B60",
         "LVL_10_HRUGIS_CLOUD_FUN_00450D58",
         "LVL_10_HRUGIS_CLOUD_FUN_00450EF8",
         "LVL_10_HRUGIS_CLOUD_FUN_00450F30",
@@ -12211,7 +14543,9 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00455C28",
         "LVL_10_HRUGIS_CLOUD_FUN_00456148",
         "LVL_10_HRUGIS_CLOUD_FUN_00456168",
+        "LVL_10_HRUGIS_CLOUD_FUN_00456588",
         "LVL_10_HRUGIS_CLOUD_FUN_00456D48",
+        "LVL_10_HRUGIS_CLOUD_FUN_00457FE8",
         "LVL_10_HRUGIS_CLOUD_FUN_0045AA88",
         "LVL_10_HRUGIS_CLOUD_FUN_0045ACD0",
         "LVL_10_HRUGIS_CLOUD_FUN_0045BD30",
@@ -12225,8 +14559,11 @@
         "LVL_10_HRUGIS_CLOUD_FUN_00460E10",
         "LVL_10_HRUGIS_CLOUD_FUN_004611B0",
         "LVL_10_HRUGIS_CLOUD_FUN_004617D8",
+        "LVL_10_HRUGIS_CLOUD_FUN_00461868",
         "LVL_10_HRUGIS_CLOUD_FUN_004631A0",
         "LVL_10_HRUGIS_CLOUD_FUN_004632A0",
+        "LVL_10_HRUGIS_CLOUD_FUN_00463510",
+        "LVL_10_HRUGIS_CLOUD_FUN_004639C0",
         "LVL_10_HRUGIS_CLOUD_FUN_00464A38",
         "LVL_10_HRUGIS_CLOUD_FUN_00464AE0",
         "LVL_10_HRUGIS_CLOUD_FUN_003240A0",
@@ -12278,12 +14615,12 @@
         "LVL_10_HRUGIS_CLOUD_FUN_002F1D10"
       ]
     },
-    "source_sha256": "e97ccd1bb6670f20a917035bfc840b1fe416955f73b01962532fbb6db559d694",
+    "source_sha256": "87cc67abdfd2d98ecb8b8ca5019bb1d412a41e863020ee6a9fb231608c824f67",
     "state": "integrated",
     "target": "SCUS_972.68",
     "tools": {
-      "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-      "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+      "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+      "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
       "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
       "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
     }
@@ -12832,23 +15169,23 @@
       "state": "matched_unintegrated",
       "target": "SCUS_972.68",
       "tools": {
-        "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-        "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+        "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+        "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
         "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
         "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
       }
     },
     "object_sha256": "4216c905a983b67bd348b86ac628d248c5dd4921a8cfc4a2adbcc31cdbeb4593",
     "review_path": "progress/level-g8/10_hrugis_cloud.json",
-    "review_sha256": "749e8deffacef5434c00e8b00d2931092b94f163bd937e092e5e6a8b31b81225",
+    "review_sha256": "91814947c756ab65e77505325955764ee6ad26f0f837aa2417134049545ae404",
     "source": "candidates/levels/10_hrugis_cloud-g8.c"
   },
-  "source_sha256": "e97ccd1bb6670f20a917035bfc840b1fe416955f73b01962532fbb6db559d694",
+  "source_sha256": "87cc67abdfd2d98ecb8b8ca5019bb1d412a41e863020ee6a9fb231608c824f67",
   "state": "integrated",
   "target": "SCUS_972.68",
   "tools": {
-    "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-    "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+    "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
   }

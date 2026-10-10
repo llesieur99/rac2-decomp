@@ -16,7 +16,7 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-CC1 = "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6"
+CC1 = "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95"
 STATES = {"queued", "blocked", "stopped", "exact_private", "integrated", "done"}
 SAFE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]*\Z")
 HASH = re.compile(r"[0-9a-f]{64}\Z")
@@ -853,6 +853,8 @@ def main(argv=None):
     f.add_argument("--references", type=Path, help="Private pinned boot/level reference root when needed")
     f.add_argument("--task", action="append", default=[], help="Candidate to close after validation; repeat as needed")
     f.add_argument("--apply", action="store_true", help="Publish the validated staged files; default only prepares them")
+    f.add_argument("--maintainer-test", action="append", default=[],
+                   help="Primary maintainer only: targeted local test module; repeat as needed. Full queue suite remains mandatory")
     subs.add_parser("seed-history")
     subs.add_parser("refresh-history")
     subs.add_parser("import-legacy").add_argument("markdown", type=Path)
@@ -901,7 +903,7 @@ def main(argv=None):
         from campaign_finalize import finalize
         result = finalize(store, repo, args.action, manifest=args.manifest,
                           output=args.output, tasks=tuple(args.task), apply=args.apply,
-                          references=args.references)
+                          references=args.references, maintainer_tests=tuple(args.maintainer_test))
     elif args.command == "seed-history":
         result = seed_history(store, repo)
     elif args.command == "refresh-history":

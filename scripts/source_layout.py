@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from functools import lru_cache
 import hashlib
 import json
 from pathlib import Path
@@ -31,6 +32,29 @@ SHIP_CLEAR_VARIANT = b"void @@FUNCTION@@(int *object) {\n    object[0] = 0;\n   
 # authored body is the family identity, so any program may anchor one. The
 # legacy anchor program keeps its historical family id spelling.
 BASE_SEED_PLACEMENTS = (
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_002B91C0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_002D3960"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0033F0C8"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00321030"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00335810"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00387408"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003E3890"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_002C9228"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003CBE28"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003DCAC8"),
+    ("10_hrugis_cloud", "LVL_10_HRUGIS_CLOUD_FUN_002EF770"),
+    ("10_hrugis_cloud", "LVL_10_HRUGIS_CLOUD_FUN_002C11A0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003BFDE8"),
+    ("15_gorn", "LVL_15_GORN_FUN_00381708"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_002DC3E0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_004283C8"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0035DCA8"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003046D0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00424070"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003255A8"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0035DEF0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_004445B0"),
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0034E270"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_002E3738"),
     ("11_joba", "LVL_11_JOBA_FUN_004A5E78"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00420B98"),
@@ -175,6 +199,29 @@ BASE_SEED_PLACEMENTS = (
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0042B438"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0042B5E8"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_0035F8D0"),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_002AB108'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0033A3E0'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003276B8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003DE288'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_002B1230'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_00426480'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0030C930'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003319F8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_00348500'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003391E0'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003212F8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_00446708'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003E39B8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0030C010'),
+    ('10_hrugis_cloud', 'LVL_10_HRUGIS_CLOUD_FUN_00347890'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0039B168'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_004392D0'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0042B8F0'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_003412B8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_00446258'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_004317C8'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_00431668'),
+    ('0_aranos_tutorial', 'LVL_0_ARANOS_TUTORIAL_FUN_0033F678'),
 )
 BASE_SEED_SYMBOLS = tuple(symbol for _, symbol in BASE_SEED_PLACEMENTS)
 
@@ -211,7 +258,8 @@ def write_new(path: Path, data: bytes) -> None:
     path.write_bytes(data)
 
 
-def function_span(data: bytes, name: str) -> tuple[int, int]:
+@lru_cache(maxsize=16000)
+def _function_span_cached(data: bytes, name: str) -> tuple[int, int]:
     """Locate a catalogued definition and lex braces outside comments/strings."""
     pattern = rb"(?m)^[A-Za-z_][^;{}]*?\b" + re.escape(name.encode()) + rb"\s*\([^;{}]*?\)\s*\{"
     hits = list(re.finditer(pattern, data))
@@ -253,6 +301,14 @@ def function_span(data: bytes, name: str) -> tuple[int, int]:
                 return start, pos + 1
         pos += 1
     raise ValueError(f"unterminated definition: {name}")
+
+
+def function_span(data: bytes, name: str) -> tuple[int, int]:
+    """Reuse only exact immutable source bytes/name; freshness stays external."""
+    if type(data) is bytes and type(name) is str:
+        return _function_span_cached(data, name)
+    # Mutable/invalid/subclass inputs retain the original uncached API behavior.
+    return _function_span_cached.__wrapped__(data, name)
 
 
 def normalized_body(data: bytes, name: str, externals: dict) -> tuple[bytes, dict]:

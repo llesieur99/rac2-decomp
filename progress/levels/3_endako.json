@@ -1,51 +1,51 @@
 {
-  "boot_review_sha256": "afee317d6a9eb4e8c629e955d0a2870f94f5eda12c4cfe5980e183f708284c21",
+  "boot_review_sha256": "87d864562d4fce12e905d7cb53232b8bcc3f6f660547323a7f4b6806dfa68074",
   "c_link_object_adapter": {
     "compiled_code_unchanged": true,
-    "compiled_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
+    "compiled_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
     "integration_credit": 0,
     "kind": "reviewed-shared-import-relocation-adapter",
-    "link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
+    "link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
     "new_physical_bytes": 0,
     "relocation_changes": [
       {
         "caller": "FUN_0034F898",
         "caller_address": 4546896,
-        "new_r_info": 111364,
-        "new_symbol_index": 435,
+        "new_r_info": 122116,
+        "new_symbol_index": 477,
         "old_r_info": 67844,
         "old_symbol_index": 265,
         "provider": "FUN_001338C8",
         "provider_address": 1259720,
         "provider_reference_sha256": "df665c024f2c2f2122ca91cb5b61048030b7f98a3df2606d8c91441295d69d2f",
         "provider_size": 36,
-        "r_info_offset": 110272
+        "r_info_offset": 139596
       },
       {
         "caller": "FUN_0034FB20",
         "caller_address": 4547668,
-        "new_r_info": 128260,
-        "new_symbol_index": 501,
+        "new_r_info": 139012,
+        "new_symbol_index": 543,
         "old_r_info": 68100,
         "old_symbol_index": 266,
         "provider": "FUN_00133930",
         "provider_address": 1259824,
         "provider_reference_sha256": "d1b7a40a24b4537c4f9b704b87cafb6001ecaf64ef96c01c869fd05532732474",
         "provider_size": 44,
-        "r_info_offset": 110720
+        "r_info_offset": 140044
       },
       {
         "caller": "FUN_002B7170",
         "caller_address": 3338940,
-        "new_r_info": 142596,
-        "new_symbol_index": 557,
+        "new_r_info": 153348,
+        "new_symbol_index": 599,
         "old_r_info": 67588,
         "old_symbol_index": 264,
         "provider": "FUN_00133490",
         "provider_address": 1258640,
         "provider_reference_sha256": "1c102a1be303b46fbc85f02f327e97d8ecdbbf6635d3458a6454c0c7de75c75a",
         "provider_size": 40,
-        "r_info_offset": 111032
+        "r_info_offset": 140356
       }
     ],
     "schema": 1,
@@ -64,12 +64,12 @@
       {
         "index": 4,
         "name": ".reginfo",
-        "sha256": "c2d3969b3225176d95cc329e9f1b623c332436096048e9022c551cb112907c70"
+        "sha256": "64d8421d1617bb4b885b93d05be3edf7877e0f122dc202fecad75ba433668b99"
       },
       {
         "index": 5,
         "name": ".mdebug",
-        "sha256": "f68b313f458385fdc23576b8b4ed6a90bec6cd0670e3657e4fb9ac9425ceab6f"
+        "sha256": "f6056cff404204a133933b99b885398edfd69800c6d7dc0752b5cc5a72a93e92"
       },
       {
         "index": 6,
@@ -1688,29 +1688,239 @@
       },
       {
         "index": 440,
-        "name": ".shstrtab",
-        "sha256": "cf25a6821455714f54a5c0b81e2a723dff861ae4c7644231093fd15f91279cd2"
-      },
-      {
-        "index": 441,
-        "name": ".symtab",
-        "sha256": "0f6fa54a0b3b657de8e7f47c7adf996fb081d7796c96d521df415dd0dd426008"
+        "name": ".text.FUN_002D4E10",
+        "sha256": "a8676595c567569004a5593e8ec58c810dd0c27f0362c0bdcf4a022103432611"
       },
       {
         "index": 442,
+        "name": ".text.FUN_0034EC70",
+        "sha256": "12a13f773a4450fbc9d7e9bc664115f322058a9f643f21ba85b1ae0322e5b5fb"
+      },
+      {
+        "index": 444,
+        "name": ".text.FUN_002E46C0",
+        "sha256": "dce4524975475049e746d94bca280f5a9b9f19693e77a99c02a2739983a1e687"
+      },
+      {
+        "index": 446,
+        "name": ".text.FUN_00293CA8",
+        "sha256": "e74b7eb12a26601c43476977470e0713c48f0c39046031809fd38008a6af5d7c"
+      },
+      {
+        "index": 448,
+        "name": ".text.FUN_002E4478",
+        "sha256": "19eb8bea954758107bfa70beeb67787dd158173a05733753b1cf58d0a4308a46"
+      },
+      {
+        "index": 450,
+        "name": ".text.FUN_00274128",
+        "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+      },
+      {
+        "index": 452,
+        "name": ".text.FUN_00274208",
+        "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+      },
+      {
+        "index": 454,
+        "name": ".text.FUN_0031A998",
+        "sha256": "c59e0502110792ab05e18abe5a69eb3869c2588ecdab762c9af03f2dd0ac4f45"
+      },
+      {
+        "index": 456,
+        "name": ".text.FUN_00328D98",
+        "sha256": "ada74c42c5ce6f5f11c2faed30219547b4f71049cae441483fe9413baf3dbc91"
+      },
+      {
+        "index": 458,
+        "name": ".text.FUN_0031E8F8",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 460,
+        "name": ".text.FUN_00328D30",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 462,
+        "name": ".text.FUN_0032B378",
+        "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+      },
+      {
+        "index": 464,
+        "name": ".text.FUN_00304B68",
+        "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+      },
+      {
+        "index": 466,
+        "name": ".text.FUN_00307330",
+        "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+      },
+      {
+        "index": 468,
+        "name": ".text.FUN_002BE9B8",
+        "sha256": "47ef2422a86b8f1480709500f0c502bf995875c378fba7e72f7217fa4c492a40"
+      },
+      {
+        "index": 470,
+        "name": ".text.FUN_002AD330",
+        "sha256": "7353422adf1ba7e824cb4403384ab03670e0aa1a54e5361c81bc5da78ad2c537"
+      },
+      {
+        "index": 472,
+        "name": ".text.FUN_002C7AE8",
+        "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+      },
+      {
+        "index": 474,
+        "name": ".text.FUN_002C87B0",
+        "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+      },
+      {
+        "index": 476,
+        "name": ".text.FUN_0033BD38",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 478,
+        "name": ".text.FUN_0033C178",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 480,
+        "name": ".text.FUN_0033C430",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 482,
+        "name": ".text.FUN_0033C9B8",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 484,
+        "name": ".text.FUN_0033D440",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 486,
+        "name": ".text.FUN_0033D708",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 488,
+        "name": ".text.FUN_0033DAD0",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 490,
+        "name": ".text.FUN_0033DD80",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 492,
+        "name": ".text.FUN_0033DF78",
+        "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+      },
+      {
+        "index": 494,
+        "name": ".text.FUN_0033BE98",
+        "sha256": "ab40ac7b3980ddde7f3bcc832fa16d4679f87a122bfa26c58a539f2caa34a86c"
+      },
+      {
+        "index": 496,
+        "name": ".text.FUN_00350918",
+        "sha256": "131da89b0cd6ab731d1592a063b35ab31f231814fef35421bcab70b3f24101f7"
+      },
+      {
+        "index": 498,
+        "name": ".text.FUN_002C8F40",
+        "sha256": "420a1985ac5201b95c99f5ca4559d621b28402c475f737ee04f8df938181df1c"
+      },
+      {
+        "index": 500,
+        "name": ".text.FUN_00335FC8",
+        "sha256": "b86d2f5886fb6421e27ab73126bf55b37a925c616d33d9e1c0af4f7328cfaa0f"
+      },
+      {
+        "index": 502,
+        "name": ".text.FUN_003439A0",
+        "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+      },
+      {
+        "index": 504,
+        "name": ".text.FUN_00345400",
+        "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+      },
+      {
+        "index": 506,
+        "name": ".text.FUN_00310D78",
+        "sha256": "ccbea74f6d9ce9e7c3ceff7f683b22e4e33fa8e381334e8f22e59a3ffa447004"
+      },
+      {
+        "index": 508,
+        "name": ".text.FUN_002BC8E8",
+        "sha256": "7a52e9f3918046fb461bb5dc39bfed862d338e6eb4dcf23258ddcd3d2e212489"
+      },
+      {
+        "index": 510,
+        "name": ".text.FUN_0029AF98",
+        "sha256": "57a99eb12379fba8033071dd8c5369be58457a175511a9403d322b2e21d81196"
+      },
+      {
+        "index": 512,
+        "name": ".text.FUN_002AD5F8",
+        "sha256": "6c90c644dfa6208696e4a2d2414afd39f4155f065b4c1eb91816da5eac2f3994"
+      },
+      {
+        "index": 514,
+        "name": ".text.FUN_002C2080",
+        "sha256": "50a1c69b99eb97473f174de501f579ba943403ec222f0188bda2b1e725c46b17"
+      },
+      {
+        "index": 516,
+        "name": ".text.FUN_002CF0A0",
+        "sha256": "216fe722f15b90e1eb2ddb0624c178247370f97a0aa89982bdec78bc03c1cacd"
+      },
+      {
+        "index": 518,
+        "name": ".text.FUN_002BAF68",
+        "sha256": "8c604857278dcd0d148203087aaa43bd706eabf5b32560885aa1b8f20a7998d2"
+      },
+      {
+        "index": 520,
+        "name": ".text.FUN_002B1A80",
+        "sha256": "59346241c50a8954d9c86ee45a17f708967a997dcc68f1013d64ac01fe3a02d5"
+      },
+      {
+        "index": 522,
+        "name": ".text.FUN_002C7538",
+        "sha256": "fc153d244b019c43c19aef4072ddd8fe29f4df94ef5e07877d701eb4e9ceb4ad"
+      },
+      {
+        "index": 524,
+        "name": ".shstrtab",
+        "sha256": "39f788becf3fbfef0474aa22e408ac9d76d505a6579c2d46287d5b8f16eb2a1e"
+      },
+      {
+        "index": 525,
+        "name": ".symtab",
+        "sha256": "d39399bcddc2eff172381708f2f0b7615bff647bf1853534ffbd47bb81318b70"
+      },
+      {
+        "index": 526,
         "name": ".strtab",
-        "sha256": "6add012a7b2c038503b5b6c96edbf3697e91c4a90988170c762399f422a99359"
+        "sha256": "4a9259e4fbba7611bd464492187952484f070e8a5d6aaf082592033212a86ab8"
       }
     ]
   },
-  "c_link_object_adapter_sha256": "0f3fe351bd585c6ca88b6200369b97b58941ca5b80de34e3df2ff4407b02d0ad",
-  "c_link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
-  "c_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
-  "candidate_elf_sha256": "2df71bff08f7bf9d680aae37726bb1b37cea57f7c616371a3cfa23c099555ee4",
+  "c_link_object_adapter_sha256": "4cb35a6baece49a17cd5eb76d43db29dbece78ddec7611c90093abeeee89c0e2",
+  "c_link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
+  "c_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
+  "candidate_elf_sha256": "0d7573646b96c458be636e3656cd259b81de8bba7a1b926e065bb30491c67cdb",
   "candidate_entry": 2794248,
   "candidate_source": "candidates/boot.c",
   "catalog_sha256": "fc792ac26dd3bbec8f54565bc6a44fe3ed2c05756e5f66981ceb3d9c294fb7b0",
-  "dependency_sha256": "c023c6b74cb56adf6ab902a88aaf47e419aa901541db8a805f3b2751ed8b1243",
+  "dependency_sha256": "6a6d7d749a87323018261a9769f8f2b276a879c99207dfcfedc633c525517397",
   "full_level_gate": {
     "bytes_compared": 2821104,
     "matched": true,
@@ -4028,6 +4238,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_002AC8F8"
     },
     {
+      "address": 2804624,
+      "candidate_sha256": "78b011a08ca90778a67bdcc3235b0f84aac5b605b05ac6c6a0eb747eea994381",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "78b011a08ca90778a67bdcc3235b0f84aac5b605b05ac6c6a0eb747eea994381",
+      "size": 440,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002ACB90"
+    },
+    {
       "address": 2807776,
       "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4040,6 +4264,20 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_002AD7E0"
+    },
+    {
+      "address": 2821784,
+      "candidate_sha256": "99bc76b5a69281fd2d460fbb2e13235822b8a4ee2e7b79d9226630d399a971a3",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "99bc76b5a69281fd2d460fbb2e13235822b8a4ee2e7b79d9226630d399a971a3",
+      "size": 208,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002B0E98"
     },
     {
       "address": 2832168,
@@ -4140,6 +4378,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_002B4380"
     },
     {
+      "address": 2845424,
+      "candidate_sha256": "77c6d9847eeb5f149c523e60e47e64542f4bc810c5d742ceda2fe7db378c543f",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "77c6d9847eeb5f149c523e60e47e64542f4bc810c5d742ceda2fe7db378c543f",
+      "size": 212,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002B6AF0"
+    },
+    {
       "address": 2853984,
       "candidate_sha256": "44096337db3ef2dead087fe4023d99ef94fef08cdc91bbbefc8f38dc33eb7522",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4166,6 +4418,20 @@
       "size": 64,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_002B9358"
+    },
+    {
+      "address": 2877560,
+      "candidate_sha256": "087343f480a7bfe781bf84d51779ceb1e77ff7f9b858b60baf01c6842b153cbe",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "087343f480a7bfe781bf84d51779ceb1e77ff7f9b858b60baf01c6842b153cbe",
+      "size": 444,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002BE878"
     },
     {
       "address": 2959872,
@@ -4266,6 +4532,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_002D4200"
     },
     {
+      "address": 2966504,
+      "candidate_sha256": "a0eb0b1bb5178f77ec555c21cf5f1b1ef864eac716a0b7ddd37970230ad74eeb",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "a0eb0b1bb5178f77ec555c21cf5f1b1ef864eac716a0b7ddd37970230ad74eeb",
+      "size": 248,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002D43E8"
+    },
+    {
       "address": 2968120,
       "candidate_sha256": "151d11ef59d410e5b1971cd6b00ea66786ba5c372f5825a0026f16bbd66b6c46",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4278,6 +4558,20 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_002D4A38"
+    },
+    {
+      "address": 2970896,
+      "candidate_sha256": "cda2a86f0f98faad1aa149f74aafae27000ea693c6ef57d6991c57dbb2e0529c",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "cda2a86f0f98faad1aa149f74aafae27000ea693c6ef57d6991c57dbb2e0529c",
+      "size": 496,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002D5510"
     },
     {
       "address": 2978304,
@@ -4418,6 +4712,34 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_002DCF60"
+    },
+    {
+      "address": 3002216,
+      "candidate_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002DCF68"
+    },
+    {
+      "address": 3002440,
+      "candidate_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_002DD048"
     },
     {
       "address": 3003816,
@@ -4700,6 +5022,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_003018C8"
     },
     {
+      "address": 3168648,
+      "candidate_sha256": "c1651fd7567fef29855877cb952f8d1e99065598cf23b6f2a3bb23fa086b9fdd",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c1651fd7567fef29855877cb952f8d1e99065598cf23b6f2a3bb23fa086b9fdd",
+      "size": 132,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00305988"
+    },
+    {
       "address": 3170984,
       "candidate_sha256": "c7a60a61ce9a76559a9f70d7fed39faff8e933713e8243c959a08a88cdd3dbb9",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4810,6 +5146,90 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_0030A620"
+    },
+    {
+      "address": 3199688,
+      "candidate_sha256": "fea618e46aab18c30654ad725c6424ef2269287ff6b3314e9c5bd0d9bf7cbde5",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "fea618e46aab18c30654ad725c6424ef2269287ff6b3314e9c5bd0d9bf7cbde5",
+      "size": 276,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030D2C8"
+    },
+    {
+      "address": 3202024,
+      "candidate_sha256": "c134e4398b740a2a599bf30b245bcb8012a7f00c833716a49cfc92709e56d302",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c134e4398b740a2a599bf30b245bcb8012a7f00c833716a49cfc92709e56d302",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030DBE8"
+    },
+    {
+      "address": 3203608,
+      "candidate_sha256": "19ca76b305d3d318eb7f336c4ed6835ce638ec16978e7827ab244b353b755baf",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "19ca76b305d3d318eb7f336c4ed6835ce638ec16978e7827ab244b353b755baf",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030E218"
+    },
+    {
+      "address": 3204200,
+      "candidate_sha256": "8fcdcb548e17eeea505a221a84d7769df86de8966c39dbd41960e91c76286df1",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "8fcdcb548e17eeea505a221a84d7769df86de8966c39dbd41960e91c76286df1",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030E468"
+    },
+    {
+      "address": 3204248,
+      "candidate_sha256": "bd6ecc0d92d3dea7d24b6657e868e5f5c3406a064568a78b6fa7bdb51c26897a",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "bd6ecc0d92d3dea7d24b6657e868e5f5c3406a064568a78b6fa7bdb51c26897a",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030E498"
+    },
+    {
+      "address": 3207336,
+      "candidate_sha256": "47687b192d3a6a8b5f549fbe4ccd2cf4ffc6e61ee1754e125bed528984ab9630",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "47687b192d3a6a8b5f549fbe4ccd2cf4ffc6e61ee1754e125bed528984ab9630",
+      "size": 48,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0030F0A8"
     },
     {
       "address": 3211632,
@@ -4938,6 +5358,34 @@
       "symbol": "LVL_3_ENDAKO_FUN_00321810"
     },
     {
+      "address": 3285976,
+      "candidate_sha256": "5a22bbadd59107395471d1b4bca758f49eff4e0e9dd57225946adaaad70166cc",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "5a22bbadd59107395471d1b4bca758f49eff4e0e9dd57225946adaaad70166cc",
+      "size": 320,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003223D8"
+    },
+    {
+      "address": 3286688,
+      "candidate_sha256": "1e233f041a97705db8393947418ca221c1ce618d40f2df2a0555db82f0b1aad3",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "1e233f041a97705db8393947418ca221c1ce618d40f2df2a0555db82f0b1aad3",
+      "size": 244,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003226A0"
+    },
+    {
       "address": 3293272,
       "candidate_sha256": "56612a50cc9c3785641d76c7ef2f1a22dcdc326fbfcfeba37d2ba35f90168456",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4952,6 +5400,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_00324058"
     },
     {
+      "address": 3299624,
+      "candidate_sha256": "134ffd23cb854ba0a792c247db02c4d177e754cf0193e940e7af96f7c125409f",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "134ffd23cb854ba0a792c247db02c4d177e754cf0193e940e7af96f7c125409f",
+      "size": 88,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00325928"
+    },
+    {
       "address": 3307032,
       "candidate_sha256": "d16b3a80f66294c4d78d35a68f401ea9403160c1d13a67817ff47639edbaa5a7",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -4964,6 +5426,20 @@
       "size": 112,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_00327618"
+    },
+    {
+      "address": 3310304,
+      "candidate_sha256": "56700732b0b381bb5a043d895127199db25eff9809c586260fb8dbe1073cf9b0",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "56700732b0b381bb5a043d895127199db25eff9809c586260fb8dbe1073cf9b0",
+      "size": 416,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003282E0"
     },
     {
       "address": 3320560,
@@ -5036,6 +5512,132 @@
       "symbol": "LVL_3_ENDAKO_FUN_0032FDC8"
     },
     {
+      "address": 3354712,
+      "candidate_sha256": "071bfd282a5fd37b1506d451e7528a964a52a5267b2f7d65627bd72c1b4d6869",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "071bfd282a5fd37b1506d451e7528a964a52a5267b2f7d65627bd72c1b4d6869",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00333058"
+    },
+    {
+      "address": 3361240,
+      "candidate_sha256": "5d442be2288a157d60ff87f2eb9c08a9a2baf2520eb5c694942eb67722f2e255",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "5d442be2288a157d60ff87f2eb9c08a9a2baf2520eb5c694942eb67722f2e255",
+      "size": 284,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003349D8"
+    },
+    {
+      "address": 3370608,
+      "candidate_sha256": "7499eb5ed611b6dd772023385564516aa61f8fd1c418c0928f048db191a4718b",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "7499eb5ed611b6dd772023385564516aa61f8fd1c418c0928f048db191a4718b",
+      "size": 516,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00336E70"
+    },
+    {
+      "address": 3384944,
+      "candidate_sha256": "baf64f465e6f2ab2fbb95d1b854ebc524daecb28111e61edfbdc7ee2312bcede",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "baf64f465e6f2ab2fbb95d1b854ebc524daecb28111e61edfbdc7ee2312bcede",
+      "size": 236,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0033A670"
+    },
+    {
+      "address": 3389552,
+      "candidate_sha256": "5a230ec089ad2a6a5ef95c070beffe2a6659ca03ed04ee2ad10ac320c801bd2e",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "5a230ec089ad2a6a5ef95c070beffe2a6659ca03ed04ee2ad10ac320c801bd2e",
+      "size": 432,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0033B870"
+    },
+    {
+      "address": 3409240,
+      "candidate_sha256": "3b482cf597e097db5787b757fcc22e8d76e27234bf99d37b25fbe49619234030",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "3b482cf597e097db5787b757fcc22e8d76e27234bf99d37b25fbe49619234030",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00340558"
+    },
+    {
+      "address": 3410696,
+      "candidate_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+      "size": 204,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00340B08"
+    },
+    {
+      "address": 3414304,
+      "candidate_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+      "size": 204,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00341920"
+    },
+    {
+      "address": 3417928,
+      "candidate_sha256": "ce64eae3da9412f2d502cb4d86001a66d46b689cd653e7384d8e9bb1f0ce5bbc",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "ce64eae3da9412f2d502cb4d86001a66d46b689cd653e7384d8e9bb1f0ce5bbc",
+      "size": 344,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00342748"
+    },
+    {
       "address": 3419208,
       "candidate_sha256": "ebca143726974110e29d0bfcb98a049bd0855fc47004d282f041d760cf6454fc",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5104,6 +5706,20 @@
       "size": 48,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_003483F8"
+    },
+    {
+      "address": 3447768,
+      "candidate_sha256": "89587da37b686d3247fc9e050fad89ac09893e407a3fd2bb219f31aea92ec6a4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "89587da37b686d3247fc9e050fad89ac09893e407a3fd2bb219f31aea92ec6a4",
+      "size": 228,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00349BD8"
     },
     {
       "address": 3463152,
@@ -5176,6 +5792,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_0034DEC8"
     },
     {
+      "address": 3471688,
+      "candidate_sha256": "4705d8d911a1514ad348cc026f96d7a8a8db4e6ae7918daa25a995a38b7e1805",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "4705d8d911a1514ad348cc026f96d7a8a8db4e6ae7918daa25a995a38b7e1805",
+      "size": 52,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0034F948"
+    },
+    {
       "address": 3473528,
       "candidate_sha256": "15f130db6955cec3c4728b361028808efbc47c8a1b5d9548799c6729248e89e1",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5216,6 +5846,34 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_00359D40"
+    },
+    {
+      "address": 3535744,
+      "candidate_sha256": "72c5b8610ee18fefa496b97e9851aee924f5cbfc277152437a00ca225fc2b7e1",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72c5b8610ee18fefa496b97e9851aee924f5cbfc277152437a00ca225fc2b7e1",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0035F380"
+    },
+    {
+      "address": 3536328,
+      "candidate_sha256": "09f14d3ab03d47e1a50f509f1ee072f7b24c1e1c9ec7d342d13b59943f9dd37c",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "09f14d3ab03d47e1a50f509f1ee072f7b24c1e1c9ec7d342d13b59943f9dd37c",
+      "size": 68,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0035F5C8"
     },
     {
       "address": 3540952,
@@ -5428,6 +6086,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_003834E8"
     },
     {
+      "address": 3720624,
+      "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0038C5B0"
+    },
+    {
       "address": 3720896,
       "candidate_sha256": "54a992af2cedb419e273561905e14f58698c0d351d083f43ead46ac03601d7ca",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5482,6 +6154,20 @@
       "size": 144,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_0038D560"
+    },
+    {
+      "address": 3731544,
+      "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0038F058"
     },
     {
       "address": 3731816,
@@ -5540,6 +6226,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_0038FBE8"
     },
     {
+      "address": 3757248,
+      "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+      "size": 172,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003954C0"
+    },
+    {
       "address": 3793408,
       "candidate_sha256": "90de55ff7819c75af3df5ddb3b508af1121f63c71946a9e0d9f5441436d606cd",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5552,6 +6252,20 @@
       "size": 52,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_0039E200"
+    },
+    {
+      "address": 3805104,
+      "candidate_sha256": "c336aa6a44917f59810badf7c0f6eb9ea55065bceb9132cce4e3bb35a7b44fd6",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c336aa6a44917f59810badf7c0f6eb9ea55065bceb9132cce4e3bb35a7b44fd6",
+      "size": 288,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003A0FB0"
     },
     {
       "address": 3814024,
@@ -5806,6 +6520,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_003DBC08"
     },
     {
+      "address": 4046256,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003DBDB0"
+    },
+    {
       "address": 4048480,
       "candidate_sha256": "52958ad1e6d60427fb8db537e0903da892fabd12c8874e51e5de52aac6c5f634",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5834,6 +6562,48 @@
       "symbol": "LVL_3_ENDAKO_FUN_003E69A0"
     },
     {
+      "address": 4090408,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003E6A28"
+    },
+    {
+      "address": 4090952,
+      "candidate_sha256": "4a9a9549d0ab9d2e164792343a936d443af35fdfd2fbeecfe8796cd5f580897e",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "4a9a9549d0ab9d2e164792343a936d443af35fdfd2fbeecfe8796cd5f580897e",
+      "size": 384,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003E6C48"
+    },
+    {
+      "address": 4096024,
+      "candidate_sha256": "672f981a149b36020f37cbbb516924a350ff56f37f4ea5dd440fb84db9279bb1",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "672f981a149b36020f37cbbb516924a350ff56f37f4ea5dd440fb84db9279bb1",
+      "size": 212,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003E8018"
+    },
+    {
       "address": 4104008,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5848,6 +6618,62 @@
       "symbol": "LVL_3_ENDAKO_FUN_003E9F48"
     },
     {
+      "address": 4104144,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003E9FD0"
+    },
+    {
+      "address": 4104248,
+      "candidate_sha256": "16ff8c11728551dcee09884e4fb7b7d0fc1226f4336daecc65cfc8cd6cd7d6f3",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "16ff8c11728551dcee09884e4fb7b7d0fc1226f4336daecc65cfc8cd6cd7d6f3",
+      "size": 384,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003EA038"
+    },
+    {
+      "address": 4115184,
+      "candidate_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+      "size": 296,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003ECAF0"
+    },
+    {
+      "address": 4115480,
+      "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003ECC18"
+    },
+    {
       "address": 4129320,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5860,6 +6686,20 @@
       "size": 136,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_003F0228"
+    },
+    {
+      "address": 4129456,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003F02B0"
     },
     {
       "address": 4140872,
@@ -5932,6 +6772,34 @@
       "symbol": "LVL_3_ENDAKO_FUN_003F4438"
     },
     {
+      "address": 4169024,
+      "candidate_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+      "size": 296,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003F9D40"
+    },
+    {
+      "address": 4169320,
+      "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003F9E68"
+    },
+    {
       "address": 4170480,
       "candidate_sha256": "90de55ff7819c75af3df5ddb3b508af1121f63c71946a9e0d9f5441436d606cd",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5960,6 +6828,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_003FC428"
     },
     {
+      "address": 4179120,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003FC4B0"
+    },
+    {
       "address": 4184016,
       "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -5972,6 +6854,20 @@
       "size": 136,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_003FD7D0"
+    },
+    {
+      "address": 4184152,
+      "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+      "size": 104,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_003FD858"
     },
     {
       "address": 4186792,
@@ -6142,6 +7038,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_0042CCC0"
     },
     {
+      "address": 4399216,
+      "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+      "size": 92,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00432070"
+    },
+    {
       "address": 4401400,
       "candidate_sha256": "cdad7cf34566e4b082f188bb8504a23c14275575d334b267b507276612ba096f",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -6154,6 +7064,48 @@
       "size": 160,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_004328F8"
+    },
+    {
+      "address": 4414928,
+      "candidate_sha256": "b72f903d55591438c4da28d39fd81a8245fb03cc41762bf175f27d1702145763",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "b72f903d55591438c4da28d39fd81a8245fb03cc41762bf175f27d1702145763",
+      "size": 100,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00435DD0"
+    },
+    {
+      "address": 4424160,
+      "candidate_sha256": "2bc56e45352a367dee768c01680cd41c7991e076730ff3cbbabbdbefce4829dd",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "2bc56e45352a367dee768c01680cd41c7991e076730ff3cbbabbdbefce4829dd",
+      "size": 224,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_004381E0"
+    },
+    {
+      "address": 4432168,
+      "candidate_sha256": "5aa457c69104c3b8aa6eb93397f0c14759cec49e19c50dc0b5500cea841e6a66",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "5aa457c69104c3b8aa6eb93397f0c14759cec49e19c50dc0b5500cea841e6a66",
+      "size": 220,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0043A128"
     },
     {
       "address": 4436000,
@@ -6196,6 +7148,20 @@
       "size": 112,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_0043C558"
+    },
+    {
+      "address": 4442208,
+      "candidate_sha256": "2f7f802e44ae2d010e59a9f0cfc845063e9ee4a48f4c20515fb5659cbdebaf0c",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "2f7f802e44ae2d010e59a9f0cfc845063e9ee4a48f4c20515fb5659cbdebaf0c",
+      "size": 292,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0043C860"
     },
     {
       "address": 4444872,
@@ -6380,6 +7346,146 @@
       "symbol": "LVL_3_ENDAKO_FUN_004418B8"
     },
     {
+      "address": 4466136,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_004425D8"
+    },
+    {
+      "address": 4466488,
+      "candidate_sha256": "7707ba7d89923ce2f0249050292e5fa9afc7ee39ab5f51ee85f94e6b4f798083",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "7707ba7d89923ce2f0249050292e5fa9afc7ee39ab5f51ee85f94e6b4f798083",
+      "size": 396,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00442738"
+    },
+    {
+      "address": 4467224,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00442A18"
+    },
+    {
+      "address": 4467920,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00442CD0"
+    },
+    {
+      "address": 4469336,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00443258"
+    },
+    {
+      "address": 4472032,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00443CE0"
+    },
+    {
+      "address": 4472744,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00443FA8"
+    },
+    {
+      "address": 4473712,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00444370"
+    },
+    {
+      "address": 4474400,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00444620"
+    },
+    {
+      "address": 4474904,
+      "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+      "size": 44,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00444818"
+    },
+    {
       "address": 4475408,
       "candidate_sha256": "847260847b8d9018bc19ffa120d172affc4557cb934d29471b6171d7ba4a0e94",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -6548,6 +7654,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_00449E20"
     },
     {
+      "address": 4497984,
+      "candidate_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+      "size": 144,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0044A240"
+    },
+    {
       "address": 4499968,
       "candidate_sha256": "db85123bfb95fec2c90984d176df65a8d1ba1e868fb989d7e07cef8179b68dd2",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -6560,6 +7680,20 @@
       "size": 312,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_0044AA00"
+    },
+    {
+      "address": 4504736,
+      "candidate_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+      "size": 144,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_0044BCA0"
     },
     {
       "address": 4515648,
@@ -6744,6 +7878,20 @@
       "symbol": "LVL_3_ENDAKO_FUN_00455490"
     },
     {
+      "address": 4543776,
+      "candidate_sha256": "9f6cd68d20f3cc6507ad9355c337719fa3a7716c8cd84151565567ff61ecd967",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "9f6cd68d20f3cc6507ad9355c337719fa3a7716c8cd84151565567ff61ecd967",
+      "size": 56,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00455520"
+    },
+    {
       "address": 4550232,
       "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
       "candidate_source": "candidates/levels/3_endako.c",
@@ -6770,6 +7918,34 @@
       "size": 8,
       "state": "integrated",
       "symbol": "LVL_3_ENDAKO_FUN_00456F58"
+    },
+    {
+      "address": 4551112,
+      "candidate_sha256": "514faebad1e40ca2eb12b2ab5278b0064284c2ff40735f58871ca9d52cc18540",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "514faebad1e40ca2eb12b2ab5278b0064284c2ff40735f58871ca9d52cc18540",
+      "size": 352,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_004571C8"
+    },
+    {
+      "address": 4552312,
+      "candidate_sha256": "fbf17d5c0ab90f52a63f72c995f0ff2aa33150eec7f1e6bdbb2d800c023baa50",
+      "candidate_source": "candidates/levels/3_endako.c",
+      "different_bytes": 0,
+      "integrated": true,
+      "matched": true,
+      "origin": "level-native",
+      "program": "3_endako",
+      "reference_sha256": "fbf17d5c0ab90f52a63f72c995f0ff2aa33150eec7f1e6bdbb2d800c023baa50",
+      "size": 272,
+      "state": "integrated",
+      "symbol": "LVL_3_ENDAKO_FUN_00457678"
     },
     {
       "address": 4556528,
@@ -7473,13 +8649,13 @@
     }
   ],
   "kind": "level-c-integration",
-  "matched_code_bytes": 30192,
+  "matched_code_bytes": 43464,
   "native": {
     "catalog_path": "config/level-native/3_endako.json",
     "object_qualification": {
-      "candidate_elf_sha256": "b816cac229f55c92c493d676da81c751497396cfe631193821d7290c851ea216",
+      "candidate_elf_sha256": "dba64534577b36d23f24531b98f68d59906786cc80d203039e257c69def43140",
       "candidate_source": "candidates/levels/3_endako.c",
-      "catalog_sha256": "865450d7c984409303cbbe40641025c42d572a133fbb46f2889224b425cbdffc",
+      "catalog_sha256": "5c045cf85c9e4801ff4529b1b57a212d5056d03f8c48140fcd0f64aec16feb43",
       "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
       "flags": [
         "-O2",
@@ -7521,6 +8697,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_002AC8F8"
         },
         {
+          "address": 2804624,
+          "candidate_sha256": "78b011a08ca90778a67bdcc3235b0f84aac5b605b05ac6c6a0eb747eea994381",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 440,
+          "reference_sha256": "78b011a08ca90778a67bdcc3235b0f84aac5b605b05ac6c6a0eb747eea994381",
+          "size": 440,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002ACB90"
+        },
+        {
           "address": 2807776,
           "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
           "different_bytes": 0,
@@ -7530,6 +8717,17 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_002AD7E0"
+        },
+        {
+          "address": 2821784,
+          "candidate_sha256": "99bc76b5a69281fd2d460fbb2e13235822b8a4ee2e7b79d9226630d399a971a3",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 208,
+          "reference_sha256": "99bc76b5a69281fd2d460fbb2e13235822b8a4ee2e7b79d9226630d399a971a3",
+          "size": 208,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002B0E98"
         },
         {
           "address": 2832168,
@@ -7609,6 +8807,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_002B4380"
         },
         {
+          "address": 2845424,
+          "candidate_sha256": "77c6d9847eeb5f149c523e60e47e64542f4bc810c5d742ceda2fe7db378c543f",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 212,
+          "reference_sha256": "77c6d9847eeb5f149c523e60e47e64542f4bc810c5d742ceda2fe7db378c543f",
+          "size": 212,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002B6AF0"
+        },
+        {
           "address": 2853984,
           "candidate_sha256": "44096337db3ef2dead087fe4023d99ef94fef08cdc91bbbefc8f38dc33eb7522",
           "different_bytes": 0,
@@ -7629,6 +8838,17 @@
           "size": 64,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_002B9358"
+        },
+        {
+          "address": 2877560,
+          "candidate_sha256": "087343f480a7bfe781bf84d51779ceb1e77ff7f9b858b60baf01c6842b153cbe",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 444,
+          "reference_sha256": "087343f480a7bfe781bf84d51779ceb1e77ff7f9b858b60baf01c6842b153cbe",
+          "size": 444,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002BE878"
         },
         {
           "address": 2959872,
@@ -7708,6 +8928,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_002D4200"
         },
         {
+          "address": 2966504,
+          "candidate_sha256": "a0eb0b1bb5178f77ec555c21cf5f1b1ef864eac716a0b7ddd37970230ad74eeb",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 248,
+          "reference_sha256": "a0eb0b1bb5178f77ec555c21cf5f1b1ef864eac716a0b7ddd37970230ad74eeb",
+          "size": 248,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002D43E8"
+        },
+        {
           "address": 2968120,
           "candidate_sha256": "151d11ef59d410e5b1971cd6b00ea66786ba5c372f5825a0026f16bbd66b6c46",
           "different_bytes": 0,
@@ -7717,6 +8948,17 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_002D4A38"
+        },
+        {
+          "address": 2970896,
+          "candidate_sha256": "cda2a86f0f98faad1aa149f74aafae27000ea693c6ef57d6991c57dbb2e0529c",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 496,
+          "reference_sha256": "cda2a86f0f98faad1aa149f74aafae27000ea693c6ef57d6991c57dbb2e0529c",
+          "size": 496,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002D5510"
         },
         {
           "address": 2978304,
@@ -7827,6 +9069,28 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_002DCF60"
+        },
+        {
+          "address": 3002216,
+          "candidate_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002DCF68"
+        },
+        {
+          "address": 3002440,
+          "candidate_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "7543312ec74ecdb44f92eae3f94a372ede900e7955f16cd630c32d6e50ad31c8",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_002DD048"
         },
         {
           "address": 3003816,
@@ -8049,6 +9313,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_003018C8"
         },
         {
+          "address": 3168648,
+          "candidate_sha256": "c1651fd7567fef29855877cb952f8d1e99065598cf23b6f2a3bb23fa086b9fdd",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 132,
+          "reference_sha256": "c1651fd7567fef29855877cb952f8d1e99065598cf23b6f2a3bb23fa086b9fdd",
+          "size": 132,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00305988"
+        },
+        {
           "address": 3170984,
           "candidate_sha256": "c7a60a61ce9a76559a9f70d7fed39faff8e933713e8243c959a08a88cdd3dbb9",
           "different_bytes": 0,
@@ -8135,6 +9410,72 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_0030A620"
+        },
+        {
+          "address": 3199688,
+          "candidate_sha256": "fea618e46aab18c30654ad725c6424ef2269287ff6b3314e9c5bd0d9bf7cbde5",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 276,
+          "reference_sha256": "fea618e46aab18c30654ad725c6424ef2269287ff6b3314e9c5bd0d9bf7cbde5",
+          "size": 276,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030D2C8"
+        },
+        {
+          "address": 3202024,
+          "candidate_sha256": "c134e4398b740a2a599bf30b245bcb8012a7f00c833716a49cfc92709e56d302",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "c134e4398b740a2a599bf30b245bcb8012a7f00c833716a49cfc92709e56d302",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030DBE8"
+        },
+        {
+          "address": 3203608,
+          "candidate_sha256": "19ca76b305d3d318eb7f336c4ed6835ce638ec16978e7827ab244b353b755baf",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "19ca76b305d3d318eb7f336c4ed6835ce638ec16978e7827ab244b353b755baf",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030E218"
+        },
+        {
+          "address": 3204200,
+          "candidate_sha256": "8fcdcb548e17eeea505a221a84d7769df86de8966c39dbd41960e91c76286df1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "8fcdcb548e17eeea505a221a84d7769df86de8966c39dbd41960e91c76286df1",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030E468"
+        },
+        {
+          "address": 3204248,
+          "candidate_sha256": "bd6ecc0d92d3dea7d24b6657e868e5f5c3406a064568a78b6fa7bdb51c26897a",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "bd6ecc0d92d3dea7d24b6657e868e5f5c3406a064568a78b6fa7bdb51c26897a",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030E498"
+        },
+        {
+          "address": 3207336,
+          "candidate_sha256": "47687b192d3a6a8b5f549fbe4ccd2cf4ffc6e61ee1754e125bed528984ab9630",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 48,
+          "reference_sha256": "47687b192d3a6a8b5f549fbe4ccd2cf4ffc6e61ee1754e125bed528984ab9630",
+          "size": 48,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0030F0A8"
         },
         {
           "address": 3211632,
@@ -8236,6 +9577,28 @@
           "symbol": "LVL_3_ENDAKO_FUN_00321810"
         },
         {
+          "address": 3285976,
+          "candidate_sha256": "5a22bbadd59107395471d1b4bca758f49eff4e0e9dd57225946adaaad70166cc",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 320,
+          "reference_sha256": "5a22bbadd59107395471d1b4bca758f49eff4e0e9dd57225946adaaad70166cc",
+          "size": 320,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003223D8"
+        },
+        {
+          "address": 3286688,
+          "candidate_sha256": "1e233f041a97705db8393947418ca221c1ce618d40f2df2a0555db82f0b1aad3",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 244,
+          "reference_sha256": "1e233f041a97705db8393947418ca221c1ce618d40f2df2a0555db82f0b1aad3",
+          "size": 244,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003226A0"
+        },
+        {
           "address": 3293272,
           "candidate_sha256": "56612a50cc9c3785641d76c7ef2f1a22dcdc326fbfcfeba37d2ba35f90168456",
           "different_bytes": 0,
@@ -8247,6 +9610,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_00324058"
         },
         {
+          "address": 3299624,
+          "candidate_sha256": "134ffd23cb854ba0a792c247db02c4d177e754cf0193e940e7af96f7c125409f",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 88,
+          "reference_sha256": "134ffd23cb854ba0a792c247db02c4d177e754cf0193e940e7af96f7c125409f",
+          "size": 88,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00325928"
+        },
+        {
           "address": 3307032,
           "candidate_sha256": "d16b3a80f66294c4d78d35a68f401ea9403160c1d13a67817ff47639edbaa5a7",
           "different_bytes": 0,
@@ -8256,6 +9630,17 @@
           "size": 112,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_00327618"
+        },
+        {
+          "address": 3310304,
+          "candidate_sha256": "56700732b0b381bb5a043d895127199db25eff9809c586260fb8dbe1073cf9b0",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 416,
+          "reference_sha256": "56700732b0b381bb5a043d895127199db25eff9809c586260fb8dbe1073cf9b0",
+          "size": 416,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003282E0"
         },
         {
           "address": 3320560,
@@ -8313,6 +9698,105 @@
           "symbol": "LVL_3_ENDAKO_FUN_0032FDC8"
         },
         {
+          "address": 3354712,
+          "candidate_sha256": "071bfd282a5fd37b1506d451e7528a964a52a5267b2f7d65627bd72c1b4d6869",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "071bfd282a5fd37b1506d451e7528a964a52a5267b2f7d65627bd72c1b4d6869",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00333058"
+        },
+        {
+          "address": 3361240,
+          "candidate_sha256": "5d442be2288a157d60ff87f2eb9c08a9a2baf2520eb5c694942eb67722f2e255",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 284,
+          "reference_sha256": "5d442be2288a157d60ff87f2eb9c08a9a2baf2520eb5c694942eb67722f2e255",
+          "size": 284,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003349D8"
+        },
+        {
+          "address": 3370608,
+          "candidate_sha256": "7499eb5ed611b6dd772023385564516aa61f8fd1c418c0928f048db191a4718b",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 516,
+          "reference_sha256": "7499eb5ed611b6dd772023385564516aa61f8fd1c418c0928f048db191a4718b",
+          "size": 516,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00336E70"
+        },
+        {
+          "address": 3384944,
+          "candidate_sha256": "baf64f465e6f2ab2fbb95d1b854ebc524daecb28111e61edfbdc7ee2312bcede",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 236,
+          "reference_sha256": "baf64f465e6f2ab2fbb95d1b854ebc524daecb28111e61edfbdc7ee2312bcede",
+          "size": 236,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0033A670"
+        },
+        {
+          "address": 3389552,
+          "candidate_sha256": "5a230ec089ad2a6a5ef95c070beffe2a6659ca03ed04ee2ad10ac320c801bd2e",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 432,
+          "reference_sha256": "5a230ec089ad2a6a5ef95c070beffe2a6659ca03ed04ee2ad10ac320c801bd2e",
+          "size": 432,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0033B870"
+        },
+        {
+          "address": 3409240,
+          "candidate_sha256": "3b482cf597e097db5787b757fcc22e8d76e27234bf99d37b25fbe49619234030",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "3b482cf597e097db5787b757fcc22e8d76e27234bf99d37b25fbe49619234030",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00340558"
+        },
+        {
+          "address": 3410696,
+          "candidate_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 204,
+          "reference_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+          "size": 204,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00340B08"
+        },
+        {
+          "address": 3414304,
+          "candidate_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 204,
+          "reference_sha256": "672692676675bfc721e5f80b6f9b715f644bf51e134860764d6d3a9d5bedc18b",
+          "size": 204,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00341920"
+        },
+        {
+          "address": 3417928,
+          "candidate_sha256": "ce64eae3da9412f2d502cb4d86001a66d46b689cd653e7384d8e9bb1f0ce5bbc",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 344,
+          "reference_sha256": "ce64eae3da9412f2d502cb4d86001a66d46b689cd653e7384d8e9bb1f0ce5bbc",
+          "size": 344,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00342748"
+        },
+        {
           "address": 3419208,
           "candidate_sha256": "ebca143726974110e29d0bfcb98a049bd0855fc47004d282f041d760cf6454fc",
           "different_bytes": 0,
@@ -8366,6 +9850,17 @@
           "size": 48,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_003483F8"
+        },
+        {
+          "address": 3447768,
+          "candidate_sha256": "89587da37b686d3247fc9e050fad89ac09893e407a3fd2bb219f31aea92ec6a4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 228,
+          "reference_sha256": "89587da37b686d3247fc9e050fad89ac09893e407a3fd2bb219f31aea92ec6a4",
+          "size": 228,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00349BD8"
         },
         {
           "address": 3463152,
@@ -8423,6 +9918,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_0034DEC8"
         },
         {
+          "address": 3471688,
+          "candidate_sha256": "4705d8d911a1514ad348cc026f96d7a8a8db4e6ae7918daa25a995a38b7e1805",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 52,
+          "reference_sha256": "4705d8d911a1514ad348cc026f96d7a8a8db4e6ae7918daa25a995a38b7e1805",
+          "size": 52,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0034F948"
+        },
+        {
           "address": 3473528,
           "candidate_sha256": "15f130db6955cec3c4728b361028808efbc47c8a1b5d9548799c6729248e89e1",
           "different_bytes": 0,
@@ -8454,6 +9960,28 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_00359D40"
+        },
+        {
+          "address": 3535744,
+          "candidate_sha256": "72c5b8610ee18fefa496b97e9851aee924f5cbfc277152437a00ca225fc2b7e1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "72c5b8610ee18fefa496b97e9851aee924f5cbfc277152437a00ca225fc2b7e1",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0035F380"
+        },
+        {
+          "address": 3536328,
+          "candidate_sha256": "09f14d3ab03d47e1a50f509f1ee072f7b24c1e1c9ec7d342d13b59943f9dd37c",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 68,
+          "reference_sha256": "09f14d3ab03d47e1a50f509f1ee072f7b24c1e1c9ec7d342d13b59943f9dd37c",
+          "size": 68,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0035F5C8"
         },
         {
           "address": 3540952,
@@ -8621,6 +10149,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_003834E8"
         },
         {
+          "address": 3720624,
+          "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0038C5B0"
+        },
+        {
           "address": 3720896,
           "candidate_sha256": "54a992af2cedb419e273561905e14f58698c0d351d083f43ead46ac03601d7ca",
           "different_bytes": 0,
@@ -8663,6 +10202,17 @@
           "size": 144,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_0038D560"
+        },
+        {
+          "address": 3731544,
+          "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0038F058"
         },
         {
           "address": 3731816,
@@ -8709,6 +10259,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_0038FBE8"
         },
         {
+          "address": 3757248,
+          "candidate_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 172,
+          "reference_sha256": "f300732f104225b1364b37db032c072c8b129611b9e8376cfa9856807d519032",
+          "size": 172,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003954C0"
+        },
+        {
           "address": 3793408,
           "candidate_sha256": "90de55ff7819c75af3df5ddb3b508af1121f63c71946a9e0d9f5441436d606cd",
           "different_bytes": 0,
@@ -8718,6 +10279,17 @@
           "size": 52,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_0039E200"
+        },
+        {
+          "address": 3805104,
+          "candidate_sha256": "c336aa6a44917f59810badf7c0f6eb9ea55065bceb9132cce4e3bb35a7b44fd6",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 288,
+          "reference_sha256": "c336aa6a44917f59810badf7c0f6eb9ea55065bceb9132cce4e3bb35a7b44fd6",
+          "size": 288,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003A0FB0"
         },
         {
           "address": 3814024,
@@ -8918,6 +10490,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_003DBC08"
         },
         {
+          "address": 4046256,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003DBDB0"
+        },
+        {
           "address": 4048480,
           "candidate_sha256": "52958ad1e6d60427fb8db537e0903da892fabd12c8874e51e5de52aac6c5f634",
           "different_bytes": 0,
@@ -8940,6 +10523,39 @@
           "symbol": "LVL_3_ENDAKO_FUN_003E69A0"
         },
         {
+          "address": 4090408,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003E6A28"
+        },
+        {
+          "address": 4090952,
+          "candidate_sha256": "4a9a9549d0ab9d2e164792343a936d443af35fdfd2fbeecfe8796cd5f580897e",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 384,
+          "reference_sha256": "4a9a9549d0ab9d2e164792343a936d443af35fdfd2fbeecfe8796cd5f580897e",
+          "size": 384,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003E6C48"
+        },
+        {
+          "address": 4096024,
+          "candidate_sha256": "672f981a149b36020f37cbbb516924a350ff56f37f4ea5dd440fb84db9279bb1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 212,
+          "reference_sha256": "672f981a149b36020f37cbbb516924a350ff56f37f4ea5dd440fb84db9279bb1",
+          "size": 212,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003E8018"
+        },
+        {
           "address": 4104008,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -8951,6 +10567,50 @@
           "symbol": "LVL_3_ENDAKO_FUN_003E9F48"
         },
         {
+          "address": 4104144,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003E9FD0"
+        },
+        {
+          "address": 4104248,
+          "candidate_sha256": "16ff8c11728551dcee09884e4fb7b7d0fc1226f4336daecc65cfc8cd6cd7d6f3",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 384,
+          "reference_sha256": "16ff8c11728551dcee09884e4fb7b7d0fc1226f4336daecc65cfc8cd6cd7d6f3",
+          "size": 384,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003EA038"
+        },
+        {
+          "address": 4115184,
+          "candidate_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 296,
+          "reference_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+          "size": 296,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003ECAF0"
+        },
+        {
+          "address": 4115480,
+          "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003ECC18"
+        },
+        {
           "address": 4129320,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -8960,6 +10620,17 @@
           "size": 136,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_003F0228"
+        },
+        {
+          "address": 4129456,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003F02B0"
         },
         {
           "address": 4140872,
@@ -9017,6 +10688,28 @@
           "symbol": "LVL_3_ENDAKO_FUN_003F4438"
         },
         {
+          "address": 4169024,
+          "candidate_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 296,
+          "reference_sha256": "dde901dd00e6037e4725cc79a17cd8ada5e39a268bcf20f1edda2a9bee9448a1",
+          "size": 296,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003F9D40"
+        },
+        {
+          "address": 4169320,
+          "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003F9E68"
+        },
+        {
           "address": 4170480,
           "candidate_sha256": "90de55ff7819c75af3df5ddb3b508af1121f63c71946a9e0d9f5441436d606cd",
           "different_bytes": 0,
@@ -9039,6 +10732,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_003FC428"
         },
         {
+          "address": 4179120,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003FC4B0"
+        },
+        {
           "address": 4184016,
           "candidate_sha256": "75985436c135a869936af1bdc5beb8cec619a3df58898e4c2f81c52347b940e7",
           "different_bytes": 0,
@@ -9048,6 +10752,17 @@
           "size": 136,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_003FD7D0"
+        },
+        {
+          "address": 4184152,
+          "candidate_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 104,
+          "reference_sha256": "24d5201356b9f229e4d08d495d89e00c5c1a7b7a2b4d56e6ec9cba20d670dfd4",
+          "size": 104,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_003FD858"
         },
         {
           "address": 4186792,
@@ -9182,6 +10897,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_0042CCC0"
         },
         {
+          "address": 4399216,
+          "candidate_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 92,
+          "reference_sha256": "c059bb30656bc869f6e6caa194c565716dd3c4d211491dd012cd742b90d0db86",
+          "size": 92,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00432070"
+        },
+        {
           "address": 4401400,
           "candidate_sha256": "cdad7cf34566e4b082f188bb8504a23c14275575d334b267b507276612ba096f",
           "different_bytes": 0,
@@ -9191,6 +10917,39 @@
           "size": 160,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_004328F8"
+        },
+        {
+          "address": 4414928,
+          "candidate_sha256": "b72f903d55591438c4da28d39fd81a8245fb03cc41762bf175f27d1702145763",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 100,
+          "reference_sha256": "b72f903d55591438c4da28d39fd81a8245fb03cc41762bf175f27d1702145763",
+          "size": 100,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00435DD0"
+        },
+        {
+          "address": 4424160,
+          "candidate_sha256": "2bc56e45352a367dee768c01680cd41c7991e076730ff3cbbabbdbefce4829dd",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 224,
+          "reference_sha256": "2bc56e45352a367dee768c01680cd41c7991e076730ff3cbbabbdbefce4829dd",
+          "size": 224,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_004381E0"
+        },
+        {
+          "address": 4432168,
+          "candidate_sha256": "5aa457c69104c3b8aa6eb93397f0c14759cec49e19c50dc0b5500cea841e6a66",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 220,
+          "reference_sha256": "5aa457c69104c3b8aa6eb93397f0c14759cec49e19c50dc0b5500cea841e6a66",
+          "size": 220,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0043A128"
         },
         {
           "address": 4436000,
@@ -9224,6 +10983,17 @@
           "size": 112,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_0043C558"
+        },
+        {
+          "address": 4442208,
+          "candidate_sha256": "2f7f802e44ae2d010e59a9f0cfc845063e9ee4a48f4c20515fb5659cbdebaf0c",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 292,
+          "reference_sha256": "2f7f802e44ae2d010e59a9f0cfc845063e9ee4a48f4c20515fb5659cbdebaf0c",
+          "size": 292,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0043C860"
         },
         {
           "address": 4444872,
@@ -9369,6 +11139,116 @@
           "symbol": "LVL_3_ENDAKO_FUN_004418B8"
         },
         {
+          "address": 4466136,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_004425D8"
+        },
+        {
+          "address": 4466488,
+          "candidate_sha256": "7707ba7d89923ce2f0249050292e5fa9afc7ee39ab5f51ee85f94e6b4f798083",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 396,
+          "reference_sha256": "7707ba7d89923ce2f0249050292e5fa9afc7ee39ab5f51ee85f94e6b4f798083",
+          "size": 396,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00442738"
+        },
+        {
+          "address": 4467224,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00442A18"
+        },
+        {
+          "address": 4467920,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00442CD0"
+        },
+        {
+          "address": 4469336,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00443258"
+        },
+        {
+          "address": 4472032,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00443CE0"
+        },
+        {
+          "address": 4472744,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00443FA8"
+        },
+        {
+          "address": 4473712,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00444370"
+        },
+        {
+          "address": 4474400,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00444620"
+        },
+        {
+          "address": 4474904,
+          "candidate_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 44,
+          "reference_sha256": "72bad0e307f3ead4c62db6aacd88316d2604dcb75d8c37213e8acec5b7dc1cb8",
+          "size": 44,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00444818"
+        },
+        {
           "address": 4475408,
           "candidate_sha256": "847260847b8d9018bc19ffa120d172affc4557cb934d29471b6171d7ba4a0e94",
           "different_bytes": 0,
@@ -9501,6 +11381,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_00449E20"
         },
         {
+          "address": 4497984,
+          "candidate_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 144,
+          "reference_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+          "size": 144,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0044A240"
+        },
+        {
           "address": 4499968,
           "candidate_sha256": "db85123bfb95fec2c90984d176df65a8d1ba1e868fb989d7e07cef8179b68dd2",
           "different_bytes": 0,
@@ -9510,6 +11401,17 @@
           "size": 312,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_0044AA00"
+        },
+        {
+          "address": 4504736,
+          "candidate_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 144,
+          "reference_sha256": "fa9e538f3c8aa3d993afeb0f6831aa365962f74995302ae8334dab13f6aec03d",
+          "size": 144,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_0044BCA0"
         },
         {
           "address": 4515648,
@@ -9655,6 +11557,17 @@
           "symbol": "LVL_3_ENDAKO_FUN_00455490"
         },
         {
+          "address": 4543776,
+          "candidate_sha256": "9f6cd68d20f3cc6507ad9355c337719fa3a7716c8cd84151565567ff61ecd967",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 56,
+          "reference_sha256": "9f6cd68d20f3cc6507ad9355c337719fa3a7716c8cd84151565567ff61ecd967",
+          "size": 56,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00455520"
+        },
+        {
           "address": 4550232,
           "candidate_sha256": "6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1",
           "different_bytes": 0,
@@ -9675,6 +11588,28 @@
           "size": 8,
           "state": "matched_unintegrated",
           "symbol": "LVL_3_ENDAKO_FUN_00456F58"
+        },
+        {
+          "address": 4551112,
+          "candidate_sha256": "514faebad1e40ca2eb12b2ab5278b0064284c2ff40735f58871ca9d52cc18540",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 352,
+          "reference_sha256": "514faebad1e40ca2eb12b2ab5278b0064284c2ff40735f58871ca9d52cc18540",
+          "size": 352,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_004571C8"
+        },
+        {
+          "address": 4552312,
+          "candidate_sha256": "fbf17d5c0ab90f52a63f72c995f0ff2aa33150eec7f1e6bdbb2d800c023baa50",
+          "different_bytes": 0,
+          "matched": true,
+          "produced_size": 272,
+          "reference_sha256": "fbf17d5c0ab90f52a63f72c995f0ff2aa33150eec7f1e6bdbb2d800c023baa50",
+          "size": 272,
+          "state": "matched_unintegrated",
+          "symbol": "LVL_3_ENDAKO_FUN_00457678"
         },
         {
           "address": 4556528,
@@ -9700,26 +11635,26 @@
         }
       ],
       "kind": "level-native-candidate",
-      "matched_code_bytes": 18352,
-      "object_sha256": "b04080acd5a2936a8fae24885d4e63324127fc38b62daef8de3598da4fb67fcc",
+      "matched_code_bytes": 31624,
+      "object_sha256": "de5bf0d2843c64c8df20b0c0af93041b580b444e413a9b36590d544c0aa15571",
       "program": "levels/3_endako",
       "read_only_sections": [],
       "reference_entry": 2794248,
       "reference_sha256": "7b2caf2987c29ef7bc86c35bb2991cf0127170bd726ddbb74a7c5506b386d6d3",
       "schema": 1,
-      "source_sha256": "760b054f6d03551910ec47a55d97bc533ad3f4cb6f66a19d153350ce8400b023",
+      "source_sha256": "8503f64eb6ab21a793ddc3d2262cbd890df54bf501cbce00be570a3e4b426f61",
       "state": "matched_unintegrated",
       "target": "SCUS_972.68",
       "tools": {
-        "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-        "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+        "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+        "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
         "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
         "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
       }
     },
-    "object_sha256": "b04080acd5a2936a8fae24885d4e63324127fc38b62daef8de3598da4fb67fcc",
+    "object_sha256": "de5bf0d2843c64c8df20b0c0af93041b580b444e413a9b36590d544c0aa15571",
     "review_path": "progress/level-candidates/3_endako.json",
-    "review_sha256": "f4275aa9e08d0526606abadf8a1d27eaeda29e40ca96ce71b7b71d4654402a64",
+    "review_sha256": "16a2e3937554da72ed35fe006ac6e2fbf519e8ffbb0efb049de612b4a4c451b3",
     "source": "candidates/levels/3_endako.c"
   },
   "program": "3_endako",
@@ -9896,7 +11831,9 @@
       "LVL_3_ENDAKO_FUN_002AB660",
       "LVL_3_ENDAKO_FUN_002AB758",
       "LVL_3_ENDAKO_FUN_002AC8F8",
+      "LVL_3_ENDAKO_FUN_002ACB90",
       "LVL_3_ENDAKO_FUN_002AD7E0",
+      "LVL_3_ENDAKO_FUN_002B0E98",
       "LVL_3_ENDAKO_FUN_002B3728",
       "LVL_3_ENDAKO_FUN_002B3760",
       "LVL_3_ENDAKO_FUN_002B3798",
@@ -9904,8 +11841,10 @@
       "LVL_3_ENDAKO_FUN_002B3840",
       "LVL_3_ENDAKO_FUN_002B3890",
       "LVL_3_ENDAKO_FUN_002B4380",
+      "LVL_3_ENDAKO_FUN_002B6AF0",
       "LVL_3_ENDAKO_FUN_002B8C60",
       "LVL_3_ENDAKO_FUN_002B9358",
+      "LVL_3_ENDAKO_FUN_002BE878",
       "LVL_3_ENDAKO_FUN_002D2A00",
       "LVL_3_ENDAKO_FUN_002D2EF8",
       "LVL_3_ENDAKO_FUN_002D3AF0",
@@ -9913,7 +11852,9 @@
       "LVL_3_ENDAKO_FUN_002D3C90",
       "LVL_3_ENDAKO_FUN_002D3E88",
       "LVL_3_ENDAKO_FUN_002D4200",
+      "LVL_3_ENDAKO_FUN_002D43E8",
       "LVL_3_ENDAKO_FUN_002D4A38",
+      "LVL_3_ENDAKO_FUN_002D5510",
       "LVL_3_ENDAKO_FUN_002D7200",
       "LVL_3_ENDAKO_FUN_002D7280",
       "LVL_3_ENDAKO_FUN_002D7350",
@@ -9924,6 +11865,8 @@
       "LVL_3_ENDAKO_FUN_002DCB50",
       "LVL_3_ENDAKO_FUN_002DCF58",
       "LVL_3_ENDAKO_FUN_002DCF60",
+      "LVL_3_ENDAKO_FUN_002DCF68",
+      "LVL_3_ENDAKO_FUN_002DD048",
       "LVL_3_ENDAKO_FUN_002DD5A8",
       "LVL_3_ENDAKO_FUN_002E42C0",
       "LVL_3_ENDAKO_FUN_002E45F0",
@@ -9944,6 +11887,7 @@
       "LVL_3_ENDAKO_FUN_002FDBB8",
       "LVL_3_ENDAKO_FUN_002FDBC0",
       "LVL_3_ENDAKO_FUN_003018C8",
+      "LVL_3_ENDAKO_FUN_00305988",
       "LVL_3_ENDAKO_FUN_003062A8",
       "LVL_3_ENDAKO_FUN_00306B68",
       "LVL_3_ENDAKO_FUN_00306BE8",
@@ -9952,6 +11896,12 @@
       "LVL_3_ENDAKO_FUN_00309E40",
       "LVL_3_ENDAKO_FUN_0030A268",
       "LVL_3_ENDAKO_FUN_0030A620",
+      "LVL_3_ENDAKO_FUN_0030D2C8",
+      "LVL_3_ENDAKO_FUN_0030DBE8",
+      "LVL_3_ENDAKO_FUN_0030E218",
+      "LVL_3_ENDAKO_FUN_0030E468",
+      "LVL_3_ENDAKO_FUN_0030E498",
+      "LVL_3_ENDAKO_FUN_0030F0A8",
       "LVL_3_ENDAKO_FUN_00310170",
       "LVL_3_ENDAKO_FUN_003117B0",
       "LVL_3_ENDAKO_FUN_00311EE0",
@@ -9961,26 +11911,43 @@
       "LVL_3_ENDAKO_FUN_0031B990",
       "LVL_3_ENDAKO_FUN_00320658",
       "LVL_3_ENDAKO_FUN_00321810",
+      "LVL_3_ENDAKO_FUN_003223D8",
+      "LVL_3_ENDAKO_FUN_003226A0",
       "LVL_3_ENDAKO_FUN_00324058",
+      "LVL_3_ENDAKO_FUN_00325928",
       "LVL_3_ENDAKO_FUN_00327618",
+      "LVL_3_ENDAKO_FUN_003282E0",
       "LVL_3_ENDAKO_FUN_0032AAF0",
       "LVL_3_ENDAKO_FUN_0032DD38",
       "LVL_3_ENDAKO_FUN_0032ECF8",
       "LVL_3_ENDAKO_FUN_0032FC50",
       "LVL_3_ENDAKO_FUN_0032FDC8",
+      "LVL_3_ENDAKO_FUN_00333058",
+      "LVL_3_ENDAKO_FUN_003349D8",
+      "LVL_3_ENDAKO_FUN_00336E70",
+      "LVL_3_ENDAKO_FUN_0033A670",
+      "LVL_3_ENDAKO_FUN_0033B870",
+      "LVL_3_ENDAKO_FUN_00340558",
+      "LVL_3_ENDAKO_FUN_00340B08",
+      "LVL_3_ENDAKO_FUN_00341920",
+      "LVL_3_ENDAKO_FUN_00342748",
       "LVL_3_ENDAKO_FUN_00342C48",
       "LVL_3_ENDAKO_FUN_00347A08",
       "LVL_3_ENDAKO_FUN_00347D58",
       "LVL_3_ENDAKO_FUN_00348158",
       "LVL_3_ENDAKO_FUN_003483F8",
+      "LVL_3_ENDAKO_FUN_00349BD8",
       "LVL_3_ENDAKO_FUN_0034D7F0",
       "LVL_3_ENDAKO_FUN_0034D960",
       "LVL_3_ENDAKO_FUN_0034DA18",
       "LVL_3_ENDAKO_FUN_0034DDC8",
       "LVL_3_ENDAKO_FUN_0034DEC8",
+      "LVL_3_ENDAKO_FUN_0034F948",
       "LVL_3_ENDAKO_FUN_00350078",
       "LVL_3_ENDAKO_FUN_003542D0",
       "LVL_3_ENDAKO_FUN_00359D40",
+      "LVL_3_ENDAKO_FUN_0035F380",
+      "LVL_3_ENDAKO_FUN_0035F5C8",
       "LVL_3_ENDAKO_FUN_003607D8",
       "LVL_3_ENDAKO_FUN_00360FA8",
       "LVL_3_ENDAKO_FUN_0036A128",
@@ -9996,15 +11963,19 @@
       "LVL_3_ENDAKO_FUN_00381458",
       "LVL_3_ENDAKO_FUN_003816B8",
       "LVL_3_ENDAKO_FUN_003834E8",
+      "LVL_3_ENDAKO_FUN_0038C5B0",
       "LVL_3_ENDAKO_FUN_0038C6C0",
       "LVL_3_ENDAKO_FUN_0038CC70",
       "LVL_3_ENDAKO_FUN_0038D098",
       "LVL_3_ENDAKO_FUN_0038D560",
+      "LVL_3_ENDAKO_FUN_0038F058",
       "LVL_3_ENDAKO_FUN_0038F168",
       "LVL_3_ENDAKO_FUN_0038F710",
       "LVL_3_ENDAKO_FUN_0038FB10",
       "LVL_3_ENDAKO_FUN_0038FBE8",
+      "LVL_3_ENDAKO_FUN_003954C0",
       "LVL_3_ENDAKO_FUN_0039E200",
+      "LVL_3_ENDAKO_FUN_003A0FB0",
       "LVL_3_ENDAKO_FUN_003A3288",
       "LVL_3_ENDAKO_FUN_003A4418",
       "LVL_3_ENDAKO_FUN_003A4978",
@@ -10023,18 +11994,31 @@
       "LVL_3_ENDAKO_FUN_003D5718",
       "LVL_3_ENDAKO_FUN_003D8658",
       "LVL_3_ENDAKO_FUN_003DBC08",
+      "LVL_3_ENDAKO_FUN_003DBDB0",
       "LVL_3_ENDAKO_FUN_003DC660",
       "LVL_3_ENDAKO_FUN_003E69A0",
+      "LVL_3_ENDAKO_FUN_003E6A28",
+      "LVL_3_ENDAKO_FUN_003E6C48",
+      "LVL_3_ENDAKO_FUN_003E8018",
       "LVL_3_ENDAKO_FUN_003E9F48",
+      "LVL_3_ENDAKO_FUN_003E9FD0",
+      "LVL_3_ENDAKO_FUN_003EA038",
+      "LVL_3_ENDAKO_FUN_003ECAF0",
+      "LVL_3_ENDAKO_FUN_003ECC18",
       "LVL_3_ENDAKO_FUN_003F0228",
+      "LVL_3_ENDAKO_FUN_003F02B0",
       "LVL_3_ENDAKO_FUN_003F2F48",
       "LVL_3_ENDAKO_FUN_003F3380",
       "LVL_3_ENDAKO_FUN_003F3938",
       "LVL_3_ENDAKO_FUN_003F4010",
       "LVL_3_ENDAKO_FUN_003F4438",
+      "LVL_3_ENDAKO_FUN_003F9D40",
+      "LVL_3_ENDAKO_FUN_003F9E68",
       "LVL_3_ENDAKO_FUN_003FA2F0",
       "LVL_3_ENDAKO_FUN_003FC428",
+      "LVL_3_ENDAKO_FUN_003FC4B0",
       "LVL_3_ENDAKO_FUN_003FD7D0",
+      "LVL_3_ENDAKO_FUN_003FD858",
       "LVL_3_ENDAKO_FUN_003FE2A8",
       "LVL_3_ENDAKO_FUN_00401060",
       "LVL_3_ENDAKO_FUN_00404480",
@@ -10047,10 +12031,15 @@
       "LVL_3_ENDAKO_FUN_00429E20",
       "LVL_3_ENDAKO_FUN_0042CC58",
       "LVL_3_ENDAKO_FUN_0042CCC0",
+      "LVL_3_ENDAKO_FUN_00432070",
       "LVL_3_ENDAKO_FUN_004328F8",
+      "LVL_3_ENDAKO_FUN_00435DD0",
+      "LVL_3_ENDAKO_FUN_004381E0",
+      "LVL_3_ENDAKO_FUN_0043A128",
       "LVL_3_ENDAKO_FUN_0043B020",
       "LVL_3_ENDAKO_FUN_0043C3A8",
       "LVL_3_ENDAKO_FUN_0043C558",
+      "LVL_3_ENDAKO_FUN_0043C860",
       "LVL_3_ENDAKO_FUN_0043D2C8",
       "LVL_3_ENDAKO_FUN_0043D2D0",
       "LVL_3_ENDAKO_FUN_0043D428",
@@ -10064,6 +12053,16 @@
       "LVL_3_ENDAKO_FUN_0043F7F0",
       "LVL_3_ENDAKO_FUN_00440010",
       "LVL_3_ENDAKO_FUN_004418B8",
+      "LVL_3_ENDAKO_FUN_004425D8",
+      "LVL_3_ENDAKO_FUN_00442738",
+      "LVL_3_ENDAKO_FUN_00442A18",
+      "LVL_3_ENDAKO_FUN_00442CD0",
+      "LVL_3_ENDAKO_FUN_00443258",
+      "LVL_3_ENDAKO_FUN_00443CE0",
+      "LVL_3_ENDAKO_FUN_00443FA8",
+      "LVL_3_ENDAKO_FUN_00444370",
+      "LVL_3_ENDAKO_FUN_00444620",
+      "LVL_3_ENDAKO_FUN_00444818",
       "LVL_3_ENDAKO_FUN_00444A10",
       "LVL_3_ENDAKO_FUN_00444BB0",
       "LVL_3_ENDAKO_FUN_00444BE8",
@@ -10076,7 +12075,9 @@
       "LVL_3_ENDAKO_FUN_004498E0",
       "LVL_3_ENDAKO_FUN_00449E00",
       "LVL_3_ENDAKO_FUN_00449E20",
+      "LVL_3_ENDAKO_FUN_0044A240",
       "LVL_3_ENDAKO_FUN_0044AA00",
+      "LVL_3_ENDAKO_FUN_0044BCA0",
       "LVL_3_ENDAKO_FUN_0044E740",
       "LVL_3_ENDAKO_FUN_0044E988",
       "LVL_3_ENDAKO_FUN_0044F9E8",
@@ -10090,8 +12091,11 @@
       "LVL_3_ENDAKO_FUN_00454AC8",
       "LVL_3_ENDAKO_FUN_00454E68",
       "LVL_3_ENDAKO_FUN_00455490",
+      "LVL_3_ENDAKO_FUN_00455520",
       "LVL_3_ENDAKO_FUN_00456E58",
       "LVL_3_ENDAKO_FUN_00456F58",
+      "LVL_3_ENDAKO_FUN_004571C8",
+      "LVL_3_ENDAKO_FUN_00457678",
       "LVL_3_ENDAKO_FUN_004586F0",
       "LVL_3_ENDAKO_FUN_00458798",
       "LVL_3_ENDAKO_FUN_0030A880",
@@ -10148,50 +12152,50 @@
   "shared": {
     "c_link_object_adapter": {
       "compiled_code_unchanged": true,
-      "compiled_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
+      "compiled_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
       "integration_credit": 0,
       "kind": "reviewed-shared-import-relocation-adapter",
-      "link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
+      "link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
       "new_physical_bytes": 0,
       "relocation_changes": [
         {
           "caller": "FUN_0034F898",
           "caller_address": 4546896,
-          "new_r_info": 111364,
-          "new_symbol_index": 435,
+          "new_r_info": 122116,
+          "new_symbol_index": 477,
           "old_r_info": 67844,
           "old_symbol_index": 265,
           "provider": "FUN_001338C8",
           "provider_address": 1259720,
           "provider_reference_sha256": "df665c024f2c2f2122ca91cb5b61048030b7f98a3df2606d8c91441295d69d2f",
           "provider_size": 36,
-          "r_info_offset": 110272
+          "r_info_offset": 139596
         },
         {
           "caller": "FUN_0034FB20",
           "caller_address": 4547668,
-          "new_r_info": 128260,
-          "new_symbol_index": 501,
+          "new_r_info": 139012,
+          "new_symbol_index": 543,
           "old_r_info": 68100,
           "old_symbol_index": 266,
           "provider": "FUN_00133930",
           "provider_address": 1259824,
           "provider_reference_sha256": "d1b7a40a24b4537c4f9b704b87cafb6001ecaf64ef96c01c869fd05532732474",
           "provider_size": 44,
-          "r_info_offset": 110720
+          "r_info_offset": 140044
         },
         {
           "caller": "FUN_002B7170",
           "caller_address": 3338940,
-          "new_r_info": 142596,
-          "new_symbol_index": 557,
+          "new_r_info": 153348,
+          "new_symbol_index": 599,
           "old_r_info": 67588,
           "old_symbol_index": 264,
           "provider": "FUN_00133490",
           "provider_address": 1258640,
           "provider_reference_sha256": "1c102a1be303b46fbc85f02f327e97d8ecdbbf6635d3458a6454c0c7de75c75a",
           "provider_size": 40,
-          "r_info_offset": 111032
+          "r_info_offset": 140356
         }
       ],
       "schema": 1,
@@ -10210,12 +12214,12 @@
         {
           "index": 4,
           "name": ".reginfo",
-          "sha256": "c2d3969b3225176d95cc329e9f1b623c332436096048e9022c551cb112907c70"
+          "sha256": "64d8421d1617bb4b885b93d05be3edf7877e0f122dc202fecad75ba433668b99"
         },
         {
           "index": 5,
           "name": ".mdebug",
-          "sha256": "f68b313f458385fdc23576b8b4ed6a90bec6cd0670e3657e4fb9ac9425ceab6f"
+          "sha256": "f6056cff404204a133933b99b885398edfd69800c6d7dc0752b5cc5a72a93e92"
         },
         {
           "index": 6,
@@ -11834,25 +13838,235 @@
         },
         {
           "index": 440,
-          "name": ".shstrtab",
-          "sha256": "cf25a6821455714f54a5c0b81e2a723dff861ae4c7644231093fd15f91279cd2"
-        },
-        {
-          "index": 441,
-          "name": ".symtab",
-          "sha256": "0f6fa54a0b3b657de8e7f47c7adf996fb081d7796c96d521df415dd0dd426008"
+          "name": ".text.FUN_002D4E10",
+          "sha256": "a8676595c567569004a5593e8ec58c810dd0c27f0362c0bdcf4a022103432611"
         },
         {
           "index": 442,
+          "name": ".text.FUN_0034EC70",
+          "sha256": "12a13f773a4450fbc9d7e9bc664115f322058a9f643f21ba85b1ae0322e5b5fb"
+        },
+        {
+          "index": 444,
+          "name": ".text.FUN_002E46C0",
+          "sha256": "dce4524975475049e746d94bca280f5a9b9f19693e77a99c02a2739983a1e687"
+        },
+        {
+          "index": 446,
+          "name": ".text.FUN_00293CA8",
+          "sha256": "e74b7eb12a26601c43476977470e0713c48f0c39046031809fd38008a6af5d7c"
+        },
+        {
+          "index": 448,
+          "name": ".text.FUN_002E4478",
+          "sha256": "19eb8bea954758107bfa70beeb67787dd158173a05733753b1cf58d0a4308a46"
+        },
+        {
+          "index": 450,
+          "name": ".text.FUN_00274128",
+          "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+        },
+        {
+          "index": 452,
+          "name": ".text.FUN_00274208",
+          "sha256": "7681577e80523b7bd374570a001aaf35bfe5afa4cc45e9d6024b2acc9a6c72b7"
+        },
+        {
+          "index": 454,
+          "name": ".text.FUN_0031A998",
+          "sha256": "c59e0502110792ab05e18abe5a69eb3869c2588ecdab762c9af03f2dd0ac4f45"
+        },
+        {
+          "index": 456,
+          "name": ".text.FUN_00328D98",
+          "sha256": "ada74c42c5ce6f5f11c2faed30219547b4f71049cae441483fe9413baf3dbc91"
+        },
+        {
+          "index": 458,
+          "name": ".text.FUN_0031E8F8",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 460,
+          "name": ".text.FUN_00328D30",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 462,
+          "name": ".text.FUN_0032B378",
+          "sha256": "ccd515b937c6bda91ffaa4afcf982db99c2332cdd584f9df1330ce0064f815fc"
+        },
+        {
+          "index": 464,
+          "name": ".text.FUN_00304B68",
+          "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+        },
+        {
+          "index": 466,
+          "name": ".text.FUN_00307330",
+          "sha256": "ef41e209a692205a84583afb7a8e68aa7b935a56bf2b4187100109a2c807d3ca"
+        },
+        {
+          "index": 468,
+          "name": ".text.FUN_002BE9B8",
+          "sha256": "47ef2422a86b8f1480709500f0c502bf995875c378fba7e72f7217fa4c492a40"
+        },
+        {
+          "index": 470,
+          "name": ".text.FUN_002AD330",
+          "sha256": "7353422adf1ba7e824cb4403384ab03670e0aa1a54e5361c81bc5da78ad2c537"
+        },
+        {
+          "index": 472,
+          "name": ".text.FUN_002C7AE8",
+          "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+        },
+        {
+          "index": 474,
+          "name": ".text.FUN_002C87B0",
+          "sha256": "f9d27d7b3daaee65fca76b5d1e49c121d88be9e0595ad48f1a06c55fb1ff627d"
+        },
+        {
+          "index": 476,
+          "name": ".text.FUN_0033BD38",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 478,
+          "name": ".text.FUN_0033C178",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 480,
+          "name": ".text.FUN_0033C430",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 482,
+          "name": ".text.FUN_0033C9B8",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 484,
+          "name": ".text.FUN_0033D440",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 486,
+          "name": ".text.FUN_0033D708",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 488,
+          "name": ".text.FUN_0033DAD0",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 490,
+          "name": ".text.FUN_0033DD80",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 492,
+          "name": ".text.FUN_0033DF78",
+          "sha256": "100555b83f9f5ef1fd3d8dccde70d52acfa5291c99fb72a6a0f09b6f73975aa6"
+        },
+        {
+          "index": 494,
+          "name": ".text.FUN_0033BE98",
+          "sha256": "ab40ac7b3980ddde7f3bcc832fa16d4679f87a122bfa26c58a539f2caa34a86c"
+        },
+        {
+          "index": 496,
+          "name": ".text.FUN_00350918",
+          "sha256": "131da89b0cd6ab731d1592a063b35ab31f231814fef35421bcab70b3f24101f7"
+        },
+        {
+          "index": 498,
+          "name": ".text.FUN_002C8F40",
+          "sha256": "420a1985ac5201b95c99f5ca4559d621b28402c475f737ee04f8df938181df1c"
+        },
+        {
+          "index": 500,
+          "name": ".text.FUN_00335FC8",
+          "sha256": "b86d2f5886fb6421e27ab73126bf55b37a925c616d33d9e1c0af4f7328cfaa0f"
+        },
+        {
+          "index": 502,
+          "name": ".text.FUN_003439A0",
+          "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+        },
+        {
+          "index": 504,
+          "name": ".text.FUN_00345400",
+          "sha256": "546b9080d87029feab774f5b07d87779dc447174c57a0a2b4ab962de71b9e5ee"
+        },
+        {
+          "index": 506,
+          "name": ".text.FUN_00310D78",
+          "sha256": "ccbea74f6d9ce9e7c3ceff7f683b22e4e33fa8e381334e8f22e59a3ffa447004"
+        },
+        {
+          "index": 508,
+          "name": ".text.FUN_002BC8E8",
+          "sha256": "7a52e9f3918046fb461bb5dc39bfed862d338e6eb4dcf23258ddcd3d2e212489"
+        },
+        {
+          "index": 510,
+          "name": ".text.FUN_0029AF98",
+          "sha256": "57a99eb12379fba8033071dd8c5369be58457a175511a9403d322b2e21d81196"
+        },
+        {
+          "index": 512,
+          "name": ".text.FUN_002AD5F8",
+          "sha256": "6c90c644dfa6208696e4a2d2414afd39f4155f065b4c1eb91816da5eac2f3994"
+        },
+        {
+          "index": 514,
+          "name": ".text.FUN_002C2080",
+          "sha256": "50a1c69b99eb97473f174de501f579ba943403ec222f0188bda2b1e725c46b17"
+        },
+        {
+          "index": 516,
+          "name": ".text.FUN_002CF0A0",
+          "sha256": "216fe722f15b90e1eb2ddb0624c178247370f97a0aa89982bdec78bc03c1cacd"
+        },
+        {
+          "index": 518,
+          "name": ".text.FUN_002BAF68",
+          "sha256": "8c604857278dcd0d148203087aaa43bd706eabf5b32560885aa1b8f20a7998d2"
+        },
+        {
+          "index": 520,
+          "name": ".text.FUN_002B1A80",
+          "sha256": "59346241c50a8954d9c86ee45a17f708967a997dcc68f1013d64ac01fe3a02d5"
+        },
+        {
+          "index": 522,
+          "name": ".text.FUN_002C7538",
+          "sha256": "fc153d244b019c43c19aef4072ddd8fe29f4df94ef5e07877d701eb4e9ceb4ad"
+        },
+        {
+          "index": 524,
+          "name": ".shstrtab",
+          "sha256": "39f788becf3fbfef0474aa22e408ac9d76d505a6579c2d46287d5b8f16eb2a1e"
+        },
+        {
+          "index": 525,
+          "name": ".symtab",
+          "sha256": "d39399bcddc2eff172381708f2f0b7615bff647bf1853534ffbd47bb81318b70"
+        },
+        {
+          "index": 526,
           "name": ".strtab",
-          "sha256": "6add012a7b2c038503b5b6c96edbf3697e91c4a90988170c762399f422a99359"
+          "sha256": "4a9259e4fbba7611bd464492187952484f070e8a5d6aaf082592033212a86ab8"
         }
       ]
     },
-    "c_link_object_adapter_sha256": "0f3fe351bd585c6ca88b6200369b97b58941ca5b80de34e3df2ff4407b02d0ad",
-    "c_link_object_sha256": "eba078c6c4de9eb6608465f40243b511809f0d4816f5552ef6cd808ecde8596a",
-    "c_object_sha256": "b5a2be9bbd43e6f2a3d80f8b84eef1c0047328f4f015d4ffbec1bd324505b71e",
-    "candidate_elf_sha256": "2df71bff08f7bf9d680aae37726bb1b37cea57f7c616371a3cfa23c099555ee4",
+    "c_link_object_adapter_sha256": "4cb35a6baece49a17cd5eb76d43db29dbece78ddec7611c90093abeeee89c0e2",
+    "c_link_object_sha256": "526910e634501a8125e05e1a8faf60854b4bfcc06fa1560f4d8e6491ab17fc53",
+    "c_object_sha256": "750c8707a4134ccf2a80ee21d94fba1937d64e47528912c6984e606e6c26fc00",
+    "candidate_elf_sha256": "0d7573646b96c458be636e3656cd259b81de8bba7a1b926e065bb30491c67cdb",
     "candidate_source": "candidates/boot.c",
     "catalog_sha256": "fc792ac26dd3bbec8f54565bc6a44fe3ed2c05756e5f66981ceb3d9c294fb7b0",
     "full_level_gate": {
@@ -12030,7 +14244,9 @@
         "LVL_3_ENDAKO_FUN_002AB660",
         "LVL_3_ENDAKO_FUN_002AB758",
         "LVL_3_ENDAKO_FUN_002AC8F8",
+        "LVL_3_ENDAKO_FUN_002ACB90",
         "LVL_3_ENDAKO_FUN_002AD7E0",
+        "LVL_3_ENDAKO_FUN_002B0E98",
         "LVL_3_ENDAKO_FUN_002B3728",
         "LVL_3_ENDAKO_FUN_002B3760",
         "LVL_3_ENDAKO_FUN_002B3798",
@@ -12038,8 +14254,10 @@
         "LVL_3_ENDAKO_FUN_002B3840",
         "LVL_3_ENDAKO_FUN_002B3890",
         "LVL_3_ENDAKO_FUN_002B4380",
+        "LVL_3_ENDAKO_FUN_002B6AF0",
         "LVL_3_ENDAKO_FUN_002B8C60",
         "LVL_3_ENDAKO_FUN_002B9358",
+        "LVL_3_ENDAKO_FUN_002BE878",
         "LVL_3_ENDAKO_FUN_002D2A00",
         "LVL_3_ENDAKO_FUN_002D2EF8",
         "LVL_3_ENDAKO_FUN_002D3AF0",
@@ -12047,7 +14265,9 @@
         "LVL_3_ENDAKO_FUN_002D3C90",
         "LVL_3_ENDAKO_FUN_002D3E88",
         "LVL_3_ENDAKO_FUN_002D4200",
+        "LVL_3_ENDAKO_FUN_002D43E8",
         "LVL_3_ENDAKO_FUN_002D4A38",
+        "LVL_3_ENDAKO_FUN_002D5510",
         "LVL_3_ENDAKO_FUN_002D7200",
         "LVL_3_ENDAKO_FUN_002D7280",
         "LVL_3_ENDAKO_FUN_002D7350",
@@ -12058,6 +14278,8 @@
         "LVL_3_ENDAKO_FUN_002DCB50",
         "LVL_3_ENDAKO_FUN_002DCF58",
         "LVL_3_ENDAKO_FUN_002DCF60",
+        "LVL_3_ENDAKO_FUN_002DCF68",
+        "LVL_3_ENDAKO_FUN_002DD048",
         "LVL_3_ENDAKO_FUN_002DD5A8",
         "LVL_3_ENDAKO_FUN_002E42C0",
         "LVL_3_ENDAKO_FUN_002E45F0",
@@ -12078,6 +14300,7 @@
         "LVL_3_ENDAKO_FUN_002FDBB8",
         "LVL_3_ENDAKO_FUN_002FDBC0",
         "LVL_3_ENDAKO_FUN_003018C8",
+        "LVL_3_ENDAKO_FUN_00305988",
         "LVL_3_ENDAKO_FUN_003062A8",
         "LVL_3_ENDAKO_FUN_00306B68",
         "LVL_3_ENDAKO_FUN_00306BE8",
@@ -12086,6 +14309,12 @@
         "LVL_3_ENDAKO_FUN_00309E40",
         "LVL_3_ENDAKO_FUN_0030A268",
         "LVL_3_ENDAKO_FUN_0030A620",
+        "LVL_3_ENDAKO_FUN_0030D2C8",
+        "LVL_3_ENDAKO_FUN_0030DBE8",
+        "LVL_3_ENDAKO_FUN_0030E218",
+        "LVL_3_ENDAKO_FUN_0030E468",
+        "LVL_3_ENDAKO_FUN_0030E498",
+        "LVL_3_ENDAKO_FUN_0030F0A8",
         "LVL_3_ENDAKO_FUN_00310170",
         "LVL_3_ENDAKO_FUN_003117B0",
         "LVL_3_ENDAKO_FUN_00311EE0",
@@ -12095,26 +14324,43 @@
         "LVL_3_ENDAKO_FUN_0031B990",
         "LVL_3_ENDAKO_FUN_00320658",
         "LVL_3_ENDAKO_FUN_00321810",
+        "LVL_3_ENDAKO_FUN_003223D8",
+        "LVL_3_ENDAKO_FUN_003226A0",
         "LVL_3_ENDAKO_FUN_00324058",
+        "LVL_3_ENDAKO_FUN_00325928",
         "LVL_3_ENDAKO_FUN_00327618",
+        "LVL_3_ENDAKO_FUN_003282E0",
         "LVL_3_ENDAKO_FUN_0032AAF0",
         "LVL_3_ENDAKO_FUN_0032DD38",
         "LVL_3_ENDAKO_FUN_0032ECF8",
         "LVL_3_ENDAKO_FUN_0032FC50",
         "LVL_3_ENDAKO_FUN_0032FDC8",
+        "LVL_3_ENDAKO_FUN_00333058",
+        "LVL_3_ENDAKO_FUN_003349D8",
+        "LVL_3_ENDAKO_FUN_00336E70",
+        "LVL_3_ENDAKO_FUN_0033A670",
+        "LVL_3_ENDAKO_FUN_0033B870",
+        "LVL_3_ENDAKO_FUN_00340558",
+        "LVL_3_ENDAKO_FUN_00340B08",
+        "LVL_3_ENDAKO_FUN_00341920",
+        "LVL_3_ENDAKO_FUN_00342748",
         "LVL_3_ENDAKO_FUN_00342C48",
         "LVL_3_ENDAKO_FUN_00347A08",
         "LVL_3_ENDAKO_FUN_00347D58",
         "LVL_3_ENDAKO_FUN_00348158",
         "LVL_3_ENDAKO_FUN_003483F8",
+        "LVL_3_ENDAKO_FUN_00349BD8",
         "LVL_3_ENDAKO_FUN_0034D7F0",
         "LVL_3_ENDAKO_FUN_0034D960",
         "LVL_3_ENDAKO_FUN_0034DA18",
         "LVL_3_ENDAKO_FUN_0034DDC8",
         "LVL_3_ENDAKO_FUN_0034DEC8",
+        "LVL_3_ENDAKO_FUN_0034F948",
         "LVL_3_ENDAKO_FUN_00350078",
         "LVL_3_ENDAKO_FUN_003542D0",
         "LVL_3_ENDAKO_FUN_00359D40",
+        "LVL_3_ENDAKO_FUN_0035F380",
+        "LVL_3_ENDAKO_FUN_0035F5C8",
         "LVL_3_ENDAKO_FUN_003607D8",
         "LVL_3_ENDAKO_FUN_00360FA8",
         "LVL_3_ENDAKO_FUN_0036A128",
@@ -12130,15 +14376,19 @@
         "LVL_3_ENDAKO_FUN_00381458",
         "LVL_3_ENDAKO_FUN_003816B8",
         "LVL_3_ENDAKO_FUN_003834E8",
+        "LVL_3_ENDAKO_FUN_0038C5B0",
         "LVL_3_ENDAKO_FUN_0038C6C0",
         "LVL_3_ENDAKO_FUN_0038CC70",
         "LVL_3_ENDAKO_FUN_0038D098",
         "LVL_3_ENDAKO_FUN_0038D560",
+        "LVL_3_ENDAKO_FUN_0038F058",
         "LVL_3_ENDAKO_FUN_0038F168",
         "LVL_3_ENDAKO_FUN_0038F710",
         "LVL_3_ENDAKO_FUN_0038FB10",
         "LVL_3_ENDAKO_FUN_0038FBE8",
+        "LVL_3_ENDAKO_FUN_003954C0",
         "LVL_3_ENDAKO_FUN_0039E200",
+        "LVL_3_ENDAKO_FUN_003A0FB0",
         "LVL_3_ENDAKO_FUN_003A3288",
         "LVL_3_ENDAKO_FUN_003A4418",
         "LVL_3_ENDAKO_FUN_003A4978",
@@ -12157,18 +14407,31 @@
         "LVL_3_ENDAKO_FUN_003D5718",
         "LVL_3_ENDAKO_FUN_003D8658",
         "LVL_3_ENDAKO_FUN_003DBC08",
+        "LVL_3_ENDAKO_FUN_003DBDB0",
         "LVL_3_ENDAKO_FUN_003DC660",
         "LVL_3_ENDAKO_FUN_003E69A0",
+        "LVL_3_ENDAKO_FUN_003E6A28",
+        "LVL_3_ENDAKO_FUN_003E6C48",
+        "LVL_3_ENDAKO_FUN_003E8018",
         "LVL_3_ENDAKO_FUN_003E9F48",
+        "LVL_3_ENDAKO_FUN_003E9FD0",
+        "LVL_3_ENDAKO_FUN_003EA038",
+        "LVL_3_ENDAKO_FUN_003ECAF0",
+        "LVL_3_ENDAKO_FUN_003ECC18",
         "LVL_3_ENDAKO_FUN_003F0228",
+        "LVL_3_ENDAKO_FUN_003F02B0",
         "LVL_3_ENDAKO_FUN_003F2F48",
         "LVL_3_ENDAKO_FUN_003F3380",
         "LVL_3_ENDAKO_FUN_003F3938",
         "LVL_3_ENDAKO_FUN_003F4010",
         "LVL_3_ENDAKO_FUN_003F4438",
+        "LVL_3_ENDAKO_FUN_003F9D40",
+        "LVL_3_ENDAKO_FUN_003F9E68",
         "LVL_3_ENDAKO_FUN_003FA2F0",
         "LVL_3_ENDAKO_FUN_003FC428",
+        "LVL_3_ENDAKO_FUN_003FC4B0",
         "LVL_3_ENDAKO_FUN_003FD7D0",
+        "LVL_3_ENDAKO_FUN_003FD858",
         "LVL_3_ENDAKO_FUN_003FE2A8",
         "LVL_3_ENDAKO_FUN_00401060",
         "LVL_3_ENDAKO_FUN_00404480",
@@ -12181,10 +14444,15 @@
         "LVL_3_ENDAKO_FUN_00429E20",
         "LVL_3_ENDAKO_FUN_0042CC58",
         "LVL_3_ENDAKO_FUN_0042CCC0",
+        "LVL_3_ENDAKO_FUN_00432070",
         "LVL_3_ENDAKO_FUN_004328F8",
+        "LVL_3_ENDAKO_FUN_00435DD0",
+        "LVL_3_ENDAKO_FUN_004381E0",
+        "LVL_3_ENDAKO_FUN_0043A128",
         "LVL_3_ENDAKO_FUN_0043B020",
         "LVL_3_ENDAKO_FUN_0043C3A8",
         "LVL_3_ENDAKO_FUN_0043C558",
+        "LVL_3_ENDAKO_FUN_0043C860",
         "LVL_3_ENDAKO_FUN_0043D2C8",
         "LVL_3_ENDAKO_FUN_0043D2D0",
         "LVL_3_ENDAKO_FUN_0043D428",
@@ -12198,6 +14466,16 @@
         "LVL_3_ENDAKO_FUN_0043F7F0",
         "LVL_3_ENDAKO_FUN_00440010",
         "LVL_3_ENDAKO_FUN_004418B8",
+        "LVL_3_ENDAKO_FUN_004425D8",
+        "LVL_3_ENDAKO_FUN_00442738",
+        "LVL_3_ENDAKO_FUN_00442A18",
+        "LVL_3_ENDAKO_FUN_00442CD0",
+        "LVL_3_ENDAKO_FUN_00443258",
+        "LVL_3_ENDAKO_FUN_00443CE0",
+        "LVL_3_ENDAKO_FUN_00443FA8",
+        "LVL_3_ENDAKO_FUN_00444370",
+        "LVL_3_ENDAKO_FUN_00444620",
+        "LVL_3_ENDAKO_FUN_00444818",
         "LVL_3_ENDAKO_FUN_00444A10",
         "LVL_3_ENDAKO_FUN_00444BB0",
         "LVL_3_ENDAKO_FUN_00444BE8",
@@ -12210,7 +14488,9 @@
         "LVL_3_ENDAKO_FUN_004498E0",
         "LVL_3_ENDAKO_FUN_00449E00",
         "LVL_3_ENDAKO_FUN_00449E20",
+        "LVL_3_ENDAKO_FUN_0044A240",
         "LVL_3_ENDAKO_FUN_0044AA00",
+        "LVL_3_ENDAKO_FUN_0044BCA0",
         "LVL_3_ENDAKO_FUN_0044E740",
         "LVL_3_ENDAKO_FUN_0044E988",
         "LVL_3_ENDAKO_FUN_0044F9E8",
@@ -12224,8 +14504,11 @@
         "LVL_3_ENDAKO_FUN_00454AC8",
         "LVL_3_ENDAKO_FUN_00454E68",
         "LVL_3_ENDAKO_FUN_00455490",
+        "LVL_3_ENDAKO_FUN_00455520",
         "LVL_3_ENDAKO_FUN_00456E58",
         "LVL_3_ENDAKO_FUN_00456F58",
+        "LVL_3_ENDAKO_FUN_004571C8",
+        "LVL_3_ENDAKO_FUN_00457678",
         "LVL_3_ENDAKO_FUN_004586F0",
         "LVL_3_ENDAKO_FUN_00458798",
         "LVL_3_ENDAKO_FUN_0030A880",
@@ -12278,12 +14561,12 @@
         "LVL_3_ENDAKO_FUN_0037C8D8"
       ]
     },
-    "source_sha256": "e97ccd1bb6670f20a917035bfc840b1fe416955f73b01962532fbb6db559d694",
+    "source_sha256": "87cc67abdfd2d98ecb8b8ca5019bb1d412a41e863020ee6a9fb231608c824f67",
     "state": "integrated",
     "target": "SCUS_972.68",
     "tools": {
-      "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-      "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+      "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+      "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
       "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
       "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
     }
@@ -12843,23 +15126,23 @@
       "state": "matched_unintegrated",
       "target": "SCUS_972.68",
       "tools": {
-        "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-        "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+        "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+        "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
         "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
         "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
       }
     },
     "object_sha256": "cfe7bda7b47552c7df435901155cfabc7f82463891432fabfcaa095a47d8fd17",
     "review_path": "progress/level-g8/3_endako.json",
-    "review_sha256": "c8071a3ea8e97cc7b3054592551a86119d4822a6e9a7c574f73c3799b0b34cb1",
+    "review_sha256": "9e5af338e1f06f650d7d4fd97325706dbbdc94c41e95dc777d22e320dcc12c02",
     "source": "candidates/levels/3_endako-g8.c"
   },
-  "source_sha256": "e97ccd1bb6670f20a917035bfc840b1fe416955f73b01962532fbb6db559d694",
+  "source_sha256": "87cc67abdfd2d98ecb8b8ca5019bb1d412a41e863020ee6a9fb231608c824f67",
   "state": "integrated",
   "target": "SCUS_972.68",
   "tools": {
-    "as": "cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876",
-    "cc1": "5fed4e239d6fe3ef19d3b18483844eaf5fb1e647c5d8556652c75fc8e9a73bc6",
+    "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
   }

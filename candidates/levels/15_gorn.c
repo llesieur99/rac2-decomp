@@ -3621,3 +3621,2051 @@ void LVL_15_GORN_FUN_002FC4D8(void)
         *(int *)(q + i * 16) = *(int *)(q + i * 16) + (int)r;
     }
 }
+extern char LVL_15_GORN_F7cb419c1_D_001FF640[];
+
+extern int LVL_15_GORN_F7cb419c1_FUN_00370740(int arg);
+
+int LVL_15_GORN_FUN_00366F38(void)
+{
+    char *p = LVL_15_GORN_F7cb419c1_D_001FF640;
+
+    *(int *)(p + 460) = LVL_15_GORN_F7cb419c1_FUN_00370740(*(int *)(p + 460));
+    return 0;
+}
+extern char LVL_15_GORN_F0a76d85b_D_001B9680[];
+
+extern void LVL_15_GORN_F0a76d85b_FUN_003073E8(char *p);
+extern void LVL_15_GORN_F0a76d85b_FUN_002FCCA0(void);
+
+void LVL_15_GORN_FUN_0046C928(void)
+{
+    char *p = LVL_15_GORN_F0a76d85b_D_001B9680;
+
+    *(int *)(p + 320) = 0;
+    *(int *)(p + 324) = 0;
+    *(int *)(p + 328) = 0;
+    LVL_15_GORN_F0a76d85b_FUN_003073E8(p + 880);
+    LVL_15_GORN_F0a76d85b_FUN_002FCCA0();
+}
+extern char LVL_15_GORN_F391de845_D_001B97C0[];
+extern float LVL_15_GORN_F391de845_FUN_00306DD8(char *a, char *b);
+extern float LVL_15_GORN_F391de845_FUN_00376AC0(void *self, float d, float x, float y);
+
+float LVL_15_GORN_FUN_00376BB8(char *self, char *p)
+{
+    float v = LVL_15_GORN_F391de845_FUN_00306DD8(p, LVL_15_GORN_F391de845_D_001B97C0);
+    float *q = *(float **)(self + 8);
+
+    return LVL_15_GORN_F391de845_FUN_00376AC0(q, v, q[0], q[1]);
+}
+extern int LVL_15_GORN_F2f080549_D_001A8FF4 __attribute__((sda));
+extern char LVL_15_GORN_F2f080549_D_001B2290[] __attribute__((sda));
+extern char LVL_15_GORN_F2f080549_D_001A9000[] __attribute__((sda));
+extern float LVL_15_GORN_F2f080549_FUN_00306DD8(char *a, char *b);
+
+float LVL_15_GORN_FUN_0033DAC0(char *p)
+{
+    float v;
+
+    if (LVL_15_GORN_F2f080549_D_001A8FF4 == 0) {
+        v = LVL_15_GORN_F2f080549_FUN_00306DD8(p, LVL_15_GORN_F2f080549_D_001B2290);
+    } else {
+        v = 100.0f - LVL_15_GORN_F2f080549_FUN_00306DD8(p, LVL_15_GORN_F2f080549_D_001A9000);
+    }
+    return v;
+}
+extern char LVL_15_GORN_Fa76f1772_D_001BFC20[];
+extern void LVL_15_GORN_Fa76f1772_FUN_00306C60(char *local, char *data);
+extern float LVL_15_GORN_Fa76f1772_FUN_00306D20(char *local, char *p);
+
+int LVL_15_GORN_FUN_00448F10(int a0, int a1)
+{
+    char local[16];
+    int s0;
+    int r;
+
+    if (a1 != 1) {
+        r = 0;
+    } else {
+        s0 = *(int *)(a0 + 112) + 352;
+        LVL_15_GORN_Fa76f1772_FUN_00306C60(local, LVL_15_GORN_Fa76f1772_D_001BFC20);
+        r = LVL_15_GORN_Fa76f1772_FUN_00306D20(local, (char *)s0) < 0.0f ? 1 : 0;
+    }
+    return r;
+}
+extern void LVL_15_GORN_F46b43b72_FUN_00346C00(int value, char *target);
+extern void LVL_15_GORN_F46b43b72_FUN_00346DC8(int value);
+
+extern int LVL_15_GORN_F46b43b72_D_001BD4C0[];
+extern int LVL_15_GORN_F46b43b72_D_0014B540[];
+
+int LVL_15_GORN_FUN_0031D278(int index)
+{
+    int j = index + 1;
+    int *d = LVL_15_GORN_F46b43b72_D_001BD4C0;
+    int *b = LVL_15_GORN_F46b43b72_D_0014B540;
+    int *t = (int *)((char *)b + 25416);
+    int n = d[12] * 332;
+    int hold = d[28];
+    int j4 = j * 4;
+    int cur = *(int *)((char *)t + (n + index * 4));
+    int next = *(int *)((char *)t + (j4 + n));
+
+    n = next - cur;
+    if (n > 0) {
+        LVL_15_GORN_F46b43b72_FUN_00346C00(hold, (char *)(cur + b[6341]));
+        LVL_15_GORN_F46b43b72_FUN_00346DC8(0);
+    }
+    return 1;
+}
+extern void LVL_15_GORN_Fa2d20de7_FUN_00333488(void *object, float first, float second);
+extern void LVL_15_GORN_Fa2d20de7_FUN_00306C30(char *first, char *second, void *third);
+extern int LVL_15_GORN_Fa2d20de7_FUN_002F7250(void *first, char *second, int mode, int value, int extra);
+extern void LVL_15_GORN_Fa2d20de7_FUN_00306C60(void *first, void *second, void *third);
+extern void LVL_15_GORN_Fa2d20de7_FUN_00306CA0(void *first, void *second, float value);
+
+extern short LVL_15_GORN_Fa2d20de7_D_001B97C0[];
+extern short LVL_15_GORN_Fa2d20de7_D_001BFC20[];
+extern int LVL_15_GORN_Fa2d20de7_D_001886CC[];
+
+void LVL_15_GORN_FUN_00376970(void *object)
+{
+    LVL_15_GORN_Fa2d20de7_FUN_00333488(object, 0.5f, 6.0f);
+    LVL_15_GORN_Fa2d20de7_FUN_00306C30(object, object, LVL_15_GORN_Fa2d20de7_D_001B97C0);
+    if (LVL_15_GORN_Fa2d20de7_FUN_002F7250(LVL_15_GORN_Fa2d20de7_D_001B97C0, object, 130, LVL_15_GORN_Fa2d20de7_D_001886CC[0], 0)) {
+        LVL_15_GORN_Fa2d20de7_FUN_00306C60(object, LVL_15_GORN_Fa2d20de7_D_001BFC20, LVL_15_GORN_Fa2d20de7_D_001B97C0);
+        LVL_15_GORN_Fa2d20de7_FUN_00306CA0(object, object, 0.75f);
+        LVL_15_GORN_Fa2d20de7_FUN_00306C30(object, object, LVL_15_GORN_Fa2d20de7_D_001B97C0);
+    }
+}
+extern char LVL_15_GORN_F15d5f4fb_D_001B9680[];
+extern char LVL_15_GORN_F15d5f4fb_D_00189E20[];
+extern float LVL_15_GORN_F15d5f4fb_FUN_003072D0(float a, float b);
+extern float LVL_15_GORN_F15d5f4fb_FUN_00307D08(float a, float b);
+extern float LVL_15_GORN_F15d5f4fb_FUN_00306DD8(char *a, char *b);
+
+void LVL_15_GORN_FUN_0044D268(char *o)
+{
+    char *B = LVL_15_GORN_F15d5f4fb_D_001B9680;
+    char *D = LVL_15_GORN_F15d5f4fb_D_00189E20;
+    float *p = *(float **)(D + 8848);
+    float r = LVL_15_GORN_F15d5f4fb_FUN_00307D08(*(float *)(B + 344),
+                      LVL_15_GORN_F15d5f4fb_FUN_003072D0(p[4] - *(float *)(B + 320),
+                              p[5] - *(float *)(B + 324)));
+
+    if (r < 0.5585054f) {
+        r = LVL_15_GORN_F15d5f4fb_FUN_00306DD8(D + 128, B + 320);
+        if (r < 8.0f) {
+            *(char *)(B + 659) = 0;
+            *(short *)(o + 126) = 2;
+            *(float *)(B + 692) = 0.018f;
+            *(float *)(B + 680) = 0.018f;
+        } else {
+            *(short *)(o + 126) = 4;
+        }
+    } else {
+        *(short *)(o + 126) = 4;
+    }
+    *(char *)(o + 125) = 0;
+}
+
+#ifndef RAC2_T_S8_F4778F810
+#define RAC2_T_S8_F4778F810
+typedef signed char s8_F4778f810;
+#endif
+
+#ifndef RAC2_T_S16_F4778F810
+#define RAC2_T_S16_F4778F810
+typedef signed short s16_F4778f810;
+#endif
+
+#ifndef RAC2_T_U16_F4778F810
+#define RAC2_T_U16_F4778F810
+typedef unsigned short u16_F4778f810;
+#endif
+
+
+
+
+
+extern void LVL_15_GORN_F4778f810_FUN_0033D838(char *a, char *b, char *c, f32 d);
+extern void LVL_15_GORN_F4778f810_FUN_00306C30(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003070D8(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003079E0(char *a, char *b);
+extern void LVL_15_GORN_F4778f810_FUN_003077C0(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003070D8(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_00306C60(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_00306C60(char *a, char *b, char *c);
+
+#ifndef RAC2_T_V4_F4778F810
+#define RAC2_T_V4_F4778F810
+typedef struct {
+    f32 x, y, z, w;
+} V4_F4778f810;
+#endif
+
+
+#ifndef RAC2_T_SUB_F4778F810
+#define RAC2_T_SUB_F4778F810
+typedef struct {
+    u8 pad000[0x10];
+    u8 at010[0x10];
+    u8 at020[0x28];
+    f32 f048;
+} Sub_F4778f810;
+#endif
+
+
+#ifndef RAC2_T_OBJ_F4778F810
+#define RAC2_T_OBJ_F4778F810
+typedef struct {
+    u8 pad000[0x10];
+    u8 at010[0x58];
+    char *p068;
+    u8 pad06C[0xC0 - 0x6C];
+    u8 at0C0[0x10];
+} Obj_F4778f810;
+#endif
+
+
+void LVL_15_GORN_FUN_002F5180(Obj_F4778f810 *obj)
+{
+    V4_F4778f810 tmp[6];
+    Sub_F4778f810 *p = (Sub_F4778f810 *)obj->p068;
+
+    LVL_15_GORN_F4778f810_FUN_0033D838((char *)obj + 0x10, (char *)p, (char *)p, p->f048);
+    LVL_15_GORN_F4778f810_FUN_00306C30((char *)obj + 0x10, (char *)obj + 0x10, (char *)p);
+    LVL_15_GORN_F4778f810_FUN_003070D8((char *)&tmp[0], (char *)p + 0x20, (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_003079E0((char *)p + 0x10, (char *)&tmp[3]);
+    LVL_15_GORN_F4778f810_FUN_003077C0((char *)obj + 0xC0, (char *)&tmp[3], (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_003070D8((char *)&tmp[1], (char *)p + 0x20, (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_00306C60((char *)&tmp[2], (char *)&tmp[1], (char *)&tmp[0]);
+    LVL_15_GORN_F4778f810_FUN_00306C60((char *)obj + 0x10, (char *)obj + 0x10, (char *)&tmp[2]);
+}
+
+#ifndef RAC2_T_S8_F4778F810
+#define RAC2_T_S8_F4778F810
+typedef signed char s8_F4778f810;
+#endif
+
+#ifndef RAC2_T_S16_F4778F810
+#define RAC2_T_S16_F4778F810
+typedef signed short s16_F4778f810;
+#endif
+
+#ifndef RAC2_T_U16_F4778F810
+#define RAC2_T_U16_F4778F810
+typedef unsigned short u16_F4778f810;
+#endif
+
+
+
+
+
+extern void LVL_15_GORN_F4778f810_FUN_0033D838(char *a, char *b, char *c, f32 d);
+extern void LVL_15_GORN_F4778f810_FUN_00306C30(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003070D8(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003079E0(char *a, char *b);
+extern void LVL_15_GORN_F4778f810_FUN_003077C0(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_003070D8(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_00306C60(char *a, char *b, char *c);
+extern void LVL_15_GORN_F4778f810_FUN_00306C60(char *a, char *b, char *c);
+
+#ifndef RAC2_T_V4_F4778F810
+#define RAC2_T_V4_F4778F810
+typedef struct {
+    f32 x, y, z, w;
+} V4_F4778f810;
+#endif
+
+
+#ifndef RAC2_T_SUB_F4778F810
+#define RAC2_T_SUB_F4778F810
+typedef struct {
+    u8 pad000[0x10];
+    u8 at010[0x10];
+    u8 at020[0x28];
+    f32 f048;
+} Sub_F4778f810;
+#endif
+
+
+#ifndef RAC2_T_OBJ_F4778F810
+#define RAC2_T_OBJ_F4778F810
+typedef struct {
+    u8 pad000[0x10];
+    u8 at010[0x58];
+    char *p068;
+    u8 pad06C[0xC0 - 0x6C];
+    u8 at0C0[0x10];
+} Obj_F4778f810;
+#endif
+
+
+void LVL_15_GORN_FUN_002F5260(Obj_F4778f810 *obj)
+{
+    V4_F4778f810 tmp[6];
+    Sub_F4778f810 *p = (Sub_F4778f810 *)obj->p068;
+
+    LVL_15_GORN_F4778f810_FUN_0033D838((char *)obj + 0x10, (char *)p, (char *)p, p->f048);
+    LVL_15_GORN_F4778f810_FUN_00306C30((char *)obj + 0x10, (char *)obj + 0x10, (char *)p);
+    LVL_15_GORN_F4778f810_FUN_003070D8((char *)&tmp[0], (char *)p + 0x20, (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_003079E0((char *)p + 0x10, (char *)&tmp[3]);
+    LVL_15_GORN_F4778f810_FUN_003077C0((char *)obj + 0xC0, (char *)&tmp[3], (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_003070D8((char *)&tmp[1], (char *)p + 0x20, (char *)obj + 0xC0);
+    LVL_15_GORN_F4778f810_FUN_00306C60((char *)&tmp[2], (char *)&tmp[1], (char *)&tmp[0]);
+    LVL_15_GORN_F4778f810_FUN_00306C60((char *)obj + 0x10, (char *)obj + 0x10, (char *)&tmp[2]);
+}
+extern char *LVL_15_GORN_Fa5c6e8ca_FUN_003804E8(char *object, int flag);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_00306BF8(char *target);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_003824A8(char *object);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_00383700(char *object, int value);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_00383758(char *object, int value);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_00383AE0(char *object);
+extern void LVL_15_GORN_Fa5c6e8ca_FUN_00381688(char *object);
+extern int LVL_15_GORN_Fa5c6e8ca_D_00221E10[];
+
+void LVL_15_GORN_FUN_00381708(char *object, int flag)
+{
+    char *s;
+    int **slot;
+
+    s = LVL_15_GORN_Fa5c6e8ca_FUN_003804E8(object, flag);
+    if (s == 0)
+        return;
+
+    *(short *)(object + 50) = 511;
+    *(unsigned char *)(object + 48) = 255;
+    *(short *)(object + 52) = *(unsigned short *)(object + 52) & 0xfffc;
+    *(int *)(object + 152) = *(int *)(*(int *)(object + 36) + 16);
+    *(int *)(s + 272) = 1;
+    *(int *)(s + 248) = 0;
+    LVL_15_GORN_Fa5c6e8ca_FUN_00306BF8(s + 112);
+    *(int *)(s + 268) = 0;
+    *(int *)(s + 280) = 0;
+    *(int *)(s + 252) = 0;
+    *(int *)(s + 308) = 0;
+    *(int *)(s + 332) = 1;
+    *(int *)(s + 348) = 0;
+    slot = *(int ***)(object + 104);
+    *(float *)*slot = (float)*(int *)(s + 328);
+    LVL_15_GORN_Fa5c6e8ca_D_00221E10[4] = LVL_15_GORN_Fa5c6e8ca_D_00221E10[4] + 1;
+    LVL_15_GORN_Fa5c6e8ca_FUN_003824A8(object);
+    LVL_15_GORN_Fa5c6e8ca_FUN_00383700(object, 1);
+    LVL_15_GORN_Fa5c6e8ca_FUN_00383758(object, 1);
+    if (flag)
+        LVL_15_GORN_Fa5c6e8ca_FUN_00383AE0(object);
+    if (LVL_15_GORN_Fa5c6e8ca_D_00221E10[13] == 1)
+        LVL_15_GORN_Fa5c6e8ca_FUN_00381688(object);
+}
+
+
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+extern int LVL_15_GORN_Fd160fb9c_FUN_002CC818(float value);
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+extern int LVL_15_GORN_Fd160fb9c_FUN_002CC818(float value);
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+extern int LVL_15_GORN_Fd160fb9c_FUN_002CC818(float value);
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+extern int LVL_15_GORN_Fd160fb9c_FUN_002CC818(float value);
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+extern int LVL_15_GORN_Fd160fb9c_FUN_002CC818(float value);
+extern void LVL_15_GORN_Fd160fb9c_FUN_002BF048(int arg0, int arg1, int arg2, int arg3);
+
+#ifndef RAC2_T_RESIDENTSTATE_FD160FB9C
+#define RAC2_T_RESIDENTSTATE_FD160FB9C
+typedef struct {
+    u8 pad000[0x1b8];
+    int f1B8;
+    u8 pad1bc[0xc2c - 0x1bc];
+    int fC2C;
+    u8 padc30[0x149d - 0xc30];
+    u8 b149D;
+    u8 pad149e[0x2290 - 0x149e];
+    u8 *p2290;
+    int f2294;
+} ResidentState_Fd160fb9c;
+#endif
+
+
+extern ResidentState_Fd160fb9c LVL_15_GORN_Fd160fb9c_D_00189E20;
+
+void LVL_15_GORN_FUN_002BF2A0(void)
+{
+    int selector;
+
+    if (LVL_15_GORN_Fd160fb9c_D_00189E20.f2294 == 2) {
+        if (LVL_15_GORN_Fd160fb9c_D_00189E20.f1B8 < 15)
+            return;
+    }
+
+    selector = LVL_15_GORN_Fd160fb9c_D_00189E20.b149D;
+
+    if (LVL_15_GORN_Fd160fb9c_D_00189E20.f2294 == 2) {
+        if (LVL_15_GORN_Fd160fb9c_D_00189E20.f1B8 == 22)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 0, 1, 30);
+    }
+
+    switch (LVL_15_GORN_Fd160fb9c_D_00189E20.p2290[67]) {
+    case 3:
+        if (LVL_15_GORN_Fd160fb9c_D_00189E20.fC2C != 0)
+            return;
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(49.5f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 0, 1, 30);
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(17.0f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 1, 1, 30);
+        return;
+    case 4:
+        if (LVL_15_GORN_Fd160fb9c_D_00189E20.fC2C != 0)
+            return;
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(12.5f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 0, 1, 30);
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(1.0f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 1, 1, 30);
+        return;
+    case 20:
+        if (LVL_15_GORN_Fd160fb9c_D_00189E20.fC2C != 0)
+            return;
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(8.0f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 0, 1, 30);
+        if (LVL_15_GORN_Fd160fb9c_FUN_002CC818(21.0f) != 0)
+            LVL_15_GORN_Fd160fb9c_FUN_002BF048(selector, 1, 1, 30);
+        return;
+    }
+}
+#ifndef RAC2_T_PERSISTENT_F882F1178
+#define RAC2_T_PERSISTENT_F882F1178
+typedef struct {
+    unsigned char pad0[4960];
+    void *p1360;
+    void *p1364;
+    void *p1368;
+    unsigned char pad1[4512];
+    float f250C;
+    float f2510;
+    float f2514;
+} Persistent_F882f1178;
+#endif
+
+
+#ifndef RAC2_T_NODE_F882F1178
+#define RAC2_T_NODE_F882F1178
+typedef struct {
+    unsigned char pad[120];
+    int field120;
+} Node_F882f1178;
+#endif
+
+
+extern Persistent_F882f1178 LVL_15_GORN_F882f1178_D_00189E20;
+extern int LVL_15_GORN_F882f1178_D_001A8F00 __attribute__((sda));
+
+extern float LVL_15_GORN_F882f1178_FUN_00307C20(float, float);
+extern float LVL_15_GORN_F882f1178_FUN_00307220(float);
+extern int LVL_15_GORN_F882f1178_FUN_00307DC0(int, int, float);
+extern float LVL_15_GORN_F882f1178_FUN_00307C20(float, float);
+extern float LVL_15_GORN_F882f1178_FUN_00307C20(float, float);
+extern float LVL_15_GORN_F882f1178_FUN_00307220(float);
+extern int LVL_15_GORN_F882f1178_FUN_00307DC0(int, int, float);
+extern void LVL_15_GORN_F882f1178_FUN_0033E390(int, float *, int, int, float);
+extern void LVL_15_GORN_F882f1178_FUN_0033E390(int, float *, int, int, float);
+
+void LVL_15_GORN_FUN_002ED870(void)
+{
+    Node_F882f1178 *node;
+
+    node = (Node_F882f1178 *)LVL_15_GORN_F882f1178_D_00189E20.p1360;
+    if (node != 0) {
+        if (*(int *)0x1A8F00 == 2)
+            LVL_15_GORN_F882f1178_D_00189E20.f250C = LVL_15_GORN_F882f1178_FUN_00307C20(LVL_15_GORN_F882f1178_D_00189E20.f250C, 0.020362177863717079f);
+        else
+            LVL_15_GORN_F882f1178_D_00189E20.f250C = LVL_15_GORN_F882f1178_FUN_00307C20(LVL_15_GORN_F882f1178_D_00189E20.f250C, 0.034906592220067978f);
+        node->field120 = LVL_15_GORN_F882f1178_FUN_00307DC0(0xd2d2d2, 0x285050,
+                                 LVL_15_GORN_F882f1178_FUN_00307220(LVL_15_GORN_F882f1178_D_00189E20.f250C) * 0.5f + 0.5f);
+    }
+    node = (Node_F882f1178 *)LVL_15_GORN_F882f1178_D_00189E20.p1364;
+    if (node != 0) {
+        if (LVL_15_GORN_F882f1178_D_001A8F00 != 2) {
+            float limit;
+            int which;
+
+            limit = LVL_15_GORN_F882f1178_FUN_00307C20(LVL_15_GORN_F882f1178_D_00189E20.f2510, 0.049451004713773727f);
+            LVL_15_GORN_F882f1178_D_00189E20.f2510 = limit;
+            which = 0x1ee628;
+            if (limit > 0.0f && limit < 1.9198623895645142f) {
+                which = 0x1e1ed2;
+            }
+            node->field120 = LVL_15_GORN_F882f1178_FUN_00307DC0(node->field120, which, 0.070000000298023224f);
+        } else {
+            LVL_15_GORN_F882f1178_D_00189E20.f2510 = LVL_15_GORN_F882f1178_FUN_00307C20(LVL_15_GORN_F882f1178_D_00189E20.f2510, 0.026179943233728409f);
+            node->field120 = LVL_15_GORN_F882f1178_FUN_00307DC0(0x1e1ed2, 0x1e1e50,
+                                     LVL_15_GORN_F882f1178_FUN_00307220(LVL_15_GORN_F882f1178_D_00189E20.f2510) * 0.5f + 0.5f);
+        }
+    }
+    if (LVL_15_GORN_F882f1178_D_00189E20.p1368 != 0) {
+        if (LVL_15_GORN_F882f1178_D_001A8F00 == 2)
+            LVL_15_GORN_F882f1178_FUN_0033E390((int)LVL_15_GORN_F882f1178_D_00189E20.p1368, &LVL_15_GORN_F882f1178_D_00189E20.f2514, 0xdcdcdc, 0x323232,
+                    0.026179943233728409f);
+        else
+            LVL_15_GORN_F882f1178_FUN_0033E390((int)LVL_15_GORN_F882f1178_D_00189E20.p1368, &LVL_15_GORN_F882f1178_D_00189E20.f2514, 0xdcdcdc, 0x323232,
+                    0.040724355727434158f);
+    }
+}
+extern void LVL_15_GORN_F8411efa9_FUN_003EF728(char *pkt);
+extern long long LVL_15_GORN_F8411efa9_FUN_002FF540(char *p);
+extern float LVL_15_GORN_F8411efa9_FUN_003072D0(float x, float y);
+extern float LVL_15_GORN_F8411efa9_FUN_00306D90(char *p);
+extern float LVL_15_GORN_F8411efa9_FUN_003072D0(float x, float y);
+extern void LVL_15_GORN_F8411efa9_FUN_00307498(float *matrix, float *quat);
+extern void LVL_15_GORN_F8411efa9_FUN_00306EF8(float *off, char *src, float scale);
+extern void LVL_15_GORN_F8411efa9_FUN_003EF7B0(char *pkt, float angle);
+extern void LVL_15_GORN_F8411efa9_FUN_00303F10(char *pkt, float *matrix, int mode);
+
+void LVL_15_GORN_FUN_003EF9D0(char *pos, int a1, int a2, char *a3, int t0,
+                                        char *src, float f12, float f13)
+{
+    char pkt[144];
+    float m[16];
+    float quat[4];
+    float off[4];
+    long long r;
+
+    LVL_15_GORN_F8411efa9_FUN_003EF728(pkt);
+    r = LVL_15_GORN_F8411efa9_FUN_002FF540(a3);
+
+    *(int *)(pkt + 76) = a1 + (a2 << 24);
+    *(int *)(pkt + 72) = a1 + (a2 << 24);
+    *(int *)(pkt + 68) = a1 + (a2 << 24);
+    *(int *)(pkt + 64) = a1 + (a2 << 24);
+    *(long long *)(pkt + 112) = 0LL;
+    *(long long *)(pkt + 120) = r;
+    *(long long *)(pkt + 128) = 280993940374112LL;
+    *(long long *)(pkt + 136) = ((long long)t0 << 2) | 0x8000000040LL;
+
+    quat[3] = 0.0f;
+    quat[2] = LVL_15_GORN_F8411efa9_FUN_003072D0(*(float *)(src + 0), *(float *)(src + 4));
+    quat[1] = -LVL_15_GORN_F8411efa9_FUN_003072D0(LVL_15_GORN_F8411efa9_FUN_00306D90(src), *(float *)(src + 8));
+    quat[0] = f13;
+
+    LVL_15_GORN_F8411efa9_FUN_00307498(m, quat);
+    LVL_15_GORN_F8411efa9_FUN_00306EF8(off, src, 0.025f);
+
+    m[12] = *(float *)(pos + 0) + off[0];
+    m[13] = *(float *)(pos + 4) + off[1];
+    m[14] = *(float *)(pos + 8) + off[2];
+    m[15] = 1.0f;
+
+    LVL_15_GORN_F8411efa9_FUN_003EF7B0(pkt, f12);
+    LVL_15_GORN_F8411efa9_FUN_00303F10(pkt, m, 0);
+}
+extern void LVL_15_GORN_F8411efa9_FUN_003F3600(char *pkt);
+extern long long LVL_15_GORN_F8411efa9_FUN_002FF540(char *p);
+extern float LVL_15_GORN_F8411efa9_FUN_003072D0(float x, float y);
+extern float LVL_15_GORN_F8411efa9_FUN_00306D90(char *p);
+extern float LVL_15_GORN_F8411efa9_FUN_003072D0(float x, float y);
+extern void LVL_15_GORN_F8411efa9_FUN_00307498(float *matrix, float *quat);
+extern void LVL_15_GORN_F8411efa9_FUN_00306EF8(float *off, char *src, float scale);
+extern void LVL_15_GORN_F8411efa9_FUN_003F3688(char *pkt, float angle);
+extern void LVL_15_GORN_F8411efa9_FUN_00303F10(char *pkt, float *matrix, int mode);
+
+void LVL_15_GORN_FUN_003F36F0(char *pos, int a1, int a2, char *a3, int t0,
+                                        char *src, float f12, float f13)
+{
+    char pkt[144];
+    float m[16];
+    float quat[4];
+    float off[4];
+    long long r;
+
+    LVL_15_GORN_F8411efa9_FUN_003F3600(pkt);
+    r = LVL_15_GORN_F8411efa9_FUN_002FF540(a3);
+
+    *(int *)(pkt + 76) = a1 + (a2 << 24);
+    *(int *)(pkt + 72) = a1 + (a2 << 24);
+    *(int *)(pkt + 68) = a1 + (a2 << 24);
+    *(int *)(pkt + 64) = a1 + (a2 << 24);
+    *(long long *)(pkt + 112) = 0LL;
+    *(long long *)(pkt + 120) = r;
+    *(long long *)(pkt + 128) = 280993940374112LL;
+    *(long long *)(pkt + 136) = ((long long)t0 << 2) | 0x8000000040LL;
+
+    quat[3] = 0.0f;
+    quat[2] = LVL_15_GORN_F8411efa9_FUN_003072D0(*(float *)(src + 0), *(float *)(src + 4));
+    quat[1] = -LVL_15_GORN_F8411efa9_FUN_003072D0(LVL_15_GORN_F8411efa9_FUN_00306D90(src), *(float *)(src + 8));
+    quat[0] = f13;
+
+    LVL_15_GORN_F8411efa9_FUN_00307498(m, quat);
+    LVL_15_GORN_F8411efa9_FUN_00306EF8(off, src, 0.025f);
+
+    m[12] = *(float *)(pos + 0) + off[0];
+    m[13] = *(float *)(pos + 4) + off[1];
+    m[14] = *(float *)(pos + 8) + off[2];
+    m[15] = 1.0f;
+
+    LVL_15_GORN_F8411efa9_FUN_003F3688(pkt, f12);
+    LVL_15_GORN_F8411efa9_FUN_00303F10(pkt, m, 0);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_003E8A28(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_003EF7B0(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_003F3688(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_003F9968(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_00402610(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+extern void LVL_15_GORN_F2c74c194_FUN_00306CA0(char *dst, char *src, float scale);
+
+void LVL_15_GORN_FUN_004039B8(char *p, float scale)
+{
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p, p, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 16, p + 16, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 32, p + 32, scale);
+    LVL_15_GORN_F2c74c194_FUN_00306CA0(p + 48, p + 48, scale);
+}
+
+
+
+
+extern u8 LVL_15_GORN_F458c670e_D_00189E20[];
+
+extern void LVL_15_GORN_F458c670e_FUN_00336490(f32 *a, f32 *b, f32 c, f32 d, f32 e, f32 f);
+extern f32 LVL_15_GORN_F458c670e_FUN_00306BA0(f32 v);
+extern void LVL_15_GORN_F458c670e_FUN_003363D0(f32 *p, f32 v, f32 w);
+
+#ifndef RAC2_T_RES_F458C670E
+#define RAC2_T_RES_F458C670E
+typedef struct {
+    u8 pad000[0x88];
+    f32 f088;
+    u8 pad08C[0x1B8 - 0x08C];
+    s32 i1B8;
+    u8 pad1BC[0x330 - 0x1BC];
+    f32 f330;
+    u8 pad334[0x790 - 0x334];
+    f32 f790;
+    f32 f794;
+    u8 pad798[4];
+    f32 f79C;
+    f32 f7A0;
+    u8 pad7A4[0x9B0 - 0x7A4];
+    f32 f9B0;
+    u8 pad9B4[0xA3C - 0x9B4];
+    f32 fA3C;
+    u8 padA40[0x2294 - 0xA40];
+    s32 i2294;
+    u8 pad2298[4];
+    s32 i229C;
+    u8 pad22A0[4];
+    s32 i22A4;
+    u8 pad22A8[8];
+    s32 i22B0;
+} Res_F458c670e;
+#endif
+
+
+void LVL_15_GORN_FUN_002E20A8(void)
+{
+    f32 old, v, r, sum;
+
+    if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i1B8 >= 11
+        || ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790 < 0.0f
+        || ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i22A4 == 17
+        || ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i22B0 == 17) {
+        if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i2294 == 53) {
+            LVL_15_GORN_F458c670e_FUN_00336490(&((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790,
+                    &((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->fA3C,
+                    0.0f, 0.03f, 0.3f, 0.025000002f);
+            ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 = 0.0f;
+        } else {
+            old = ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790;
+            v = ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794;
+            ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 =
+                v - (old * 0.005f + v * 0.045f);
+            r = LVL_15_GORN_F458c670e_FUN_00306BA0(old);
+            if (r < 0.001f) {
+                if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 < 0.0001f)
+                    ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 = 0.0f;
+            }
+        }
+    }
+    sum = ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790
+        + ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794;
+    ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790 = sum;
+    if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i2294 == 53) {
+        if (sum > 0.0f) {
+            if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 > 0.0f)
+                ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f794 = 0.0f;
+            LVL_15_GORN_F458c670e_FUN_003363D0(&((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790,
+                    0.0f, 0.011666667f);
+        }
+    }
+    if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i2294 != 124) {
+        f32 x = ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f330;
+        if (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->i229C == 22)
+            x = ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f9B0;
+        LVL_15_GORN_F458c670e_FUN_00336490(&((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f79C,
+                &((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f7A0,
+                x, 0.027f, 0.3f, 0.0f);
+    }
+    ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f088 =
+        (((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f79C + (-0.12f))
+        + ((Res_F458c670e *)LVL_15_GORN_F458c670e_D_00189E20)->f790;
+}
+extern void LVL_15_GORN_F40487154_FUN_00307478(char *a, char *b);
+extern float LVL_15_GORN_F40487154_FUN_00307220(float value);
+extern void LVL_15_GORN_F40487154_FUN_00306CA0(char *a, char *b, float value);
+extern float LVL_15_GORN_F40487154_FUN_00307C20(float value, float scale);
+
+void LVL_15_GORN_FUN_003F61A8(char *object)
+{
+    char *data;
+    float x;
+    float y;
+    float z;
+
+    data = *(char **)(object + 104);
+    LVL_15_GORN_F40487154_FUN_00307478(object + 192, object + 240);
+    x = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 4)) * 0.15f + 0.35000002f;
+    y = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 8)) * 0.15f + 0.35000002f;
+    z = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 12)) * 0.15f + 0.35000002f;
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 192, object + 192, x);
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 208, object + 208, y);
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 224, object + 224, z);
+    *(float *)(data + 4) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 4), 0.5f);
+    *(float *)(data + 8) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 8), 0.5f);
+    *(float *)(data + 12) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 12), 0.5f);
+}
+extern void LVL_15_GORN_F40487154_FUN_00307478(char *a, char *b);
+extern float LVL_15_GORN_F40487154_FUN_00307220(float value);
+extern void LVL_15_GORN_F40487154_FUN_00306CA0(char *a, char *b, float value);
+extern float LVL_15_GORN_F40487154_FUN_00307C20(float value, float scale);
+
+void LVL_15_GORN_FUN_003FFEA0(char *object)
+{
+    char *data;
+    float x;
+    float y;
+    float z;
+
+    data = *(char **)(object + 104);
+    LVL_15_GORN_F40487154_FUN_00307478(object + 192, object + 240);
+    x = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 4)) * 0.15f + 0.35000002f;
+    y = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 8)) * 0.15f + 0.35000002f;
+    z = LVL_15_GORN_F40487154_FUN_00307220(*(float *)(data + 12)) * 0.15f + 0.35000002f;
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 192, object + 192, x);
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 208, object + 208, y);
+    LVL_15_GORN_F40487154_FUN_00306CA0(object + 224, object + 224, z);
+    *(float *)(data + 4) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 4), 0.5f);
+    *(float *)(data + 8) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 8), 0.5f);
+    *(float *)(data + 12) = LVL_15_GORN_F40487154_FUN_00307C20(*(float *)(data + 12), 0.5f);
+}
+extern int LVL_15_GORN_F6eb4f363_FUN_003332E0(int mode);
+extern float LVL_15_GORN_F6eb4f363_FUN_00335058(char *object, char *local);
+extern void LVL_15_GORN_F6eb4f363_FUN_00306CA0(char *local, int value, float scale);
+extern float LVL_15_GORN_F6eb4f363_FUN_00333378(float low, float high);
+extern void LVL_15_GORN_F6eb4f363_FUN_0034EE88(char *object, char *local, float amount, float base);
+
+void LVL_15_GORN_FUN_003A3B38(char *object)
+{
+    char local[16];
+    float base;
+    int value = *(int *)(object + 104);
+
+    if (LVL_15_GORN_F6eb4f363_FUN_003332E0(5))
+        return;
+    base = LVL_15_GORN_F6eb4f363_FUN_00335058(object + 16, local);
+    LVL_15_GORN_F6eb4f363_FUN_00306CA0(local, value, 0.25f);
+    LVL_15_GORN_F6eb4f363_FUN_0034EE88(object + 16, local, LVL_15_GORN_F6eb4f363_FUN_00333378(0.05f, 0.1f) * 210000.0f, base);
+}
+extern int LVL_15_GORN_F6eb4f363_FUN_003332E0(int mode);
+extern float LVL_15_GORN_F6eb4f363_FUN_00335058(char *object, char *local);
+extern void LVL_15_GORN_F6eb4f363_FUN_00306CA0(char *local, int value, float scale);
+extern float LVL_15_GORN_F6eb4f363_FUN_00333378(float low, float high);
+extern void LVL_15_GORN_F6eb4f363_FUN_0034EE88(char *object, char *local, float amount, float base);
+
+void LVL_15_GORN_FUN_003A65E0(char *object)
+{
+    char local[16];
+    float base;
+    int value = *(int *)(object + 104);
+
+    if (LVL_15_GORN_F6eb4f363_FUN_003332E0(5))
+        return;
+    base = LVL_15_GORN_F6eb4f363_FUN_00335058(object + 16, local);
+    LVL_15_GORN_F6eb4f363_FUN_00306CA0(local, value, 0.25f);
+    LVL_15_GORN_F6eb4f363_FUN_0034EE88(object + 16, local, LVL_15_GORN_F6eb4f363_FUN_00333378(0.05f, 0.1f) * 210000.0f, base);
+}
+extern int LVL_15_GORN_F6eb4f363_FUN_003332E0(int mode);
+extern float LVL_15_GORN_F6eb4f363_FUN_00335058(char *object, char *local);
+extern void LVL_15_GORN_F6eb4f363_FUN_00306CA0(char *local, int value, float scale);
+extern float LVL_15_GORN_F6eb4f363_FUN_00333378(float low, float high);
+extern void LVL_15_GORN_F6eb4f363_FUN_0034EE88(char *object, char *local, float amount, float base);
+
+void LVL_15_GORN_FUN_003ABB08(char *object)
+{
+    char local[16];
+    float base;
+    int value = *(int *)(object + 104);
+
+    if (LVL_15_GORN_F6eb4f363_FUN_003332E0(5))
+        return;
+    base = LVL_15_GORN_F6eb4f363_FUN_00335058(object + 16, local);
+    LVL_15_GORN_F6eb4f363_FUN_00306CA0(local, value, 0.25f);
+    LVL_15_GORN_F6eb4f363_FUN_0034EE88(object + 16, local, LVL_15_GORN_F6eb4f363_FUN_00333378(0.05f, 0.1f) * 210000.0f, base);
+}
+extern int LVL_15_GORN_Fc10c1216_FUN_003068D0(char *);
+extern void LVL_15_GORN_Fc10c1216_FUN_00348318(char *);
+extern int LVL_15_GORN_Fc10c1216_FUN_00307D78(float);
+extern void LVL_15_GORN_Fc10c1216_FUN_00306C30(char *, char *, char *);
+
+void LVL_15_GORN_FUN_0034E118(char *p)
+{
+    float *q = (float *)(p + 32);
+
+    if (0.0f < q[3])
+        q[1] = q[1] + q[3] * 0.007f;
+    else if (0.03f < q[1])
+        q[1] = q[1] + q[3] * 0.007f;
+    else {
+        q[1] = q[1] + q[3] * 1.4000000664964318275452e-03f;
+        *(float *)(p + 12) = *(float *)(p + 12) + 5460.0f;
+    }
+
+    if (q[1] <= 0.0244f || LVL_15_GORN_Fc10c1216_FUN_003068D0(p + 10) != 0) {
+        LVL_15_GORN_Fc10c1216_FUN_00348318(p);
+        return;
+    }
+
+    if (q[1] >= 0.12f) {
+        q[3] = -q[3];
+        q[1] = q[1] + q[3] * 0.007f;
+    }
+    *(float *)(p + 12) = *(float *)(p + 12) + 5460.0f;
+    *(int *)(p + 4) = (*(int *)(p + 4) & 0xffffff) | (LVL_15_GORN_Fc10c1216_FUN_00307D78(q[1] * 255.0f) << 24);
+    q[2] = q[2] + 0.002f;
+    if (q[2] > 1.0f)
+        q[2] = q[2] - 1.0f;
+    *(char *)(p + 8) = (char)(q[2] * 255.0f);
+    LVL_15_GORN_Fc10c1216_FUN_00306C30(p + 16, p + 16, (char *)(q + 4));
+}
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *LVL_15_GORN_F904cc63b_FUN_003395D0(char *p);
+extern void LVL_15_GORN_F904cc63b_FUN_00307498(V4_F904cc63b *dst, char *src);
+extern void LVL_15_GORN_F904cc63b_FUN_00306C30(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_15_GORN_F904cc63b_FUN_00306C60(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void LVL_15_GORN_F904cc63b_FUN_00307720(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void LVL_15_GORN_F904cc63b_FUN_003070D8(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int LVL_15_GORN_FUN_00339850(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = LVL_15_GORN_F904cc63b_FUN_003395D0(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    LVL_15_GORN_F904cc63b_FUN_00307498(b0, p);
+    LVL_15_GORN_F904cc63b_FUN_00306C30(b1, (V4_F904cc63b *)a2, p + 16);
+    LVL_15_GORN_F904cc63b_FUN_00306C60(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        LVL_15_GORN_F904cc63b_FUN_00307498(b3, p + 32);
+        LVL_15_GORN_F904cc63b_FUN_00307720(b2, b3);
+        LVL_15_GORN_F904cc63b_FUN_003070D8(b1, b1, b2);
+        LVL_15_GORN_F904cc63b_FUN_003070D8(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        LVL_15_GORN_F904cc63b_FUN_003070D8(b1, b1, b0);
+    }
+    LVL_15_GORN_F904cc63b_FUN_00306C30(b1, b1, a1 + 16);
+    LVL_15_GORN_F904cc63b_FUN_00306C60((V4_F904cc63b *)a3, b1, a2);
+    return 1;
+}
+extern int LVL_15_GORN_F250fbfa4_FUN_003068D0(char *p);
+extern void LVL_15_GORN_F250fbfa4_FUN_00348318(char *p);
+extern void LVL_15_GORN_F250fbfa4_FUN_00306C30(char *p0, char *p1, char *p2);
+
+void LVL_15_GORN_FUN_003580F8(char *a0)
+{
+    char local[16];
+    char *s1 = a0;
+    char *s0;
+    int a1;
+    int v1;
+    char *p;
+
+    if (LVL_15_GORN_F250fbfa4_FUN_003068D0(a0 + 10) != 0) {
+        LVL_15_GORN_F250fbfa4_FUN_00348318(a0);
+        return;
+    }
+    s0 = a0 + 32;
+    a1 = *(int *)(s1 + 4);
+    v1 = (a1 >> 24) + *(unsigned char *)(s0 + 20);
+    *(int *)(s1 + 4) = (a1 & 0x00ffffff) | (v1 << 24);
+    p = s1 + 16;
+    *(float *)(local + 0) = *(float *)(s1 + 32);
+    *(float *)(local + 4) = *(float *)(s0 + 4);
+    *(float *)(local + 8) = *(float *)(s0 + 8);
+    *(int *)(local + 12) = 0;
+    LVL_15_GORN_F250fbfa4_FUN_00306C30(p, p, local);
+    *(float *)(s0 + 8) = *(float *)(s0 + 8) - *(float *)(s0 + 12);
+    *(unsigned char *)(s1 + 8) = *(unsigned char *)(s1 + 8) + *(unsigned char *)(s0 + 21);
+    *(float *)(s1 + 12) = *(float *)(s1 + 12) + *(float *)(s0 + 16);
+}
+extern int LVL_15_GORN_F250fbfa4_FUN_003068D0(char *p);
+extern void LVL_15_GORN_F250fbfa4_FUN_00348318(char *p);
+extern void LVL_15_GORN_F250fbfa4_FUN_00306C30(char *p0, char *p1, char *p2);
+
+void LVL_15_GORN_FUN_00358F10(char *a0)
+{
+    char local[16];
+    char *s1 = a0;
+    char *s0;
+    int a1;
+    int v1;
+    char *p;
+
+    if (LVL_15_GORN_F250fbfa4_FUN_003068D0(a0 + 10) != 0) {
+        LVL_15_GORN_F250fbfa4_FUN_00348318(a0);
+        return;
+    }
+    s0 = a0 + 32;
+    a1 = *(int *)(s1 + 4);
+    v1 = (a1 >> 24) + *(unsigned char *)(s0 + 20);
+    *(int *)(s1 + 4) = (a1 & 0x00ffffff) | (v1 << 24);
+    p = s1 + 16;
+    *(float *)(local + 0) = *(float *)(s1 + 32);
+    *(float *)(local + 4) = *(float *)(s0 + 4);
+    *(float *)(local + 8) = *(float *)(s0 + 8);
+    *(int *)(local + 12) = 0;
+    LVL_15_GORN_F250fbfa4_FUN_00306C30(p, p, local);
+    *(float *)(s0 + 8) = *(float *)(s0 + 8) - *(float *)(s0 + 12);
+    *(unsigned char *)(s1 + 8) = *(unsigned char *)(s1 + 8) + *(unsigned char *)(s0 + 21);
+    *(float *)(s1 + 12) = *(float *)(s1 + 12) + *(float *)(s0 + 16);
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_004599E0(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_00459E20(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045A0D8(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045A660(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045B0E8(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045B3B0(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045B778(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045BA28(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Ffb202470_FUN_004587F8(char *p);
+
+char *LVL_15_GORN_FUN_0045BC20(char *object)
+{
+    LVL_15_GORN_Ffb202470_FUN_004587F8(object + 8);
+    return object;
+}
+extern void LVL_15_GORN_Fe524d931_FUN_00458AD0(char *p);
+extern void LVL_15_GORN_Fe524d931_FUN_00458CC0(char *p, float x, float y);
+extern void LVL_15_GORN_Fe524d931_FUN_003781D0(int a, int b, int c);
+extern void LVL_15_GORN_Fe524d931_FUN_00308F80(void);
+extern short LVL_15_GORN_Fe524d931_D_001A6480[];
+
+int LVL_15_GORN_FUN_00459B40(char *object, int mask)
+{
+    char *sub = object + 8;
+    short oldx;
+    short oldy;
+    int *v;
+
+    LVL_15_GORN_Fe524d931_FUN_00458AD0(sub);
+    v = *(int **)(object + 684);
+    LVL_15_GORN_Fe524d931_FUN_00458CC0(sub, *(float *)v, *(float *)(v + 1));
+    if ((mask & 0x40) != 0 && *(int *)(object + 680) == 0)
+        LVL_15_GORN_Fe524d931_FUN_003781D0(4, 0, 0);
+    if ((mask & 0xf000) != 0) {
+        short *p = LVL_15_GORN_Fe524d931_D_001A6480;
+        oldx = p[180];
+        oldy = p[181];
+        if ((mask & 0x1000) != 0) {
+            ((unsigned short *)p)[181] = ((unsigned short *)p)[181] - 1;
+            if ((short)((unsigned short *)p)[181] < -32)
+                p[181] = -32;
+        }
+        if ((mask & 0x4000) != 0) {
+            unsigned short *q = (unsigned short *)LVL_15_GORN_Fe524d931_D_001A6480;
+            q[181] = q[181] + 1;
+            if ((short)q[181] > 32)
+                ((short *)q)[181] = 32;
+        }
+        if ((mask & 0x8000) != 0) {
+            unsigned short *q = (unsigned short *)LVL_15_GORN_Fe524d931_D_001A6480;
+            q[180] = q[180] - 1;
+            if ((short)q[180] < -40)
+                ((short *)q)[180] = -40;
+        }
+        if ((mask & 0x2000) != 0) {
+            unsigned short *q = (unsigned short *)LVL_15_GORN_Fe524d931_D_001A6480;
+            q[180] = q[180] + 1;
+            if ((short)q[180] > 40)
+                ((short *)q)[180] = 40;
+        }
+        {
+            short *q = LVL_15_GORN_Fe524d931_D_001A6480;
+            if (oldx != q[180] || oldy != q[181])
+                LVL_15_GORN_Fe524d931_FUN_003781D0(4, 0, 0);
+        }
+        LVL_15_GORN_Fe524d931_FUN_00308F80();
+    }
+    return (mask >> 6) & 1;
+}
+extern void LVL_15_GORN_F0b028b34_FUN_0046E530(char *a, unsigned int b, int c, int d);
+extern void LVL_15_GORN_F0b028b34_FUN_0046E530(char *a, unsigned int b, int c, int d);
+extern void LVL_15_GORN_F0b028b34_FUN_0046E4C0(int a);
+
+int LVL_15_GORN_FUN_0046E5D0(int *p)
+{
+    int i;
+
+    p[17] = 1;
+    p[3] = 0;
+    p[4] = 0;
+    p[5] = 0;
+    p[22] = 0;
+    p[23] = 0;
+    for (i = 0; i < p[21]; i++) {
+        *(long long *)((char *)p[20] + i * 24) = -1;
+        *(long long *)((char *)p[20] + i * 24 + 8) = -1;
+        *(int *)((char *)p[20] + i * 24 + 16) = 0;
+        *(int *)((char *)p[20] + i * 24 + 20) = 0;
+    }
+    for (i = 0; i < p[2]; i++) {
+        LVL_15_GORN_F0b028b34_FUN_0046E530((char *)(p[1] + i * 16), (i * 2048 + p[0]) & 0x0FFFFFFF, 3, 128);
+    }
+    LVL_15_GORN_F0b028b34_FUN_0046E530((char *)(p[1] + i * 16), p[1] & 0x0FFFFFFF, 2, 0);
+    *(volatile unsigned int *)0x1000B420 = 0;
+    *(volatile unsigned int *)0x1000B410 = p[0] & 0x0FFFFFFF;
+    *(volatile unsigned int *)0x1000B430 = p[1] & 0x0FFFFFFF;
+    LVL_15_GORN_F0b028b34_FUN_0046E4C0(5);
+    return 1;
+}
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_0039B4F8(char *a, char *b);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(char *a, char *b, char *c);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(char *a, char *b, float f);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_003993D8(char *a, char *b);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(char *a, char *b, float f);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(char *a, char *b, char *c);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(char *a, char *b, float f);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(char *a, char *b, char *c);
+extern int LVL_15_GORN_Fbdd4a4aa_FUN_00307DC0(unsigned int a, int b, float f);
+extern void LVL_15_GORN_Fbdd4a4aa_FUN_00348318(char *a);
+
+void LVL_15_GORN_FUN_00359D38(int *obj)
+{
+    char *a = (char *)obj + 16;
+    char *b = (char *)obj + 32;
+    char tmp[16];
+
+    LVL_15_GORN_Fbdd4a4aa_FUN_0039B4F8(a, a);
+    *(int *)(b + 16) = *(int *)(b + 16) - 1;
+    if (*(int *)(b + 16) < 0)
+        *(int *)(b + 16) = 0;
+    *(unsigned char *)((char *)obj + 8) = *(unsigned char *)((char *)obj + 8) + 1;
+    LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(a, b, a);
+    *(float *)((char *)obj + 12) = *(float *)((char *)obj + 12) + 1.5750000000000000000000e+03f;
+    LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(b, b, 9.9000000953674316406250e-01f);
+    LVL_15_GORN_Fbdd4a4aa_FUN_003993D8(a, tmp);
+    if ((*(int *)((char *)obj + 4) & 0xFF) < 32) {
+        LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(tmp, tmp, 1.5000000130385160446167e-03f);
+        LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(b, b, tmp);
+    } else {
+        LVL_15_GORN_Fbdd4a4aa_FUN_00306CA0(tmp, tmp, -7.5000000651925802230835e-04f);
+        LVL_15_GORN_Fbdd4a4aa_FUN_00306C30(b, b, tmp);
+    }
+    *(int *)((char *)obj + 4) = LVL_15_GORN_Fbdd4a4aa_FUN_00307DC0(*(unsigned int *)((char *)obj + 4) & 0x00FFFFFF, 0, 2.5000000372529029846191e-02f)
+        | (*(int *)(b + 16) << 24);
+    if (*(int *)(b + 16) == 0)
+        LVL_15_GORN_Fbdd4a4aa_FUN_00348318((char *)obj);
+}
+#ifndef RAC2_T_OBJ_F7B2F1854
+#define RAC2_T_OBJ_F7B2F1854
+typedef struct Obj_F7b2f1854 {
+    int *f0;
+    int *f4;
+    int *f8;
+    int *f12;
+    int *f16;
+    int f20;
+    int f24;
+    int f28;
+    int f32;
+    int f36;
+    int f40;
+    int f44;
+} Obj_F7b2f1854;
+#endif
+
+
+extern int *LVL_15_GORN_F7b2f1854_FUN_00454AE0(int n);
+extern int *LVL_15_GORN_F7b2f1854_FUN_00454A48(int size, int *p);
+extern void LVL_15_GORN_F7b2f1854_FUN_00453B08(Obj_F7b2f1854 *o, int v);
+
+void LVL_15_GORN_FUN_00453C68(Obj_F7b2f1854 *o, int a1, int count)
+{
+    int *p;
+    int n;
+
+    o->f44 = count;
+    if (count != 0) {
+        p = LVL_15_GORN_F7b2f1854_FUN_00454A48(16, LVL_15_GORN_F7b2f1854_FUN_00454AE0(count));
+        n = o->f44;
+        o->f0 = p;
+        p[1] = 0;
+        p[2] = 0;
+        p[3] = 0;
+        p[0] = 0;
+
+        p = LVL_15_GORN_F7b2f1854_FUN_00454A48(16, LVL_15_GORN_F7b2f1854_FUN_00454AE0(n));
+        n = o->f44;
+        o->f8 = p;
+        p[1] = 0;
+        p[2] = 0;
+        p[3] = 0;
+        p[0] = 0;
+
+        p = LVL_15_GORN_F7b2f1854_FUN_00454A48(16, LVL_15_GORN_F7b2f1854_FUN_00454AE0(n));
+        n = o->f44;
+        o->f4 = p;
+        p[1] = 0;
+        p[2] = 0;
+        p[3] = 0;
+        p[0] = 0;
+
+        p = LVL_15_GORN_F7b2f1854_FUN_00454A48(16, LVL_15_GORN_F7b2f1854_FUN_00454AE0(n));
+        n = o->f44;
+        o->f12 = p;
+        p[1] = 0;
+        p[2] = 0;
+        p[3] = 0;
+        p[0] = 0;
+
+        p = LVL_15_GORN_F7b2f1854_FUN_00454A48(16, LVL_15_GORN_F7b2f1854_FUN_00454AE0(n));
+        o->f16 = p;
+        p[1] = 0;
+        p[2] = 0;
+        p[3] = 0;
+        p[0] = 0;
+    }
+    o->f40 = a1;
+    o->f32 = 0;
+    o->f20 = 0;
+    o->f28 = 0;
+    o->f24 = 0;
+    o->f36 = 0;
+    LVL_15_GORN_F7b2f1854_FUN_00453B08(o, 1);
+}
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454370(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+
+char *LVL_15_GORN_FUN_00461648(char *p)
+{
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 76);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 152);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 228);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 304);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 380);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 456);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 528);
+    LVL_15_GORN_F449e2f67_FUN_00454370(p + 600);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 664);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 736);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 808);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 880);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 952);
+    return p;
+}
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00453E48(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454370(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+extern void LVL_15_GORN_F449e2f67_FUN_00454608(char *p);
+
+char *LVL_15_GORN_FUN_004630A8(char *p)
+{
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 76);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 152);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 228);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 304);
+    LVL_15_GORN_F449e2f67_FUN_00453E48(p + 380);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 456);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 528);
+    LVL_15_GORN_F449e2f67_FUN_00454370(p + 600);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 664);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 736);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 808);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 880);
+    LVL_15_GORN_F449e2f67_FUN_00454608(p + 952);
+    return p;
+}
+extern char *LVL_15_GORN_Ffc961fca_FUN_003395D0(char *a1);
+extern void LVL_15_GORN_Ffc961fca_FUN_00307498(char *dst, char *src);
+extern void LVL_15_GORN_Ffc961fca_FUN_00306C30(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_00306C60(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_00307498(char *dst, char *src);
+extern void LVL_15_GORN_Ffc961fca_FUN_00307720(char *dst, char *src);
+extern void LVL_15_GORN_Ffc961fca_FUN_003070D8(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_003070D8(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_003070D8(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_00306C30(char *dst, char *src, char *tail);
+extern void LVL_15_GORN_Ffc961fca_FUN_003077C0(char *dst, char *src, char *tail);
+
+void LVL_15_GORN_FUN_003B7150(char *o0, char *o1)
+{
+    char b0[64];
+    char b1[64];
+    char b2[64];
+    char *r = LVL_15_GORN_Ffc961fca_FUN_003395D0(o1);
+
+    if (r == 0)
+        return;
+    LVL_15_GORN_Ffc961fca_FUN_00307498(b0, r);
+    LVL_15_GORN_Ffc961fca_FUN_00306C30(o0 + 16, o0 + 16, r + 16);
+    LVL_15_GORN_Ffc961fca_FUN_00306C60(o0 + 16, o0 + 16, o1 + 16);
+    if ((*(int *)(r + 60) & 2) != 0) {
+        LVL_15_GORN_Ffc961fca_FUN_00307498(b2, r + 32);
+        LVL_15_GORN_Ffc961fca_FUN_00307720(b1, b2);
+        LVL_15_GORN_Ffc961fca_FUN_003070D8(o0 + 16, o0 + 16, b1);
+        LVL_15_GORN_Ffc961fca_FUN_003070D8(o0 + 16, o0 + 16, o1 + 192);
+    } else {
+        LVL_15_GORN_Ffc961fca_FUN_003070D8(o0 + 16, o0 + 16, b0);
+    }
+    LVL_15_GORN_Ffc961fca_FUN_00306C30(o0 + 16, o0 + 16, o1 + 16);
+    LVL_15_GORN_Ffc961fca_FUN_003077C0(o0 + 192, b0, o0 + 192);
+}
+extern int LVL_15_GORN_Fd1c348f5_FUN_003068D0(char *p);
+extern int LVL_15_GORN_Fd1c348f5_FUN_00307D78(float v);
+extern int LVL_15_GORN_Fd1c348f5_FUN_003068D0(char *p);
+extern void LVL_15_GORN_Fd1c348f5_FUN_00348318(char *p);
+extern int LVL_15_GORN_Fd1c348f5_FUN_00307D78(float v);
+
+void LVL_15_GORN_FUN_0034BC80(char *p)
+{
+    char *q = p + 32;
+    int r;
+    int v;
+    float f;
+
+    *(unsigned char *)(p + 8) = *(unsigned char *)(p + 8) + *(unsigned char *)(q + 8);
+    *(float *)(p + 24) = *(float *)(p + 24) + *(float *)(q + 16);
+    *(float *)(p + 12) = *(float *)(p + 12) * *(float *)(q + 12);
+    if (*(int *)(q + 4) == 0) {
+        r = LVL_15_GORN_Fd1c348f5_FUN_003068D0(p + 10);
+        if (r != 0) {
+            *(int *)(q + 4) = 1;
+            *(short *)(p + 10) = 30;
+            *(int *)(p + 4) = *(int *)(q + 20) | 0x7f000000;
+        } else {
+            f = (float)(10 - *(short *)(p + 10)) * 9.6000003814697265625000e+00f;
+            v = LVL_15_GORN_Fd1c348f5_FUN_00307D78(f);
+            *(int *)(p + 4) = ((v + 32) << 24) | *(int *)(q + 20);
+        }
+    } else {
+        r = LVL_15_GORN_Fd1c348f5_FUN_003068D0(p + 10);
+        if (r != 0) {
+            LVL_15_GORN_Fd1c348f5_FUN_00348318(p);
+        } else {
+            f = (float)*(short *)(p + 10) * 4.2333333492279052734375e+00f;
+            v = LVL_15_GORN_Fd1c348f5_FUN_00307D78(f);
+            *(int *)(p + 4) = (v << 24) | *(int *)(q + 20);
+        }
+    }
+}
+extern void LVL_15_GORN_F2d5993bb_FUN_003069B8(char *p, int a1, int a2);
+extern void LVL_15_GORN_F2d5993bb_FUN_00306A08(char *p, int a1, int a2);
+extern int LVL_15_GORN_F2d5993bb_FUN_00324AD0(char *p, int a1);
+
+int LVL_15_GORN_FUN_00324BB8(char *out, int mult, int *recs)
+{
+    int off = 0;
+    char *p = out + 8;
+    char *r;
+    int v;
+    int w;
+
+    if (*(int *)recs != 0) {
+        r = (char *)recs;
+        do {
+            off += 8;
+            v = *(int *)(r + 0) + mult * *(int *)(r + 4);
+            *(int *)(p + 0) = *(int *)(r + 8);
+            *(int *)(p + 4) = *(int *)(r + 4);
+            p += 8;
+            if (*(int *)(r + 8) == 6000)
+                LVL_15_GORN_F2d5993bb_FUN_003069B8(p, 0, *(int *)(r + 4));
+            else
+                LVL_15_GORN_F2d5993bb_FUN_00306A08(p, v, *(int *)(r + 4));
+            w = *(int *)(r + 4);
+            r += 16;
+            p += w;
+            off += w;
+            p = (char *)(((int)p + 3) & ~3);
+            off = (off + 3) & ~3;
+        } while (*(int *)r != 0);
+    }
+    off += 8;
+    *(int *)(p + 4) = 0;
+    *(int *)(p + 0) = -1;
+    v = LVL_15_GORN_F2d5993bb_FUN_00324AD0(out + 8, off);
+    *(int *)(out + 4) = v;
+    *(int *)(out + 0) = off;
+    return off + 8;
+}
+extern int LVL_15_GORN_F77a1e64d_FUN_00337DA0(char *object);
+extern float *LVL_15_GORN_F77a1e64d_FUN_003372D8(char *object);
+
+int LVL_15_GORN_FUN_003F62D0(char *object)
+{
+    float *p;
+
+    if (LVL_15_GORN_F77a1e64d_FUN_00337DA0(object) != 0)
+        return 0;
+    p = LVL_15_GORN_F77a1e64d_FUN_003372D8(object);
+    if (p == 0)
+        return 0;
+    if (0.0f < *p)
+        return 0;
+    return 1;
+}
+extern int LVL_15_GORN_F77a1e64d_FUN_00337DA0(char *object);
+extern float *LVL_15_GORN_F77a1e64d_FUN_003372D8(char *object);
+
+int LVL_15_GORN_FUN_003FFFC8(char *object)
+{
+    float *p;
+
+    if (LVL_15_GORN_F77a1e64d_FUN_00337DA0(object) != 0)
+        return 0;
+    p = LVL_15_GORN_F77a1e64d_FUN_003372D8(object);
+    if (p == 0)
+        return 0;
+    if (0.0f < *p)
+        return 0;
+    return 1;
+}
+extern int LVL_15_GORN_F77a1e64d_FUN_00337DA0(char *object);
+extern float *LVL_15_GORN_F77a1e64d_FUN_003372D8(char *object);
+
+int LVL_15_GORN_FUN_004451B0(char *object)
+{
+    float *p;
+
+    if (LVL_15_GORN_F77a1e64d_FUN_00337DA0(object) != 0)
+        return 0;
+    p = LVL_15_GORN_F77a1e64d_FUN_003372D8(object);
+    if (p == 0)
+        return 0;
+    if (0.0f < *p)
+        return 0;
+    return 1;
+}
+extern void LVL_15_GORN_Fb342d477_D_0011AC60(int value);
+extern void LVL_15_GORN_Fb342d477_FUN_0046E4C0(int value);
+extern void LVL_15_GORN_Fb342d477_FUN_0046E450(int value);
+extern void LVL_15_GORN_Fb342d477_D_0011AC40(int value);
+
+int LVL_15_GORN_FUN_0046EA80(int *p)
+{
+    LVL_15_GORN_Fb342d477_D_0011AC60(p[16]);
+    p[17] = 0;
+    LVL_15_GORN_Fb342d477_FUN_0046E4C0(5);
+    p[7] = *(volatile int *)0x1000B410;
+    p[8] = *(volatile int *)0x1000B430;
+    p[9] = *(volatile int *)0x1000B420;
+    p[10] = *(volatile int *)0x1000B400;
+    if (*(volatile int *)0x10002010 & 0xF0)
+        while (*(volatile int *)0x10002010 & 0xF0)
+            ;
+    LVL_15_GORN_Fb342d477_FUN_0046E450(0);
+    p[11] = *(volatile int *)0x1000B010;
+    p[12] = *(volatile int *)0x1000B020;
+    p[13] = *(volatile int *)0x1000B000;
+    p[14] = *(volatile int *)0x10002020;
+    p[15] = *(volatile int *)0x10002010;
+    LVL_15_GORN_Fb342d477_D_0011AC40(p[16]);
+    return 1;
+}
+/* Family 0e7bb6a8908d30dc -- 244 bytes, 28 placements (1 boot + 27 levels). */
+
+extern char *LVL_15_GORN_F0e7bb6a8_FUN_003395D0(char *a);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307498(char *dst, char *src);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307720(char *dst, char *src);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307720(char *dst, char *src);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00306C60(char *dst, char *a, char *b);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307100(char *a, char *b, char *c);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307498(char *dst, char *src);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_00307810(char *a, char *b, char *c);
+extern void LVL_15_GORN_F0e7bb6a8_FUN_003378B8(char *a, char *b);
+
+int LVL_15_GORN_FUN_00339B18(char *unused, char *obj, char *arg2, char *arg3, char *arg4, char *arg5)
+{
+    char buf0[64];
+    char buf1[16];
+    char buf2[64];
+    char *p;
+
+    p = LVL_15_GORN_F0e7bb6a8_FUN_003395D0(obj);
+    if (p == 0)
+        return 0;
+    if (*(int *)(p + 60) & 0x40) {
+        LVL_15_GORN_F0e7bb6a8_FUN_00307498(buf0, obj + 240);
+        LVL_15_GORN_F0e7bb6a8_FUN_00307720(buf0, buf0);
+    } else {
+        LVL_15_GORN_F0e7bb6a8_FUN_00307720(buf0, obj + 192);
+    }
+    LVL_15_GORN_F0e7bb6a8_FUN_00306C60(buf1, arg2, obj + 16);
+    LVL_15_GORN_F0e7bb6a8_FUN_00307100(arg4, buf1, buf0);
+    LVL_15_GORN_F0e7bb6a8_FUN_00307498(buf2, arg3);
+    LVL_15_GORN_F0e7bb6a8_FUN_00307810(buf2, buf0, buf2);
+    LVL_15_GORN_F0e7bb6a8_FUN_003378B8(buf2, arg5);
+    return 1;
+}
+extern void LVL_15_GORN_Fa2a84657_FUN_00306CB8(float *tmp, char *v, float k);
+extern void LVL_15_GORN_Fa2a84657_FUN_00306C48(float *tmp, char *a, char *v);
+extern int LVL_15_GORN_Fa2a84657_FUN_003068D0(char *field);
+extern void LVL_15_GORN_Fa2a84657_FUN_00348318(unsigned char *p);
+
+void LVL_15_GORN_FUN_00351B00(unsigned char *p)
+{
+    float tmp[4];
+    char *v;
+    int n;
+
+    v = (char *)p + 32;
+    LVL_15_GORN_Fa2a84657_FUN_00306CB8(tmp, v, 9.4999998807907104492188e-01f);
+    *(float *)(v + 8) = *(float *)(v + 8) + 1.3888889225199818611145e-03f;
+    LVL_15_GORN_Fa2a84657_FUN_00306C48(tmp, (char *)p + 16, v);
+
+    n = *(int *)(p + 4) + (int)0xFE000000;
+    *(int *)(p + 4) = n;
+    if (((unsigned)(n & 0xFF000000) - 1) > 0x5EFFFFFFu || LVL_15_GORN_Fa2a84657_FUN_003068D0((char *)p + 10) != 0) {
+        LVL_15_GORN_Fa2a84657_FUN_00348318(p);
+    } else {
+        float f0;
+        float f1;
+
+        f1 = *(float *)(p + 12);
+        f0 = 2.1000000000000000000000e+05f - f1;
+        f0 = f0 * 7.0000000298023223876953e-02f;
+        f1 = f1 + f0;
+        *(float *)(p + 12) = f1;
+        p[8] = p[8] + 1;
+    }
+}
+extern int LVL_15_GORN_F750245c6_D_001A7340 __attribute__((sda));
+extern void LVL_15_GORN_F750245c6_FUN_00314078(int a, int b, int c, int d, char *e, int f);
+void LVL_15_GORN_FUN_003611C8(int a0, char *a1)
+{
+    int h, k, p, m;
+    k = a0 / 2 + 5;
+    h = LVL_15_GORN_F750245c6_D_001A7340 / 2;
+    m = h - k;
+    p = h + k;
+    LVL_15_GORN_F750245c6_FUN_00314078(m - 2, 312, p + 4, 314, a1, 0);
+    LVL_15_GORN_F750245c6_FUN_00314078(m - 2, 333, p + 4, 335, a1, 0);
+    LVL_15_GORN_F750245c6_FUN_00314078(m - 2, 313, m, 334, a1, 0);
+    LVL_15_GORN_F750245c6_FUN_00314078(p + 2, 313, p + 4, 334, a1, 0);
+}
+extern float LVL_15_GORN_Fe617c30b_FUN_00307D68(int a);
+extern void LVL_15_GORN_Fe617c30b_FUN_00306CA0(char *p, char *q, float f);
+extern void LVL_15_GORN_Fe617c30b_FUN_00306C30(char *p, char *q, char *r);
+extern int LVL_15_GORN_Fe617c30b_FUN_003354C8(int a, int b, float f);
+extern int LVL_15_GORN_Fe617c30b_FUN_003068D0(char *p);
+extern void LVL_15_GORN_Fe617c30b_FUN_00348318(char *p);
+
+void LVL_15_GORN_FUN_0034A300(char *a0)
+{
+    char *s0 = a0 + 32;
+    int x;
+    int u;
+    int t;
+    float f;
+
+    x = *(int *)(s0 + 28);
+    t = *(short *)(a0 + 10);
+    u = *(short *)(s0 + 24) * (x - t) / x + *(short *)(s0 + 26);
+
+    f = LVL_15_GORN_Fe617c30b_FUN_00307D68(u) * 1000.0f;
+    *(float *)(a0 + 12) = f;
+    LVL_15_GORN_Fe617c30b_FUN_00306CA0(s0, s0, 9.8000001907348632812500e-01f);
+    LVL_15_GORN_Fe617c30b_FUN_00306C30(a0 + 16, a0 + 16, s0);
+    *(unsigned char *)(a0 + 8) = *(unsigned char *)(a0 + 8) + 1;
+    f = LVL_15_GORN_Fe617c30b_FUN_00307D68(*(int *)(s0 + 28));
+    *(int *)(a0 + 4) = LVL_15_GORN_Fe617c30b_FUN_003354C8(*(int *)(s0 + 20), *(int *)(s0 + 16),
+                               (float)*(short *)(a0 + 10) / f);
+    if (LVL_15_GORN_Fe617c30b_FUN_003068D0(a0 + 10) != 0)
+        LVL_15_GORN_Fe617c30b_FUN_00348318(a0);
+}
+extern int LVL_15_GORN_F4a4e68d9_D_001A904C __attribute__((sda));
+extern void LVL_15_GORN_F4a4e68d9_FUN_0046C170(int);
+
+void LVL_15_GORN_FUN_003254D8(void)
+{
+    int value = LVL_15_GORN_F4a4e68d9_D_001A904C;
+
+    if (value != 0)
+        LVL_15_GORN_F4a4e68d9_FUN_0046C170(value + 0x36F28);
+}
+extern int LVL_15_GORN_F4a4e68d9_D_001A904C __attribute__((sda));
+extern void LVL_15_GORN_F4a4e68d9_FUN_0046C190(int);
+
+void LVL_15_GORN_FUN_00325B60(void)
+{
+    int value = LVL_15_GORN_F4a4e68d9_D_001A904C;
+
+    if (value != 0)
+        LVL_15_GORN_F4a4e68d9_FUN_0046C190(value + 0x36F28);
+}
+extern int LVL_15_GORN_F4a4e68d9_D_001A904C __attribute__((sda));
+extern void LVL_15_GORN_F4a4e68d9_FUN_0046C130(int);
+
+void LVL_15_GORN_FUN_00325DB0(void)
+{
+    int value = LVL_15_GORN_F4a4e68d9_D_001A904C;
+
+    if (value != 0)
+        LVL_15_GORN_F4a4e68d9_FUN_0046C130(value + 0x36F28);
+}
+extern int LVL_15_GORN_F4a4e68d9_D_001A904C __attribute__((sda));
+extern void LVL_15_GORN_F4a4e68d9_FUN_0046C1B0(int);
+
+void LVL_15_GORN_FUN_00325DE0(void)
+{
+    int value = LVL_15_GORN_F4a4e68d9_D_001A904C;
+
+    if (value != 0)
+        LVL_15_GORN_F4a4e68d9_FUN_0046C1B0(value + 0x36F28);
+}
+extern int LVL_15_GORN_F4a4e68d9_D_001A904C __attribute__((sda));
+extern void LVL_15_GORN_F4a4e68d9_FUN_00455D48(int);
+
+void LVL_15_GORN_FUN_003269F0(void)
+{
+    int value = LVL_15_GORN_F4a4e68d9_D_001A904C;
+
+    if (value != 0)
+        LVL_15_GORN_F4a4e68d9_FUN_00455D48(value + 0x36F28);
+}
+extern void LVL_15_GORN_F42d2147f_FUN_00306EF8(char *a0, char *a1, float f);
+extern void LVL_15_GORN_F42d2147f_FUN_00306CA0(char *a0, char *a1, float f);
+extern void LVL_15_GORN_F42d2147f_FUN_00306C30(char *a0, char *a1, char *a2);
+extern char LVL_15_GORN_F42d2147f_D_00189E20[];
+extern char LVL_15_GORN_F42d2147f_D_00189EA0[];
+
+void LVL_15_GORN_FUN_0044B320(char *object)
+{
+    char local[16];
+    char buf[16];
+    char *p = LVL_15_GORN_F42d2147f_D_00189E20;
+    unsigned char v;
+
+    LVL_15_GORN_F42d2147f_FUN_00306EF8(local, (char *)(*(int *)(p + 8848) + 224), 1.0f);
+    v = *(unsigned char *)(p + 8884);
+    if (v == 2) {
+        LVL_15_GORN_F42d2147f_FUN_00306CA0(buf, local, 9.5f);
+    } else if (v == 1) {
+        LVL_15_GORN_F42d2147f_FUN_00306CA0(buf, local, 0.75f);
+    } else {
+        LVL_15_GORN_F42d2147f_FUN_00306CA0(buf, local, 1.6f);
+    }
+    LVL_15_GORN_F42d2147f_FUN_00306C30(object + 48, LVL_15_GORN_F42d2147f_D_00189EA0, buf);
+    LVL_15_GORN_F42d2147f_FUN_00306C30(object + 48, LVL_15_GORN_F42d2147f_D_00189EA0 + 208, object + 48);
+}
+extern char LVL_15_GORN_F93479d13_D_00189E20[];
+extern void LVL_15_GORN_F93479d13_FUN_00329048(char *entry);
+extern void LVL_15_GORN_F93479d13_FUN_00329048(char *entry);
+
+void LVL_15_GORN_FUN_002CA0B0(int slot, int value)
+{
+    char *e;
+    void (*fn)(char *);
+
+    {
+        char *p = LVL_15_GORN_F93479d13_D_00189E20 + slot * 80;
+
+        *(int *)(p + 4660) = value;
+        if (*(int *)(p + 4676) != 3) {
+            *(int *)(p + 4676) = 3;
+            e = *(char **)(p + 4640);
+            if (e != 0) {
+                if (*(unsigned char *)(e + 32) != 254) {
+                    if (*(unsigned char *)(e + 32) != 253) {
+                        fn = *(void (**)(char *))(e + 100);
+                        if (fn != 0)
+                            fn(e);
+                    }
+                }
+            }
+        }
+    }
+    {
+        char *q = LVL_15_GORN_F93479d13_D_00189E20 + slot * 80;
+
+        e = *(char **)(q + 4640);
+        *(int *)(q + 4676) = 0;
+        *(int *)(q + 4680) = 0;
+        if (e != 0) {
+            LVL_15_GORN_F93479d13_FUN_00329048(e);
+            *(char **)(q + 4640) = 0;
+        }
+        e = *(char **)(q + 4644);
+        if (e != 0 && slot != 3) {
+            LVL_15_GORN_F93479d13_FUN_00329048(e);
+            *(char **)(q + 4644) = 0;
+        }
+    }
+}
+extern char LVL_15_GORN_F5fa3e1af_D_00189E20[];
+extern float LVL_15_GORN_F5fa3e1af_FUN_00306BF8(float *buf);
+extern float LVL_15_GORN_F5fa3e1af_FUN_00306D60(float *buf);
+
+void LVL_15_GORN_FUN_003F0DA0(char *obj)
+{
+    float buf[2];
+    char *d = LVL_15_GORN_F5fa3e1af_D_00189E20;
+    char *e = *(char **)(obj + 104);
+    float a, b, x;
+
+    a = -*(float *)(d + 8112);
+    *(float *)(e + 20) = a;
+    b = -*(float *)(d + 8116);
+    *(float *)(e + 16) = b;
+
+    if (a > 1.0f) {
+        *(float *)(e + 20) = 1.0f;
+    } else if (a < -1.0f) {
+        *(float *)(e + 20) = -1.0f;
+    }
+
+    x = *(float *)(e + 16);
+    if (x > 1.0f) {
+        *(float *)(e + 16) = 1.0f;
+    } else if (x < -1.0f) {
+        *(float *)(e + 16) = -1.0f;
+    }
+    LVL_15_GORN_F5fa3e1af_FUN_00306BF8(buf);
+    buf[0] = *(float *)(e + 16);
+    buf[1] = *(float *)(e + 20);
+    *(float *)(e + 48) = LVL_15_GORN_F5fa3e1af_FUN_00306D60(buf);
+}
+
+
+extern int LVL_15_GORN_F9a90bcc4_FUN_003332E0(int count);
+
+int LVL_15_GORN_FUN_0033F648(u8 *owner, int b, int *outIndex,
+                                       float *o0, float *o1, float *o2, float *o3,
+                                       float *o4, float *o5, float *o6)
+{
+    int n;
+    int count;
+    int i;
+    int k;
+    int left;
+    u8 *p;
+
+    n = 0;
+    count = *(u8 *)(*(int *)(owner + 36) + 12);
+    if (count != 0) {
+        int *t = (int *)(*(int *)(owner + 36) + 72);
+        u8 *q;
+        left = count;
+        do {
+            q = *(u8 **)(*t + 20);
+            if (q != 0 && *q == b)
+                n++;
+            t++;
+            left--;
+        } while (left != 0);
+    }
+
+    if (n != 0)
+        goto second;
+
+    return 0;
+
+found:
+    *o0 = *(float *)(p + 8) * 0.016666668f;
+    *o1 = *(float *)(p + 12) * 0.016666668f;
+    *o2 = *(float *)(p + 16) * 0.00027777778f;
+    *o3 = *(float *)(p + 20) * 0.00027777778f;
+    *o6 = *(float *)(p + 4) * 0.00027777778f;
+    *o4 = *(float *)(p + 24);
+    *o5 = *(float *)(p + 28);
+    *outIndex = i;
+    return 1;
+
+second:
+    k = LVL_15_GORN_F9a90bcc4_FUN_003332E0(n);
+    for (i = 0; i < *(u8 *)(*(int *)(owner + 36) + 12); i++) {
+        char *tbl = (char *)(*(int *)(owner + 36) + 72);
+        char *e = *(char **)(tbl + i * 4);
+        p = *(u8 **)(e + 20);
+        if (p == 0 || *p != b)
+            continue;
+        if (k == 0)
+            goto found;
+        k--;
+    }
+    return 0;
+}
+
+
+extern void LVL_15_GORN_Feda2e14e_FUN_00306C30(void *out, void *in, void *src);
+extern int LVL_15_GORN_Feda2e14e_FUN_003068D0(void *p);
+extern void LVL_15_GORN_Feda2e14e_FUN_00348318(void *self);
+extern float LVL_15_GORN_Feda2e14e_FUN_00307D68(int n);
+extern int LVL_15_GORN_Feda2e14e_FUN_00307DC0(int handle, int previous, float ratio);
+extern char LVL_15_GORN_Feda2e14e_D_00189E20[];
+
+void LVL_15_GORN_FUN_00352D00(u8 *self)
+{
+    char *s2 = (char *)self + 32;
+    int n;
+    float a;
+    float b;
+
+    if (*(int *)(s2 + 28) == 1) {
+        char *base = LVL_15_GORN_Feda2e14e_D_00189E20;
+        *(float *)(self + 16) = *(float *)(base + 128) + *(float *)(s2 + 16);
+        *(float *)(self + 20) = *(float *)(base + 132) + *(float *)(s2 + 20);
+        *(float *)(self + 24) = *(float *)(base + 136) + *(float *)(s2 + 24);
+        LVL_15_GORN_Feda2e14e_FUN_00306C30(self + 16, self + 16, s2);
+        *(float *)(s2 + 16) = *(float *)(self + 16) - *(float *)(base + 128);
+        *(float *)(s2 + 20) = *(float *)(self + 20) - *(float *)(base + 132);
+        *(float *)(s2 + 24) = *(float *)(self + 24) - *(float *)(base + 136);
+    } else {
+        LVL_15_GORN_Feda2e14e_FUN_00306C30(self + 16, self + 16, s2);
+    }
+
+    if (*(float *)(self + 16) < 2.0f || *(float *)(self + 16) > 1021.0f
+        || *(float *)(self + 20) < 2.0f || *(float *)(self + 20) > 1021.0f
+        || *(float *)(self + 24) < 2.0f || *(float *)(self + 24) > 1021.0f) {
+        LVL_15_GORN_Feda2e14e_FUN_00348318(self);
+        return;
+    }
+
+    if (LVL_15_GORN_Feda2e14e_FUN_003068D0((char *)self + 10) != 0) {
+        LVL_15_GORN_Feda2e14e_FUN_00348318(self);
+        return;
+    }
+
+    n = *(int *)(self + 4) & 0xFFFFFF;
+    a = LVL_15_GORN_Feda2e14e_FUN_00307D68(*(short *)(self + 10) - 1);
+    b = LVL_15_GORN_Feda2e14e_FUN_00307D68(*(short *)(self + 10));
+    *(int *)(self + 4) = LVL_15_GORN_Feda2e14e_FUN_00307DC0(n, *(int *)(self + 4), a / b);
+}
+extern void LVL_15_GORN_Feb99aa89_FUN_002EC4B8(char *target, int mode, float value, float zero, float scale);
+extern int LVL_15_GORN_Feb99aa89_FUN_002F7250(char *first, char *second, int mode, int flag, int extra);
+extern float LVL_15_GORN_Feb99aa89_FUN_00306DD8(char *source, short *table);
+
+extern short LVL_15_GORN_Feb99aa89_D_001BFC20[];
+extern float LVL_15_GORN_Feb99aa89_D_0018A084;
+
+int LVL_15_GORN_FUN_002C3F88(float *out, float scale, float amount)
+{
+    char buffer[32];
+
+    LVL_15_GORN_Feb99aa89_FUN_002EC4B8(buffer, 1, LVL_15_GORN_Feb99aa89_D_0018A084 - 0.02f, 0.0f, scale);
+    LVL_15_GORN_Feb99aa89_FUN_002EC4B8(buffer + 16, 1, amount, 0.0f, scale);
+    if (LVL_15_GORN_Feb99aa89_FUN_002F7250(buffer, buffer + 16, 2, 0, 0)) {
+        if (out)
+            *out = LVL_15_GORN_Feb99aa89_FUN_00306DD8(buffer, LVL_15_GORN_Feb99aa89_D_001BFC20);
+        return 1;
+    }
+    return 0;
+}
+#ifndef RAC2_T_V4_FC3CB9262
+#define RAC2_T_V4_FC3CB9262
+typedef int V4_Fc3cb9262 __attribute__((mode(TI)));
+#endif
+
+
+extern void LVL_15_GORN_Fc3cb9262_FUN_00306C30(char *a, char *b, char *c);
+extern int LVL_15_GORN_Fc3cb9262_FUN_00307D78(float f);
+extern int LVL_15_GORN_Fc3cb9262_FUN_003068D0(char *a);
+extern void LVL_15_GORN_Fc3cb9262_FUN_00348318(char *a);
+
+void LVL_15_GORN_FUN_00357B48(char *a0)
+{
+    V4_Fc3cb9262 buf;
+    char *s0 = a0 + 32;
+    float f0;
+    float f1;
+    float f2;
+
+    f1 = *(float *)(s0 + 16) + 1.0000000474974513053894e-03f;
+    f2 = *(float *)(s0 + 8) - 3.0000000260770320892334e-03f;
+    *(float *)(s0 + 16) = f1;
+    *(float *)(s0 + 8) = f2;
+    f0 = *(float *)(s0 + 20) * f1 * 2.1000000000000000000000e+05f;
+    buf = *(V4_Fc3cb9262 *)s0;
+    *(float *)(a0 + 12) = f0;
+    LVL_15_GORN_Fc3cb9262_FUN_00306C30(a0 + 16, a0 + 16, (char *)&buf);
+    *(int *)(a0 + 4) = (LVL_15_GORN_Fc3cb9262_FUN_00307D78((float)*(short *)(a0 + 10)) << 24) | 0x00FFD2D2;
+    *(unsigned char *)(a0 + 8) = *(unsigned char *)(a0 + 8) + *(unsigned char *)(s0 + 24);
+    if (LVL_15_GORN_Fc3cb9262_FUN_003068D0(a0 + 10) != 0)
+        LVL_15_GORN_Fc3cb9262_FUN_00348318(a0);
+}
+extern void LVL_15_GORN_Fc186f630_FUN_00306EF8(char *local, char *a, float k);
+extern float LVL_15_GORN_Fc186f630_FUN_00306D20(char *a, char *src);
+extern void LVL_15_GORN_Fc186f630_FUN_00306CA0(char *dst, char *src, float k);
+extern void LVL_15_GORN_Fc186f630_FUN_00306C60(char *dst, char *src, char *local);
+
+extern char LVL_15_GORN_Fc186f630_D_00189E20[];            /* 0x00189E20 */
+
+#ifndef RAC2_T_V4_FC186F630
+#define RAC2_T_V4_FC186F630
+typedef int V4_Fc186f630 __attribute__((mode(TI)));
+#endif
+
+
+void LVL_15_GORN_FUN_002EC7E0(char *dst, char *src)
+{
+    char local[16];
+    char *base;
+    float f;
+
+    base = LVL_15_GORN_Fc186f630_D_00189E20;
+    switch (*(unsigned char *)(base + 8899)) {
+    case 0:
+        *(V4_Fc186f630 *)dst = *(V4_Fc186f630 *)src;
+        *(int *)(dst + 8) = 0;
+        break;
+    case 1:
+        LVL_15_GORN_Fc186f630_FUN_00306EF8(local, base + 672, 1.0f);
+        f = LVL_15_GORN_Fc186f630_FUN_00306D20(local, src);
+        LVL_15_GORN_Fc186f630_FUN_00306CA0(local, local, f);
+        LVL_15_GORN_Fc186f630_FUN_00306C60(dst, src, local);
+        break;
+    case 2:
+        f = LVL_15_GORN_Fc186f630_FUN_00306D20(base + 704, src);
+        LVL_15_GORN_Fc186f630_FUN_00306CA0(local, base + 704, f);
+        LVL_15_GORN_Fc186f630_FUN_00306C60(dst, src, local);
+        break;
+    }
+}
+
+
+#ifndef RAC2_T_TI_F41EB487E
+#define RAC2_T_TI_F41EB487E
+typedef int TI_F41eb487e __attribute__((mode(TI)));
+#endif
+
+
+extern void LVL_15_GORN_F41eb487e_FUN_00307100(void *a, void *b, void *c);
+extern void LVL_15_GORN_F41eb487e_FUN_00306CA0(void *a, void *b, float value);
+extern void LVL_15_GORN_F41eb487e_FUN_002D1D80(void *a, void *b, int c, float p, float q, float r);
+extern void LVL_15_GORN_F41eb487e_FUN_00306C60(void *a, void *b, void *c);
+extern void LVL_15_GORN_F41eb487e_FUN_00306C30(void *a, void *b, void *c);
+
+
+#ifndef RAC2_T_VEC4_F41EB487E
+#define RAC2_T_VEC4_F41EB487E
+typedef struct {
+    int a;
+    int b;
+    float c;
+    float d;
+} Vec4_F41eb487e;
+#endif
+
+
+#ifndef RAC2_T_RESIDENTSTATE_F41EB487E
+#define RAC2_T_RESIDENTSTATE_F41EB487E
+typedef struct {
+    u8 pad000[0x80];
+    u8 area080[0x218 - 0x80];
+    short h218;
+    u8 pad21a[0x2a0 - 0x21a];
+    TI_F41eb487e q2A0;
+    u8 pad2b0[0x2c0 - 0x2b0];
+    u8 area2C0[0x31c - 0x2c0];
+    float f31C;
+    u8 pad320[0x34e - 0x320];
+    short h34E;
+    u8 pad350[0x22c3 - 0x350];
+    u8 b22C3;
+} ResidentState_F41eb487e;
+#endif
+
+
+extern ResidentState_F41eb487e LVL_15_GORN_F41eb487e_D_00189E20;
+
+void LVL_15_GORN_FUN_002D2040(void)
+{
+    u8 scratch[64];
+    Vec4_F41eb487e A, B, C;
+    float hi = 0.035f;
+    float lo = 0.3f;
+
+    *(TI_F41eb487e *)&A = 0;
+    *(TI_F41eb487e *)&B = 0;
+    *(TI_F41eb487e *)&C = 0;
+
+    A.c = 1.0f;
+    B.c = 0.8f;
+    C.c = 0.8f;
+
+    LVL_15_GORN_F41eb487e_FUN_00307100(&B, &B, &LVL_15_GORN_F41eb487e_D_00189E20);
+
+    *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&LVL_15_GORN_F41eb487e_D_00189E20.q2A0;
+    if (LVL_15_GORN_F41eb487e_D_00189E20.b22C3 == 2) {
+        LVL_15_GORN_F41eb487e_FUN_00306CA0(&A, &LVL_15_GORN_F41eb487e_D_00189E20.area2C0, -1.0f);
+    }
+
+    if (LVL_15_GORN_F41eb487e_D_00189E20.b22C3 == 1 && (LVL_15_GORN_F41eb487e_D_00189E20.h34E < 10 || LVL_15_GORN_F41eb487e_D_00189E20.f31C < 1.0f))
+        *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&LVL_15_GORN_F41eb487e_D_00189E20.q2A0;
+
+    if (LVL_15_GORN_F41eb487e_D_00189E20.h34E != 0 && LVL_15_GORN_F41eb487e_D_00189E20.h218 != 0) {
+        lo = 0.001f;
+        hi = lo;
+    }
+
+    LVL_15_GORN_F41eb487e_FUN_002D1D80(&A, scratch, 0, hi, lo, 0.0f);
+
+    if (LVL_15_GORN_F41eb487e_D_00189E20.b22C3 == 1 && LVL_15_GORN_F41eb487e_D_00189E20.h34E != 0) {
+        LVL_15_GORN_F41eb487e_FUN_00307100(&C, &C, scratch);
+        LVL_15_GORN_F41eb487e_FUN_00306C60(&LVL_15_GORN_F41eb487e_D_00189E20.area080, &LVL_15_GORN_F41eb487e_D_00189E20.area080, &C);
+        LVL_15_GORN_F41eb487e_FUN_00306C30(&LVL_15_GORN_F41eb487e_D_00189E20.area080, &LVL_15_GORN_F41eb487e_D_00189E20.area080, &B);
+    }
+}
