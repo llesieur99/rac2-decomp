@@ -6,13 +6,13 @@
   "reference_sha256": "37c1b1c86b8800fb3930b539fe4b5c94dccf42e7bb5960154477f63731dd48a5",
   "reference_entry": 2843784,
   "candidate_source": "candidates/levels/8_tabora.c",
-  "source_sha256": "39f28a6cb2d397ec2ab0add41ea28824c2ac41b92a782c900c026adc7a6431f9",
-  "catalog_sha256": "e16188903c051d325d0ee3db086b31fb6ee3cf307d88d282893da016c56ea80e",
-  "object_sha256": "bdb3ad9d50fb7338a3970dc2d92984a15eeac973410f065030425e9172c1ae06",
-  "candidate_elf_sha256": "a4e0e7ba020eadda72a10bdcfc352ddebbf1f741dd2cc14955823c6230faa7f2",
+  "source_sha256": "b405166fc56ad92eecbcef0ece1833ad626b2014b4810b4aee4b3616b4961827",
+  "catalog_sha256": "aff10da3558d6fe3299b22e9568159583662eb4cbdab04a0aa1a54ba040b4730",
+  "object_sha256": "8f63a398dde483bfb4abf6f2489ec45598f9203b5297495bffdb9866fc9edee4",
+  "candidate_elf_sha256": "b907d6382c099c7923f2950a89bea0b9d3a4202d2acf803421eb17387365957c",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -804,6 +804,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 16
+    },
+    {
+      "symbol": "LVL_8_TABORA_FUN_0032FE00",
+      "address": 3341824,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "0f90d51897b8cf5db5ac7148e63bae6f66c50153c6634ce83ec03e94e87b8b46",
+      "candidate_sha256": "0f90d51897b8cf5db5ac7148e63bae6f66c50153c6634ce83ec03e94e87b8b46",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_8_TABORA_FUN_003319B8",
@@ -2468,5 +2479,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 24084
+  "matched_code_bytes": 24404
 }

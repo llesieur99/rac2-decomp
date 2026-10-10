@@ -6,13 +6,13 @@
   "reference_sha256": "ad5840ad4ebfef75199ad6196e36ba010d99970e75d0de681a050ab4c59f944b",
   "reference_entry": 2774024,
   "candidate_source": "candidates/levels/16_snivelak.c",
-  "source_sha256": "dd1f4a375ffb3a929ee89df82a3c0e6869e8d7a9a3652451a84708e295969fb9",
-  "catalog_sha256": "587fdd45773c502b9d4e2ca9235ce394d35533198a67d573d1266bb47b11d839",
-  "object_sha256": "d2fd1aa7d04bd1a7c01436def29f369a142accd1d75bfb89b1fb90ca8ffc4410",
-  "candidate_elf_sha256": "906cf218ffbab269b6ef4f621cf9bab21487e8f2cda9a6064df9daa2ce29a34e",
+  "source_sha256": "6bdc1e4b8c51f893280c7472e31431245392f3ff97e598a8f1b60cf7ec9d42a8",
+  "catalog_sha256": "0ef04c87198593fde52cf54906759cdf9bf2cd042dba7d9bd3ff8d0cda3533c1",
+  "object_sha256": "844fcdb3f4ba64ac8da48852ef98a1f9cc21261d6f95f8487ddae6055c8f3aa0",
+  "candidate_elf_sha256": "ab7953a382bae60776285cfb48cbe946196bd4ee5e5884e47458ef0ad2e99f8a",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -760,6 +760,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 16
+    },
+    {
+      "symbol": "LVL_16_SNIVELAK_FUN_0031A638",
+      "address": 3253816,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "05b2d6679ed98c3904864cdd37f3f69c873474b94a9b0d4e359b31db8434cfae",
+      "candidate_sha256": "05b2d6679ed98c3904864cdd37f3f69c873474b94a9b0d4e359b31db8434cfae",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_16_SNIVELAK_FUN_0031C2B8",
@@ -2545,5 +2556,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 24196
+  "matched_code_bytes": 24516
 }

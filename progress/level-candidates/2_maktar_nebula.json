@@ -6,13 +6,13 @@
   "reference_sha256": "ab59cf107fb30843db03cd3571af1c08d62e99e6b50594bc38dd7a70f91ac94b",
   "reference_entry": 2780808,
   "candidate_source": "candidates/levels/2_maktar_nebula.c",
-  "source_sha256": "ddc02454bacb4229b5b5da587f1fce5a0cba8fccfe9fcb66e78439a50d04c9dc",
-  "catalog_sha256": "a0e66ff1cb8a421d2c4211bdeee8fa2cac344dd5b89e7d7cdc77d4418022a187",
-  "object_sha256": "5c0ccfa2cad40324a3708aa16337c98b84fb38b1915c10df6a187a2d2e7dfdcc",
-  "candidate_elf_sha256": "62f3b65daca45b0a096a0693d52c0ab4bd58f1d3a687159157429c9db320b745",
+  "source_sha256": "25f383b90b751a4cb1538c919c61562ee811b304287567ba01bacb33cbe9f27d",
+  "catalog_sha256": "ffaf97261945c5621b659572137826a41d19add297f7086b5f3b72b18324fcfd",
+  "object_sha256": "9045eacf7c19241cf88827bace029989473fe50abde3eac401ee17b61f6c3fc7",
+  "candidate_elf_sha256": "c5537e587dbe6c59e9c34db845bc8399fef70b6e37dee25b8e16b8fc2c6e69a2",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -826,6 +826,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 116
+    },
+    {
+      "symbol": "LVL_2_MAKTAR_NEBULA_FUN_003253A8",
+      "address": 3298216,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "6a27ac4b375b814fa07f633abf8451289dd936b62cb154a441b8bf0b1ab360d1",
+      "candidate_sha256": "6a27ac4b375b814fa07f633abf8451289dd936b62cb154a441b8bf0b1ab360d1",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_2_MAKTAR_NEBULA_FUN_00327240",
@@ -2523,5 +2534,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 23932
+  "matched_code_bytes": 24252
 }

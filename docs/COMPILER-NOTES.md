@@ -269,6 +269,9 @@ the same totals as under `8bed6eae`). The batch-specific intermediate candidate
 images differ from the previous batch only inside the build path they embed;
 the compared `PT_LOAD` content and every published function record are identical.
 
+The pass is extended on 10 October 2026 to admit one *reconstructible* reader —
+the function-value `use` — in the section below.
+
 **Family `41eb487e64fb6b76`.** With the fold pass the recovered body reaches the
 retail's full size at every one of its 27 placements — 111 instructions /
 444 bytes, against 110 / 440 under `8bed6eae` — and the shared
@@ -298,11 +301,11 @@ proofs:
 | `cpp` | `2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155` |
 | `as` | `cda1a4e43dc8eaef2670d2445d6916050137330b2051a0695fe0d2631f3d7876` |
 
-(The current `cc1` is `adb1c1b4…` and the current `as` is `c71a15db…`; this
+(The current `cc1` is `37704f48…` and the current `as` is `c71a15db…`; this
 table is the 7 October milestone those descend from, through the
 folded-zero-store identity, the division-erratum assembler, the two
-division fixes of 9 October 2026 and the save-block order of 10 October 2026
-documented below.)
+division fixes of 9 October 2026, the save-block order and the return-value
+zero fold of 10 October 2026 documented below.)
 
 (An earlier `as`, `87a1a012…`, carried the two-point `mtc1` rule described above
 and has been superseded. The earlier `cc1`, `3e7628b7…`, emitted the GPR save
@@ -413,7 +416,10 @@ directory rather than one file, because it retires a machine-description change
 and inserts a back-end pass across three more sources at once; the
 `allow_zero_ti_store.patch` it replaces was removed from the tree on
 9 October 2026 and must not be applied again (its text is preserved in that
-file's history). Applying the table above as prose instead of
+file's history). `fold_zero_ti_return_value.py` (the fourth chain fix, 10
+October 2026) also takes the `gcc` source directory and applies **after**
+`fold_zero_ti_store.py`: it rewrites the guard that pass inserts, so the guard
+must exist first. Applying the table above as prose instead of
 running these files yields a *different* `mips.c`: two of the replacements carry
 annotation text, and a differently worded comment changes the hash even though
 the generated code is identical. The order of the last three is immaterial —
@@ -443,12 +449,12 @@ match:
 
 | Artifact | sha256 |
 | --- | --- |
-| `gcc/config/mips/mips.c` | `58d25b2c66abd95aef2c6c8e662ce15bb471d916704b1268413fca72694e738a` |
+| `gcc/config/mips/mips.c` | `4a6a1ae14448e504eef4f58450973ebcd6c3ba45fdf204961642f0b97138fb8a` |
 | `gcc/config/mips/mips.h` | `87d59c06d047cf7252349cb02aebc266f8b4dcecd537c827e6ec3966a10bbfc3` |
 | `gcc/config/mips/mips.md` | `9720897dc353fd246c6f94d5882c3beb16c81fa9e42438ee8d184c8a78a581ad` |
 | `gcc/toplev.c` | `38d52727addc0b0b299700835788808cf23fe59c863a961cdd6f28170faaf3cc` |
 | `gas/config/tc-mips.c` | `b22dfff81e41d3d378b1f35a231d2c11b60700967d6faf70b820f6300caf81d6` |
-| `gcc/cc1` | `adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022` |
+| `gcc/cc1` | `37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95` |
 | `gcc/cpp` | `2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155` |
 | `gas/as-new` | `c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902` |
 
@@ -457,6 +463,11 @@ then-current `cc1`). The `gcc` rows and `cc1` above are the 10 October 2026
 identities: the whole list above was replayed from a fresh archive extraction on
 that date and reproduced all eight hashes, and the previous `mips.c`/`cc1` pair
 (`7952e5da…`/`4d069ae4…`) was reproduced the same way immediately before it.
+The list was replayed a third time from a fresh extraction for the return-value
+fold of 10 October 2026 and reproduced all eight hashes above; the same list with
+the new transformer omitted reproduced the previous eight
+(`58d25b2c…`/`adb1c1b4…`) on the same host in the same run, so the two rows that
+move are the transformer's work and not a build difference.
 The 9 October 2026 identities were the same apart from those two rows; the same date's `mips.md` was `177caa69…` before
 `neutralise_div_dslot.py` and is `9720897d…` after it, and its `tc-mips.c` was
 `61e51c1e…` before `pad_div_erratum_nops.py`, `b014add9…` after it and
@@ -782,6 +793,201 @@ For comparison, the first run of this requalification on the installed chain,
 with four of the six families promoted, reported 5 905 native functions /
 598 704 bytes on the same instruments — so the two families re-measured after
 that run account for the difference.
+
+## The function-value zero fold: `904cc63b097639e5` unblocked (10 October 2026)
+
+**Identity.** `cc1` moves from `adb1c1b4…` to `37704f48…`. `cpp` (`2ac3d8d3…`)
+and GNU `as` (`c71a15db…`) do **not** move, and `mips.h`, `mips.md`, `toplev.c`
+and `tc-mips.c` stay byte-identical to the previous qualified tree, so the
+assembler half of the identity is untouched. One source moves — `mips.c`
+`58d25b2c…` → `4a6a1ae1…` — and the whole change is one transformer,
+[`fold_zero_ti_return_value.py`](../scripts/compiler/fold_zero_ti_return_value.py),
+which rewrites the guard `fold_zero_ti_store.py` inserts and therefore applies
+**after** it.
+
+**The rule it extends, cited as it stands.** `rac2_fold_zero_ti_store` folds a
+`(set (mem:TI) (reg))` to architectural zero, and deletes the materialisation
+that produced the register, exactly when the store is the register's last use:
+
+```c
+static int
+rac2_reg_live_after_store_p (insn, reg)
+     rtx insn;
+     rtx reg;
+{
+  rtx scan;
+
+  for (scan = NEXT_INSN (insn); scan; scan = NEXT_INSN (scan))
+    {
+      ...
+      if (reg_referenced_p (reg, pat))
+	return 1;			/* consomme avant toute reecriture */
+
+      set = single_set (scan);
+      if (set != 0 && GET_CODE (SET_DEST (set)) == REG
+	  && REGNO (SET_DEST (set)) == REGNO (reg))
+	return 0;			/* registre reecrit : le store etait la
+					   derniere utilisation */
+    }
+
+  return 0;
+}
+```
+
+The guard is not a comfort: it is the safety condition of the deletion. A single
+reader left alive, and the deletion leaves a reader on a register nothing writes.
+
+**The case that was missing.** For the family `904cc63b097639e5` the RTL before
+the pass (`-dg`, `src.i.greg`) is:
+
+```
+(insn 210 (set (reg:TI 2 v0) (const_int 0)) 238 {movti_internal})
+(insn  28 (set (mem:TI (reg/v:SI 22 s6) 0) (reg:TI 2 v0)) 238 {movti_internal})
+(insn  31 (use (reg/i:SI 2 v0)) -1)
+(jump_insn 33 (set (pc) (label_ref 190)) 450 {jump})
+```
+
+`movti_internal` accepts no constant zero on its store alternatives
+(`"d,R,m,d,d,J,K,L,M,i"`: the stores are alternatives 3 and 4, source `d`), so
+reload must materialise the zero in a register; and the pre-reload return
+`(set (reg/i:SI 2 v0) (const_int 0))` degenerated into `(use (reg/i:SI 2 v0))`
+because the same zero serves both the store and the return, which is why reload
+placed it in `$v0`, the function-value register. `rac2_reg_live_after_store_p`
+then meets that reference and refuses the fold, so the chain printed
+`por $v0,$zero,$zero` + `sq $v0,0($base)` where the retail prints
+`sq $zero,0($base)` + `move $v0,$zero`.
+
+The reader is a read of *the constant being folded*, so its value is
+reconstructible — which is what makes an exception admissible at all. The
+transformer admits exactly one, bounded by four conditions: the pattern is
+exactly `(use (reg/i ...))`, the register is the same one,
+`REG_FUNCTION_VALUE_P` is set, no jump or call intervenes between the store and
+the use, and there is exactly one such use. The store then folds to
+architectural zero **and** the `use` is rewritten to
+`(set (reg/i:SI 2 v0) (const_int 0))` — the pre-reload form, which prints
+`move $v0,$zero`. Both changes go into the **same** `validate_change` /
+`apply_change_group` group: if either pattern is not recognised the whole group
+is abandoned and nothing is folded, a degradation that is safe and can never
+leave broken RTL. A zero shared with any other reconstructible consumer (a call
+argument, a phi) stays refused.
+
+**The two counter-proofs.** Both were measured, and both are recorded here
+because they are what stops a later simplification of this file:
+
+| route | measured result |
+| --- | --- |
+| treating the `(use (reg v0))` as an end of life (variant C, `cc1` `b2429e74…`) | **wrong**: the store folds but no `move $2,$0` is emitted, so the body returns whatever `$v0` holds — the null path's `jal CALLEE0` result. Silent corruption, not a one-instruction miss: the return value must be re-materialised, which is the second half of this transformer |
+| re-admitting constraint `J` on the store alternatives of `movti_internal` (variant B, `cc1` `d22de10d…`, `mips.md` `774f6b60…`) | reproduces this family as well and passes the 55 published sources, but **regresses** `41eb487e64fb6b76`: the shared `por $2,$0,$0` disappears and its three stores become `sq $0,64/80/96($sp)`, with the prologue reordered over 20+ lines. The constraint is a **global** rule — it changes what `cse` may substitute — so it removes the shared register from the families that need it. The pass is local and its new case is bounded. The constrained route is not reopenable as it stands |
+
+**What it yields.** On the seed placement the difference is exactly two words:
+
+```
+40c40
+< 	por $2,$0,$0
+---
+> 	sq $0,0($22)
+44c44
+< 	sq $2,0($22)
+---
+> 	move	$2,$0
+```
+
+`scripts/check_candidates.py` reports `MATCH` at the seed
+(`0_aranos_tutorial@0x002B91C0`, 320 bytes), the promoter's owner gate
+reproduces it again on the *rendered* fragment (the aliases the units actually
+carry), and the family's own proof replays **27 of 27** level placements byte
+for byte. The boot placement is not bindable by the family harness
+(`family.py bindings` refuses a boot member by design); it is verified instead
+by the boot review itself, which reproduces it complete and exact against the
+retail image — `325/325` definitions with the promoted body.
+
+| | |
+| --- | --- |
+| family | `904cc63b097639e5`, 320 bytes |
+| placements | 28 — 26 native levels, the boot, and one small-data placement (level `4_barlow`) |
+| promoted | 27 (26 native + boot) = **8 640 bytes** |
+| kept out | the small-data placement (level `4_barlow`): the native-profile promotion skips it, by the promoter's documented rule for a nonzero-`-G` unit, and the same record cannot be promoted again with the small-data profile — the boot placement has no small-data unit and a mixed family is refused. Tried, not assumed |
+| state | byte-exact on every promoted placement, boot included |
+
+Census of the class in the retail images: 28 placements carry the tight
+signature (a 16-byte store from `$zero` within three words of
+`move $v0,$zero`), all of them in this one family, and 0 of the published paired
+placements carry a `por $zero` word. The wider class — a `por $rd,$zero,$zero`
+that feeds exactly one store — counts 4 164 sites, but the retail keeps the
+register in those families and the fold is not what they need; nothing here
+claims them.
+
+**One source prerequisite, measured.** The promoted fragment declares a 128-bit
+type, and this compiler refuses the `mode(TI)` spelling while a *typedef named
+`TI`* is in scope: with `typedef int TI __attribute__((mode(TI)));` earlier in
+the unit, a later `typedef … __attribute__((mode(TI))) …` fails to parse
+(`parse error before 'TI'`), in either attribute position, measured on both a
+two-line fixture and the boot unit. The same trap was hit independently, from
+the other side, by the family lot merged before this one: its typedef extractor
+took `TI` — the *mode* name inside `__attribute__((mode(TI)))` — for a type name
+and rewrote the attribute to `mode(TI_F…)`, breaking three families. The boot
+source carried exactly that typedef. It and its three users (the two bodies that clear or copy a 128-bit
+object, `FUN_002A8C00` and `FUN_00282C88`) now spell the type `TI128`;
+`src/boot/03-ported-utilities.cfrag` and `src/boot/12-aligned-clear.cfrag`
+change, nothing else. The rename is code-generation-neutral and was checked that
+way: the emitted assembly and the linked object are byte-identical before and
+after, under both chains, and the boot review reproduces every definition
+(325/325 with the promoted body). A typedef name does not reach the instruction
+stream; the `FUN_00282C88` witness is still `j $31 ; sq $0,0($4)`.
+
+**Composition guard.** This is *added to* the qualified chain, never substituted
+for it: the tree is the current qualified tree plus this transformer alone.
+Every previously adopted behaviour was re-measured against its own negative
+control:
+
+| behaviour | negative control | installed chain |
+| --- | --- | --- |
+| a single-precision division is kept out of a delay slot | `cc1` `5fed4e23…` (pre-barrier) emits `jal g` then `div.s` | `div.s` standalone, then `subu`/`sd`/`jal g` |
+| the assembler pads a division after a branch group | `as` `d81f2e93…` (label floor only) emits 0 `nop` after `bc1t ; lw ; div.s` | that sequence gains 2, one interposed instruction gains 1, two gain 0; `b` triggers, `jal` does not |
+| the assembler still pads after a code label | — | label + 0 slots / +1 / +2 give 2 / 1 / 0 `nop`, byte-identical to the outgoing assembler, which is the same binary (`c71a15db…`) |
+| save blocks are emitted GPR first, then FPR | `cc1` `4d069ae4…` (pre-V3) emits `s.s $f22`/`s.s $f21`/`s.s $f20` before `sd $16`/`sd $31` on the dedicated probe | `sd $16`/`sd $31` first, then the FPR block; restores unchanged. The probe reads the emission order with `-fno-schedule-insns2` (probe-only: in the qualified profile sched2 interleaves both orders) |
+| `FUN_00282C88` and `FUN_002E5FE0` | — | both byte-exact and byte-identical to the outgoing chain: `j $31 ; sq $0,0($4)` and the counted 52-entry loop |
+
+**The day's refusals, re-tested rather than assumed.** The refused bodies that
+mention `por` or `sq $zero` were measured under the new chain instead of being
+carried over: `f_41eb487e64fb6b76`, `f_445bd756…`, `f_5df05f81…`,
+`f_9f5f0a99…`, `f_50d4f5f2…`, `f_8977f392…`, the `122b6336` and `r09` witnesses
+and the `w1` control all compile to byte-identical assembly under both chains —
+their wall is the opposite one (the retail keeps the register there) and this
+fold neither closes nor breaks them. Only `904cc63b…` changes. `ad5b681b…` and
+`6c1e201f…` have no retained body to re-measure; `c10c1216…` was closed by the
+save-block lot of the same morning.
+
+**Control measurement on the published corpus.** At the lot's base, all 55
+published candidate sources (boot and the 27 native and 27 small-data units)
+compile and assemble to **byte-identical objects** under both chains — 55/55,
+zero `.s` differing, 4 933 212 bytes either side. The corpus does not contain a
+body in which the new case occurs: the only source the fold changes is the
+family this lot promotes, and its fragment is added to the units *after* this
+control, so the promotion is the one intended difference and it is measured by
+the unit qualification and the image gate rather than hidden in this count.
+
+Measured again *after* the promotion, on the final corpus, the two chains now
+differ in exactly the 27 sources that carry the family — the boot and the 26
+native levels — and by exactly **8 bytes each**, the two words the fold moves;
+the other 28 sources (the 27 small-data units and the one native level with no
+placement) are still byte-identical. Nothing else moves with the chain.
+
+**Requalification.** The whole published corpus was re-qualified on the
+installed tree: **6 035 complete C functions exact across the 27 native units
+(633 856 bytes)** and **1 398 across the 27 small-data units (81 664 bytes)**,
+the boot review reproduces all **325** complete definitions, and the full
+boot-and-27-overlay loaded-image gate passes with no failure. Physical coverage
+moves from 968 180 to 976 820 of 48 788 176 bytes (1.9845 % to 2.0022 %) and the
+combined-reference boot binding stays at **22 576** static edges. No previously
+matched body changes status; the run adds only the family this change closes.
+
+The *unique* ledger does not move on this lot, and the reason is the placement
+the promoter keeps out: its policy counts a structural class only when **every**
+verified placement of the class is integrated, and this family still has its
+small-data placement outside. `any_c_unique_bytes` does grow by the family's 320
+bytes (292 728 → 293 048); `matched_c_unique_bytes` stays at 286 752 until that
+placement is integrated too.
 
 ## Scope
 

@@ -16,7 +16,7 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-CC1 = "4d069ae40f7e22d19bf35ccbe0b1a52973ba7f56622ce8bf85cf6d92811a6c78"
+CC1 = "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95"
 STATES = {"queued", "blocked", "stopped", "exact_private", "integrated", "done"}
 SAFE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]*\Z")
 HASH = re.compile(r"[0-9a-f]{64}\Z")

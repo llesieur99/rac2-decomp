@@ -32,6 +32,7 @@ SHIP_CLEAR_VARIANT = b"void @@FUNCTION@@(int *object) {\n    object[0] = 0;\n   
 # authored body is the family identity, so any program may anchor one. The
 # legacy anchor program keeps its historical family id spelling.
 BASE_SEED_PLACEMENTS = (
+    ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00321030"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00335810"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_00387408"),
     ("0_aranos_tutorial", "LVL_0_ARANOS_TUTORIAL_FUN_003E3890"),

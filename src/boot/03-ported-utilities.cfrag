@@ -58,14 +58,14 @@ s32 FUN_0012DA98(void *arg0) {
    retail (`lq $v0,0($a3); sq $v0,0($a0)`). */
 
 typedef struct { int a, b, c, d; } __attribute__((aligned(16))) Quad16;
-typedef int TI __attribute__((mode(TI)));
+typedef int TI128 __attribute__((mode(TI)));
 
 void FUN_002A8C00(char *a, int b, int c, float d, Quad16 *q) {
     *(int *)(a + 0x10) = b;
     *(int *)(a + 0x14) = c;
     *(float *)(a + 0x1C) = d;
     *(int *)(a + 0x20) = 1;
-    *(volatile TI *)a = *(TI *)q;
+    *(volatile TI128 *)a = *(TI128 *)q;
 }
 
 void FUN_002B6770(int arg0, long arg1) {
