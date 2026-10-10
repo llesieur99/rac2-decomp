@@ -88,6 +88,23 @@ contributor compares identities before working. The
 GNU releases, not a download of our byte-matching EE profile. Do not substitute
 another compiler and report it as qualified.
 
+## Running the chain on Linux
+
+The scripts assume Windows + WSL. Without editing them, put `tools/linux/` on `PYTHONPATH`
+(`sitecustomize.py` redirects `wsl.exe` and `*.exe` calls) and point the runners at a container that
+sees the same paths, for example:
+
+```bash
+podman run -d --init --name rac2-gnu --userns=keep-id --security-opt label=disable \
+  -v $HOME:$HOME --tmpfs /rac2tmp:exec,mode=1777 rac2-linux sleep infinity
+export PYTHONPATH=$PWD/tools/linux RAC2_LINUX_RUNNER="podman exec rac2-gnu bash -c" \
+  RAC2_WSL_TOOLS=<dir with cc1 cpp as> RAC2_WSL_TMP=/rac2tmp RAC2_EXE_RUNNER=<wibo>
+python scripts/try_function.py src/usa-v2/IntToFloat.c --address 0x284690 --size 16
+```
+
+`rac2-linux` is the Ubuntu image from OpenRAC's `games/rac2/ntsc/host/` recipe, which also builds
+`cc1`/`cpp`/`as` from source (inputs are public and SHA-256 checked; see `docs/COMPILER-NOTES.md`).
+
 ## Legacy SN components
 
 Contributors fetch these themselves; they are git-ignored and never committed:
