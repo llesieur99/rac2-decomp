@@ -13,7 +13,7 @@ reviews or progress proofs, and it adds nothing to the README progress.
 | Region | Serial | Identity files | State |
 | --- | --- | --- | --- |
 | `ntsc-u` (aliases `ntsc`, `usa`, `v1.01`; registry default) | `SCUS_972.68` | [target](../config/target.json), [overlays](../config/overlays.json) | pinned; matching proofs |
-| `ntsc-u-v2` (aliases `v2`, `usa-v2`) | `SCUS_972.68` | [target](../config/regions/ntsc-u-v2/target.json) | disc and boot pinned; overlays unmeasured; no proofs yet. Symbols: `symbol_addrs/usa-v2/` |
+| `ntsc-u-v2` (aliases `v2`, `usa-v2`) | `SCUS_972.68` | [target](../config/regions/ntsc-u-v2/target.json) | fully pinned (disc, boot, 27 overlays); no C catalogues or proofs yet. Symbols: `symbol_addrs/usa-v2/` |
 | `pal` (alias `europe`) | `SCES_516.07` | [target](../config/regions/pal/target.json); overlays not yet recorded | unmeasured; no catalogues |
 
 [`config/regions.json`](../config/regions.json) is the registry and

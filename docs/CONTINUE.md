@@ -7,7 +7,7 @@ Tool acquisition and setup levels are described in [toolchain/README.md](../tool
 Open this repository's local checkout on branch `RAC2`. A short request to
 continue matching decompilation is sufficient when the repository instructions
 and the private machine environment are available. No long pasted prompt is
-required. The game target is Going Commando USA v1.01, `SCUS_972.68`.
+required. The game target is Going Commando USA v2.00 (`--region v2`), `SCUS_972.68`; earlier proofs are v1.01.
 
 ## Read only the current entry points
 
