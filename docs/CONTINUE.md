@@ -9,6 +9,24 @@ continue matching decompilation is sufficient when the repository instructions
 and the private machine environment are available. No long pasted prompt is
 required. The game target is Going Commando USA v2.00 (`--region v2`), `SCUS_972.68`; earlier proofs are v1.01.
 
+## Short request on USA v2.00: "decompile N small functions"
+
+The v1.01 campaign commands below have no v2.00 catalogues. For v2.00 follow this loop; stop and report the first missing prerequisite
+(ISO, `baserom/SCUS_972.68`, ProDG 2.0 files, compiler chain, Podman container) instead of substituting another route.
+
+1. `python scripts/doctor.py --region v2 --iso <iso>` and the setup in [V2-SETUP.md](V2-SETUP.md) (steps 1-5). Verify the chain's five
+   source hashes (`tools/linux/build-compiler.sh`) and start the `rac2-gnu` container.
+2. Pick targets: `python scripts/function_size_rank.py --category small --status todo --ascending --limit 40`. Skip calls into VU0/COP2,
+   `syscall`, and in-place `cvt.w.s $f12,$f12` words (handwritten; see `src/usa-v2/README.md`). Read the words with `rabbitizer`.
+3. Reserve the lot in [CONTRIBUTOR-RESERVATIONS.md](CONTRIBUTOR-RESERVATIONS.md) and wait for acknowledgement.
+4. For each function write `src/usa-v2/<Name>.c`, then
+   `python scripts/try_function.py src/usa-v2/<Name>.c --address <addr> --size <n> --mask-relocs --flags "-O2 -G0 -ffunction-sections"`.
+   Iterate the C shape and try `-G8`. Record only a full `MATCH` with `--record`, and put near misses in `src/usa-v2/README.md`.
+5. `python scripts/v2_report.py report --output build/decomp/report.json`, `python scripts/legal_check.py`, the unit tests, then a
+   detailed commit and a draft PR per [PR-DESCRIPTIONS.md](PR-DESCRIPTIONS.md). Matches are candidates: say so; add no credit claim.
+
+Never copy code from GPL projects (Going Native) into the tree; use them for names and ideas only.
+
 ## Read only the current entry points
 
 1. Read `AGENTS.md`, then this page and the relevant section of
