@@ -11,3 +11,9 @@ no reservation and no register entry, so these add no credit.
 | `HasMobyGroup` | `0x31B508` | 16 | all 4 words equal (`!= 0xFF`, not `^ 0xFF`) |
 | `SetPopupItemEnabled` | `0x349368` | 16 | all 4 words equal (struct array member, not pointer arithmetic) |
 | `FloatToInt` | `0x2846A0` | 16 | not matched: retail converts in place (`cvt.w.s $f12,$f12`); the chain always picks `$f0` for `(int)x` at -O1/-O2/-O3, so the original was probably handwritten |
+
+`FloatToInt` was also tried with the real `2.96-ee-001003-1` `cc1` (`-O2`, `-G0` and `-G8`, three source spellings) and with
+SN `2.95.3`: all allocate `$f0` for the result. Going Native reaches the same conclusion (no C spelling reproduces the in-place
+`cvt.w.s $f12,$f12` under cc1 2.9 or the 2.96 arm) and lists six functions with that pattern: `FloatToInt 0x2846A0`,
+`0x283240`, `0x283278`, `0x2832B0`, `0x2A1628/0x2A1630` and `0x2BAB68`. Treat them as handwritten assembly (an assembly unit),
+not as C targets.
