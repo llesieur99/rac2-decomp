@@ -90,6 +90,12 @@ another compiler and report it as qualified.
 
 ## Legacy SN components
 
+Contributors fetch these themselves; they are git-ignored and never committed:
+`git clone https://github.com/AngheloAlf/SN-Systems-ProDG_for_PS2_3.01 toolchain/sn-prodg-3.01` and
+`git clone https://github.com/AngheloAlf/sce_ps2_sdk_24 toolchain/sn-prodg-24`
+(the layout rac1-decomp uses). A mirror is not proof of permission to use or distribute it.
+Verify the executables against the hashes in `progress/report.json` before relying on them.
+
 You must supply an authorized copy of the qualified legacy assembler/linker.
 We offer no verified public download URL for these exact components and do not
 host SDK kits. The current [PlayStation Partners portal](https://partners.playstation.net/)
