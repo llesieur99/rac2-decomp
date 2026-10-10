@@ -1,5 +1,7 @@
 # USA v2.00 first trials
 
+This directory is deliberately outside `src/` and `candidates/`: nothing here is reserved, integrated or credited. A function moves into `src/` only through a reservation and a PR of Type `matching` (see `docs/CONTINUE.md`).
+
 Exploratory C for the USA v2.00 target, checked with `scripts/try_function.py` against the
 retail words of `baserom/SCUS_972.68` using the locally built GNU EE chain (`tools/linux/`).
 The chain's source hashes equal the qualified ones (`docs/V2-SETUP.md`), but v2.00 has no campaign task,

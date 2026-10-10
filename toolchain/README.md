@@ -99,7 +99,7 @@ podman run -d --init --name rac2-gnu --userns=keep-id --security-opt label=disab
   -v $HOME:$HOME --tmpfs /rac2tmp:exec,mode=1777 rac2-linux sleep infinity
 export PYTHONPATH=$PWD/tools/linux RAC2_LINUX_RUNNER="podman exec rac2-gnu bash -c" \
   RAC2_WSL_TOOLS=<dir with cc1 cpp as> RAC2_WSL_TMP=/rac2tmp RAC2_EXE_RUNNER=<wibo>
-python scripts/try_function.py src/usa-v2/IntToFloat.c --address 0x284690 --size 16
+python scripts/try_function.py trials/usa-v2/IntToFloat.c --address 0x284690 --size 16
 ```
 
 `rac2-linux` is the Ubuntu image from OpenRAC's `games/rac2/ntsc/host/` recipe, which also builds

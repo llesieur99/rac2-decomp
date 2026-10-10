@@ -32,5 +32,5 @@ Going Native also builds each unit with `-O2 -G0` or `-G8`, sometimes `-fno-gcse
 
 1. Keep the patched 2.9 chain for engine code; add a second chain (with `0001`) only for the 32 `sq` functions at `0x115228-0x119BF8`.
 2. If a leaf function will not match, try `-G8` and `-fno-gcse` per function before rewriting the C.
-3. Functions that never match under 2.9 may belong to `engine96` or `s136os`; the real `cc1` from the mirrors can be tried. `FloatToInt` was: the 2.96 and 2.95.3 `cc1` also give `$f0`, so it is handwritten (see `src/usa-v2/README.md`).
+3. Functions that never match under 2.9 may belong to `engine96` or `s136os`; the real `cc1` from the mirrors can be tried. `FloatToInt` was: the 2.96 and 2.95.3 `cc1` also give `$f0`, so it is handwritten (see `trials/usa-v2/README.md`).
 4. Everything here is a candidate result. v2.00 has no campaign task, reservation or qualified proof yet.

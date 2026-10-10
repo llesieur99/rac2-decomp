@@ -64,11 +64,11 @@ podman run -d --init --name rac2-gnu --userns=keep-id --security-opt label=disab
   --tmpfs /rac2tmp:exec,mode=1777 rac2-linux sleep infinity
 export PYTHONPATH=$PWD/tools/linux RAC2_LINUX_RUNNER="podman exec rac2-gnu bash -c" \
   RAC2_WSL_TOOLS=$HOME/rac2-private/compiler/tools RAC2_WSL_TMP=/rac2tmp
-python scripts/try_function.py src/usa-v2/IntToFloat.c --address 0x284690 --size 16     # prints MATCH
+python scripts/try_function.py trials/usa-v2/IntToFloat.c --address 0x284690 --size 16     # prints MATCH
 ```
 
-Write your function in `src/usa-v2/`, compare, then iterate on the C shape (see the notes in
-[`src/usa-v2/README.md`](../src/usa-v2/README.md)). Leaf functions compare exactly; calls and globals carry relocations.
+Write your function in `trials/usa-v2/`, compare, then iterate on the C shape (see the notes in
+[`trials/usa-v2/README.md`](../trials/usa-v2/README.md)). Leaf functions compare exactly; calls and globals carry relocations.
 
 ## 6. decomp.dev report
 
