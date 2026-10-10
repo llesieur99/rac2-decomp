@@ -42,6 +42,19 @@ its signatures never reopen a parked source trial or add matching credit.
 Verify a stale environment pointer and update its private source as soon as it
 changes; do not repeatedly rediscover an already documented tool.
 
+## Pick a small function
+
+With your own `baserom/SCUS_972.68` in place, rank the retail functions by size and
+list unmatched ones (output stays local; only addresses and sizes are printed):
+
+```bash
+python scripts/function_size_rank.py --category small --status todo --ascending --limit 20
+```
+
+Boundaries are heuristic; confirm in Ghidra, then claim the lot in
+[CONTRIBUTOR-RESERVATIONS.md](CONTRIBUTOR-RESERVATIONS.md). `scripts/legal_check.py`
+runs in CI and rejects game bytes, assets or disassembly.
+
 ## Mission and ownership
 
 An explicit continuation request starts matching work. The long-term goal is

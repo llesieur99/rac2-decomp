@@ -21,6 +21,8 @@ jobs:
           python-version: '3.12'
       - name: Install qualified boundary decoder
         run: python -m pip install rabbitizer==1.16.2
+      - name: Legal compliance (no game bytes, assets or disassembly)
+        run: python scripts/legal_check.py
       - run: python -m unittest discover -s tests -v
       - name: Check authored source and campaign views
         run: |
