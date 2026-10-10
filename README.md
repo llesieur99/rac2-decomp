@@ -63,6 +63,8 @@ Shared boot binding: 22,576 static edges in combined pinned reference images. Ru
    git clone https://github.com/AngheloAlf/sce_ps2_sdk_24 toolchain/sn-prodg-24
    ```
 
+Linux walkthrough with every command: [`docs/V2-SETUP.md`](docs/V2-SETUP.md).
+
 Compiler and linker requirements are in [`toolchain/README.md`](toolchain/README.md); the full walkthrough is [`docs/START-HERE.md`](docs/START-HERE.md).
 
 ## Contributing
