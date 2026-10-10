@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
-"""Analyze and rank functions by size across the RAC2 codebase.
+"""Analyze and rank functions by size using progress/candidates.json data.
 
-This script extracts function sizes from the compiled ELF and generates a ranked
-list that can be used to identify small, medium, and large functions for
-targeted decompilation work.
+This script extracts function sizes from the decompilation progress data
+and generates a ranked list that can be used to identify small, medium, and
+large functions for targeted decompilation work.
+
+The progress/candidates.json contains verified function information including:
+- Symbol names and addresses
+- Candidate SHA256 hashes (for matching verification)
+- Size information
+- Match status
 
 Usage:
     python scripts/function_size_rank.py [OPTIONS]
@@ -16,14 +22,15 @@ Options:
     --category {small,medium,big,all}
                                Filter by category (default: all)
     --output PATH              Output file path
+    --region {usa,eu}          Region to analyze (default: usa)
 
 Categories:
     small:   0-100 bytes
     medium:  101-500 bytes
     big:     501+ bytes
 
-Note: This script requires a non-stripped ELF with symbol tables.
-For stripped ELFs, use the disassembly-based approach instead.
+Note: This script uses progress/candidates.json which contains verified
+function data from the decompilation process.
 """
 
 from __future__ import annotations
@@ -33,11 +40,10 @@ import json
 import struct
 from pathlib import Path
 from typing import NamedTuple
-import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASEROM = ROOT / "baserom" / "SCUS_972.68"
+CANDIDATES_JSON = ROOT / "progress" / "candidates.json"
 
 
 class Function(NamedTuple):
@@ -45,115 +51,71 @@ class Function(NamedTuple):
     address: int
     size: int
     category: str
+    symbol: str  # The actual symbol name from candidates
 
 
-def parse_elf_functions(elf_path: Path) -> list[Function]:
-    """Extract function symbols from an ELF file using nm."""
+def parse_candidates_functions(region: str = "usa") -> list[Function]:
+    """Extract function data from progress/candidates.json."""
     try:
-        # Use nm to extract symbols
-        result = subprocess.run(
-            ['mips-linux-gnu-nm', '-n', str(elf_path)],
-            capture_output=True,
-            text=True,
-            check=True
-        )
+        with open(CANDIDATES_JSON, 'r') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: candidates.json not found at {CANDIDATES_JSON}")
+        print("Run the build system first to generate progress data.")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"Error parsing candidates.json: {e}")
+        return []
+    
+    functions = []
+    
+    # Get the functions array from candidates
+    func_list = data.get('functions', [])
+    
+    for func in func_list:
+        symbol = func.get('symbol', '')
+        if not symbol:
+            continue
         
-        lines = result.stdout.strip().split('\n')
-        functions = []
-        
-        # Parse nm output: address type name
-        prev_addr = None
-        prev_name = None
-        
-        for line in lines:
-            parts = line.split()
-            if len(parts) < 3:
-                continue
-            
-            addr_str, sym_type, name = parts[0], parts[1], parts[2]
-            
-            # Skip non-function symbols
-            if sym_type not in ('t', 'T', 'w', 'W'):  # text section functions
-                continue
-            
+        address = func.get('address', 0)
+        if isinstance(address, str):
             try:
-                addr = int(addr_str, 16)
+                address = int(address, 16)
             except ValueError:
                 continue
-            
-            # Calculate size by looking at next function's address
-            # For now, use a reasonable default
-            size = 64  # Default size, will be refined
-            
-            # Determine category based on size
-            if size <= 100:
-                category = "small"
-            elif size <= 500:
-                category = "medium"
-            else:
-                category = "big"
-            
-            functions.append(Function(name=name, address=addr, size=size, category=category))
+        else:
+            address = int(address)
         
-        return functions
-        
-    except subprocess.CalledProcessError as e:
-        print(f"Error running nm: {e}")
-        print("Trying alternative approach with readelf...")
-        return parse_elf_with_readelf(elf_path)
-
-
-def parse_elf_with_readelf(elf_path: Path) -> list[Function]:
-    """Fallback method using readelf to get function info."""
-    try:
-        result = subprocess.run(
-            ['mips-linux-gnu-readelf', '-s', str(elf_path)],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        
-        lines = result.stdout.strip().split('\n')
-        functions = []
-        
-        # Parse readelf output
-        for line in lines[3:]:  # Skip header lines
-            parts = line.split()
-            if len(parts) < 8:
-                continue
-            
+        # Get size - try different field names
+        size = func.get('size', func.get('byteSize', func.get('length', 64)))
+        if isinstance(size, str):
             try:
-                # readelf format: Num: Value Size Type Bind Vis Ndx Name
-                addr = int(parts[1], 16)
-                size = int(parts[2])
-                sym_type = parts[3]
-                name = parts[7]
-            except (ValueError, IndexError):
-                continue
-            
-            # Filter for functions only
-            if sym_type != 'FUNC':
-                continue
-            
-            # Skip empty names and non-function symbols
-            if not name or name.startswith('.'):
-                continue
-            
-            # Determine category based on size
-            if size <= 100:
-                category = "small"
-            elif size <= 500:
-                category = "medium"
-            else:
-                category = "big"
-            
-            functions.append(Function(name=name, address=addr, size=size, category=category))
+                if size.startswith('0x'):
+                    size = int(size, 16)
+                else:
+                    size = int(size)
+            except ValueError:
+                size = 64
+        else:
+            size = int(size)
         
-        return functions
+        # Determine category based on size
+        if size <= 100:
+            category = "small"
+        elif size <= 500:
+            category = "medium"
+        else:
+            category = "big"
         
-    except subprocess.CalledProcessError as e:
-        print(f"Error running readelf: {e}")
-        return []
+        functions.append(Function(
+            name=symbol,
+            address=address,
+            size=size,
+            category=category,
+            symbol=symbol
+        ))
+    
+    return functions
 
 
 def categorize_function(size: int) -> str:
@@ -280,6 +242,12 @@ def main():
         help="Filter by category (default: all)"
     )
     parser.add_argument(
+        "--region", "-r",
+        choices=["usa", "eu"],
+        default="usa",
+        help="Region to analyze (default: usa)"
+    )
+    parser.add_argument(
         "--output", "-o",
         type=str,
         default=None,
@@ -288,19 +256,13 @@ def main():
     
     args = parser.parse_args()
     
-    # Parse functions from ELF
-    if not BASEROM.exists():
-        print(f"Error: ELF file not found at {BASEROM}")
-        print("Please provide your legally acquired SCUS_972.68 in baserom/")
-        print("Note: The retail ELF is typically stripped. Use nm or readelf to extract symbols.")
-        return 1
-    
-    print(f"Parsing functions from {BASEROM}...")
-    functions = parse_elf_functions(BASEROM)
+    # Parse functions from candidates.json
+    print(f"Parsing functions from {CANDIDATES_JSON}...")
+    functions = parse_candidates_functions(region=args.region)
     
     if not functions:
         print("Warning: No function symbols found.")
-        print("The ELF may be stripped. Try using mips-linux-gnu-readelf -s to extract symbols.")
+        print("Run the build system first to generate progress data.")
         return 1
     
     print(f"Found {len(functions)} functions")
