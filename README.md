@@ -39,7 +39,7 @@ from loaded-byte coverage; the normal matching acceptance rule is unchanged.
 | Metric | Matched C bytes | Total code bytes | Progress |
 | --- | ---: | ---: | ---: |
 | Conservative unique EE code (unsupported extents uncollapsed) | 286,752 | 44,400,168 | 0.6458% |
-| Loaded code (boot + 27 overlays) | 968,180 | 48,788,176 | 1.9845% |
+| Loaded code (boot + 27 overlays) | 976,820 | 48,788,176 | 2.0022% |
 
 Structurally supported function extents cover 40,075,248 loaded EE bytes; 231,732 EE bytes remain unresolved. VU code excluded: 86,368 bytes.
 Provisional representative partition: 37,641,816 bytes (certified: false); no global progress percentage is inferred from this partition.
@@ -57,10 +57,10 @@ Recorded validation on **10 October 2026**:
 
 | Scope | Integrated C functions / placements | Matched C bytes |
 | --- | ---: | ---: |
-| Boot | 327 functions | 21,044 |
-| 27 level overlays | 11,803 placements | 947,136 |
-| Native overlay subset, included above | 7,407 placements | 707,200 |
-| **Total C coverage** | **Boot + all 27 overlays** | **968,180 / 48,788,176 (1.9845%)** |
+| Boot | 328 functions | 21,364 |
+| 27 level overlays | 11,829 placements | 955,456 |
+| Native overlay subset, included above | 7,433 placements | 715,520 |
+| **Total C coverage** | **Boot + all 27 overlays** | **976,820 / 48,788,176 (2.0022%)** |
 <!-- generated-progress:end -->
 
 The complete boot (**2,521,763 loaded bytes, two PT_LOAD segments**) and all

@@ -893,20 +893,21 @@ because they are what stops a later simplification of this file:
 ```
 
 `scripts/check_candidates.py` reports `MATCH` at the seed
-(`0_aranos_tutorial@0x002B91C0`, 320 bytes), and the family's own proof replays
-**27 of 27** level placements byte for byte. The boot placement is not bindable
-by the family harness (`family.py bindings` refuses a boot member by design); it
-is verified at the byte level instead — the boot body and the
-`0_aranos_tutorial` body differ in 11 words, all of them `jal`, the call sites
-the linker supplies, and words 18 and 20 are identical in both
-(`7ec00000` = `sq $zero,0($s6)`, `0000102d` = `move $v0,$zero`).
+(`0_aranos_tutorial@0x002B91C0`, 320 bytes), the promoter's owner gate
+reproduces it again on the *rendered* fragment (the aliases the units actually
+carry), and the family's own proof replays **27 of 27** level placements byte
+for byte. The boot placement is not bindable by the family harness
+(`family.py bindings` refuses a boot member by design); it is verified instead
+by the boot review itself, which reproduces it complete and exact against the
+retail image — `325/325` definitions with the promoted body.
 
 | | |
 | --- | --- |
 | family | `904cc63b097639e5`, 320 bytes |
-| placements | 28 (27 level + boot) |
-| bytes closed | **8 960** (320 × 28) |
-| state | byte-exact on every level placement; boot verified by bytes |
+| placements | 28 — 26 native levels, the boot, and one small-data placement (level `4_barlow`) |
+| promoted | 27 (26 native + boot) = **8 640 bytes** |
+| kept out | the small-data placement (level `4_barlow`): the native-profile promotion skips it, by the promoter's documented rule for a nonzero-`-G` unit, and the same record cannot be promoted again with the small-data profile — the boot placement has no small-data unit and a mixed family is refused. Tried, not assumed |
+| state | byte-exact on every promoted placement, boot included |
 
 Census of the class in the retail images: 28 placements carry the tight
 signature (a 16-byte store from `$zero` within three words of
@@ -915,6 +916,24 @@ placements carry a `por $zero` word. The wider class — a `por $rd,$zero,$zero`
 that feeds exactly one store — counts 4 164 sites, but the retail keeps the
 register in those families and the fold is not what they need; nothing here
 claims them.
+
+**One source prerequisite, measured.** The promoted fragment declares a 128-bit
+type, and this compiler refuses the `mode(TI)` spelling while a *typedef named
+`TI`* is in scope: with `typedef int TI __attribute__((mode(TI)));` earlier in
+the unit, a later `typedef … __attribute__((mode(TI))) …` fails to parse
+(`parse error before 'TI'`), in either attribute position, measured on both a
+two-line fixture and the boot unit. The same trap was hit independently, from
+the other side, by the family lot merged before this one: its typedef extractor
+took `TI` — the *mode* name inside `__attribute__((mode(TI)))` — for a type name
+and rewrote the attribute to `mode(TI_F…)`, breaking three families. The boot
+source carried exactly that typedef. It and its three users (the two bodies that clear or copy a 128-bit
+object, `FUN_002A8C00` and `FUN_00282C88`) now spell the type `TI128`;
+`src/boot/03-ported-utilities.cfrag` and `src/boot/12-aligned-clear.cfrag`
+change, nothing else. The rename is code-generation-neutral and was checked that
+way: the emitted assembly and the linked object are byte-identical before and
+after, under both chains, and the boot review reproduces every definition
+(325/325 with the promoted body). A typedef name does not reach the instruction
+stream; the `FUN_00282C88` witness is still `j $31 ; sq $0,0($4)`.
 
 **Composition guard.** This is *added to* the qualified chain, never substituted
 for it: the tree is the current qualified tree plus this transformer alone.
@@ -939,10 +958,36 @@ fold neither closes nor breaks them. Only `904cc63b…` changes. `ad5b681b…` a
 `6c1e201f…` have no retained body to re-measure; `c10c1216…` was closed by the
 save-block lot of the same morning.
 
-**Control measurement on the published corpus.** All 55 published candidate
-sources (boot and the 27 native and 27 small-data units) compile and assemble to
-**byte-identical objects** under both chains — 55/55, zero `.s` differing,
-4 933 212 bytes either side.
+**Control measurement on the published corpus.** At the lot's base, all 55
+published candidate sources (boot and the 27 native and 27 small-data units)
+compile and assemble to **byte-identical objects** under both chains — 55/55,
+zero `.s` differing, 4 933 212 bytes either side. The corpus does not contain a
+body in which the new case occurs: the only source the fold changes is the
+family this lot promotes, and its fragment is added to the units *after* this
+control, so the promotion is the one intended difference and it is measured by
+the unit qualification and the image gate rather than hidden in this count.
+
+Measured again *after* the promotion, on the final corpus, the two chains now
+differ in exactly the 27 sources that carry the family — the boot and the 26
+native levels — and by exactly **8 bytes each**, the two words the fold moves;
+the other 28 sources (the 27 small-data units and the one native level with no
+placement) are still byte-identical. Nothing else moves with the chain.
+
+**Requalification.** The whole published corpus was re-qualified on the
+installed tree: **6 035 complete C functions exact across the 27 native units
+(633 856 bytes)** and **1 398 across the 27 small-data units (81 664 bytes)**,
+the boot review reproduces all **325** complete definitions, and the full
+boot-and-27-overlay loaded-image gate passes with no failure. Physical coverage
+moves from 968 180 to 976 820 of 48 788 176 bytes (1.9845 % to 2.0022 %) and the
+combined-reference boot binding stays at **22 576** static edges. No previously
+matched body changes status; the run adds only the family this change closes.
+
+The *unique* ledger does not move on this lot, and the reason is the placement
+the promoter keeps out: its policy counts a structural class only when **every**
+verified placement of the class is integrated, and this family still has its
+small-data placement outside. `any_c_unique_bytes` does grow by the family's 320
+bytes (292 728 → 293 048); `matched_c_unique_bytes` stays at 286 752 until that
+placement is integrated too.
 
 ## Scope
 

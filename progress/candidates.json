@@ -1,11 +1,11 @@
 {
   "target": "SCUS_972.68",
-  "verified_at": "2026-10-10T12:47:35.621589+00:00",
+  "verified_at": "2026-10-10T16:18:57.460449+00:00",
   "reference_sha256": "36d5814d8d95328d5839612ccdf7a2e7ecac0b6f868d3ad4bb2e98411f734b4a",
-  "source_sha256": "091121af6d4fa3d8a8d53a1ed5dbf980a05c4462241d9f2cca1794b636796468",
-  "candidate_elf_sha256": "9cfcde5c97c72f910005eb11142db4a0c8b328553dc5b31ac31943a972eacaa1",
-  "object_sha256": "c3d04dd0d37f0998d07bfc7977801bab5b5c946ec33f8c306059d57dadcb132a",
-  "catalog_sha256": "112576ff6fcb3f59a95d0e618a867392ea4887d0b9b1c4f435c254e2bb80a20d",
+  "source_sha256": "21b1e3ff0f44570f7b0555b35ed8c3092015edbe7befdbcb9a333350942edd76",
+  "candidate_elf_sha256": "2e52f8761cc06f5616c74210a459a61ddde256f83660893a3c6c06d81522f101",
+  "object_sha256": "6262e9f94e5c44d37d5e7b61aac4e9fcaef9d6f34de101b409ac1de49c9a80a3",
+  "catalog_sha256": "9dde978fa8dc4b3d81b2a3f2f5f574bdd7771920d7dfeef4ebb6c33a880e1fd7",
   "checker_sha256": "7c40d149419ff91694c03789372ef51da25fc9c9f3c37265d2a1bbfaa915fb07",
   "flags": [
     "-O2",
@@ -13,7 +13,7 @@
     "-ffunction-sections"
   ],
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -1156,6 +1156,16 @@
       "matched": true,
       "reference_sha256": "ab9ffb671eb77a5ca0786313e14d8fbdd35debec8f373572ef40690b20a81078",
       "candidate_sha256": "ab9ffb671eb77a5ca0786313e14d8fbdd35debec8f373572ef40690b20a81078",
+      "different_bytes": 0,
+      "state": "matched_unintegrated"
+    },
+    {
+      "symbol": "FUN_002AD330",
+      "address": 2806576,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "fe78019106c29f0f93e15f92aab35f3108b859fb27d385a61ac2e2f67de2319a",
+      "candidate_sha256": "fe78019106c29f0f93e15f92aab35f3108b859fb27d385a61ac2e2f67de2319a",
       "different_bytes": 0,
       "state": "matched_unintegrated"
     },

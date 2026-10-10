@@ -6,13 +6,13 @@
   "reference_sha256": "b638bb36997a9b3e8041738f45b0c624c01fe4ad9ae601ff50e305916ff3040c",
   "reference_entry": 2795912,
   "candidate_source": "candidates/levels/30_insomniac_museum.c",
-  "source_sha256": "cece68cc0504999ac77b7a7b48bcdccb8b63e74a75e5372cf212dc944ddfb5d6",
-  "catalog_sha256": "a1efa0ab0d005cd443a7de3ba363729bc614412368307c07ba5c311ff52af60f",
-  "object_sha256": "e23e124d160ce8320fd85efda088e0034a6a84b92eddf390ac3c76aacd412454",
-  "candidate_elf_sha256": "83c7cfc226f9e4c4652dfa574bceb2dfbdc7ebd1212f77f4f3a759991334d858",
+  "source_sha256": "162873c57a95cacdbc7fbe6204a44c17b35c1fec86cba95041df642c81fb3bb6",
+  "catalog_sha256": "3920fea351fa6aff4dc3455b4e1acbd825b2038659acbcaa6dad00ec026a4aef",
+  "object_sha256": "10eb796c63d9398bc5e0a013b0364b7eb6293e67f82bf8997d108a1a2aba1fe2",
+  "candidate_elf_sha256": "f1dd0bbf0ad2bfd0d16760cabe859c7141554e114269ea28c7c0df16b9171cbc",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
-    "cc1": "adb1c1b4bb33048f2877ddda3b7a32ebaf847c5a3ba52e15d2fb92b62bc1a022",
+    "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
     "cpp": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
     "as": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
     "ld.exe": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
@@ -760,6 +760,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 16
+    },
+    {
+      "symbol": "LVL_30_INSOMNIAC_MUSEUM_FUN_003272B8",
+      "address": 3306168,
+      "size": 320,
+      "matched": true,
+      "reference_sha256": "9c222777033f30fa6d2dca293064acbaf4a544fd6530b35899b5f200c03d563d",
+      "candidate_sha256": "9c222777033f30fa6d2dca293064acbaf4a544fd6530b35899b5f200c03d563d",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 320
     },
     {
       "symbol": "LVL_30_INSOMNIAC_MUSEUM_FUN_00328D48",
@@ -2424,5 +2435,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 22492
+  "matched_code_bytes": 22812
 }

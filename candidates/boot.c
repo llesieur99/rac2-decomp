@@ -224,14 +224,14 @@ s32 FUN_0012DA98(void *arg0) {
    retail (`lq $v0,0($a3); sq $v0,0($a0)`). */
 
 typedef struct { int a, b, c, d; } __attribute__((aligned(16))) Quad16;
-typedef int TI __attribute__((mode(TI)));
+typedef int TI128 __attribute__((mode(TI)));
 
 void FUN_002A8C00(char *a, int b, int c, float d, Quad16 *q) {
     *(int *)(a + 0x10) = b;
     *(int *)(a + 0x14) = c;
     *(float *)(a + 0x1C) = d;
     *(int *)(a + 0x20) = 1;
-    *(volatile TI *)a = *(TI *)q;
+    *(volatile TI128 *)a = *(TI128 *)q;
 }
 
 void FUN_002B6770(int arg0, long arg1) {
@@ -1402,7 +1402,7 @@ void FUN_002B7170(void) {
 }
 
 /* Clear one aligned 128-bit object through architectural zero. */
-void FUN_00282C88(TI *a0) { *a0 = 0; }
+void FUN_00282C88(TI128 *a0) { *a0 = 0; }
 
 /* Write the measured GS privileged 64-bit register configuration in order. */
 typedef unsigned long long GsRegisterValue;
@@ -4874,4 +4874,49 @@ void FUN_002BE9B8(char *p)
         q[2] = q[2] - 1.0f;
     *(char *)(p + 8) = (char)(q[2] * 255.0f);
     Fc10c1216_FUN_00282CC0(p + 16, p + 16, (char *)(q + 4));
+}
+#ifndef RAC2_T_V4_F904CC63B
+#define RAC2_T_V4_F904CC63B
+typedef __attribute__((mode(TI))) int V4_F904cc63b;
+#endif
+
+
+extern char *F904cc63b_FUN_002AD0B0(char *p);
+extern void F904cc63b_FUN_00283410(V4_F904cc63b *dst, char *src);
+extern void F904cc63b_FUN_00282CC0(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void F904cc63b_FUN_00282CF0(V4_F904cc63b *dst, V4_F904cc63b *a, char *b);
+extern void F904cc63b_FUN_00283698(V4_F904cc63b *dst, V4_F904cc63b *src);
+extern void F904cc63b_FUN_00283098(V4_F904cc63b *dst, V4_F904cc63b *a, V4_F904cc63b *b);
+
+int FUN_002AD330(char *a0, char *a1, char *a2, char *a3)
+{
+    V4_F904cc63b b0[4];
+    V4_F904cc63b b1[1];
+    V4_F904cc63b b2[4];
+    V4_F904cc63b b3[4];
+    char *p;
+
+    p = F904cc63b_FUN_002AD0B0(a1);
+    if (p == 0)
+    {
+        *(V4_F904cc63b *)a3 = 0;
+        return 0;
+    }
+    F904cc63b_FUN_00283410(b0, p);
+    F904cc63b_FUN_00282CC0(b1, (V4_F904cc63b *)a2, p + 16);
+    F904cc63b_FUN_00282CF0(b1, b1, a1 + 16);
+    if (*(int *)(p + 60) & 2)
+    {
+        F904cc63b_FUN_00283410(b3, p + 32);
+        F904cc63b_FUN_00283698(b2, b3);
+        F904cc63b_FUN_00283098(b1, b1, b2);
+        F904cc63b_FUN_00283098(b1, b1, (V4_F904cc63b *)(a1 + 192));
+    }
+    else
+    {
+        F904cc63b_FUN_00283098(b1, b1, b0);
+    }
+    F904cc63b_FUN_00282CC0(b1, b1, a1 + 16);
+    F904cc63b_FUN_00282CF0((V4_F904cc63b *)a3, b1, a2);
+    return 1;
 }
