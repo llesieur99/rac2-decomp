@@ -49,8 +49,13 @@ Expected: the boot and all 27 overlays report `All PT_LOAD bytes and metadata ma
 tools/linux/build-compiler.sh ~/rac2-private/compiler       # ~2 minutes, needs podman or docker
 ```
 
-All inputs are public and SHA-256 checked. Known gap: `mips.c` hashes differently from the qualified file
-(four steps were never published), so this `cc1` is **not** the qualified one and results are candidates only.
+All inputs are public and SHA-256 checked. The script applies only published transformers (`tools/linux/rac2_recipe.py`)
+and prints the five source hashes; all must equal the checkpoint table in [`COMPILER-NOTES.md`](COMPILER-NOTES.md)
+(`mips.c 7952e5da…`, `mips.h 87d59c06…`, `mips.md 177caa69…`, `toplev.c 38d52727…`, `tc-mips.c 61e51c1e…`).
+They do on Ubuntu 24.04 and 26.04 (`UBUNTU=26.04 tools/linux/build-compiler.sh …`). The `cc1`/`cpp`/`as` **binary** hashes
+depend on the build host and do not equal the documented ones, so record your own in any proof.
+Behavioural check: compiling `candidates/boot.c` gives bytes identical to the recorded v1.01 proofs for all 210
+relocation-free functions (the other 99 need a link to compare).
 
 ## 5. Try a function
 
@@ -69,5 +74,5 @@ Write your function in `src/usa-v2/`, compare, then iterate on the C shape (see 
 
 Claim a small lot in [`CONTRIBUTOR-RESERVATIONS.md`](CONTRIBUTOR-RESERVATIONS.md) first, open a draft PR against `RAC2`
 as described in [`CONTRIBUTOR-QUICKSTART.md`](CONTRIBUTOR-QUICKSTART.md), and keep matching claims honest:
-a function counts only after the campaign byte gates pass with the qualified compiler.
+a function counts only after the campaign byte gates pass.
 `python scripts/measure_unique.py --reference <runtime>/runs/<run>/reference` estimates unique v2.00 code (about 5.25 MB).

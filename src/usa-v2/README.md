@@ -2,8 +2,8 @@
 
 Exploratory C for the USA v2.00 target, checked with `scripts/try_function.py` against the
 retail words of `baserom/SCUS_972.68` using the locally built GNU EE chain (`tools/linux/`).
-The chain's `mips.c` hash is **not** the qualified one (see `docs/COMPILER-NOTES.md`), so these
-are candidate matches only: no campaign task, no reservation, no register entry and no credit.
+The chain's source hashes equal the qualified ones (`docs/V2-SETUP.md`), but v2.00 has no campaign task,
+no reservation and no register entry, so these add no credit.
 
 | Function | Address | Size | Result |
 | --- | --- | --- | --- |
