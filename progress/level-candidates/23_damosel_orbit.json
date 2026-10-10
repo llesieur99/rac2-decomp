@@ -6,10 +6,10 @@
   "reference_sha256": "0c75617382013a703eb5fcc85845f4d1352f496bfbb4047f512454aa730d37b4",
   "reference_entry": 2801928,
   "candidate_source": "candidates/levels/23_damosel_orbit.c",
-  "source_sha256": "952cc308092bab14e793b3fde536475a11926926b3d998330ea634cb57d222b4",
-  "catalog_sha256": "3827f8cc276e37ecd23e821de3eced6193bbac7cffc2267c08f06b965e01ee39",
-  "object_sha256": "ed46b5b21ab1fcbe818cc3d489c0ae700fb8a7bba496ab30d15304d65d70f143",
-  "candidate_elf_sha256": "e91d8846372d62588ed890e5d5b9ce0e64f6d0d731f62d0ebb6fa3ac3f81396b",
+  "source_sha256": "f08e5af10dc98243cfd7d886384c6beaa37540faac35856ce45bedf23048c1c3",
+  "catalog_sha256": "235b02339933694f65fb37b07f20573f50d45d35039b60bd713c601af73b5ddd",
+  "object_sha256": "f38a739971cf9fe82ff571bb42e8aff32e5f898703721a46b08d209cb98ff8a5",
+  "candidate_elf_sha256": "85a174ef75d206e077a1cd4851fa63e8388ef5fc29d7df999c2160f98651ad1e",
   "checker_sha256": "bfc3a7714e257ed26ff1d8fb68346df89c1d2eaa01651849db022ac871ac30f5",
   "tools": {
     "cc1": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
@@ -223,6 +223,17 @@
       "produced_size": 64
     },
     {
+      "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_002C2298",
+      "address": 2892440,
+      "size": 444,
+      "matched": true,
+      "reference_sha256": "fb21b2d17de3f631e4a7f744b36657827259fc467881d29bcc72ab4689bb711b",
+      "candidate_sha256": "fb21b2d17de3f631e4a7f744b36657827259fc467881d29bcc72ab4689bb711b",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 444
+    },
+    {
       "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_002D31F8",
       "address": 2961912,
       "size": 540,
@@ -309,6 +320,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 28
+    },
+    {
+      "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_002DE378",
+      "address": 3007352,
+      "size": 248,
+      "matched": true,
+      "reference_sha256": "ab9d3bb38871a2793a94bd9349141e268b85e43a4764e6b18282c0acc900f956",
+      "candidate_sha256": "ab9d3bb38871a2793a94bd9349141e268b85e43a4764e6b18282c0acc900f956",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 248
     },
     {
       "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_002DE9C8",
@@ -1024,6 +1046,17 @@
       "different_bytes": 0,
       "state": "matched_unintegrated",
       "produced_size": 432
+    },
+    {
+      "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_00347170",
+      "address": 3436912,
+      "size": 228,
+      "matched": true,
+      "reference_sha256": "32d3ea7ca0085474d1354284d28806116f59d9185cfc31153da54caec6325346",
+      "candidate_sha256": "32d3ea7ca0085474d1354284d28806116f59d9185cfc31153da54caec6325346",
+      "different_bytes": 0,
+      "state": "matched_unintegrated",
+      "produced_size": 228
     },
     {
       "symbol": "LVL_23_DAMOSEL_ORBIT_FUN_00347720",
@@ -2853,5 +2886,5 @@
     }
   ],
   "read_only_sections": [],
-  "matched_code_bytes": 29284
+  "matched_code_bytes": 30204
 }

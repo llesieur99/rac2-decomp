@@ -5420,3 +5420,158 @@ int LVL_7_SIBERIUS_FUN_002AA778(float *out, float scale, float amount)
     }
     return 0;
 }
+#ifndef RAC2_T_V4_FC3CB9262
+#define RAC2_T_V4_FC3CB9262
+typedef int V4_Fc3cb9262 __attribute__((mode(TI)));
+#endif
+
+
+extern void LVL_7_SIBERIUS_Fc3cb9262_FUN_002E4310(char *a, char *b, char *c);
+extern int LVL_7_SIBERIUS_Fc3cb9262_FUN_002E5470(float f);
+extern int LVL_7_SIBERIUS_Fc3cb9262_FUN_002E3FB0(char *a);
+extern void LVL_7_SIBERIUS_Fc3cb9262_FUN_003263C0(char *a);
+
+void LVL_7_SIBERIUS_FUN_00335638(char *a0)
+{
+    V4_Fc3cb9262 buf;
+    char *s0 = a0 + 32;
+    float f0;
+    float f1;
+    float f2;
+
+    f1 = *(float *)(s0 + 16) + 1.0000000474974513053894e-03f;
+    f2 = *(float *)(s0 + 8) - 3.0000000260770320892334e-03f;
+    *(float *)(s0 + 16) = f1;
+    *(float *)(s0 + 8) = f2;
+    f0 = *(float *)(s0 + 20) * f1 * 2.1000000000000000000000e+05f;
+    buf = *(V4_Fc3cb9262 *)s0;
+    *(float *)(a0 + 12) = f0;
+    LVL_7_SIBERIUS_Fc3cb9262_FUN_002E4310(a0 + 16, a0 + 16, (char *)&buf);
+    *(int *)(a0 + 4) = (LVL_7_SIBERIUS_Fc3cb9262_FUN_002E5470((float)*(short *)(a0 + 10)) << 24) | 0x00FFD2D2;
+    *(unsigned char *)(a0 + 8) = *(unsigned char *)(a0 + 8) + *(unsigned char *)(s0 + 24);
+    if (LVL_7_SIBERIUS_Fc3cb9262_FUN_002E3FB0(a0 + 10) != 0)
+        LVL_7_SIBERIUS_Fc3cb9262_FUN_003263C0(a0);
+}
+extern void LVL_7_SIBERIUS_Fc186f630_FUN_002E45F0(char *local, char *a, float k);
+extern float LVL_7_SIBERIUS_Fc186f630_FUN_002E4418(char *a, char *src);
+extern void LVL_7_SIBERIUS_Fc186f630_FUN_002E4398(char *dst, char *src, float k);
+extern void LVL_7_SIBERIUS_Fc186f630_FUN_002E4340(char *dst, char *src, char *local);
+
+extern char LVL_7_SIBERIUS_Fc186f630_D_00189E20[];            /* 0x00189E20 */
+
+#ifndef RAC2_T_V4_FC186F630
+#define RAC2_T_V4_FC186F630
+typedef int V4_Fc186f630 __attribute__((mode(TI)));
+#endif
+
+
+void LVL_7_SIBERIUS_FUN_002C9910(char *dst, char *src)
+{
+    char local[16];
+    char *base;
+    float f;
+
+    base = LVL_7_SIBERIUS_Fc186f630_D_00189E20;
+    switch (*(unsigned char *)(base + 8899)) {
+    case 0:
+        *(V4_Fc186f630 *)dst = *(V4_Fc186f630 *)src;
+        *(int *)(dst + 8) = 0;
+        break;
+    case 1:
+        LVL_7_SIBERIUS_Fc186f630_FUN_002E45F0(local, base + 672, 1.0f);
+        f = LVL_7_SIBERIUS_Fc186f630_FUN_002E4418(local, src);
+        LVL_7_SIBERIUS_Fc186f630_FUN_002E4398(local, local, f);
+        LVL_7_SIBERIUS_Fc186f630_FUN_002E4340(dst, src, local);
+        break;
+    case 2:
+        f = LVL_7_SIBERIUS_Fc186f630_FUN_002E4418(base + 704, src);
+        LVL_7_SIBERIUS_Fc186f630_FUN_002E4398(local, base + 704, f);
+        LVL_7_SIBERIUS_Fc186f630_FUN_002E4340(dst, src, local);
+        break;
+    }
+}
+
+
+#ifndef RAC2_T_TI_F41EB487E
+#define RAC2_T_TI_F41EB487E
+typedef int TI_F41eb487e __attribute__((mode(TI)));
+#endif
+
+
+extern void LVL_7_SIBERIUS_F41eb487e_FUN_002E47F8(void *a, void *b, void *c);
+extern void LVL_7_SIBERIUS_F41eb487e_FUN_002E4398(void *a, void *b, float value);
+extern void LVL_7_SIBERIUS_F41eb487e_FUN_002B74C8(void *a, void *b, int c, float p, float q, float r);
+extern void LVL_7_SIBERIUS_F41eb487e_FUN_002E4340(void *a, void *b, void *c);
+extern void LVL_7_SIBERIUS_F41eb487e_FUN_002E4310(void *a, void *b, void *c);
+
+
+#ifndef RAC2_T_VEC4_F41EB487E
+#define RAC2_T_VEC4_F41EB487E
+typedef struct {
+    int a;
+    int b;
+    float c;
+    float d;
+} Vec4_F41eb487e;
+#endif
+
+
+#ifndef RAC2_T_RESIDENTSTATE_F41EB487E
+#define RAC2_T_RESIDENTSTATE_F41EB487E
+typedef struct {
+    u8 pad000[0x80];
+    u8 area080[0x218 - 0x80];
+    short h218;
+    u8 pad21a[0x2a0 - 0x21a];
+    TI_F41eb487e q2A0;
+    u8 pad2b0[0x2c0 - 0x2b0];
+    u8 area2C0[0x31c - 0x2c0];
+    float f31C;
+    u8 pad320[0x34e - 0x320];
+    short h34E;
+    u8 pad350[0x22c3 - 0x350];
+    u8 b22C3;
+} ResidentState_F41eb487e;
+#endif
+
+
+extern ResidentState_F41eb487e LVL_7_SIBERIUS_F41eb487e_D_00189E20;
+
+void LVL_7_SIBERIUS_FUN_002B7788(void)
+{
+    u8 scratch[64];
+    Vec4_F41eb487e A, B, C;
+    float hi = 0.035f;
+    float lo = 0.3f;
+
+    *(TI_F41eb487e *)&A = 0;
+    *(TI_F41eb487e *)&B = 0;
+    *(TI_F41eb487e *)&C = 0;
+
+    A.c = 1.0f;
+    B.c = 0.8f;
+    C.c = 0.8f;
+
+    LVL_7_SIBERIUS_F41eb487e_FUN_002E47F8(&B, &B, &LVL_7_SIBERIUS_F41eb487e_D_00189E20);
+
+    *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&LVL_7_SIBERIUS_F41eb487e_D_00189E20.q2A0;
+    if (LVL_7_SIBERIUS_F41eb487e_D_00189E20.b22C3 == 2) {
+        LVL_7_SIBERIUS_F41eb487e_FUN_002E4398(&A, &LVL_7_SIBERIUS_F41eb487e_D_00189E20.area2C0, -1.0f);
+    }
+
+    if (LVL_7_SIBERIUS_F41eb487e_D_00189E20.b22C3 == 1 && (LVL_7_SIBERIUS_F41eb487e_D_00189E20.h34E < 10 || LVL_7_SIBERIUS_F41eb487e_D_00189E20.f31C < 1.0f))
+        *(TI_F41eb487e *)&A = *(TI_F41eb487e *)&LVL_7_SIBERIUS_F41eb487e_D_00189E20.q2A0;
+
+    if (LVL_7_SIBERIUS_F41eb487e_D_00189E20.h34E != 0 && LVL_7_SIBERIUS_F41eb487e_D_00189E20.h218 != 0) {
+        lo = 0.001f;
+        hi = lo;
+    }
+
+    LVL_7_SIBERIUS_F41eb487e_FUN_002B74C8(&A, scratch, 0, hi, lo, 0.0f);
+
+    if (LVL_7_SIBERIUS_F41eb487e_D_00189E20.b22C3 == 1 && LVL_7_SIBERIUS_F41eb487e_D_00189E20.h34E != 0) {
+        LVL_7_SIBERIUS_F41eb487e_FUN_002E47F8(&C, &C, scratch);
+        LVL_7_SIBERIUS_F41eb487e_FUN_002E4340(&LVL_7_SIBERIUS_F41eb487e_D_00189E20.area080, &LVL_7_SIBERIUS_F41eb487e_D_00189E20.area080, &C);
+        LVL_7_SIBERIUS_F41eb487e_FUN_002E4310(&LVL_7_SIBERIUS_F41eb487e_D_00189E20.area080, &LVL_7_SIBERIUS_F41eb487e_D_00189E20.area080, &B);
+    }
+}

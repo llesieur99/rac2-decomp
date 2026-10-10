@@ -91,6 +91,12 @@
     "LVL_3_ENDAKO_F40487154_FUN_002EF5C0": 3077568,
     "LVL_3_ENDAKO_F40487154_FUN_002EF818": 3078168,
     "LVL_3_ENDAKO_F40487154_FUN_002F0000": 3080192,
+    "LVL_3_ENDAKO_F41eb487e_D_00189E20": 1613344,
+    "LVL_3_ENDAKO_F41eb487e_FUN_002BE5B8": 2876856,
+    "LVL_3_ENDAKO_F41eb487e_FUN_002EEFB0": 3076016,
+    "LVL_3_ENDAKO_F41eb487e_FUN_002EEFE0": 3076064,
+    "LVL_3_ENDAKO_F41eb487e_FUN_002EF020": 3076128,
+    "LVL_3_ENDAKO_F41eb487e_FUN_002EF4A0": 3077280,
     "LVL_3_ENDAKO_F42d2147f_D_00189E20": 1613344,
     "LVL_3_ENDAKO_F42d2147f_D_00189EA0": 1613472,
     "LVL_3_ENDAKO_F42d2147f_FUN_002EEFB0": 3076016,
@@ -274,6 +280,15 @@
     "LVL_3_ENDAKO_Fc10c1216_FUN_002EEFB0": 3076016,
     "LVL_3_ENDAKO_Fc10c1216_FUN_002F0158": 3080536,
     "LVL_3_ENDAKO_Fc10c1216_FUN_00331270": 3347056,
+    "LVL_3_ENDAKO_Fc186f630_D_00189E20": 1613344,
+    "LVL_3_ENDAKO_Fc186f630_FUN_002EEFE0": 3076064,
+    "LVL_3_ENDAKO_Fc186f630_FUN_002EF020": 3076128,
+    "LVL_3_ENDAKO_Fc186f630_FUN_002EF0A0": 3076256,
+    "LVL_3_ENDAKO_Fc186f630_FUN_002EF298": 3076760,
+    "LVL_3_ENDAKO_Fc3cb9262_FUN_002EEC20": 3075104,
+    "LVL_3_ENDAKO_Fc3cb9262_FUN_002EEFB0": 3076016,
+    "LVL_3_ENDAKO_Fc3cb9262_FUN_002F0158": 3080536,
+    "LVL_3_ENDAKO_Fc3cb9262_FUN_00331270": 3347056,
     "LVL_3_ENDAKO_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_3_ENDAKO_Fc936841d_FUN_002EEFB0": 3076016,
     "LVL_3_ENDAKO_Fc936841d_FUN_002EEFE0": 3076064,
@@ -483,6 +498,12 @@
       "symbol": "LVL_3_ENDAKO_FUN_002B9358"
     },
     {
+      "address": 2877560,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_3_ENDAKO_FUN_002BE878"
+    },
+    {
       "address": 2959872,
       "meaning": "shared native body of family c68ad20a",
       "size": 96,
@@ -523,6 +544,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_3_ENDAKO_FUN_002D4200"
+    },
+    {
+      "address": 2966504,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_3_ENDAKO_FUN_002D43E8"
     },
     {
       "address": 2968120,
@@ -957,6 +984,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_3_ENDAKO_FUN_0033B870"
+    },
+    {
+      "address": 3409240,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_3_ENDAKO_FUN_00340558"
     },
     {
       "address": 3410696,

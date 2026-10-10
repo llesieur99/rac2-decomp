@@ -78,6 +78,12 @@
     "LVL_8_TABORA_F40487154_FUN_002FA3E0": 3122144,
     "LVL_8_TABORA_F40487154_FUN_002FA638": 3122744,
     "LVL_8_TABORA_F40487154_FUN_002FADE0": 3124704,
+    "LVL_8_TABORA_F41eb487e_D_00189E20": 1613344,
+    "LVL_8_TABORA_F41eb487e_FUN_002C9FF8": 2924536,
+    "LVL_8_TABORA_F41eb487e_FUN_002F9DF0": 3120624,
+    "LVL_8_TABORA_F41eb487e_FUN_002F9E20": 3120672,
+    "LVL_8_TABORA_F41eb487e_FUN_002F9E60": 3120736,
+    "LVL_8_TABORA_F41eb487e_FUN_002FA2C0": 3121856,
     "LVL_8_TABORA_F42d2147f_D_00189E20": 1613344,
     "LVL_8_TABORA_F42d2147f_D_00189EA0": 1613472,
     "LVL_8_TABORA_F42d2147f_FUN_002F9DF0": 3120624,
@@ -277,6 +283,15 @@
     "LVL_8_TABORA_Fc10c1216_FUN_002F9DF0": 3120624,
     "LVL_8_TABORA_Fc10c1216_FUN_002FAF38": 3125048,
     "LVL_8_TABORA_Fc10c1216_FUN_0033E208": 3400200,
+    "LVL_8_TABORA_Fc186f630_D_00189E20": 1613344,
+    "LVL_8_TABORA_Fc186f630_FUN_002F9E20": 3120672,
+    "LVL_8_TABORA_Fc186f630_FUN_002F9E60": 3120736,
+    "LVL_8_TABORA_Fc186f630_FUN_002F9EE0": 3120864,
+    "LVL_8_TABORA_Fc186f630_FUN_002FA0B8": 3121336,
+    "LVL_8_TABORA_Fc3cb9262_FUN_002F9A90": 3119760,
+    "LVL_8_TABORA_Fc3cb9262_FUN_002F9DF0": 3120624,
+    "LVL_8_TABORA_Fc3cb9262_FUN_002FAF38": 3125048,
+    "LVL_8_TABORA_Fc3cb9262_FUN_0033E208": 3400200,
     "LVL_8_TABORA_Fc459a266_D_00138180": 1278336,
     "LVL_8_TABORA_Fc459a266_D_00189E20": 1613344,
     "LVL_8_TABORA_Fc68ad20a_D_0018C2B8": 1622712,
@@ -484,6 +499,12 @@
       "symbol": "LVL_8_TABORA_FUN_002C4FA0"
     },
     {
+      "address": 2925240,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_8_TABORA_FUN_002CA2B8"
+    },
+    {
       "address": 2977608,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -518,6 +539,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_8_TABORA_FUN_002DF510"
+    },
+    {
+      "address": 3012344,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_8_TABORA_FUN_002DF6F8"
     },
     {
       "address": 3013960,
@@ -946,6 +973,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_8_TABORA_FUN_00348C78"
+    },
+    {
+      "address": 3463816,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_8_TABORA_FUN_0034DA88"
     },
     {
       "address": 3465272,

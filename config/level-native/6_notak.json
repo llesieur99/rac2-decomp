@@ -109,6 +109,12 @@
     "LVL_6_NOTAK_F412a47f9_D_001B2DA0": 1781152,
     "LVL_6_NOTAK_F412a47f9_D_001B2DC0": 1781184,
     "LVL_6_NOTAK_F412a47f9_D_001B2F88": 1781640,
+    "LVL_6_NOTAK_F41eb487e_D_00189E20": 1613344,
+    "LVL_6_NOTAK_F41eb487e_FUN_002F8680": 3114624,
+    "LVL_6_NOTAK_F41eb487e_FUN_0032D5C8": 3331528,
+    "LVL_6_NOTAK_F41eb487e_FUN_0032D5F8": 3331576,
+    "LVL_6_NOTAK_F41eb487e_FUN_0032D650": 3331664,
+    "LVL_6_NOTAK_F41eb487e_FUN_0032DAB0": 3332784,
     "LVL_6_NOTAK_F42d2147f_D_00189E20": 1613344,
     "LVL_6_NOTAK_F42d2147f_D_00189EA0": 1613472,
     "LVL_6_NOTAK_F42d2147f_FUN_0032D5C8": 3331528,
@@ -293,6 +299,15 @@
     "LVL_6_NOTAK_Fc10c1216_FUN_0032D5C8": 3331528,
     "LVL_6_NOTAK_Fc10c1216_FUN_0032E728": 3335976,
     "LVL_6_NOTAK_Fc10c1216_FUN_003708A0": 3606688,
+    "LVL_6_NOTAK_Fc186f630_D_00189E20": 1613344,
+    "LVL_6_NOTAK_Fc186f630_FUN_0032D5F8": 3331576,
+    "LVL_6_NOTAK_Fc186f630_FUN_0032D650": 3331664,
+    "LVL_6_NOTAK_Fc186f630_FUN_0032D6D0": 3331792,
+    "LVL_6_NOTAK_Fc186f630_FUN_0032D8A8": 3332264,
+    "LVL_6_NOTAK_Fc3cb9262_FUN_0032D268": 3330664,
+    "LVL_6_NOTAK_Fc3cb9262_FUN_0032D5C8": 3331528,
+    "LVL_6_NOTAK_Fc3cb9262_FUN_0032E728": 3335976,
+    "LVL_6_NOTAK_Fc3cb9262_FUN_003708A0": 3606688,
     "LVL_6_NOTAK_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_6_NOTAK_Fc936841d_FUN_0032D5C8": 3331528,
     "LVL_6_NOTAK_Fc936841d_FUN_0032D5F8": 3331576,
@@ -517,6 +532,12 @@
       "symbol": "LVL_6_NOTAK_FUN_002F3118"
     },
     {
+      "address": 3115328,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_6_NOTAK_FUN_002F8940"
+    },
+    {
       "address": 3180968,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -563,6 +584,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_6_NOTAK_FUN_00312EF8"
+    },
+    {
+      "address": 3223776,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_6_NOTAK_FUN_003130E0"
     },
     {
       "address": 3225392,
@@ -996,6 +1023,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_6_NOTAK_FUN_0037B088"
+    },
+    {
+      "address": 3669640,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_6_NOTAK_FUN_0037FE88"
     },
     {
       "address": 3671096,

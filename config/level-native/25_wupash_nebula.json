@@ -85,6 +85,12 @@
     "LVL_25_WUPASH_NEBULA_F40487154_FUN_003011F0": 3150320,
     "LVL_25_WUPASH_NEBULA_F40487154_FUN_00301448": 3150920,
     "LVL_25_WUPASH_NEBULA_F40487154_FUN_00301BF0": 3152880,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_D_00189E20": 1613344,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_FUN_002CC100": 2932992,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_FUN_00300C00": 3148800,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_FUN_00300C30": 3148848,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_FUN_00300C70": 3148912,
+    "LVL_25_WUPASH_NEBULA_F41eb487e_FUN_003010D0": 3150032,
     "LVL_25_WUPASH_NEBULA_F42d2147f_D_00189E20": 1613344,
     "LVL_25_WUPASH_NEBULA_F42d2147f_D_00189EA0": 1613472,
     "LVL_25_WUPASH_NEBULA_F42d2147f_FUN_00300C00": 3148800,
@@ -274,6 +280,15 @@
     "LVL_25_WUPASH_NEBULA_Fc10c1216_FUN_00300C00": 3148800,
     "LVL_25_WUPASH_NEBULA_Fc10c1216_FUN_00301D48": 3153224,
     "LVL_25_WUPASH_NEBULA_Fc10c1216_FUN_0033C570": 3392880,
+    "LVL_25_WUPASH_NEBULA_Fc186f630_D_00189E20": 1613344,
+    "LVL_25_WUPASH_NEBULA_Fc186f630_FUN_00300C30": 3148848,
+    "LVL_25_WUPASH_NEBULA_Fc186f630_FUN_00300C70": 3148912,
+    "LVL_25_WUPASH_NEBULA_Fc186f630_FUN_00300CF0": 3149040,
+    "LVL_25_WUPASH_NEBULA_Fc186f630_FUN_00300EC8": 3149512,
+    "LVL_25_WUPASH_NEBULA_Fc3cb9262_FUN_003008A0": 3147936,
+    "LVL_25_WUPASH_NEBULA_Fc3cb9262_FUN_00300C00": 3148800,
+    "LVL_25_WUPASH_NEBULA_Fc3cb9262_FUN_00301D48": 3153224,
+    "LVL_25_WUPASH_NEBULA_Fc3cb9262_FUN_0033C570": 3392880,
     "LVL_25_WUPASH_NEBULA_Fc68ad20a_D_0018C2B8": 1622712,
     "LVL_25_WUPASH_NEBULA_Fc895cb79_D_001D1D00": 1907968,
     "LVL_25_WUPASH_NEBULA_Fc936841d_FUN_00300C00": 3148800,
@@ -493,6 +508,12 @@
       "symbol": "LVL_25_WUPASH_NEBULA_FUN_002C6B98"
     },
     {
+      "address": 2933696,
+      "meaning": "initialises three 16-byte records, folds a resident 32-byte quad into the first of them, then for the stored mode 2 runs a four-argument fallback and for mode 1 with a short or low field re-copies the resident quad; finally scales and copies the two remaining records through three more calls",
+      "size": 444,
+      "symbol": "LVL_25_WUPASH_NEBULA_FUN_002CC3C0"
+    },
+    {
       "address": 2999336,
       "meaning": "Drives one effect state: branches on several resource fields, decays and integrates two float components through three float helpers, and writes back the summed value.",
       "size": 540,
@@ -539,6 +560,12 @@
       "meaning": "calls the measured float callee with the negated input",
       "size": 28,
       "symbol": "LVL_25_WUPASH_NEBULA_FUN_002E6978"
+    },
+    {
+      "address": 3042144,
+      "meaning": "switches on a state byte in a shared table: copies 16 bytes and clears the third word, or computes a dot product that scales a vector and subtracts it into the destination",
+      "size": 248,
+      "symbol": "LVL_25_WUPASH_NEBULA_FUN_002E6B60"
     },
     {
       "address": 3043760,
@@ -943,6 +970,12 @@
       "meaning": "advances three floats of a sub-object by a resident offset triple, calls a three-pointer update, subtracts the offsets back out, rejects the result when any coordinate leaves the 2.0..1021.0 band, and otherwise rescales a 24-bit handle by the ratio of two helper lookups over a signed halfword index",
       "size": 432,
       "symbol": "LVL_25_WUPASH_NEBULA_FUN_00346C20"
+    },
+    {
+      "address": 3455240,
+      "meaning": "Integrates two float fields of a 32-byte-relative record against 0.001f and 0.003f, scales a third by 210000.0f into an offset of the incoming pointer, copies 16 bytes into a stack buffer before calling, then packs a scaled short with 0x00FFD2D2 into an int field and conditionally calls a final helper",
+      "size": 228,
+      "symbol": "LVL_25_WUPASH_NEBULA_FUN_0034B908"
     },
     {
       "address": 3456696,

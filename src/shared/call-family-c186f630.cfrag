@@ -1,0 +1,38 @@
+extern void @@ROLE_0_00@@(char *local, char *a, float k);
+extern float @@ROLE_1_00@@(char *a, char *src);
+extern void @@ROLE_2_00@@(char *dst, char *src, float k);
+extern void @@ROLE_3_00@@(char *dst, char *src, char *local);
+
+extern char @@BIND_DATA0_00@@[];            /* 0x00189E20 */
+
+#ifndef RAC2_T_V4_FC186F630
+#define RAC2_T_V4_FC186F630
+typedef int V4_Fc186f630 __attribute__((mode(TI)));
+#endif
+
+
+void @@FUNCTION@@(char *dst, char *src)
+{
+    char local[16];
+    char *base;
+    float f;
+
+    base = @@BIND_DATA0_01@@;
+    switch (*(unsigned char *)(base + 8899)) {
+    case 0:
+        *(V4_Fc186f630 *)dst = *(V4_Fc186f630 *)src;
+        *(int *)(dst + 8) = 0;
+        break;
+    case 1:
+        @@ROLE_0_01@@(local, base + 672, 1.0f);
+        f = @@ROLE_1_01@@(local, src);
+        @@ROLE_2_01@@(local, local, f);
+        @@ROLE_3_01@@(dst, src, local);
+        break;
+    case 2:
+        f = @@ROLE_1_02@@(base + 704, src);
+        @@ROLE_2_02@@(local, base + 704, f);
+        @@ROLE_3_02@@(dst, src, local);
+        break;
+    }
+}
