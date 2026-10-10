@@ -1,0 +1,28 @@
+extern void @@ROLE_0_00@@(char *p);
+extern void @@ROLE_1_00@@(char *p);
+extern void @@ROLE_2_00@@(char *p);
+extern void @@ROLE_3_00@@(char *p);
+extern void @@ROLE_4_00@@(char *p);
+extern void @@ROLE_5_00@@(char *p);
+extern void @@ROLE_6_00@@(char *p);
+extern void @@ROLE_7_00@@(char *p);
+
+char *@@FUNCTION@@(char *a0)
+{
+    char *p = a0 + 536;
+    int i;
+
+    @@ROLE_0_01@@(a0);
+    @@ROLE_1_01@@(a0 + 76);
+    @@ROLE_2_01@@(a0 + 152);
+    @@ROLE_3_01@@(a0 + 228);
+    @@ROLE_4_01@@(a0 + 304);
+    @@ROLE_5_01@@(a0 + 380);
+    @@ROLE_6_01@@(a0 + 456);
+
+    for (i = 6; i != -1; i--) {
+        @@ROLE_7_01@@(p);
+        p += 72;
+    }
+    return a0;
+}

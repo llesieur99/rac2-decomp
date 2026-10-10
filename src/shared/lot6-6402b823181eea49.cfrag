@@ -1,0 +1,36 @@
+extern void @@ROLE_0_00@@(char *a);
+extern void @@ROLE_1_00@@(char *a);
+extern void @@ROLE_2_00@@(char *a);
+extern void @@ROLE_3_00@@(char *a);
+extern void @@ROLE_4_00@@(char *a);
+extern void @@ROLE_5_00@@(char *a);
+extern void @@ROLE_6_00@@(char *a);
+extern void @@ROLE_7_00@@(char *a, int b);
+extern void @@ROLE_8_00@@(char *a);
+extern void @@ROLE_9_00@@(char *a);
+extern void @@ROLE_10_00@@(char *a);
+extern void @@ROLE_11_00@@(char *a);
+extern void @@ROLE_12_00@@(char *a);
+extern void @@ROLE_13_00@@(char *a);
+
+void @@FUNCTION@@(char *obj)
+{
+    if (*(int *)(obj + 1080) != 0) {
+        char *s0 = obj + 456;
+
+        @@ROLE_0_01@@(obj);
+        @@ROLE_1_01@@(obj + 76);
+        @@ROLE_2_01@@(obj + 152);
+        @@ROLE_3_01@@(obj + 228);
+        @@ROLE_4_01@@(s0);
+        @@ROLE_5_01@@(obj + 664);
+        @@ROLE_6_01@@(s0);
+        @@ROLE_7_01@@(obj + 528, 0);
+        @@ROLE_8_01@@(obj);
+        @@ROLE_9_01@@(obj);
+        @@ROLE_10_01@@(obj);
+        @@ROLE_11_01@@(obj);
+        @@ROLE_12_01@@(obj);
+        @@ROLE_13_01@@(obj + 380);
+    }
+}

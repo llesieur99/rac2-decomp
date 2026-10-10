@@ -1,0 +1,33 @@
+extern void @@ROLE_0_00@@(char *target);
+#ifndef RAC2_T_ENTRY_F624A0727
+#define RAC2_T_ENTRY_F624A0727
+typedef struct { char pad[8]; short n; void (*fn)(char *); } ENTRY_F624a0727;
+#endif
+
+
+void @@FUNCTION@@(char *object)
+{
+    char *r = object + 12;
+    char *q = object + 60;
+    char *p = object + 392;
+    int i;
+
+    for (i = 4; i >= 0; i--) {
+        if (*(short *)p != 0) {
+            ENTRY_F624a0727 *t = *(ENTRY_F624a0727 **)q;
+            t->fn(r + t->n);
+        }
+        r += 76;
+        q += 76;
+        p += 2;
+    }
+    if (*(int *)(object + 656) != 0) {
+        @@ROLE_0_01@@(object + 408);
+        if (*(int *)(object + 660) != 0) {
+            if (*(int *)(object + 668) != 0)
+                @@ROLE_0_02@@(object + 552);
+            if (*(int *)(object + 664) != 0)
+                @@ROLE_0_03@@(object + 480);
+        }
+    }
+}

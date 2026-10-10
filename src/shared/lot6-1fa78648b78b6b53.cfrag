@@ -1,0 +1,33 @@
+extern char *@@ROLE_0_00@@(int a0, int a1);
+extern char *@@ROLE_1_00@@(int a0, int a1);
+extern int @@ROLE_2_00@@(char *a0);
+extern float @@ROLE_3_00@@(float a0, float a1);
+
+int @@FUNCTION@@(int *a0)
+{
+    int i;
+    int count = 0;
+    char *base;
+    char *rec;
+    char *obj;
+
+    rec = *(char **)((char *)a0 + 104);
+    base = @@ROLE_0_01@@(3076, *(short *)(rec + 26));
+    base = base + *(int *)(@@ROLE_1_01@@(3076, *(short *)(rec + 26)) + 4);
+    obj = base + 16;
+    rec = base;
+
+    for (i = 119; i >= 0; i--) {
+        if (*(short *)(rec + 18) != 0) {
+            if (@@ROLE_2_01@@(obj) != 0) {
+                *(short *)(rec + 18) = 0;
+            } else {
+                count++;
+                *(float *)(rec + 24) = @@ROLE_3_01@@(*(float *)(rec + 24), *(float *)(rec + 28));
+            }
+        }
+        obj += 64;
+        rec += 64;
+    }
+    return count;
+}

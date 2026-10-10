@@ -1,0 +1,31 @@
+extern void @@ROLE_0_00@@(char *a);
+extern void *@@ROLE_1_00@@(char *a);
+extern void *@@ROLE_2_00@@(int size, void *b);
+extern void *@@ROLE_3_00@@(char *a);
+extern void *@@ROLE_4_00@@(int size, void *b);
+void @@FUNCTION@@(char *obj)
+{
+    int *p;
+    int x;
+    @@ROLE_0_01@@(obj);
+    if (*(int *)(obj + 44) != 0) {
+        p = (int *)@@ROLE_2_01@@(16, @@ROLE_1_01@@(*(int *)(obj + 44)));
+        *(int *)(obj + 52) = (int)p;
+        x = *(int *)(obj + 44);
+        p[1] = 0; p[2] = 0; p[3] = 0; p[0] = 0;
+        p = (int *)@@ROLE_4_01@@(16, @@ROLE_3_01@@(x));
+        *(int *)(obj + 56) = (int)p;
+        {
+            float *f = (float *)*(int *)(obj + 4);
+            p[1] = 0;
+            p[2] = 0;
+            p[3] = 0;
+            p[0] = 0;
+            f[0] = 1.0f;
+            *(float *)(*(int *)(obj + 4) + 4) = 1.0f;
+            *(float *)(*(int *)(obj + 4) + 8) = 1.0f;
+        }
+    }
+    *(int *)(obj + 68) = 0;
+    *(int *)(obj + 72) = 0;
+}

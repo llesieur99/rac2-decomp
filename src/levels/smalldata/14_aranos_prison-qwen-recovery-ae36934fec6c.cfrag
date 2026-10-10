@@ -941,3 +941,42 @@ void LVL_14_ARANOS_PRISON_FUN_00385B18(QwenRecovery_339fe89f21bc_WrapperWaitMask
         LVL_14_ARANOS_PRISON_QWEN_339fe89f21bc_AT00385B18_ROLE000(0x400);
 }
 
+#ifndef RAC2_T_VEC_F6BF9CE42
+#define RAC2_T_VEC_F6BF9CE42
+typedef struct { float x; float y; } VEC_F6bf9ce42;
+#endif
+
+
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE478 __attribute__((sda));
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE47C;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE480;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE484;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE488 __attribute__((sda));
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE48C;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7340;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7344;
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_FUN_003242D0(int a, int b, int c, int d, int e);
+extern int LVL_14_ARANOS_PRISON_F6bf9ce42_FUN_002F86C8(int a, int b, int c, int d, int e, int f, int g);
+
+void LVL_14_ARANOS_PRISON_FUN_00456C88(VEC_F6bf9ce42 **pobj)
+{
+    int s0, s1, s2, s3;
+    int r;
+
+
+    VEC_F6bf9ce42 *v;
+    v = *pobj;
+    s0 = (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE478 + v->x - (float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE488);
+    s1 = (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE47C + v->y - (float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE48C);
+    s3 = (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE480 + v->x + (float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE488);
+    s2 = (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE484 + v->y + (float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE48C);
+
+    r = LVL_14_ARANOS_PRISON_F6bf9ce42_FUN_003242D0(0x60241700, 0x55F0C070, 20, 0, 0);
+    LVL_14_ARANOS_PRISON_F6bf9ce42_FUN_002F86C8(s0, s1, s3, s2, LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7340, LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7344, r);
+
+    v = *pobj;
+    LVL_14_ARANOS_PRISON_F6bf9ce42_FUN_002F86C8((int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE478 + v->x), (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE47C + v->y),
+            (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE480 + v->x), (int)((float)LVL_14_ARANOS_PRISON_F6bf9ce42_D_001AE484 + v->y),
+            LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7340, LVL_14_ARANOS_PRISON_F6bf9ce42_D_001A7344, 0x60241700);
+
+}

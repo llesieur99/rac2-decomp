@@ -1,0 +1,12 @@
+extern void @@ROLE_0_00@@(int value);
+
+void @@FUNCTION@@(int mask)
+{
+    while (*(volatile int *)0x10008000 & 0x100)
+        @@ROLE_0_01@@(16);
+    *(volatile int *)0x10008020 = 0;
+    *(volatile int *)0x10008030 = mask & 0x0FFFFFFF;
+    *(volatile int *)0x10008000 = 325;
+    while (*(volatile int *)0x10008000 & 0x100)
+        @@ROLE_0_02@@(16);
+}

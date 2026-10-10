@@ -1,0 +1,32 @@
+extern void @@ROLE_0_00@@(char *a, char *b);
+extern void @@ROLE_1_00@@(char *a, char *b);
+
+void @@FUNCTION@@(char *obj)
+{
+    char *sub = obj + 32;
+    int w;
+    int n;
+
+    switch (*(unsigned char *)(sub + 2)) {
+    case 2:
+        *(float *)(obj + 16) = *(float *)(*(char **)(sub + 4) + 16) + *(float *)(sub + 16);
+        *(float *)(obj + 20) = *(float *)(*(char **)(sub + 4) + 20) + *(float *)(sub + 20);
+        *(float *)(obj + 24) = *(float *)(*(char **)(sub + 4) + 24) + *(float *)(sub + 24);
+        break;
+    case 1:
+        goto tail;
+    }
+    w = *(int *)(obj + 4);
+    n = (w >> 24);
+    n = n - *(short *)(obj + 32);
+    if (n <= 0) {
+        @@ROLE_0_01@@(obj, sub);
+        return;
+    }
+    *(int *)(obj + 4) = (w & 0xffffff) | (n << 24);
+tail:
+    if (*(unsigned char *)(sub + 3) != 0) {
+        obj += 16;
+        @@ROLE_1_01@@(obj, obj);
+    }
+}

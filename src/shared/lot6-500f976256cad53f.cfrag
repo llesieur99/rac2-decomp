@@ -1,0 +1,31 @@
+extern float @@ROLE_0_00@@(int index);
+extern int @@ROLE_1_00@@(float value);
+extern void @@ROLE_2_00@@(int first, char *a, char *b, char *c);
+
+void @@FUNCTION@@(int first, char *object)
+{
+    char *s0 = object;
+    short s1 = *(short *)(s0 + 0);
+    unsigned short total;
+    float limit;
+    int result;
+
+    if (s1 != 0 && *(short *)(s0 + 2) == 0)
+        return;
+    total = *(unsigned short *)(s0 + 12);
+    *(short *)(s0 + 2) = 0;
+    *(short *)(s0 + 0) = total;
+    if (s1 != 0) {
+        limit = @@ROLE_0_01@@(*(short *)(s0 + 14));
+        result = @@ROLE_1_01@@((float)*(short *)(s0 + 12) * ((float)s1 / limit));
+        *(short *)(s0 + 0) = (short)result;
+        if ((short)result <= 0)
+            *(short *)(s0 + 0) = 1;
+    } else {
+        int a, b, c;
+        @@ROLE_2_01@@(first, (char *)&a, (char *)&b, (char *)&c);
+        *(char *)(s0 + 4) = (unsigned char)a;
+        *(char *)(s0 + 5) = (unsigned char)b;
+        *(char *)(s0 + 6) = (unsigned char)c;
+    }
+}

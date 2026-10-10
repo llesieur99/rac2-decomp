@@ -1,0 +1,22 @@
+extern void @@ROLE_0_00@@(char *first, char *second, float blend);
+extern void @@ROLE_1_00@@(char *first, char *second, char *third);
+extern void @@ROLE_2_00@@(char *object);
+
+void @@FUNCTION@@(char *object)
+{
+    int count;
+    int low;
+    int high;
+
+    @@ROLE_0_01@@(object + 32, object + 32, 0.975f);
+    @@ROLE_1_01@@(object + 16, object + 16, object + 32);
+    *(float *)(object + 12) += 6300.0f;
+    count = *(unsigned char *)(object + 4) - 4;
+    if (count <= 0)
+        @@ROLE_2_01@@(object);
+    else {
+        low = (count << 8) | 0x60000000;
+        high = (count << 16) | low;
+        *(int *)(object + 4) = high | count;
+    }
+}

@@ -1,0 +1,29 @@
+extern int @@ROLE_0_00@@(char *p, int a1, char *a2, int a3, int a4);
+extern char @@BIND_DATA0_00@@[];
+
+int @@FUNCTION@@(int index, int a1, char *a2)
+{
+    int v0;
+    int v1;
+    int r;
+    char *p;
+
+    if (a2 == 0)
+        return -1;
+    v0 = *(int *)(a2 + 36);
+    if (v0 == 0)
+        return -1;
+    v1 = *(int *)(v0 + 40);
+    if (v1 == 0)
+        return -1;
+    v0 = *(unsigned char *)(v0 + 13);
+    if (index >= v0)
+        return -1;
+    r = @@ROLE_0_01@@((char *)(v1 + index * 32), a1, a2, 0, 1024);
+    if (r >= 0) {
+        p = &@@BIND_DATA0_01@@[r * 112];
+        *(int *)(p + 136) = (int)a2;
+        *(short *)(p + 126) = (short)index;
+    }
+    return r;
+}
