@@ -285,7 +285,10 @@ The [supplementary reuse report](progress/code-reuse-report.json) measures
 complete instruction templates with explicit per-image address bindings. Its
 [family catalogue](progress/code-reuse-families.json.gz) lists the proved copies
 and independently validated authored C fragment reuse; the summary exposes
-uncertain boundary and residual totals.
+uncertain boundary and residual totals. The same catalogue publishes a measured
+wide relation that groups families whose address halves fold in a memory operand
+or `$gp`, with a retained frontier verdict; it sits beside the narrow partition,
+never in place of it, and carries no credit.
 This measure keeps its own all-placement C numerator and preserves the existing
 conservative and physical progress measures. It does not establish a 5 MB
 original-source total. See [the proof scope and measured baseline](docs/GLOBAL-CODE-REUSE.md).
