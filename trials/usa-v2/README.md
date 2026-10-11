@@ -18,6 +18,11 @@ no reservation and no register entry, so these add no credit.
 | `ListScrollerSelectNext` | `0x2CA9F8` | 60 | loop; all words equal, `-O2 -G0` |
 | `ListScrollerSelectPrev` | `0x2CA9B8` | 60 | loop; all words equal. Needs a second variable and the store after the merge: `n = cur - 1; cur = n; i = n; if (i <= 0) i = count; cur = i;` |
 | `CalcSaveSectionsSize` | `0x29BC68` | 56 | loop; all words equal. Pointer advanced in place with `*section` tests, `size = (size + 3) & -4` after `+= 8` and `+= section[1]` |
+| `InstallFileLoadPump` | `0x2B7858` | 32 | call with a code address as argument; `-G0` or `-G8` |
+| `FlushTurretTracerPool` | `0x306210` | 32 | call with a data address argument; `-G0` or `-G8` |
+| `GuiListSetColorPair0` | `0x3372A0` | 20 | two stores through a reloaded pointer; `-G0` or `-G8` |
+| `IsVendorUpgradesUnlocked` | `0x289780` | 16 | `-G8` only (`-G0` picks other registers) |
+| `srand` | `0x1163A0` | 16 | `-G0` only (`-G8` picks other registers) |
 | `FloatToInt` | `0x2846A0` | 16 | not matched: retail converts in place (`cvt.w.s $f12,$f12`); the chain always picks `$f0` for `(int)x` at -O1/-O2/-O3, so the original was probably handwritten |
 
 `FloatToInt` was also tried with the real `2.96-ee-001003-1` `cc1` (`-O2`, `-G0` and `-G8`, three source spellings) and with
