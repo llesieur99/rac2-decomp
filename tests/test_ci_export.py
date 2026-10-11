@@ -1,6 +1,4 @@
 """Producer API contracts and workflow dependency guards, synthetic inputs only."""
-import gzip
-import io
 import json
 from pathlib import Path
 import re
@@ -13,7 +11,12 @@ from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import ci_export as export
+import code_reuse_report as reuse_module
 import maintainer_test_policy as policy
+
+WIDE = {"schema": 1, "policy": "measured-wide-relation", "mask": "synthetic", "frontier": "synthetic",
+        "controls": {}, "counts": {"groups": 0, "retained_groups": 0, "families": 0, "placements": 0},
+        "groups": []}
 
 
 class ExportTests(unittest.TestCase):
@@ -64,17 +67,17 @@ class ExportTests(unittest.TestCase):
              encoded=encoded, objdiff=Mock(return_value={"version": 2}))
         reuse = types.SimpleNamespace(generate=Mock(return_value=({"metrics": {}}, [{"family": "proved"}])),
              authored_subset=Mock(return_value=({"count": 1}, [{"source": "src/example.c"}])),
+             wide_groups=Mock(return_value=WIDE), wide_reference=reuse_module.wide_reference,
+             families_payload=reuse_module.families_payload, compressed=reuse_module.compressed,
              digest=export.sha, snapshot=Mock(return_value={"source": "b" * 64}), encoded=encoded, POLICY="maintained-policy")
         summary = dict(primary, catalog_sha256=export.sha(raw))
         summary.pop("groups")
         (self.repo / "progress/unique-code-report.json").write_bytes(encoded(summary))
-        payload = encoded({"schema": 1, "policy": reuse.POLICY, "template_families": [{"family": "proved"}],
-                           "authored_C_fragment_families": [{"source": "src/example.c"}]})
-        buffer = io.BytesIO()
-        with gzip.GzipFile(fileobj=buffer, mode="wb", filename="", mtime=0) as stream: stream.write(payload)
-        families = buffer.getvalue()
+        families = reuse_module.compressed(encoded(reuse_module.families_payload(
+            [{"family": "proved"}], [{"source": "src/example.c"}], WIDE)))
         report = {"metrics": {}, "authored_C_reuse_subset": {"count": 1}, "catalog_sha256": export.sha(raw),
-                  "input_sha256": {"source": "b" * 64}, "families_sha256": export.sha(families)}
+                  "input_sha256": {"source": "b" * 64}, "wide_group_reference": reuse_module.wide_reference(WIDE),
+                  "families_sha256": export.sha(families)}
         (self.repo / "progress/code-reuse-report.json").write_bytes(encoded(report))
         (self.repo / "progress/code-reuse-families.json.gz").write_bytes(families)
         return uq, reuse, catalog, credit, primary
@@ -84,8 +87,16 @@ class ExportTests(unittest.TestCase):
         with patch.dict(sys.modules, {"unique_code_report": uq, "code_reuse_report": reuse}):
             export.unique_and_reuse(self.repo, self.repo / "build/decomp")
         uq.generate.assert_called_once_with(catalog, credit, "binding")
-        reuse.generate.assert_called_once_with(catalog, credit, primary)
+        reuse.generate.assert_called_once_with(catalog, credit, primary, WIDE)
+        reuse.wide_groups.assert_called_once_with(self.repo)
         self.assertTrue((self.repo / "build/decomp/unique-report.json").exists())
+
+    def test_changed_measured_wide_relation_is_inside_the_compared_serialization(self):
+        uq, reuse, *_ = self.fixture_analyses()
+        reuse.wide_groups.return_value = dict(WIDE, policy="changed-wide-relation")
+        with patch.dict(sys.modules, {"unique_code_report": uq, "code_reuse_report": reuse}), \
+             self.assertRaisesRegex(ValueError, "reusable-code serialization differs"):
+            export.unique_and_reuse(self.repo, self.repo / "build/decomp")
 
     def test_stale_summary_or_families_serialization_refuses(self):
         for name in ("unique-code-report.json", "code-reuse-report.json", "code-reuse-families.json.gz"):
@@ -175,6 +186,34 @@ class ExportTests(unittest.TestCase):
         unique = json.loads((self.repo / "build/decomp/unique-report.json").read_bytes())
         self.assertEqual(unique["measures"]["matchedCode"], "10")
         self.assertEqual(unique["measures"]["completeUnits"], 0)
+
+    def test_local_wide_receipt_pin_is_checked_without_rebuilding_relation(self):
+        before, event, modules = self.local_fixture()
+        receipt = reuse_module.WIDE_RECEIPT
+        data = reuse_module.wide_bytes(WIDE)
+        (self.repo / receipt).write_bytes(data)
+        before[receipt] = export.sha(data)
+        report_path = self.repo / "progress/code-reuse-report.json"
+        report = json.loads(report_path.read_bytes())
+        report["input_sha256"][receipt] = before[receipt]
+        report["wide_group_reference"] = reuse_module.wide_reference(WIDE)
+        report_path.write_text(json.dumps(report), encoding="utf8")
+        before["progress/code-reuse-report.json"] = export.sha(report_path.read_bytes())
+        with patch.dict(sys.modules, modules), patch.object(export, "inputs", return_value=before), \
+             patch.object(export, "source_metadata", return_value={}), patch.object(export, "physical_display"), \
+             patch.object(export, "unique_and_reuse") as heavy, \
+             patch.object(reuse_module, "wide_groups") as rebuild, \
+             patch.dict(os.environ, {"GITHUB_EVENT_NAME": "push", "GITHUB_SHA": "a" * 40}):
+            result = export.produce(self.repo, "local", event=event)
+            self.assertFalse(result["fresh_unique_reuse_classification"])
+            before[receipt] = "c" * 64
+            with self.assertRaisesRegex(ValueError, "input snapshot changed"):
+                export.produce(self.repo, "local", event=event)
+        heavy.assert_not_called()
+        rebuild.assert_not_called()
+        provenance = json.loads((self.repo / "build/decomp/local-provenance.json").read_bytes())
+        self.assertEqual(provenance["inputs"][receipt], export.sha(data))
+        self.assertFalse(provenance["fresh_unique_reuse_classification"])
 
     def test_local_stale_pins_catalogue_families_or_physical_metrics_fail(self):
         for kind in ("input", "catalogue", "families", "chunk", "physical", "drift"):
