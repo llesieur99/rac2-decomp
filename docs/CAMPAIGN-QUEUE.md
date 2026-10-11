@@ -1122,6 +1122,230 @@ Reopen condition: Independently pinned entry GP and call-preservation evidence f
 - `docs:docs/LOCAL-GP-PROOF.md`
 - `private-work:gp-proof-pilot-20261006/root-family-proof-v2/receipt.json`
 
+## byte-flag-families-20261011-0_aranos_tutorial
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-10_hrugis_cloud
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-11_joba
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-12_todano
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-13_boldan
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-14_aranos_prison
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-15_gorn
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-16_snivelak
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-17_smolg
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-18_damosel
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-19_grelbin
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-1_oozla
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-20_yeedil
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-22_dobbo_orbit
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-23_damosel_orbit
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-24_ship_shack
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-25_wupash_nebula
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-26_jamming_array
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-2_maktar_nebula
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-30_insomniac_museum
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-3_endako
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-4_barlow
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-5_feltzin_system
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-6_notak
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-7_siberius
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-8_tabora
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-9_dobbo
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
+## byte-flag-families-20261011-boot
+
+State: `integrated`. Kind: `candidate`.
+
+Qualify the complete unit catalogue; then run the full boot and overlay gates.
+
+Reopen condition: New measured ABI, type or compiler evidence only.
+
 ## c4130-new-20261007-fun_001302e0-01fd49
 
 State: `done`. Kind: `research`.
