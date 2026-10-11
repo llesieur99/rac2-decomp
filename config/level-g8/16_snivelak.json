@@ -40,6 +40,16 @@
     "LVL_16_SNIVELAK_F60904fd170c92806_AT003031F8_ROLE01": 1733668,
     "LVL_16_SNIVELAK_F60904fd170c92806_AT003031F8_ROLE02": 1733664,
     "LVL_16_SNIVELAK_F61acb1f304b382c7_AT002EC888_ROLE00": 1740212,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001A7340": 1733440,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001A7344": 1733444,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE478": 1762424,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE47C": 1762428,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE480": 1762432,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE484": 1762436,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE488": 1762440,
+    "LVL_16_SNIVELAK_F6bf9ce42_D_001AE48C": 1762444,
+    "LVL_16_SNIVELAK_F6bf9ce42_FUN_002E9F38": 3055416,
+    "LVL_16_SNIVELAK_F6bf9ce42_FUN_00316200": 3236352,
     "LVL_16_SNIVELAK_F6fc8969f33895bc4_AT002F5730_ROLE00": 1741672,
     "LVL_16_SNIVELAK_F715e9b46a377ec8c_AT00302F60_ROLE00": 1733668,
     "LVL_16_SNIVELAK_F715e9b46a377ec8c_AT00302F60_ROLE01": 1283040,
@@ -123,94 +133,16 @@
   ],
   "functions": [
     {
-      "address": 3157392,
-      "meaning": "Always clear flag 0x20. In mode 2 at offset 0x08, select state 9 for selector 0 or -1 at offset 0x10, clearing selector -1 to zero, or state 5 for selector -2.",
-      "size": 112,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302D90"
-    },
-    {
-      "address": 3157504,
-      "meaning": "Write state 3 when the signed root selector differs from -2; otherwise write state 6 if the marker word or flag mask 0x2 is nonzero. Original game role and full data-object boundaries remain unknown.",
-      "size": 76,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302E00"
-    },
-    {
-      "address": 3157584,
-      "meaning": "Write state 3 when the signed gate differs from -2. Otherwise clear flag 0x20 and select state 23 or 5 by a nonzero or zero marker; when 0x20 is clear, clear flag 0x08 and write state 7 if that flag is set.",
-      "size": 124,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302E50"
-    },
-    {
-      "address": 3157712,
-      "meaning": "Clear the signed root selector, replace a negative selection with 3 and clear its associated word, then always write state 8.",
-      "size": 44,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302ED0"
-    },
-    {
-      "address": 3157760,
-      "meaning": "When mode at 0x15C is 2 and selection at 0x164 is negative, nonzero extra at 0x16C selects state 17 and flag 0x40; zero extra selects state 14.",
-      "size": 96,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302F00"
-    },
-    {
-      "address": 3157856,
-      "meaning": "Write state 3 for a nonzero gate; otherwise write state 10 when flag mask 6 is nonzero, or state 25 when flag 0x200 is set.",
-      "size": 76,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302F60"
-    },
-    {
-      "address": 3158000,
-      "meaning": "Under mode 2 and a negative selection, choose states 12, 3, 19 or 16 from the extra/selector words, signed phase short and the signed sum threshold 475; preserve state when the measured guards reject an update.",
-      "size": 156,
-      "symbol": "LVL_16_SNIVELAK_FUN_00302FF0"
-    },
-    {
-      "address": 3158160,
-      "meaning": "Write state 3 for a nonzero signed root selector; otherwise write state 13 when flag mask 0x2 is nonzero. Original game role and full data-object boundaries remain unknown.",
-      "size": 56,
-      "symbol": "LVL_16_SNIVELAK_FUN_00303090"
-    },
-    {
-      "address": 3158216,
-      "meaning": "Write state 3 when the signed gate is nonzero. Otherwise clear flag 0x20 and select state 24 or 12 by a nonzero or zero marker; when 0x20 is clear, clear flag 0x10 and write state 14 if that flag is set.",
-      "size": 120,
-      "symbol": "LVL_16_SNIVELAK_FUN_003030C8"
-    },
-    {
-      "address": 3158520,
-      "meaning": "Conditionally clear flag bits 4 and 2; handle flag 0x80 with state 21 or flag 0x100 with state 20 while setting 0x40, otherwise select state 3 or 1 from the measured selector and word 0x17C.",
-      "size": 184,
-      "symbol": "LVL_16_SNIVELAK_FUN_003031F8"
-    },
-    {
-      "address": 3158896,
-      "meaning": "When mode at offset 0x15C is 2 and selection at 0x164 is negative, nonzero extra at 0x16C or word at 0x24 clears word 0x17C, sets state 21 and flags 0x440; otherwise write word 0x17C to 1 and state 1.",
-      "size": 112,
-      "symbol": "LVL_16_SNIVELAK_FUN_00303370"
-    },
-    {
-      "address": 3159272,
-      "meaning": "Write state 3 when the signed root selector differs from -2; otherwise, only when flag mask 0x20 is set, clear it and write state 5. Original game role and full data-object boundaries remain unknown.",
-      "size": 72,
-      "symbol": "LVL_16_SNIVELAK_FUN_003034E8"
-    },
-    {
-      "address": 3159344,
-      "meaning": "Write state 3 when the signed root selector is nonzero; otherwise, only when flag mask 0x20 is set, clear it and write state 12. Original game role and full data-object boundaries remain unknown.",
-      "size": 68,
-      "symbol": "LVL_16_SNIVELAK_FUN_00303530"
-    },
-    {
-      "address": 3276320,
-      "meaning": "Optionally prepare the context payload when enabled is one and count is nonzero. For kinds zero through two, call the helper selected by the bound mode, clear enabled when returned flag bit 1 is set, and return those flags; other kinds return zero. Original game role and retail source ownership remain unknown.",
-      "size": 164,
-      "symbol": "LVL_16_SNIVELAK_FUN_0031FE20"
-    },
-    {
       "address": 2774016,
       "meaning": "Return the measured signed four-byte GP cell. The original game role is unknown.",
       "size": 8,
       "symbol": "LVL_16_SNIVELAK_FUN_002A5400"
+    },
+    {
+      "address": 2949624,
+      "meaning": "Collect two output words, conditionally update the accumulator and wrap byte, and store the second word low byte.",
+      "size": 132,
+      "symbol": "LVL_16_SNIVELAK_FUN_002D01F8"
     },
     {
       "address": 2952024,
@@ -351,6 +283,84 @@
       "symbol": "LVL_16_SNIVELAK_FUN_002F5818"
     },
     {
+      "address": 3157392,
+      "meaning": "Always clear flag 0x20. In mode 2 at offset 0x08, select state 9 for selector 0 or -1 at offset 0x10, clearing selector -1 to zero, or state 5 for selector -2.",
+      "size": 112,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302D90"
+    },
+    {
+      "address": 3157504,
+      "meaning": "Write state 3 when the signed root selector differs from -2; otherwise write state 6 if the marker word or flag mask 0x2 is nonzero. Original game role and full data-object boundaries remain unknown.",
+      "size": 76,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302E00"
+    },
+    {
+      "address": 3157584,
+      "meaning": "Write state 3 when the signed gate differs from -2. Otherwise clear flag 0x20 and select state 23 or 5 by a nonzero or zero marker; when 0x20 is clear, clear flag 0x08 and write state 7 if that flag is set.",
+      "size": 124,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302E50"
+    },
+    {
+      "address": 3157712,
+      "meaning": "Clear the signed root selector, replace a negative selection with 3 and clear its associated word, then always write state 8.",
+      "size": 44,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302ED0"
+    },
+    {
+      "address": 3157760,
+      "meaning": "When mode at 0x15C is 2 and selection at 0x164 is negative, nonzero extra at 0x16C selects state 17 and flag 0x40; zero extra selects state 14.",
+      "size": 96,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302F00"
+    },
+    {
+      "address": 3157856,
+      "meaning": "Write state 3 for a nonzero gate; otherwise write state 10 when flag mask 6 is nonzero, or state 25 when flag 0x200 is set.",
+      "size": 76,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302F60"
+    },
+    {
+      "address": 3158000,
+      "meaning": "Under mode 2 and a negative selection, choose states 12, 3, 19 or 16 from the extra/selector words, signed phase short and the signed sum threshold 475; preserve state when the measured guards reject an update.",
+      "size": 156,
+      "symbol": "LVL_16_SNIVELAK_FUN_00302FF0"
+    },
+    {
+      "address": 3158160,
+      "meaning": "Write state 3 for a nonzero signed root selector; otherwise write state 13 when flag mask 0x2 is nonzero. Original game role and full data-object boundaries remain unknown.",
+      "size": 56,
+      "symbol": "LVL_16_SNIVELAK_FUN_00303090"
+    },
+    {
+      "address": 3158216,
+      "meaning": "Write state 3 when the signed gate is nonzero. Otherwise clear flag 0x20 and select state 24 or 12 by a nonzero or zero marker; when 0x20 is clear, clear flag 0x10 and write state 14 if that flag is set.",
+      "size": 120,
+      "symbol": "LVL_16_SNIVELAK_FUN_003030C8"
+    },
+    {
+      "address": 3158520,
+      "meaning": "Conditionally clear flag bits 4 and 2; handle flag 0x80 with state 21 or flag 0x100 with state 20 while setting 0x40, otherwise select state 3 or 1 from the measured selector and word 0x17C.",
+      "size": 184,
+      "symbol": "LVL_16_SNIVELAK_FUN_003031F8"
+    },
+    {
+      "address": 3158896,
+      "meaning": "When mode at offset 0x15C is 2 and selection at 0x164 is negative, nonzero extra at 0x16C or word at 0x24 clears word 0x17C, sets state 21 and flags 0x440; otherwise write word 0x17C to 1 and state 1.",
+      "size": 112,
+      "symbol": "LVL_16_SNIVELAK_FUN_00303370"
+    },
+    {
+      "address": 3159272,
+      "meaning": "Write state 3 when the signed root selector differs from -2; otherwise, only when flag mask 0x20 is set, clear it and write state 5. Original game role and full data-object boundaries remain unknown.",
+      "size": 72,
+      "symbol": "LVL_16_SNIVELAK_FUN_003034E8"
+    },
+    {
+      "address": 3159344,
+      "meaning": "Write state 3 when the signed root selector is nonzero; otherwise, only when flag mask 0x20 is set, clear it and write state 12. Original game role and full data-object boundaries remain unknown.",
+      "size": 68,
+      "symbol": "LVL_16_SNIVELAK_FUN_00303530"
+    },
+    {
       "address": 3171688,
       "meaning": "Store the constant -1 in the measured four-byte GP cell. The original game role is unknown.",
       "size": 12,
@@ -361,6 +371,12 @@
       "meaning": "Set bit 0x80 in the measured byte array at index plus 16 times the GP word, unless index is 255. The original game role is unknown.",
       "size": 56,
       "symbol": "LVL_16_SNIVELAK_FUN_0030B828"
+    },
+    {
+      "address": 3276320,
+      "meaning": "Optionally prepare the context payload when enabled is one and count is nonzero. For kinds zero through two, call the helper selected by the bound mode, clear enabled when returned flag bit 1 is set, and return those flags; other kinds return zero. Original game role and retail source ownership remain unknown.",
+      "size": 164,
+      "symbol": "LVL_16_SNIVELAK_FUN_0031FE20"
     },
     {
       "address": 3289552,
@@ -385,6 +401,12 @@
       "meaning": "Store the incoming signed word in the measured GP cell. The original game role is unknown.",
       "size": 8,
       "symbol": "LVL_16_SNIVELAK_FUN_00323208"
+    },
+    {
+      "address": 3616816,
+      "meaning": "Call the measured delay helper while the backed signed flag word intersects the supplied 64-bit mask.",
+      "size": 76,
+      "symbol": "LVL_16_SNIVELAK_FUN_00373030"
     },
     {
       "address": 3616896,
@@ -435,16 +457,10 @@
       "symbol": "LVL_16_SNIVELAK_FUN_00438260"
     },
     {
-      "address": 2949624,
-      "meaning": "Collect two output words, conditionally update the accumulator and wrap byte, and store the second word low byte.",
-      "size": 132,
-      "symbol": "LVL_16_SNIVELAK_FUN_002D01F8"
-    },
-    {
-      "address": 3616816,
-      "meaning": "Call the measured delay helper while the backed signed flag word intersects the supplied 64-bit mask.",
-      "size": 76,
-      "symbol": "LVL_16_SNIVELAK_FUN_00373030"
+      "address": 4473824,
+      "meaning": "Combines six fixed 32-bit scalars with the two floats of the object reached through the incoming pointer, converting the second and thirteenth words to ints: the first pass calls a five-argument helper with three literal constants and then a second helper with the four converted sums, two globals and the first helper's result; the second pass converts four unscaled sums and calls the same helper again.",
+      "size": 408,
+      "symbol": "LVL_16_SNIVELAK_FUN_004443E0"
     }
   ],
   "gp": 1765360,

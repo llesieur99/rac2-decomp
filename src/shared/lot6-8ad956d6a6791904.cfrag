@@ -1,0 +1,30 @@
+extern void @@ROLE_0_00@@(char *target);
+extern void @@ROLE_2_00@@(int marker, int code);
+extern void @@ROLE_4_00@@(int first, int second);
+extern void @@ROLE_5_00@@(char *target);
+extern void @@ROLE_8_00@@(char *target);
+
+void @@FUNCTION@@(char *object)
+{
+    char *s0 = object;
+
+    if (*(int *)(s0 + 1024) == 0)
+        return;
+    @@ROLE_0_01@@(s0 + 8);
+    @@ROLE_0_02@@(s0 + 84);
+    @@ROLE_2_01@@(66, 68);
+    @@ROLE_2_02@@(71, 11);
+    @@ROLE_4_01@@(0, 1);
+    @@ROLE_5_01@@(0);
+    @@ROLE_0_03@@(s0 + 160);
+    @@ROLE_0_04@@(s0 + 236);
+    @@ROLE_8_01@@(s0 + 312);
+    @@ROLE_8_02@@(s0 + 384);
+    @@ROLE_8_03@@(s0 + 456);
+    @@ROLE_8_04@@(s0 + 528);
+    @@ROLE_8_05@@(s0 + 600);
+    @@ROLE_8_06@@(s0 + 672);
+    @@ROLE_8_07@@(s0 + 744);
+    @@ROLE_8_08@@(s0 + 816);
+    @@ROLE_8_09@@(s0 + 888);
+}

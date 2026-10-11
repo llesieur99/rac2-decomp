@@ -1,0 +1,25 @@
+extern unsigned char @@BIND_DATA0_00@@[];
+extern float @@ROLE_0_00@@(char *object);
+extern void @@ROLE_1_00@@(char *dst, char *src);
+extern void @@ROLE_2_00@@(char *dst, char *src);
+extern void @@ROLE_3_00@@(char *dst, char *src, char *extra);
+
+float @@FUNCTION@@(char *arg)
+{
+    char first[64];
+    char second[64];
+    char third[16];
+    unsigned char *p = @@BIND_DATA0_01@@;
+    int flag = p[8899];
+
+    if (flag == 0)
+        return @@ROLE_0_01@@(arg);
+    if (flag < 0)
+        return 0.0f;
+    if (flag >= 3)
+        return 0.0f;
+    @@ROLE_1_01@@(first, (char *)(*(int *)(p + 8848) + 240));
+    @@ROLE_2_01@@(second, first);
+    @@ROLE_3_01@@(third, arg, second);
+    return @@ROLE_0_02@@(third);
+}

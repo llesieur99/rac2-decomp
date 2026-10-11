@@ -1,0 +1,15 @@
+extern char *@@BIND_DATA0_00@@ __attribute__((sda));
+extern char *@@BIND_DATA1_00@@ __attribute__((sda));
+extern char *@@BIND_DATA2_00@@ __attribute__((sda));
+extern char *@@BIND_DATA3_00@@ __attribute__((sda));
+extern char *@@BIND_DATA4_00@@ __attribute__((sda));
+extern void @@ROLE_0_00@@(char *dst, char *src, int value);
+
+void @@FUNCTION@@(char *object, int *values)
+{
+    @@ROLE_0_01@@(object,       @@BIND_DATA0_01@@ + 0x8710, values[0]);
+    @@ROLE_0_02@@(object + 304, @@BIND_DATA1_01@@ + 0x8710, values[2]);
+    @@ROLE_0_03@@(object + 76,  @@BIND_DATA2_01@@ + 0x8710, values[4]);
+    @@ROLE_0_04@@(object + 152, @@BIND_DATA3_01@@ + 0x8710, values[8]);
+    @@ROLE_0_05@@(object + 228, @@BIND_DATA4_01@@ + 0x8710, values[6]);
+}

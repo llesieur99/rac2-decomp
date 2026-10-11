@@ -1,0 +1,12 @@
+extern int @@ROLE_0_00@@(char *handle);
+extern void @@ROLE_2_00@@(char *object);
+
+void @@FUNCTION@@(char *object)
+{
+    char *handle = *(char **)(object + 104);
+
+    if (@@ROLE_0_01@@(handle) == 0)
+        @@ROLE_0_02@@(handle + 4);
+    else
+        @@ROLE_2_01@@(object);
+}

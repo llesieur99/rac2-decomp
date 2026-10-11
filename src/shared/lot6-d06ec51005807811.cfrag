@@ -1,0 +1,35 @@
+extern void @@ROLE_0_00@@(char *object);
+extern void @@ROLE_1_00@@(char *object);
+extern float @@ROLE_2_00@@(float value, float step);
+extern void @@ROLE_4_00@@(char *object);
+extern void @@ROLE_5_00@@(char *target, char *source);
+extern void @@ROLE_6_00@@(char *target, char *source);
+extern void @@ROLE_7_00@@(char *object);
+
+void @@FUNCTION@@(char *object)
+{
+    char *s0 = object;
+    unsigned char mode = *(unsigned char *)(s0 + 32);
+    char *s1 = *(char **)(s0 + 104);
+    float result;
+
+    switch (mode) {
+    case 0:
+        if (*(int *)(s1 + 20) != 0) {
+            @@ROLE_0_01@@(s0);
+        } else {
+            @@ROLE_1_01@@(s0);
+        }
+        result = @@ROLE_2_01@@(*(float *)(s0 + 240), 3.4906592220067977905273e-02f);
+        *(float *)(s0 + 240) = result;
+        result = @@ROLE_2_02@@(*(float *)(s0 + 244), 1.3089971244335174560547e-01f);
+        *(float *)(s0 + 244) = result;
+        @@ROLE_4_01@@(s0);
+        break;
+    case 1:
+        @@ROLE_5_01@@((char *)(s0 + 16), (char *)(s0 + 16));
+        @@ROLE_6_01@@(s1, s1);
+        @@ROLE_7_01@@(s0);
+        break;
+    }
+}

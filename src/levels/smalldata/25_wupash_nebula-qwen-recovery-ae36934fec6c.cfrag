@@ -891,3 +891,42 @@ void LVL_25_WUPASH_NEBULA_FUN_0038A400(QwenRecovery_339fe89f21bc_WrapperWaitMask
         LVL_25_WUPASH_NEBULA_QWEN_339fe89f21bc_AT0038A400_ROLE000(0x400);
 }
 
+#ifndef RAC2_T_VEC_F6BF9CE42
+#define RAC2_T_VEC_F6BF9CE42
+typedef struct { float x; float y; } VEC_F6bf9ce42;
+#endif
+
+
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE478 __attribute__((sda));
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE47C;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE480;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE484;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE488 __attribute__((sda));
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE48C;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7340;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7344;
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_FUN_0032EF20(int a, int b, int c, int d, int e);
+extern int LVL_25_WUPASH_NEBULA_F6bf9ce42_FUN_00303638(int a, int b, int c, int d, int e, int f, int g);
+
+void LVL_25_WUPASH_NEBULA_FUN_00445018(VEC_F6bf9ce42 **pobj)
+{
+    int s0, s1, s2, s3;
+    int r;
+
+
+    VEC_F6bf9ce42 *v;
+    v = *pobj;
+    s0 = (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE478 + v->x - (float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE488);
+    s1 = (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE47C + v->y - (float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE48C);
+    s3 = (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE480 + v->x + (float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE488);
+    s2 = (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE484 + v->y + (float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE48C);
+
+    r = LVL_25_WUPASH_NEBULA_F6bf9ce42_FUN_0032EF20(0x60241700, 0x55F0C070, 20, 0, 0);
+    LVL_25_WUPASH_NEBULA_F6bf9ce42_FUN_00303638(s0, s1, s3, s2, LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7340, LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7344, r);
+
+    v = *pobj;
+    LVL_25_WUPASH_NEBULA_F6bf9ce42_FUN_00303638((int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE478 + v->x), (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE47C + v->y),
+            (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE480 + v->x), (int)((float)LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001AE484 + v->y),
+            LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7340, LVL_25_WUPASH_NEBULA_F6bf9ce42_D_001A7344, 0x60241700);
+
+}

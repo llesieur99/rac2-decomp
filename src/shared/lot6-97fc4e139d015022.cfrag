@@ -1,0 +1,28 @@
+extern char *@@ROLE_0_00@@(int a0, int a1);
+extern void @@ROLE_1_00@@(char *target, char *base, int len);
+
+void @@FUNCTION@@(char *a0)
+{
+    int i = 0;
+
+    if (i < *(int *)a0) {
+        int one = 1;
+        char *d = a0 + 8;
+        char *e = a0 + 4;
+
+        do {
+            char *obj = @@ROLE_0_01@@(*(short *)(e + 14), *(short *)(e + 12));
+            if (obj != 0) {
+                char *t;
+                if (*(short *)(e + 10) == one)
+                    t = (char *)(*(int *)e + (int)obj);
+                else
+                    t = (char *)(*(int *)e + *(int *)(obj + 104));
+                @@ROLE_1_01@@(t, d, *(unsigned short *)(e + 8));
+            }
+            i++;
+            d += 16;
+            e += 16;
+        } while (i < *(int *)a0);
+    }
+}
