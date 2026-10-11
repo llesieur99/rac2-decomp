@@ -5152,6 +5152,24 @@ Qualify the complete unit catalogue; then run the full boot and overlay gates.
 
 Reopen condition: New measured ABI, type or compiler evidence only.
 
+## gp32-setter-family-20261011
+
+State: `integrated`. Kind: `candidate`.
+
+The independent Ghidra boundary audit supports the complete 8-byte function span in Aranos Tutorial. Retain D_001AA430 only as a raw 4-byte external with no semantic owner or value meaning. Integrate the exact candidate into all three existing G8 small-data units, requalify each complete unit, then run the full loaded-image and metadata gates; do not repeat the unchanged isolated source/profile trial.
+
+Reopen condition: Do not repeat the unchanged G8 candidate. The independent R5900 disassembly supports an 8-byte extent in Aranos, and the exact body plus adjacent catalog families are pinned in all three placements. Revisit the extent only if new evidence contradicts that span; continue to leave global ownership and semantic value unknown.
+
+- `runtime:trials/gp32-setter-20261011/trial-report.json`
+- `runtime:trials/gp32-setter-20261011/final-audit.json`
+- `runtime:trials/gp32-setter-20261011/trial-result-receipt.json`
+- `runtime:reservations/20261011-gp32-setter-family-targets.json`
+- `runtime:trials/ea77f2bbcd2a4efea681d4bbfa59b472/outcome.json`
+- `runtime:trials/ea77f2bbcd2a4efea681d4bbfa59b472/manifest.json`
+- `runtime:analysis/setter-boundary-20261011/boundary-audit.json`
+- `runtime:analysis/setter-boundary-20261011/script.log`
+- `runtime:analysis/setter-boundary-20261011/ghidra-headless.log`
+
 ## gs-buffer-setup-control-public-family-v2-20261005-g0
 
 State: `stopped`. Kind: `candidate`.
