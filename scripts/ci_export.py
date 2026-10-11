@@ -5,13 +5,11 @@ Full mode keeps the actual expensive checks once. Legal-reference raw gates
 remain the maintained local workflow's responsibility.
 """
 import argparse
-import gzip
 import hashlib
 import json
 import os
 from pathlib import Path
 import subprocess
-import io
 import sys
 import sysconfig
 import importlib.metadata
@@ -152,16 +150,13 @@ def unique_and_reuse(repo, output):
         raise ValueError("Current unique serialization differs")
     (output / "unique-summary.json").write_bytes(summary_bytes)
     (output / "unique-report.json").write_bytes(uq.encoded(uq.objdiff(primary)))
-    report, details = reuse.generate(catalog, credit, primary)
+    wide = reuse.wide_groups(repo)
+    report, details = reuse.generate(catalog, credit, primary, wide)
     authored, authored_details = reuse.authored_subset(repo, credit)
     report.update(authored_C_reuse_subset=authored, catalog_sha256=reuse.digest(raw),
-                  input_sha256=reuse.snapshot(repo, path, catalog))
-    payload = reuse.encoded({"schema": 1, "policy": reuse.POLICY, "template_families": details,
-                             "authored_C_fragment_families": authored_details})
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode="wb", filename="", mtime=0) as stream:
-        stream.write(payload)
-    families = buffer.getvalue()
+                  input_sha256=reuse.snapshot(repo, path, catalog),
+                  wide_group_reference=reuse.wide_reference(wide))
+    families = reuse.compressed(reuse.encoded(reuse.families_payload(details, authored_details, wide)))
     report["families_sha256"] = reuse.digest(families)
     if (reuse.encoded(report) != (repo / "progress/code-reuse-report.json").read_bytes()
             or families != (repo / "progress/code-reuse-families.json.gz").read_bytes()):
