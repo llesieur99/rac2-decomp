@@ -22,11 +22,23 @@ class ReportTests(unittest.TestCase):
         with self.assertRaises(SystemExit):
             v2_report.build_report(self.catalog, [bad])
 
+    def test_reused_bodies_count_once_and_trials_win(self):
+        reused = [{"symbol": "FUN_X", "address": 0x110, "size": 32, "source": "candidates/boot.c"}]
+        report = v2_report.build_report(self.catalog, [], reused)
+        self.assertEqual(report["measures"]["matchedCode"], "32")
+        bad = [{"symbol": "FUN_X", "address": 0x110, "size": 16, "source": "candidates/boot.c"}]
+        with self.assertRaises(SystemExit):
+            v2_report.build_report(self.catalog, [], bad)
+
     def test_committed_catalogue_and_matches_build(self):
         catalog = v2_report.json.loads(v2_report.CATALOG.read_text(encoding="utf-8"))
         matches = v2_report.json.loads(v2_report.MATCHES.read_text(encoding="utf-8"))["matches"]
         report = v2_report.build_report(catalog, matches)
         self.assertEqual(report["measures"]["matchedCode"], str(sum(m["size"] for m in matches)))
+        if v2_report.REUSED.exists():
+            doc = v2_report.json.loads(v2_report.REUSED.read_text(encoding="utf-8"))
+            report = v2_report.build_report(catalog, matches, doc["matches"])
+            self.assertGreaterEqual(int(report["measures"]["matchedCode"]), sum(m["size"] for m in matches))
         self.assertLess(int(report["measures"]["totalCode"]), 6_000_000)
 
 

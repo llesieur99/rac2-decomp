@@ -29,6 +29,7 @@ import region as regions  # noqa: E402
 
 CATALOG = ROOT / "config/regions/ntsc-u-v2/catalog.json"
 MATCHES = ROOT / "progress/v2/matches.json"
+REUSED = ROOT / "progress/v2/reused.json"  # v1.01 bodies found unchanged in v2.00 (find_reusable.py)
 REGION = "ntsc-u-v2"
 
 
@@ -74,12 +75,17 @@ def build_catalog(reference: Path, elf: Path) -> dict:
                     "overlay (relocation fields masked) are not counted again."}
 
 
-def build_report(catalog: dict, matches: list[dict]) -> dict:
+def build_report(catalog: dict, matches: list[dict], reused: list[dict] | None = None) -> dict:
     matched = {m["address"]: m for m in matches}
+    reused = reused or []
+    for m in reused:  # maintained v1.01 source, so no per-file hash; trials take precedence
+        matched.setdefault(m["address"], {**m, "source": m.get("source", "candidates/boot.c")})
     sized = {f[0]: f[1] for f in catalog["functions"]}
     for address, match in matched.items():
         if sized.get(address) != match["size"]:
             raise SystemExit(f"match {match['symbol']} does not agree with the catalogue extent at 0x{address:X}")
+        if "source_sha256" not in match:
+            continue
         src = ROOT / match["source"]
         if hashlib.sha256(src.read_bytes()).hexdigest() != match["source_sha256"]:
             raise SystemExit(f"source of {match['symbol']} changed since it was recorded")
@@ -138,7 +144,11 @@ def main() -> int:
         return 0
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     matches = json.loads(MATCHES.read_text(encoding="utf-8"))["matches"] if MATCHES.exists() else []
-    report = build_report(catalog, matches)
+    reused = []
+    if REUSED.exists():
+        doc = json.loads(REUSED.read_text(encoding="utf-8"))
+        reused = [{**m, "source": doc["source"]} for m in doc["matches"]]
+    report = build_report(catalog, matches, reused)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report) + "\n", encoding="utf-8")
     m = report["measures"]

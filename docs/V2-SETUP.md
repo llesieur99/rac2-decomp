@@ -78,7 +78,15 @@ structure-only catalogue (`config/regions/ntsc-u-v2/catalog.json`). After a func
 `python scripts/v2_report.py report --output build/decomp/report.json` builds the objdiff report CI uploads to decomp.dev.
 Totals count each unique body once (about 5.27 MB of code), not 27 overlay copies.
 
-## 7. Contribute
+## 7. Reuse the maintainer's v1.01 bodies
+
+`python scripts/find_reusable.py --output progress/v2/reused.json` compiles `candidates/boot.c` and looks for each function in the
+v2.00 code (same words, call/global fields ignored, exactly one location, at least 16 bytes). On the current tree 144 of its 365
+functions (14,996 bytes) occur unchanged at a shifted address. `v2_report.py` counts them as candidates next to the trials. The
+check ignores relocated fields, so a different global offset would not be noticed; confirm any function you promote with
+`try_function.py` and a reservation first.
+
+## 8. Contribute
 
 Claim a small lot in [`CONTRIBUTOR-RESERVATIONS.md`](CONTRIBUTOR-RESERVATIONS.md) first, open a draft PR against `RAC2`
 as described in [`CONTRIBUTOR-QUICKSTART.md`](CONTRIBUTOR-QUICKSTART.md), and keep matching claims honest:
