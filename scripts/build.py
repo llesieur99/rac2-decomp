@@ -6,6 +6,7 @@ import importlib.metadata
 import json
 import re
 import shutil
+import os
 import subprocess
 import sys
 import uuid
@@ -67,6 +68,9 @@ def shared_link_object_proof(directory: Path, catalog: dict, c_object, boot_revi
 
 
 def checked(arguments: list[str], directory: Path, log: Path) -> None:
+    runner = os.environ.get("RAC2_EXE_RUNNER")  # e.g. wibo, to run the Windows SN tools on Linux
+    if runner and arguments[0].lower().endswith(".exe"):
+        arguments = [runner, *arguments]
     with log.open("wb") as stream:
         try:
             result = subprocess.run(arguments, cwd=directory, stdout=stream,
@@ -394,7 +398,10 @@ def main() -> int:
         raise ValueError("Private manifest and builds must remain outside source repository")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     try:
-        region = regions.by_serial(manifest["target"])
+        # Several releases share one serial; the manifest names its own region.
+        region = regions.load(manifest["region"]) if manifest.get("region") else regions.by_serial(manifest["target"])
+        if region.serial != manifest["target"]:
+            raise ValueError("Manifest region and target disagree")
     except ValueError as error:
         raise ValueError("Wrong manifest target") from error
     if args.region and regions.canonical(args.region) != region.name:

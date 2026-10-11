@@ -8,7 +8,7 @@ ISO and the full tool suite before contribution work. Missing prerequisites bloc
 that work; assist with setup, not an alternative contribution route. Never fabricate
 matching claims or download an SDK from an unverified source.
 
-Start or resume through [docs/CONTINUE.md](docs/CONTINUE.md). Read the optional
+Start or resume through [docs/CONTINUE.md](docs/CONTINUE.md); new work targets USA v2.00, whose short-request loop is the first section there. Read the optional
 ignored `.local/ENVIRONMENT.md` pointer for machine-specific tools and current
 private operational state. The public repository owns methods, task decisions
 and proofs; no long pasted prompt or personal workspace details belong here.
