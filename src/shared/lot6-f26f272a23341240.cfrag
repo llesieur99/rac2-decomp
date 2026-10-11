@@ -1,0 +1,21 @@
+extern void @@ROLE_0_00@@(char *first, char *second, char *third);
+extern float @@ROLE_1_00@@(float value, float reference);
+extern void @@ROLE_5_00@@(char *out, char *source);
+extern void @@ROLE_6_00@@(char *object, char *out);
+
+void @@FUNCTION@@(char *object)
+{
+    float local[16];
+    char *child = *(char **)(object + 112);
+
+    child += 176;
+    @@ROLE_0_01@@(object + 48, object + 80, child);
+    *(float *)(object + 80) = @@ROLE_1_01@@(*(float *)(object + 80), *(float *)(child + 24));
+    *(int *)(object + 64) = 0;
+    *(float *)(object + 68) = @@ROLE_1_02@@(*(float *)(object + 84), *(float *)(object + 92));
+    *(float *)(object + 72) = @@ROLE_1_03@@(3.14159265f, *(float *)(object + 80));
+    *(float *)(object + 72) = @@ROLE_1_04@@(*(float *)(object + 72), *(float *)(object + 96));
+    *(int *)(object + 76) = 0;
+    @@ROLE_5_01@@((char *)local, object + 64);
+    @@ROLE_6_01@@(object, (char *)local);
+}

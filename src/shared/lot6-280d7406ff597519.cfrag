@@ -1,0 +1,22 @@
+extern void @@ROLE_0_00@@(char *dst, char *left, char *right);
+extern void @@ROLE_2_00@@(char *dst, char *src);
+extern int @@ROLE_4_00@@(float value);
+extern void @@ROLE_5_00@@(char *object);
+
+void @@FUNCTION@@(char *a)
+{
+    char *p1 = a + 16;
+    char *p2 = a + 32;
+    char *p3 = a + 48;
+    int v;
+
+    @@ROLE_0_01@@(p1, p1, p3);
+    @@ROLE_1@@(p2, p2, p3);
+    @@ROLE_2_01@@(p1, p1);
+    @@ROLE_3@@(p2, p2);
+    v = *(int *)(a + 4) - (@@ROLE_4_01@@(*(float *)(p3 + 12)) << 24);
+    *(int *)(a + 4) = v;
+    *(int *)(a + 12) = v;
+    if (v < 0)
+        @@ROLE_5_01@@(a);
+}

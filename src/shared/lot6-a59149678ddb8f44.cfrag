@@ -1,0 +1,17 @@
+extern void @@ROLE_0_00@@(float *a, float *b, float c);
+
+void @@FUNCTION@@(float (*m)[4])
+{
+    int k;
+    int i;
+    float v[4];
+
+    for (k = 0; k < 3; k++) {
+        v[3] = 0.0f;
+        for (i = 0; i < 3; i++)
+            v[i] = m[i][k];
+        @@ROLE_0_01@@(v, v, 1.0f);
+        for (i = 0; i < 3; i++)
+            m[i][k] = v[i];
+    }
+}

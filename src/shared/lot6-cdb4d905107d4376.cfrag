@@ -1,0 +1,20 @@
+extern int @@ROLE_0_00@@(int a, int b, int c);
+
+int @@FUNCTION@@(float x, int a, int b, int c, int d, int e, int g)
+{
+    int r, p, q, s;
+    if (x < 0.5f) {
+        r = @@ROLE_0_01@@(a, b, c);
+        if (r) return r;
+        p = d;
+        q = e;
+        s = g;
+    } else {
+        r = @@ROLE_0_02@@(d, e, g);
+        if (r) return r;
+        p = a;
+        q = b;
+        s = c;
+    }
+    return @@ROLE_0_03@@(p, q, s);
+}

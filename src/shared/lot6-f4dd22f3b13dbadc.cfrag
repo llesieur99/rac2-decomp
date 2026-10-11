@@ -1,0 +1,27 @@
+extern int @@ROLE_0_00@@(char *p);
+extern void @@ROLE_1_00@@(char *p);
+extern void @@ROLE_2_00@@(char *p, char *q, float *v);
+
+void @@FUNCTION@@(char *self)
+{
+    char *p = self + 32;
+    float v[4];
+    int a1;
+
+    if (@@ROLE_0_01@@(self + 10) != 0)
+    {
+        @@ROLE_1_01@@(self);
+        return;
+    }
+
+    a1 = *(int *)(self + 4);
+    *(int *)(self + 4) = (a1 & 0xffffff) | (((a1 >> 24) + (int)*(unsigned char *)(p + 20)) << 24);
+    v[0] = *(float *)(self + 32);
+    v[1] = *(float *)(p + 4);
+    v[2] = *(float *)(p + 8);
+    v[3] = 0.0f;
+    @@ROLE_2_01@@(self + 16, self + 16, v);
+    *(unsigned char *)(self + 8) += *(unsigned char *)(p + 21);
+    *(float *)(self + 12) += *(float *)(p + 16);
+    *(float *)(p + 8) -= *(float *)(p + 12);
+}

@@ -1,0 +1,24 @@
+extern void @@ROLE_0_00@@(char *p, int a);
+extern void @@ROLE_1_00@@(char *p, int a);
+extern void @@ROLE_2_00@@(char *p, int a);
+extern void @@ROLE_3_00@@(char *p, int a);
+extern void @@ROLE_4_00@@(char *p, int a);
+extern void @@ROLE_5_00@@(char *p, void *b, int c);
+extern void @@ROLE_6_00@@(char *p, void *b, int c);
+
+void @@FUNCTION@@(char *p, void *a1, int a2)
+{
+    *(int *)(p + 0x1564) = a2;
+    if (*(int *)(p + 0x1568) != 0) {
+        *(int *)(p + 0x1568) = 0;
+        @@ROLE_0_01@@(p + 0xf1c, 0);
+        @@ROLE_1_01@@(p + 0xfb0, 0);
+        @@ROLE_2_01@@(p + 0x1044, 0);
+        @@ROLE_3_01@@(p + 0x10d8, 1);
+        @@ROLE_4_01@@(p + 0x1160, 0);
+        @@ROLE_5_01@@(p + 0x148, a1, 0);
+    }
+    if (*(int *)(p + 0x157c) != 0) {
+        @@ROLE_6_01@@(p + 0x148, a1, 0);
+    }
+}

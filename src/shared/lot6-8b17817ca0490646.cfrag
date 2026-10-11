@@ -1,0 +1,24 @@
+extern void @@ROLE_0_00@@(char *block);
+extern void @@ROLE_4_00@@(char *block);
+extern void @@ROLE_7_00@@(char *block);
+
+char *@@FUNCTION@@(char *object)
+{
+    int index;
+    char *block;
+
+    @@ROLE_0_01@@(object);
+    @@ROLE_0_02@@(object + 76);
+    @@ROLE_0_03@@(object + 152);
+    block = object + 228;
+    for (index = 2; index != -1; index--) {
+        @@ROLE_0_04@@(block);
+        block += 76;
+    }
+    @@ROLE_4_01@@(object + 472);
+    @@ROLE_4_02@@(object + 544);
+    @@ROLE_4_03@@(object + 616);
+    @@ROLE_7_01@@(object + 688);
+    @@ROLE_7_02@@(object + 748);
+    return object;
+}

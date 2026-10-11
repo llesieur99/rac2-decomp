@@ -1,0 +1,22 @@
+extern int @@BIND_G50_00@@ __attribute__((sda));
+extern int @@BIND_G54_00@@ __attribute__((sda));
+extern void @@ROLE_0_00@@(void *v, void *x);
+
+void @@FUNCTION@@(int i0, int i1, int i2, int i3, int tag, void *x)
+{
+    long long v[4];
+
+    v[0] = (((i0 << 4) + @@BIND_G50_01@@) - 8)
+         | ((long long)(((i1 << 4) + @@BIND_G54_01@@) - 8) << 16)
+         | ((long long)tag << 32);
+    v[1] = (((i2 << 4) + @@BIND_G50_02@@) - 8)
+         | ((long long)(((i1 << 4) + @@BIND_G54_02@@) - 8) << 16)
+         | ((long long)tag << 32);
+    v[2] = (((i0 << 4) + @@BIND_G50_03@@) - 8)
+         | ((long long)(((i3 << 4) + @@BIND_G54_03@@) - 8) << 16)
+         | ((long long)tag << 32);
+    v[3] = (((i2 << 4) + @@BIND_G50_04@@) - 8)
+         | ((long long)(((i3 << 4) + @@BIND_G54_04@@) - 8) << 16)
+         | ((long long)tag << 32);
+    @@ROLE_0_01@@(v, x);
+}

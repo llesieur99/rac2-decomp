@@ -1,0 +1,16 @@
+extern int @@ROLE_0_00@@(char *p);
+extern void @@ROLE_1_00@@(char *p);
+
+void @@FUNCTION@@(char *a0)
+{
+    char *p = a0 + 32;
+
+    if (@@ROLE_0_01@@(p) != 0) {
+        @@ROLE_1_01@@(a0);
+        return;
+    }
+    *(float *)(a0 + 12) = *(float *)(a0 + 12) + *(float *)(p + 4);
+    if (*(int *)(a0 + 32) < 6)
+        *(int *)(a0 + 4) = (*(int *)(a0 + 4) & 0xFFFFFF)
+                         | ((*(int *)(a0 + 32) * 127 / 6) << 24);
+}

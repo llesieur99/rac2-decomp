@@ -23,10 +23,10 @@ Recorded validation on **10 October 2026**:
 
 | Scope | Integrated C functions / placements | Matched C bytes |
 | --- | ---: | ---: |
-| Boot | 354 functions | 26,268 |
-| 27 level overlays | 12,915 placements | 1,154,484 |
-| Native overlay subset, included above | 8,519 placements | 914,548 |
-| **Total C coverage** | **Boot + all 27 overlays** | **1,180,752 / 48,788,176 (2.4202%)** |
+| Boot | 376 functions | 30,104 |
+| 27 level overlays | 13,886 placements | 1,312,280 |
+| Native overlay subset, included above | 9,490 placements | 1,072,344 |
+| **Total C coverage** | **Boot + all 27 overlays** | **1,342,384 / 48,788,176 (2.7515%)** |
 <!-- generated-progress:end -->
 
 Proofs in [`progress/`](progress/) were measured on **USA v1.01** and move to v2.00 once its catalogues are regenerated; v2.00 disc, boot and all 27 overlays are already pinned ([`docs/REGIONS.md`](docs/REGIONS.md)).
@@ -36,12 +36,12 @@ Proofs in [`progress/`](progress/) were measured on **USA v1.01** and move to v2
 <!-- unique-code-progress:start -->
 | Metric | Matched C bytes | Total code bytes | Progress |
 | --- | ---: | ---: | ---: |
-| Conservative unique EE code (unsupported extents uncollapsed) | 390,028 | 44,400,168 | 0.8784% |
-| Loaded code (boot + 27 overlays) | 1,180,752 | 48,788,176 | 2.4202% |
+| Conservative unique EE code (unsupported extents uncollapsed) | 481,344 | 44,400,168 | 1.0841% |
+| Loaded code (boot + 27 overlays) | 1,342,384 | 48,788,176 | 2.7515% |
 
 Structurally supported function extents cover 40,075,248 loaded EE bytes; 231,732 EE bytes remain unresolved. VU code excluded: 86,368 bytes.
 Provisional representative partition: 37,641,816 bytes (certified: false); no global progress percentage is inferred from this partition.
-Conservative global partition retains unknown extents and gaps without deduplication: 8,626,560 loaded EE bytes have unsupported boundaries. The total follows the stated grouping policy and is not a certified original-source size. Supported subset: 390,028 / 35,773,608 unique bytes.
+Conservative global partition retains unknown extents and gaps without deduplication: 8,626,560 loaded EE bytes have unsupported boundaries. The total follows the stated grouping policy and is not a certified original-source size. Supported subset: 481,344 / 35,773,608 unique bytes.
 
 Shared boot binding: 22,576 static edges in combined pinned reference images. Runtime code preservation is unproved. See [the binding and remaining-duplication audit](docs/BOOT-SHARED-CODE-VERIFICATION.md).
 <!-- unique-code-progress:end -->
